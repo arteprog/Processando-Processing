@@ -10,7 +10,7 @@ Doações feitas para **arteprog** vão contribuir para manter este projeto.
 
 ## em estudo
 
-####Portando para o modo Python####
+#### Portar para o modo Python####
 
 * "Arrays
  by Casey Reas and Ben Fry
@@ -60,7 +60,7 @@ Doações feitas para **arteprog** vão contribuir para manter este projeto.
  by Ira Greenberg
  An introduction to trigonometry.
  Level: Intermediate"
-* [Typography](https://docs.google.com/document/d/14MYeJQPlA57-pYYm_UPt0u3sVynIxVIU8gras3ERAFQ/pub) ([original](https://processing.org/tutorials/typography/))"Typography
+* [[Em andamento](https://docs.google.com/document/d/14MYeJQPlA57-pYYm_UPt0u3sVynIxVIU8gras3ERAFQ/pub)][[original](https://processing.org/tutorials/typography/)] "Typography
  by Casey Reas and Ben Fry
  Working with typefaces and text.
  Level: Beginner"
