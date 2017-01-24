@@ -12,6 +12,10 @@ Doações feitas para **arteprog** vão contribuir para manter este projeto.
 
 #### portar para Python####
 
+* [[Em andamento](https://docs.google.com/document/d/14MYeJQPlA57-pYYm_UPt0u3sVynIxVIU8gras3ERAFQ/pub)][[original](https://processing.org/tutorials/typography/)] "Typography
+ by Casey Reas and Ben Fry
+ Working with typefaces and text.
+ Level: Beginner"
 * "Arrays
  by Casey Reas and Ben Fry
  How to store and access data in array structures.
@@ -60,10 +64,6 @@ Doações feitas para **arteprog** vão contribuir para manter este projeto.
  by Ira Greenberg
  An introduction to trigonometry.
  Level: Intermediate"
-* [[Em andamento](https://docs.google.com/document/d/14MYeJQPlA57-pYYm_UPt0u3sVynIxVIU8gras3ERAFQ/pub)][[original](https://processing.org/tutorials/typography/)] "Typography
- by Casey Reas and Ben Fry
- Working with typefaces and text.
- Level: Beginner"
 * "Video
  by Daniel Shiffman
  How to display live and recorded video
