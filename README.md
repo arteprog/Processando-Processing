@@ -5,7 +5,7 @@ Processando Processing é um esforço para:
 1. Traduzir para o português material de referência sobre Processing;
 2. Portar para o [Processing Python mode](http://py.processing.org) tutoriais e outros exemplos. 
 
-O resultado é sempre publicado com licenças abertas semelhantes às do material original.
+Os resultados serão sempre publicado com licenças abertas semelhantes às do material original.<br>
 Doações feitas para **arteprog** vão contribuir para manter este projeto.
 
 ## em estudo
