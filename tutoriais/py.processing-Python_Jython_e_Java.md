@@ -2,7 +2,7 @@
 
 Este tutorial é para o modo Python do Processing. Originalmente publicado por Allison Parish [em inglês](http://py.processing.org/tutorials/python-jython-java/) sob a licença [Creative Commons BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/), traduzido por Alexandre Villares para [https://github.com/arteprog/Processando-Processing](https://github.com/arteprog/Processando-Processing) Se você encontrar erros ou tiver comentários, entre em contato (reportando [o original](https://github.com/processing/processing-docs/issues?state=open) ou [a tradução](https://github.com/arteprog/Processando-Processing/issues)).
 
-Processing.py é baseado na implementação Java do [Processing](http://www.processing.org/). Faz uso do [Jython](http://www.jython.org/), uma implementação de Python que roda na Maquina Virtual Java (JVM, na sigla em inglês), para acessar diretamente a biblioteca Java subjacente. A vantagem desta estratégia é que os seus sketches Processing.py podem fazer praticamente qualquer coisa que um sketch Processing normal pode fazer, e versões novas do Processing.py aproveitam imeditamente as melhorias em performance ou novas features acrescentadas na implementação Java. Quando você faz sketches com Processing.py, você tem acesso à melhor de três diferentes plataformas e ecossistemas de software: Python, Java e Processing.
+Processing.py é baseado na implementação Java do [Processing](http://www.processing.org/). Faz uso do [Jython](http://www.jython.org/), uma implementação de Python que roda na Maquina Virtual Java (JVM, na sigla em inglês), para acessar diretamente a biblioteca Java subjacente. A vantagem desta estratégia é que os seus *sketches* Processing.py podem fazer praticamente qualquer coisa que um *sketch* Processing normal pode fazer, e versões novas do Processing.py aproveitam imeditamente as melhorias em performance ou novos recursos acrescentados na implementação Java. Quando você faz *sketches* com Processing.py, você tem acesso ao melhor de três diferentes plataformas e ecossistemas de software: Python, Java e Processing.
 
 No entanto, se você já está familiarizado com qualquer uma destas plataformas, você pode descobrir que algumas coisas funcionam de maneira não-intuitiva, ou deixam de funcionar por completo. Este tutorial foi concebido para ajudá-lo a se alfabetizar sobre como Processing.py, Processing, Python e Java todos trabalham em conjunto, para que você possa raciocinar melhor sobre como diagnosticar problemas e utilizar todo o potencial da plataforma.
 
@@ -64,7 +64,7 @@ Na maioria das situações, arrays e listas são intercambiáveis, de modo que v
     y = ["a", "b", "c", "d"]
     print x == y # prints False
 
-Sempre fique atento aos tipos de suas variáveis e verifique se você sabe aquilo com o qual está trabalhando. Além das funções de Processing mencionadas acima, pode haver bibliotecas de terceiros que você usa no seu sketch Processing.py que retornam arrays também. Felizmente, há uma solução fácil: use a função buit-in de Python list() para converter os arrays em lista. Por exemplo:
+Sempre fique atento aos tipos de suas variáveis e verifique se você sabe aquilo com o qual está trabalhando. Além das funções de Processing mencionadas acima, pode haver bibliotecas de terceiros que você usa no seu *sketch* Processing.py que retornam arrays também. Felizmente, há uma solução fácil: use a função buit-in de Python list() para converter os arrays em lista. Por exemplo:
 
     x = list(split("a,b,c,d", ","))
     y = ["a", "b", "c", "d"]
