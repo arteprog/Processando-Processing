@@ -1,3 +1,10 @@
+### *Processando Processing (means processing Processing in Portuguese)*
+*Processando Processing is an effort to:<br>
+1.Translate into Portuguese Processing reference resources;<br>
+2.Port into [Processing Python Mode](py.processing.org) tutorials and other examples.<br>
+Results will be always published under open licenses similar to the original resources.<br>
+[<b>Donations</b>](http://patreon.com/arteprog) to <b>artprog</b> will contribute to mantain this project.*
+
 # Processando Processing
 
 Processando Processing é um esforço para: 
@@ -6,7 +13,7 @@ Processando Processing é um esforço para:
 2. Portar para o [Processing modo Python](abav.lugaralgum.com/como-instalar-o-processing-modo-python/) tutoriais e outros exemplos. 
 
 Os resultados serão sempre publicados com licenças abertas semelhantes às do material original.<br>
-[Doações](http://patreon.com/arteprog) feitas para **arteprog** vão contribuir para manter este projeto.
+[**Doações**](http://patreon.com/arteprog) feitas para **arteprog** vão contribuir para manter este projeto.
 
 ## concluído (ou em andamento)
 
