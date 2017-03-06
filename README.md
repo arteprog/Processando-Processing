@@ -25,6 +25,11 @@ Os resultados serão sempre publicados com licenças abertas semelhantes às do 
 
 ## em estudo
 
+#### traduzir para o português####
+
+* Atualizar a tradução da referência da linguagem versão 1.0 http://www.dainf.ct.utfpr.edu.br/~merkle/processing/reference/ptBR/index.html
+* Traduzir a introdução do livro [Nature of Code](http://natureofcode.com) de Daniel Shiffman
+
 #### portar para Python####
 
 * "Arrays
@@ -79,8 +84,3 @@ Os resultados serão sempre publicados com licenças abertas semelhantes às do 
  by Daniel Shiffman
  How to display live and recorded video
  Level: Advanced"
-
-#### traduzir para o português####
-
-* Atualizar a tradução da referência da linguagem versão 1.0 http://www.dainf.ct.utfpr.edu.br/~merkle/processing/reference/ptBR/index.html
-* Traduzir a introdução do livro [Nature of Code](http://natureofcode.com) de Daniel Shiffman
