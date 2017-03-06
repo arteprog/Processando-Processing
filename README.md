@@ -10,7 +10,7 @@ Os resultados serão sempre publicados com licenças abertas semelhantes às do 
 
 ## concluído (ou em andamento)
 
-* ***Python, Jython e Java 
+* [***Python, Jython e Java***](https://github.com/arteprog/Processando-Processing/blob/master/tutoriais/py.processing-Python_Jython_e_Java.md) 
 
 * para o português [[em andamento](https://docs.google.com/document/d/1uZTAGvQTYj7FcSEZSF7wBlbZKHOXMsUqz3Apfwbfm24/)] "2D Transformations
  by J David Eisenberg
