@@ -30,4 +30,4 @@ Bom, isso pode parecer um algoritmo particularmente simples. No entanto, caminha
 
 ### I.2 A classe Random Walker
 
-Vamos rever um pouco de programação orientada a objetos (POO) primeiramente construindo um objeto Walker. Esta será uma revisão rápida apenas. Se você nunca trabalhou com POO antes, pode ser que queira algo mais completo; Eu sugeriria parar aqui e revisar o básico no site do Processing (página em Inglês) antes de continuar.
+Vamos rever um pouco de programação orientada a objetos (POO) primeiramente construindo um objeto Walker. Esta será uma revisão rápida apenas. Se você nunca trabalhou com POO antes, pode ser que queira algo mais completo; Eu sugeriria parar aqui e revisar o básico no site do [Processing](https://processing.org/tutorials/objects/) (página em Inglês) antes de continuar.
