@@ -8,7 +8,7 @@ No entanto, se você já está familiarizado com qualquer uma destas plataformas
 
 ## Limitações do Jython (e peculiaridades)
 
-Jython é uma implementação do Python que roda na Java Virtual Machine (JVM). Jython foi inicialmente desenvolvido como uma maneira de escrever programas em Python que fazem uso de bibliotecas, frameworks e infraestruturas Java existentes. Jython é projetado para ser o mais compatível possível com todos os programas em Python, e é geralmente tão rápido quanto [CPython](https://en.wikipedia.org/wiki/CPython) (a implementação "referência" do Python, escrita em C) para a maioria das tarefas.
+Jython é uma implementação do Python que roda na Java Virtual Machine (JVM), inicialmente desenvolvido como uma maneira de escrever programas em Python que fazem uso de bibliotecas, frameworks e infraestruturas Java existentes. Jython é projetado para ser o mais compatível possível com todos os programas em Python, e é geralmente tão rápido quanto [CPython](https://en.wikipedia.org/wiki/CPython) (a implementação "referência" do Python, escrita em C) para a maioria das tarefas.
 
 No entanto, Jython tem algumas limitações significativas, especialmente se você está acostumado a trabalhar com CPython. Para mais detalhes, consulte o [FAQ Jython](https://wiki.python.org/jython/JythonFaq) oficial. Aqui vai um resumo das diferenças mais importantes para usuários de Processing.py.
 
@@ -18,7 +18,7 @@ A mais recente versão do Jython implementa Python 2.7. Python 2.7 ainda é ampl
 
 ### Bibliotecas Python
 
-Jython suporta quase toda a biblioteca padrão do Python (isto é, as bibliotecas que vêm com Python quando você o instala). Uma exceção notável é [sqlite3](https://docs.python.org/2/library/sqlite3.html) (embora você possa acessar bancos de dados SQLite usando ODBC, e [há uma issue aberta para o suporte ao sqlite3 no rastreador de bug do Jython](http://bugs.jython.org/issue1682864). Jython *não* suporta bibliotecas Python de terceiros que usam extensões escritas em C. Isto significa que as bibliotecas Python populares como [](http://www.numpy.org/)numpy, [scipy](http://www.scipy.org/) e [scikit-learn](http://scikit-learn.org/stable/) *não vão funcionar* no Jython (e, por esta razão, não funcionarão no Processing.py).
+Jython suporta quase toda a biblioteca padrão do Python (isto é, as bibliotecas que vêm com Python quando você o instala). Uma exceção notável é [sqlite3](https://docs.python.org/2/library/sqlite3.html) (embora você possa acessar bancos de dados SQLite usando ODBC, e [há uma qustão em aberto sobre suporte ao sqlite3 no rastreador de bugs do Jython](http://bugs.jython.org/issue1682864). Jython *não* suporta bibliotecas Python de terceiros que usam extensões escritas em C. Isto significa que as bibliotecas Python populares como [](http://www.numpy.org/)numpy, [scipy](http://www.scipy.org/) e [scikit-learn](http://scikit-learn.org/stable/) *não vão funcionar* no Jython (e, por esta razão, não funcionarão no Processing.py).
 
 Infelizmente, não há nenhuma maneira fácil de dizer se uma biblioteca usa ou não uma extensão em C (ou se tem como dependência uma biblioteca com uma extensão C) sem tentar instalá-la, apesar de existirem algumas bibliotecas que vêm com uma alternativa puro-Python se for impossível compilar a extensão C.
 
