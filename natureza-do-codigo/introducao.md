@@ -31,3 +31,8 @@ Bom, isso pode parecer um algoritmo particularmente simples. No entanto, caminha
 ### I.2 A classe Random Walker
 
 Vamos rever um pouco de programação orientada a objetos (POO) primeiramente construindo um objeto Walker. Esta será uma revisão rápida apenas. Se você nunca trabalhou com POO antes, pode ser que queira algo mais completo; Eu sugeriria parar aqui e revisar o básico no site do [Processing](https://processing.org/tutorials/objects/) (página em Inglês) antes de continuar.
+
+
+Um **objeto** em Processing é uma entidade que possui dados e funcionalidade. Nós queremos projetar um objeto Walker que mantém tanto o registro de seus dados (onde ele existe na tela) quanto tem a capacidade de executar certas ações (como desenhar-se ou dar um passo).
+
+Uma **classe** é o modelo para criar instâncias reais de objetos. Pense em uma classe como um cortador de biscoitos; os objetos são os próprios biscoitos.
