@@ -28,5 +28,6 @@ Bom, isso pode parecer um algoritmo particularmente simples. No entanto, caminha
 
 3. Ao longo do livro, vamos periodicamente precisar de uma compreensão básica da aleatoriedade, probabilidade e ruído Perlin. A caminhada aleatória nos permitirá demonstar alguns pontos chave que serão úteis mais para frente.
 
+### I.2 A classe Random Walker
 
 
