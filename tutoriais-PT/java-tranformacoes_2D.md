@@ -1,6 +1,6 @@
-# **2D Transformations**
+# **Transformações 2D**
 
-### **by J David Eisenberg**
+### **por J David Eisenberg**
 
 Você já aprendeu que pode mudar a posição onde desenha um retângulo. Mas há uma maneira diferente de fazer isso. E se você **mover a grade de coordenadas? 
 **O efeito visual obtido é o mesmo. Isso se chama translação. **Qual a vantagem?**
