@@ -22,7 +22,4 @@ Coroa | Coroa | Passo para trás.
 
 Bom, isso pode parecer um algoritmo particularmente simples. No entanto, caminhadas aleatórias podem ser usadas para modelar fenômenos que acontecem no mundo real, de movimentos de moléculas num gás ao comportamento de um jogador passando o dia em um cassino. Começamos o livro estudando uma caminhada aleatória com três objetivos em mente.
 
-1. Precisamos rever um conceito de programação central para este livro — programação orientada a objetos. O nosso passeador aleatório, random walker, servirá de modelo para como podemos usar uma estrutura orientada a objetos. Servirá de gabarito para como vamos usar um design orientado a objetos para fazer coisas que se movem numa janela do Processing.
-
-
-
+1. Precisamos rever um conceito de programação central para este livro — programação orientada a objetos. O nosso passeador aleatório, random walker, servirá de modelo para como usaremos o design orientado a objetos para fazer coisas que se movem numa janela do Processing.
