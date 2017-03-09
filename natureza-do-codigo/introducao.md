@@ -36,3 +36,18 @@ Vamos rever um pouco de programação orientada a objetos (POO) primeiramente co
 Um **objeto** em Processing é uma entidade que possui dados e funcionalidade. Nós queremos projetar um objeto Walker que mantém tanto o registro de seus dados (onde ele existe na tela) quanto tem a capacidade de executar certas ações (como desenhar-se ou dar um passo).
 
 Uma **classe** é o modelo para criar instâncias reais de objetos. Pense em uma classe como um cortador de biscoitos; os objetos são os próprios biscoitos.
+
+
+
+
+
+
+
+
+
+
+[FINAL]
+Começamos este capítulo falando sobre como a aleatoriedade pode ser uma muleta. De muitas maneiras, é a resposta mais óbvia para certas perguntas que fazemos continuamente, como deve esse objeto se mover? Que cor deve ter? Esta resposta óbvia, contudo, também pode ser preguiçosa.
+À medida que terminamos a introdução, é importante notar que poderíamos facilmente cair na armadilha de usar o ruído Perlin como uma muleta também. Como deve esse objeto se mover? Ruído Perlin! Que cor deve ter? Ruído Perlin! O quão rápido ele deve crescer? Ruído Perlin!
+O ponto de tudo isto não é dizer que você deve ou não usar aleatoriedade. Ou que você deve ou não usar o ruído Perlin. O ponto é que as regras do seu sistema são definidas por você, e quanto maior a sua caixa de ferramentas, mais escolhas você vai ter como você implementar essas regras. O objetivo deste livro é encher sua caixa de ferramentas. Se tudo o que você sabe é aleatóriedade, então o sua estratégia de design é limitada. Claro, o ruído Perlin ajuda, mas você vai precisar de mais. Muito mais.
+Acho que estamos prontos para começar.
