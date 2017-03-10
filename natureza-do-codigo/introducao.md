@@ -37,8 +37,9 @@ Um **objeto** em Processing é uma entidade que possui dados e funcionalidade. N
 
 Uma **classe** é o modelo para criar instâncias reais de objetos. Pense em uma classe como um cortador de biscoitos; os objetos são os próprios biscoitos.
 
+Vamos começar definindo a classe Walker - o que significa ser um objeto Walker. O Walker só precisa de dois dados - um número para sua localização x e um para sua localização y.
 
-
+  
 
 
 
