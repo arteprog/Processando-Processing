@@ -54,6 +54,21 @@ Cada classe deve ter um construtor, uma função especial que é chamada quando 
     }
 ```
 
+Finalmente, além de dados, as classes podem ser definidas com funcionalidades. Neste exemplo, um Walker tem duas funções. Primeiro, escrevemos uma função que permite que o objeto se exiba (como um ponto branco).
+
+```java
+void display() {    // Os objetos têm funções.
+    stroke(0);
+    point(x,y);
+  }
+```
+
+A segunda função direciona o objeto Walker para dar um passo. Agora, é aqui que as coisas ficam um pouco mais interessantes. Lembra-se de quando estavámos andando aleatoriamente no chão? Bem, agora podemos usar uma janela no Processing para fazer a mesma coisa. Existem quatro passos possíveis. Um passo para a direita pode ser simulado incrementando x (x ++); Para a esquerda, decrementando x (x -); Para a frente, indo para baixo um pixel (y ++); E para trás, subindo um pixel (y -). Como escolhemos uma dessas quatro possibilidades? Anteriormente, afirmamos que poderíamos virar duas moedas. No processamento, no entanto, quando queremos escolher aleatoriamente de uma lista de opções, podemos escolher um número aleatório usando random ().
+```java
+void step() {
+    int choice = int(random(4));    // 0, 1, 2, ou 3
+```     
+    
 [FINAL]
 Começamos este capítulo falando sobre como a aleatoriedade pode ser uma muleta. De muitas maneiras, é a resposta mais óbvia para certas perguntas que fazemos continuamente, como deve esse objeto se mover? Que cor deve ter? Esta resposta óbvia, contudo, também pode ser preguiçosa.
 À medida que terminamos a introdução, é importante notar que poderíamos facilmente cair na armadilha de usar o ruído Perlin como uma muleta também. Como deve esse objeto se mover? Ruído Perlin! Que cor deve ter? Ruído Perlin! O quão rápido ele deve crescer? Ruído Perlin!
