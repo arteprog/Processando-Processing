@@ -70,6 +70,22 @@ void step() {
     int choice = int(random(4));    // 0, 1, 2, ou 3
 ```
 
+A linha de código acima escolhe um número de ponto flutuante aleatório entre 0 e 4 e converte-o em um número inteiro, com um resultado de 0, 1, 2 ou 3. Tecnicamente falando, o número mais alto nunca será 4.0, mas sim 3.999999999 (Com tantos 9s quanto casas decimais existentes); Uma vez que o processo de conversão para um número inteiro sai da casa decimal, o int mais alto que podemos obter é 3. Em seguida, tomamos o passo apropriado (esquerda, direita, para cima ou para baixo) dependendo do número aleatório que foi escolhido.
+
+```java
+if (choice == 0) {    // A escolha aleatória determina nosso passo.
+      x++;
+    } else if (choice == 1) {
+      x--;
+    } else if (choice == 2) {
+      y++;
+    } else {
+      y--;
+    }
+  }
+}
+```
+
 [FINAL]
 Começamos este capítulo falando sobre como a aleatoriedade pode ser uma muleta. De muitas maneiras, é a resposta mais óbvia para certas perguntas que fazemos continuamente, como deve esse objeto se mover? Que cor deve ter? Esta resposta óbvia, contudo, também pode ser preguiçosa.
 À medida que terminamos a introdução, é importante notar que poderíamos facilmente cair na armadilha de usar o ruído Perlin como uma muleta também. Como deve esse objeto se mover? Ruído Perlin! Que cor deve ter? Ruído Perlin! O quão rápido ele deve crescer? Ruído Perlin!
