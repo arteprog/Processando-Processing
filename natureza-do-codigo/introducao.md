@@ -68,7 +68,7 @@ A segunda função direciona o objeto Walker para dar um passo. Agora, é aqui q
 ```java
 void step() {
     int choice = int(random(4));    // 0, 1, 2, ou 3
-```     
+```
 
 [FINAL]
 Começamos este capítulo falando sobre como a aleatoriedade pode ser uma muleta. De muitas maneiras, é a resposta mais óbvia para certas perguntas que fazemos continuamente, como deve esse objeto se mover? Que cor deve ter? Esta resposta óbvia, contudo, também pode ser preguiçosa.
