@@ -41,11 +41,18 @@ Vamos começar definindo a classe Walker - o que significa ser um objeto Walker.
 
 ```java
     class Walker {
-      int x;          //Objects have data.
+      int x;          // Objetos têm dados.
       int y;
 ```
 
+Cada classe deve ter um construtor, uma função especial que é chamada quando o objeto é criado pela primeira vez. Você pode pensar nisso como o setup() - configuração - do objeto. Lá, inicializaremos a localização inicial do Walker (neste caso, o centro da janela).
 
+```java
+    Walker() {    // Os objetos têm um construtor onde eles são inicializados.
+     x = width/2;
+     y = height/2;
+    }
+```
 
 [FINAL]
 Começamos este capítulo falando sobre como a aleatoriedade pode ser uma muleta. De muitas maneiras, é a resposta mais óbvia para certas perguntas que fazemos continuamente, como deve esse objeto se mover? Que cor deve ter? Esta resposta óbvia, contudo, também pode ser preguiçosa.
