@@ -39,11 +39,11 @@ Uma **classe** é o modelo para criar instâncias reais de objetos. Pense em uma
 
 Vamos começar definindo a classe Walker - o que significa ser um objeto Walker. O Walker só precisa de dois dados - um número para sua localização x e um para sua localização y.
 
-  
-
-
-
-
+```java
+    class Walker {
+      int x;          //Objects have data.
+      int y;
+```
 
 
 
