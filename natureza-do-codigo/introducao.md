@@ -105,6 +105,21 @@ void setup() {
 }
 ```
 
+Finalmente, durante cada ciclo através do draw(), pedimos ao Walker para dar um passo e desenhar um ponto.
+
+```java
+void draw() {
+  w.step();    // Chamara as funções do Walker.
+  w.display();
+}
+```
+
+Uma vez que desenhamos o plano de fundo apenas uma vez no setup(), em vez de limpá-lo continuamente cada vez através do draw(), vemos a trilha da caminhada aleatória em nossa janela do Processing.
+
+Existem algumas melhorias que poderíamos fazer para o caminhante aleatório. Primeiro, as escolhas deste Walker estão limitadas a quatro opções - para cima, para baixo, para a esquerda e para a direita. Mas qualquer pixel dado na janela tem oito possíveis vizinhos, e uma nona possibilidade é ficar no mesmo lugar.
+
+
+
 [FINAL]
 Começamos este capítulo falando sobre como a aleatoriedade pode ser uma muleta. De muitas maneiras, é a resposta mais óbvia para certas perguntas que fazemos continuamente, como deve esse objeto se mover? Que cor deve ter? Esta resposta óbvia, contudo, também pode ser preguiçosa.
 À medida que terminamos a introdução, é importante notar que poderíamos facilmente cair na armadilha de usar o ruído Perlin como uma muleta também. Como deve esse objeto se mover? Ruído Perlin! Que cor deve ter? Ruído Perlin! O quão rápido ele deve crescer? Ruído Perlin!
