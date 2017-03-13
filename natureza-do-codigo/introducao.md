@@ -86,6 +86,18 @@ if (choice == 0) {    // A escolha aleatória determina nosso passo.
 }
 ```
 
+Agora que escrevemos a classe, é hora de fazer um objeto Walker na parte principal do nosso sketch - setup() e draw(). Assumindo que estamos procurando modelar uma única caminhada aleatória, declaramos uma variável global do tipo Walker.
+
+```java
+Walker w;    // Um objeto Walker
+```
+Em seguida, criamos o objeto no setup() chamando o construtor com o novo operador.
+
+#### Exemplo I.1: Caminhada aleatória tradicional
+
+Cada vez que você vê o cabeçalho de Exemplo neste livro, significa que há um exemplo de código correspondente disponível no [GitHub](https://github.com/shiffman/The-Nature-of-Code-Examples).
+
+
 [FINAL]
 Começamos este capítulo falando sobre como a aleatoriedade pode ser uma muleta. De muitas maneiras, é a resposta mais óbvia para certas perguntas que fazemos continuamente, como deve esse objeto se mover? Que cor deve ter? Esta resposta óbvia, contudo, também pode ser preguiçosa.
 À medida que terminamos a introdução, é importante notar que poderíamos facilmente cair na armadilha de usar o ruído Perlin como uma muleta também. Como deve esse objeto se mover? Ruído Perlin! Que cor deve ter? Ruído Perlin! O quão rápido ele deve crescer? Ruído Perlin!
