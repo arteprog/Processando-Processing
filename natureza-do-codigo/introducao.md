@@ -93,10 +93,17 @@ Walker w;    // Um objeto Walker
 ```
 Em seguida, criamos o objeto no setup() chamando o construtor com o novo operador.
 
-#### Exemplo I.1: Caminhada aleatória tradicional
+### Exemplo I.1: Caminhada aleatória tradicional
 
 Cada vez que você vê o cabeçalho de Exemplo neste livro, significa que há um exemplo de código correspondente disponível no [GitHub](https://github.com/shiffman/The-Nature-of-Code-Examples).
 
+```java
+void setup() {
+  size(640,360);
+  w = new Walker();    // Crie o Walker.
+  background(255);
+}
+```
 
 [FINAL]
 Começamos este capítulo falando sobre como a aleatoriedade pode ser uma muleta. De muitas maneiras, é a resposta mais óbvia para certas perguntas que fazemos continuamente, como deve esse objeto se mover? Que cor deve ter? Esta resposta óbvia, contudo, também pode ser preguiçosa.
