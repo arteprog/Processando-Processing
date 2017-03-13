@@ -109,7 +109,7 @@ Finalmente, durante cada ciclo através do draw(), pedimos ao Walker para dar um
 
 ```java
 void draw() {
-  w.step();    // Chamara as funções do Walker.
+  w.step();    // Chame as funções do Walker.
   w.display();
 }
 ```
