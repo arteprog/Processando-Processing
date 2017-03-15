@@ -118,7 +118,7 @@ Uma vez que desenhamos o plano de fundo apenas uma vez no setup(), em vez de lim
 
 Existem algumas melhorias que poderíamos fazer para o caminhante aleatório. Primeiro, as escolhas deste Walker estão limitadas a quatro opções - para cima, para baixo, para a esquerda e para a direita. Mas qualquer pixel dado na janela tem oito possíveis vizinhos, e uma nona possibilidade é ficar no mesmo lugar.
 
-
+![1](https://github.com/arteprog/Processando-Processing/blob/master/natureza-do-codigo/assets/intro_01.png?raw=true)
 
 [FINAL]
 Começamos este capítulo falando sobre como a aleatoriedade pode ser uma muleta. De muitas maneiras, é a resposta mais óbvia para certas perguntas que fazemos continuamente, como deve esse objeto se mover? Que cor deve ter? Esta resposta óbvia, contudo, também pode ser preguiçosa.
