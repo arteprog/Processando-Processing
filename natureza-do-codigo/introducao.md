@@ -15,9 +15,9 @@ Imagine que você está no meio de uma trave olímpica. A cada dez segundos, voc
 
 Jogada 1 | Jogada 2 | Resultado
 ------------ | ------------- | -------------
-Cara | Cara | Passo a frente.
-Cara | Coroa | Passo a direita.
-Coroa | Cara | Passo a esquerda.
+Cara | Cara | Passo para frente.
+Cara | Coroa | Passo para direita.
+Coroa | Cara | Passo para esquerda.
 Coroa | Coroa | Passo para trás.
 
 Bom, isso pode parecer um algoritmo particularmente simples. No entanto, caminhadas aleatórias podem ser usadas para modelar fenômenos que acontecem no mundo real, de movimentos de moléculas num gás ao comportamento de um jogador passando o dia em um cassino. Começamos o livro estudando uma caminhada aleatória com três objetivos em mente.
