@@ -122,7 +122,18 @@ Existem algumas melhorias que poderíamos fazer para o caminhante aleatório. Pr
 
 Figura I.1
 
-Para implementar um objeto Walker que pode pisar em quaisquer pixels vizinhos (ou ficar parado), poderíamos escolher um número entre 0 e 8 (nove escolhas possíveis). No entanto, a maneira mais eficiente de escrever o código seria a de simplesmente escolher a partir de três passos possíveis ao longo do eixo x (-1, 0, ou 1) e três passos possíveis ao longo do eixo y.
+Para implementar um objeto Walker que pode pisar em qualquer pixel vizinho (ou ficar parado), poderíamos escolher um número entre 0 e 8 (nove escolhas possíveis). No entanto, a maneira mais eficiente para escrever o código seria a de simplesmente escolher a partir de três passos possíveis ao longo do eixo x (-1, 0, ou 1) e três passos possíveis ao longo do eixo y.
+
+```java
+ void step() {
+    int stepx = int(random(3))-1;    // Retorna -1, 0 ou 1
+    int stepy = int(random(3))-1;
+    x += stepx;
+    y += stepy;
+  }
+```
+
+
 
 [FINAL]
 Começamos este capítulo falando sobre como a aleatoriedade pode ser uma muleta. De muitas maneiras, é a resposta mais óbvia para certas perguntas que fazemos continuamente, como deve esse objeto se mover? Que cor deve ter? Esta resposta óbvia, contudo, também pode ser preguiçosa.
