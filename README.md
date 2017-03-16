@@ -17,14 +17,24 @@ Os resultados serão sempre publicados com licenças abertas semelhantes às do 
 
 ## concluído (ou em andamento)
 
+
+#### para o português ####
+
 * [**Python, Jython e Java**](https://github.com/arteprog/Processando-Processing/blob/master/tutoriais-PT/python-Python_Jython_e_Java.md) 
 
-* para o português [[em andamento](https://docs.google.com/document/d/1uZTAGvQTYj7FcSEZSF7wBlbZKHOXMsUqz3Apfwbfm24/)] "2D Transformations
+*  [[em andamento](https://github.com/arteprog/Processando-Processing/tree/master/natureza-do-codigo)] Introdução do livro [Nature of Code](http://natureofcode.com) de Daniel Shiffman
+
+
+#### para o modo Python ####
+
+** Arduino (Firmata) All inputs ** [Merged arduino_input.pyde (https://github.com/jdf/processing.py/commit/f6f59dc45844b8ee40a8b7cb47ccd9ddbd026416)]
+
+* [[em andamento](https://docs.google.com/document/d/1uZTAGvQTYj7FcSEZSF7wBlbZKHOXMsUqz3Apfwbfm24/)] "2D Transformations
  by J David Eisenberg
  Learn how to translate, rotate, and scale shapes using 2D transformations.
  Level: Intermediate"
 
-* para Python [[Em andamento](https://docs.google.com/document/d/14MYeJQPlA57-pYYm_UPt0u3sVynIxVIU8gras3ERAFQ/pub)][[original](https://processing.org/tutorials/typography/)] "Typography
+* [[Em andamento](https://docs.google.com/document/d/14MYeJQPlA57-pYYm_UPt0u3sVynIxVIU8gras3ERAFQ/pub)][[original](https://processing.org/tutorials/typography/)] "Typography
  by Casey Reas and Ben Fry
  Working with typefaces and text.
  Level: Beginner"
@@ -32,12 +42,11 @@ Os resultados serão sempre publicados com licenças abertas semelhantes às do 
 
 ## em estudo
 
-#### traduzir para o português####
+#### para o português ####
 
 * Atualizar a tradução da referência da linguagem versão 1.0 http://www.dainf.ct.utfpr.edu.br/~merkle/processing/reference/ptBR/index.html
-* Traduzir a introdução do livro [Nature of Code](http://natureofcode.com) de Daniel Shiffman
 
-#### portar para Python####
+#### para modo Python ####
 
 * "Arrays
  by Casey Reas and Ben Fry
