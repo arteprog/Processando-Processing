@@ -1,14 +1,14 @@
 """
 arduino_input
 
-Demonstrates the reading of digital and analog pins of an Arduino board
-running the StandardFirmata firmware.
+Demonstra a leitura dos pinos digitais e analógicos de um Arduino
+rodando o firmware StandardFirmata.
 
-To use:
-* Using the Arduino software, upload the StandardFirmata example (located
-  in Examples > Firmata > StandardFirmata) to your Arduino board.
-* Run this sketch and look at the list of serial ports printed in the
-  message area below. Note the index of the port corresponding to your
+Para usar:
+* No IDE Arduino, faça o upload do exemplo StandardFirmata
+  (Examples > Firmata > StandardFirmata) para o sua placa Arduino.
+* Execute este sketch e veja a lista de portas seriais na áre de mensagens.
+. Note the index of the port corresponding to your
   Arduino board (the numbering starts at 0).  (Unless your Arduino board
   happens to be at index 0 in the list, the sketch probably won't work.
   Stop it and proceed with the instructions.)
@@ -24,11 +24,11 @@ To use:
   were held with the logo upright (i.e. pin 13 is at the upper left). Note
   that the readings from unconnected pins will fluctuate randomly. 
   
-For more information, see: http:#playground.arduino.cc/Interfacing/Processing
+Para mais informações: http:#playground.arduino.cc/Interfacing/Processing
 """
 
-add_library('serial')  # replaces import processing.serial.*;
-add_library('arduino')  # replaces import cc.arduino.*;
+add_library('serial')  # substitui import processing.serial.*;
+add_library('arduino')  # substitui import cc.arduino.*;
 
 off = color(4, 79, 111)
 on = color(84, 145, 158)
@@ -37,7 +37,7 @@ def setup():
     global arduino
     size(470, 280)
 
-    # Prints out the available serial ports.
+    # Portas seriais disponíveis
     println(Arduino.list())
 
     # Modify this line, by changing the "0" to the index of the serial
