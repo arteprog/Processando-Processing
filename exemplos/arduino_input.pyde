@@ -12,15 +12,15 @@ Para usar:
   Arduino board (the numbering starts at 0).  (Unless your Arduino board
   happens to be at index 0 in the list, the sketch probably won't work.
   Stop it and proceed with the instructions.)
-* Modify the "arduino = Arduino(...)" line below, changing the number
+* Modifique the "arduino = Arduino(...)" line below, changing the number
   in Arduino.list()[0] to the number corresponding to the serial port of
   your Arduino board.  Alternatively, you can replace Arduino.list()[0]
   with the name of the serial port, in double quotes, e.g. "COM5" on Windows
   or "/dev/tty.usbmodem621" on Mac.
-* Run this sketch. The squares show the values of the digital inputs (HIGH
-  pins are filled, LOW pins are not). The circles show the values of the
-  analog inputs (the bigger the circle, the higher the reading on the
-  corresponding analog input pin). The pins are laid out as if the Arduino
+* Execute este sketch. Os quadrados mostram os valores das entradas digitais
+  (Pinos com HIGH preenchidos, os com LOW não). Os círculos mostram os valores
+  das entradas analógica (quanto maior o círculo, maior a leitura do pino
+  analógico de entrada correspondentr). The pins are laid out as if the Arduino
   were held with the logo upright (i.e. pin 13 is at the upper left). Note
   that the readings from unconnected pins will fluctuate randomly. 
   
@@ -40,16 +40,16 @@ def setup():
     # Portas seriais disponíveis
     println(Arduino.list())
 
-    # Modify this line, by changing the "0" to the index of the serial
-    # port corresponding to your Arduino board (as it appears in the list
-    # printed by the line above).
+    # Modifique a linha abaixo, mudando o "0" para o índice da porta serial
+    # correspondente a sua placa Arduino (conforme mostrado na lista
+    # gerade pelo cógido acima).
     arduino = Arduino(this, Arduino.list()[0], 57600)
 
-    # Alternatively, use the name of the serial port corresponding to your
-    # Arduino (in double-quotes), as in the following line.
+    # Como alternativa, use o nome da porta serial correspondente ao seu
+    # Arduino (com apspas-duplas), como na seguinte linha:
     # arduino = Arduino(this, "/dev/tty.usbmodem621", 57600)
 
-    # Set the Arduino digital pins as inputs.
+    # Ajusta os pinos digitais do Arduino como entradas (inputs).
     for i in range(14):  # for pins 0 to 13
         arduino.pinMode(i, Arduino.INPUT)
 
@@ -57,7 +57,7 @@ def draw():
     background(off)
     stroke(on)
 
-    # Draw a filled box for each digital pin that's HIGH (5 volts).
+    # Desenha uma caixa com preenchimento para cada pino digital que esteja HIGH (5 volts).
     for i in range(14):  # from 0 to 13
         if arduino.digitalRead(i) == Arduino.HIGH:
             fill(on)
@@ -65,7 +65,7 @@ def draw():
             fill(off)
         rect(420 - i * 30, 30, 20, 20)
 
-    # Draw a circle whose size corresponds to the value of an analog input.
+    # Desenha um círculo cujo tamanho corresponde ao valor do input analógico.
     noFill()
     for i in range(6):  # for analog pins from A0 to A5
         ellipse(280 + i * 30, 240, arduino.analogRead(i) / 16,
