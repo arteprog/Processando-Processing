@@ -27,7 +27,7 @@ Os resultados serão sempre publicados com licenças abertas semelhantes às do 
 
 #### para o modo Python ####
 
-** Arduino (Firmata) All inputs ** [Merged arduino_input.pyde (https://github.com/jdf/processing.py/commit/f6f59dc45844b8ee40a8b7cb47ccd9ddbd026416)]
+**Arduino (Firmata) All inputs** [[Merged arduino_input.pyde](https://github.com/jdf/processing.py/commit/f6f59dc45844b8ee40a8b7cb47ccd9ddbd026416)]
 
 * [[em andamento](https://docs.google.com/document/d/1uZTAGvQTYj7FcSEZSF7wBlbZKHOXMsUqz3Apfwbfm24/)] "2D Transformations
  by J David Eisenberg
