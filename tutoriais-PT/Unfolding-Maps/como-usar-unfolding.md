@@ -26,7 +26,7 @@ void draw() {
 
 Você pode facilmente converter uma posição de tela para um local, e vice-versa. Como exemplo, vamos exibir a posição geográfica do ponteiro do mouse.
 
-IMAGEM
+![geolocation](https://github.com/arteprog/Processando-Processing/blob/master/tutoriais-PT/Unfolding-Maps/assets/imagens/mouse-geolocation.png?raw=true)
 
 Aqui, obtemos a localização do mapa na posição atual do mouse, e mostramos sua latitude e longitude como texto preto.
 
@@ -40,4 +40,12 @@ void draw() {
 ```
 
 # Estilos de mapa
+
+Unfolding exibe mapas em um estilo padrão, com dados cartográficos do OpenStreetMaps e blocos do Cloudmade. Para usar outro estilo de mapa, basta especificá-lo como segundo parâmetro ao construir um UnfoldingMap.
+
+```java
+map = new UnfoldingMap(this, new Microsoft.AerialProvider());
+```
+
+(Não se esqueça de importar ```java de.fhpotsdam.unfolding.providers.* ```)
 
