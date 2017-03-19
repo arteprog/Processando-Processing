@@ -47,5 +47,5 @@ Unfolding exibe mapas em um estilo padrão, com dados cartográficos do OpenStre
 map = new UnfoldingMap(this, new Microsoft.AerialProvider());
 ```
 
-(Não se esqueça de importar ```java de.fhpotsdam.unfolding.providers.* ```)
+(Não se esqueça de importar ``` de.fhpotsdam.unfolding.providers.* ```)
 
