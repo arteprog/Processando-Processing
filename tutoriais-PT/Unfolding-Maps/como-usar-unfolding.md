@@ -49,3 +49,13 @@ map = new UnfoldingMap(this, new Microsoft.AerialProvider());
 
 (Não se esqueça de importar ``` de.fhpotsdam.unfolding.providers.* ```)
 
+Desta forma, você pode facilmente alternar para um dos tipos de mapa pré-configurados. Para ver os diferentes estilos do mapa, vá para o tutorial MapProvider & Tiles. Lá você também encontrará como criar seu próprio provedor de mapa, e até mesmo como criar um estilo de mapa completamente novo.
+
+![sat](https://github.com/arteprog/Processando-Processing/blob/master/tutoriais-PT/Unfolding-Maps/assets/imagens/provider-sat.png?raw=true)
+
+![toner](https://github.com/arteprog/Processando-Processing/blob/master/tutoriais-PT/Unfolding-Maps/assets/imagens/provider-toner.png?raw=true)
+
+Tenha em mente que você precisa verificar os termos e condições dos provedores de mapas sobre como você pode usar seus padrões de mapa. Estamos fornecendo exemplos de provedores apenas para fins educacionais.
+
+# Zoom e panorâmica do mapa
+
