@@ -133,7 +133,7 @@ Para implementar um objeto Walker que pode pisar em qualquer pixel vizinho (ou f
   }
 ```
 
-Ainda mais longe, poderíamos usar números de ponto flutuante (ou seja, números decimais) para x e y em vez disso e mover o Walker de acordo com um valor arbitrário aleatório entre -1 e 1.
+Ainda mais longe, poderíamos usar números de ponto flutuante (ou seja, números decimais) para x e y e mover o Walker de acordo com um valor arbitrário aleatório entre -1 e 1.
 
 ```java
 void step() {
