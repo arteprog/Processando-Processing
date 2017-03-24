@@ -126,15 +126,26 @@ Para implementar um objeto Walker que pode pisar em qualquer pixel vizinho (ou f
 
 ```java
  void step() {
-    int stepx = int(random(3))-1;    // Retorna -1, 0 ou 1
+    int stepx = int(random(3))-1;    // Fornece -1, 0 ou 1
     int stepy = int(random(3))-1;
     x += stepx;
     y += stepy;
   }
 ```
 
+Ainda mais longe, poderíamos usar números de ponto flutuante (ou seja, números decimais) para x e y em vez disso e mover o Walker de acordo com um valor arbitrário aleatório entre -1 e 1.
 
-
+```java
+void step() {
+    float stepx = random(-1, 1);    // Fornece qualquer número de ponto flutuante entre -1,0 e 1,0
+    float stepy = random(-1, 1);
+    x += stepx;
+    y += stepy;
+  }
+```
+  
+  
+  
 [FINAL]
 Começamos este capítulo falando sobre como a aleatoriedade pode ser uma muleta. De muitas maneiras, é a resposta mais óbvia para certas perguntas que fazemos continuamente, como deve esse objeto se mover? Que cor deve ter? Esta resposta óbvia, contudo, também pode ser preguiçosa.
 À medida que terminamos a introdução, é importante notar que poderíamos facilmente cair na armadilha de usar o ruído Perlin como uma muleta também. Como deve esse objeto se mover? Ruído Perlin! Que cor deve ter? Ruído Perlin! O quão rápido ele deve crescer? Ruído Perlin!
