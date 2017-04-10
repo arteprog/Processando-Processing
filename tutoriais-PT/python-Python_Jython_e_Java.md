@@ -46,7 +46,7 @@ Processing.py torna disponíveis  as funções do núcleo de Processing definind
 
 ### Listas e arrays
 
-Para tornar as coisas mais fáceis para programadores iniciantes, Processing Java normal inclui uma série de funções para manipular arrays facilmente,  tais como `split()`, `splitTokens`, `append`, `arrayCopy`, `reverse`, etc.). Para fins de compatibilidade, Processing.py suporta estas funções, embora na maioria dos casos, você deve querer usar a estruturas de Python em seu lugar.
+Para tornar as coisas mais fáceis para programadores iniciantes, Processing Java normal inclui uma série de funções para manipular arrays facilmente,  tais como `split()`, `splitTokens`, `append`, `arrayCopy`, `reverse`, etc.). Para fins de compatibilidade, Processing.py suporta estas funções, embora na maioria dos casos, você deve querer usar as estruturas de Python em seu lugar.
 
 Se você acabar usando essas funções, esteja ciente de que elas retornam objetos array de Python e não listas. (Jython representa internamente arrays Java como objetos do tipo array do módulo Python [array](https://docs.python.org/2/library/array.html). Por exemplo, considere as seguinte duas linhas de código:
 
