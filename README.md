@@ -1,9 +1,8 @@
-## *Processando Processing (means processing Processing in Portuguese)*
-*Processando Processing is an effort to:
-
+# *Processando Processing
+## (means processing Processing in Portuguese)*
+*Processando Processing is an effort to:<br><br>
 1.Translate into Portuguese Processing reference resources;<br>
-2.Port into [Processing Python Mode](py.processing.org) tutorials and other examples.<br>
-
+2.Port into [Processing Python Mode](py.processing.org) tutorials and other examples.<br><br>
 Results will be always published under open licenses similar to the original resources.<br>
 [<b>Donations</b>](http://patreon.com/arteprog) to <b>arteprog</b> will contribute to mantain this project.*
 
