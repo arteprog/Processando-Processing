@@ -3,7 +3,7 @@
 1.Translate into Portuguese Processing reference resources;<br>
 2.Port into [Processing Python Mode](py.processing.org) tutorials and other examples.<br>
 Results will be always published under open licenses similar to the original resources.<br>
-[<b>Donations</b>](http://patreon.com/arteprog) to <b>artprog</b> will contribute to mantain this project.*
+[<b>Donations</b>](http://patreon.com/arteprog) to <b>arteprog</b> will contribute to mantain this project.*
 
 # Processando Processing
 
@@ -15,7 +15,7 @@ Processando Processing é um esforço para:
 Os resultados serão sempre publicados com licenças abertas semelhantes às do material original.<br>
 [**Doações**](http://patreon.com/arteprog) feitas para **arteprog** vão contribuir para manter este projeto.
 
-## concluído (ou em andamento)
+## concluído (ou em andamento) / *done (or in progress)*
 
 
 #### para o português ####
@@ -40,7 +40,7 @@ Os resultados serão sempre publicados com licenças abertas semelhantes às do 
  Level: Beginner"
 
 
-## em estudo
+## em estudo / *under consideration*
 
 #### para o português ####
 
