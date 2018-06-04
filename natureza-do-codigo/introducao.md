@@ -185,6 +185,8 @@ Os números randômicos que obtemos utilizando a função random() não são rea
 
 Crie um caminhante aleatório que tenha a tendência de se mover para baixo e para a direita. (Veremos a solução para isso na próxima seção.)
 
+### I.3 Probabilidade e distribuições não uniformes
+
 [FINAL]
 Começamos este capítulo falando sobre como a aleatoriedade pode ser uma muleta. De muitas maneiras, é a resposta mais óbvia para certas perguntas que fazemos continuamente, como deve esse objeto se mover? Que cor deve ter? Esta resposta óbvia, contudo, também pode ser preguiçosa.
 À medida que terminamos a introdução, é importante notar que poderíamos facilmente cair na armadilha de usar o ruído Perlin como uma muleta também. Como deve esse objeto se mover? Ruído Perlin! Que cor deve ter? Ruído Perlin! O quão rápido ele deve crescer? Ruído Perlin!
