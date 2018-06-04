@@ -176,6 +176,14 @@ void draw(){
 }
 ```
 
+A captura de tela acima mostra o resultado do sketch sendo executado por alguns minutos. Observe como cada barra do gráfico difere em altura. Nosso tamanho de amostra (ou seja, o número de números aleatórios que escolhemos) é bastante pequeno e existem algumas discrepâncias ocasionais, em que determinados números são selecionados com mais frequência. Com o tempo, com um bom gerador de números aleatórios, isso seria o mesmo.
+
+#### Números Pseudo-Randômicos
+Os números randômicos que obtemos utilizando a função random() não são realmente randômicos; portanto são chamados de "pseudo-randômicos". Eles são o resultado de funções matemáticas que simulam randomicidade. A função pode gerar um padrão ao longo do tempo, mas esse período é tão longo para nós que o padrão é imperceptível. Os números pseudo-randômicos funcionam tão bem quanto os randômicos nas aplicações de Processing.
+
+#### Exercício I.1
+
+Crie um caminhante aleatório que tenha a tendência de se mover para baixo e para a direita. (Veremos a solução para isso na próxima seção.)
 
 [FINAL]
 Começamos este capítulo falando sobre como a aleatoriedade pode ser uma muleta. De muitas maneiras, é a resposta mais óbvia para certas perguntas que fazemos continuamente, como deve esse objeto se mover? Que cor deve ter? Esta resposta óbvia, contudo, também pode ser preguiçosa.
