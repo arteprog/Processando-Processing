@@ -148,28 +148,32 @@ Todas estas variações na caminhada aleatória "tradicional" têm uma coisa em 
 
 Convenientemente, é assim que a função random() funciona. O gerador de números aleatórios do Processing (que opera nos bastidores) produz o que é conhecido como distribuição "uniforme" de números. Podemos testar esta distribuição com um sketch no Processing que sorteia um número aleatório de cada vez e ultiliza o resultado para definir a altura de um retângulo.
 
+![random1.2](https://github.com/arteprog/Processando-Processing/blob/master/natureza-do-codigo/assets/randomDistribution.jpg?raw=true)
+
+### Exemplo 1.2: Distribuição aleatória de números
+
 ```pde
 int[] randomCounts; // um array que registra qual a frequência que um número aleatório é sorteado
 
 void setup(){
-size(640, 240);
-randomCounts = new int[20];
+ size(640, 240);
+ randomCounts = new int[20];
 }
 
 void draw(){
-background(255);
-int index = int(random(random.Count.lenght)); // Sorteia um número pseudo-randômico e incrementa o conta
-randomCounts[index]++;
+ background(255);
+ 
+ int index = int(random(randomCounts.length)); // sorteia um número pseudo-randômico e incrementa o conta
+ randomCounts[index]++;
+ 
+ stroke(0);
+ fill(175);
+ int w = width/randomCounts.length;
 
-stroke(0);
-fill(175);
-int w = width/randomCounts.lenght;
-
-for (int x = 0; x < randomCount.lenght; x++){ desenhandoos resultados
-rect(x*w, height-randomCount[x], w-1, randomCounts[x]);
+ for (int x = 0; x < randomCounts.length; x++){ // desenhandoos resultados
+   rect(x*w, height-randomCounts[x], w-1, randomCounts[x]);
+ }
 }
-}
-
 ```
 
 
