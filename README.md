@@ -23,8 +23,7 @@ Os resultados serão sempre publicados com licenças abertas semelhantes às do 
 
 * [**Python, Jython e Java**](https://github.com/arteprog/Processando-Processing/blob/master/tutoriais-PT/python-Python_Jython_e_Java.md) 
 
-* [[em andamento](https://github.com/arteprog/Processando-Processing/tree/master/natureza-do-codigo)] Introdução do livro [Nature of Code](http://natureofcode.com) de Daniel Shiffman
-
+* [**Introdução**](https://github.com/arteprog/Processando-Processing/tree/master/natureza-do-codigo) do livro [Nature of Code](http://natureofcode.com) de Daniel Shiffman. OBS: Encontramos na Khan Academy [Simulações Naturais](https://pt.khanacademy.org/computing/computer-programming/programming-natural-simulations),uma tradução do livro para o português com exemplos em JS.
 
 #### para o modo Python ####
 
