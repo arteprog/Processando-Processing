@@ -1,6 +1,4 @@
-# About / Sobre
-
-## *Processando Processing*
+# *Processando Processing*
 *Processando Processing (meaning processing Processing in Portuguese) is an effort to:*
 1. *Translate into Portuguese Processing reference resources;*
 
