@@ -17,7 +17,7 @@ Os resultados serão sempre publicados com licenças abertas semelhantes às do 
 
 Depois do agito do PCD 2020 @ São Paulo e um encontro para falar sobre tadução na Noite de Processing de fevereiro de 2020, temos uma grupo de interssados em traduzir material!
 
-TODO: Link para o grupo no Telegram, mas sem ser um link de verdade (pra reduzir os bots de spam)
+Grupo no Telegram: **@processando_processing** (`https:// t.me / processando_processing`)
 
 ## Principal meta
 
