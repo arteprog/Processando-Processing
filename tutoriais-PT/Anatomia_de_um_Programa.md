@@ -10,33 +10,24 @@ Muitos dos tutoriais para o Processing se concentram no que a linguagem pode faz
 
 Há uma peça do quebra-cabeça que esses tutoriais não resolvem: como você analisa um problema e o desmonta em passos que o computador consegue executar? Neste tutorial, pretendo mostrar o que aconteceu na minha cabeça conforme eu prosegui na tarefa de escrever funções para desenhar polígonos regulares e figuras em forma de estrela em Processing. Esta é uma boa escolha por não ser uma tarefa grande demais para compreender, mas também não é um problema trivial.
 
-Lembre que o que você está vendo aqui são o meu processo mental e o meu estilo de programação particulares. Há muitas diferentes formas de aproximação e estilos. Conforme você continuar a programar, vai encontrar o seu próprio. Você pode também ver o estilo de programaco de outras pessoas (mas não o seus processos mentais!) olhando o código fonte de programas em [openProcessing.org](http://openprocessing.org/).
-
-<i>Remember that what you are seeing here is my particular thought process and programming style. There are many different approaches and styles. As you continue programming, you will find your own. You can also see other people’s programming style (though not their thought process!) by looking at the source code for the programs at [openProcessing.org](http://openprocessing.org/).</i> 
+Lembre que o que você está vendo aqui são o meu processo mental e o meu estilo de programação particulares. Há muitas diferentes formas de aproximação e estilos. Conforme você continuar a programar, vai encontrar o seu próprio. Você pode também ver o estilo de programaco de outras pessoas (mas não o seus processos mentais!) olhando o código fonte de programas em [openProcessing.org](http://openprocessing.org/). 
 
 ### Desenhando poígonos regulares
 
 Ninguém pensa em construir uma casa sem um projeto executivo, e você não deve pensar em escrever um programa sem algum tipo de planejamento. Uma vez que Processing é uma linguagem tão visual, eu sempre tenho que esboçar o que eu gostaria como resultado antes de me aproximar do teclado. Então é aí que eu começo.
 
-<i>You wouldn’t think of building a house without a blueprint, and you shouldn’t think of writing a program without a plan of some sort. Since Processing is such a visual language, I always have to sketch out what I want as a result before I approach the keyboard. So that’s where I started.   </i> 
-
 ### Passo 1: Planejando no papel
 
-O primeiro passo foi desenhar um diagrama tosco para desenterrar velhas memórias de como polígonos regulares funcionam. O hexágono foi o primeiro que eu desenhei. Como você pode ver pelo lacinho que eu desenhei no interior, os ângulos centrais das fatias somam um círculo completo, ou 360°, e o "raio" do polígono é a linha do centro até cada vértice.O angulo entra cada linha do raio é .portanto, 360º diviedido pelo numero de lados.
+O primeiro passo foi desenhar um diagrama tosco para desenterrar velhas memórias de como polígonos regulares funcionam. O hexágono foi o primeiro que eu desenhei. Como você pode ver pelo lacinho que eu desenhei no interior, os ângulos centrais das fatias somam um círculo completo, ou 360°, e o "raio" do polígono é a linha do centro até cada vértice.O angulo entre cada linha do raio é, portanto, 360º dividido pelo número de lados.
 
-The first step was to draw a crude diagram to dredge up old memories of how regular polygons work. The hexagon was the first one I drew. As you can see from the little loop I drew inside the hexagon, the center angles of all the slices add up to a complete circle, or 360°, and the “radius” of the polygon is a line from the center to each vertex. The angle between each of the radius lines is thus 360° divided by the number of sides.
 
-Eu preciso ter uma ideia do que era a tarefa, e um diagrama desenhado a mão fez o trabalho.
+Eu só precisava ter uma ideia do que era a tarefa, e um diagrama desenhado a mão resolveu isso. Eu não precisei gerar o diagrama em um programa de desenho.
 
-I just needed to get an idea of what the task was, and a hand-drawn diagram did the job. I didn’t need to generate the diagram in a drawing program.
-
-Dica de Programador : Quanmdo fizer seu plano, faça iste processo a partir do computador. Se estiver sentado em frente ao cmputador,a tela irá sussurrar,"Olhe pra mim! Olhe pra mim!" a tela irá sussurrar Digite algo!,Digite algo!" Ao invé disso, vá para mesa da cozinha
-
-> Programming Hint: When you do your planning, do it away from the computer. If you are sitting in front of the computer, the screen will whisper, “Look at me! Look at me!” and the keyboard will whisper “Type something! Type something!” Go to your kitchen table instead.
+> Dica de Programacão: Quando fizer seu plano, faça este processo longe do computador. Se estiver sentado em frente ao cmputador, a tela irá sussurrar, "Olhe pra mim! Olhe pra mim!" o teclado irá sussurrar Digite algo! Digite algo!" Ao invés disso, vá para mesa da cozinha.
 
 ### Passo 2: Um pouco de trigonometria básica
 
-Então se voce tem uma linha do tamanho de *r* iniciando em (0,0) em um anguo theta (0), o que são estas coordenadas em termos de *x* e *y*? Se você conhce um pouco de trigonometria , a resposta é que ponto final da linha está em (*r* cos θ,*sen*),Se você não conhece trigonometria, ^de uma olhada,[Neste tutorial](http://catcode.com/trig/) (Uma introdução geral a trigonometrial),[Neste tutorial](http://processing.org/learning/trig/) (Trigonometria orientada a Processing) e [Neste exemple a partit capitulo 13 de *Learning Processing*]
+Então se você tem uma linha do tamanho de *r* iniciando em (0,0) em um anguo theta (0), o que são estas coordenadas em termos de *x* e *y*? Se você conhce um pouco de trigonometria , a resposta é que ponto final da linha está em (*r* cos θ,*sen*),Se você não conhece trigonometria, ^de uma olhada,[Neste tutorial](http://catcode.com/trig/) (Uma introdução geral a trigonometrial),[Neste tutorial](http://processing.org/learning/trig/) (Trigonometria orientada a Processing) e [Neste exemple a partit capitulo 13 de *Learning Processing*]
 (http://learningprocessing.com/examples/chp13/example-13-05-polar-cartesian). No seguinte diagrama, os angulos sao desenhados em sentido horário, no qual é como são mensurados no Processing.
 
 So, if you have a line of length *r* starting at (0,0) at an angle theta (θ), what are its coordinates in terms of *x* and *y*? If you know a little bit of  trigonometry, the answer is that the endpoint of the line is at (*r* cos θ, *r* sin θ). If you don’t  know trigonometry, take a look at [this tutorial](http://catcode.com/trig/) (a general and very light introduction to  trigonometry), [this tutorial](http://processing.org/learning/trig/) (oriented towards Processing), and [this example from chapter 13 of *Learning Processing*](http://learningprocessing.com/examples/chp13/example-13-05-polar-cartesian). In the following diagram, angles are drawn clockwise, which is how they are measured in Processing.
@@ -272,6 +263,8 @@ endShape(CLOSE);
 ```
 
 ### O que deu errado?
+
+Quando eu executei esse programa, eu dei uma surtada. Tudo parecia ótimo, exceto a estrela de três lados. Como eu não tinha obtido uma estrela disso? 
 
 When I ran this program, I just freaked out. Everything looked great, except for the three-sided star. How come I didn’t get a star from it?  The code sure looks correct, so I decided to see what would happen if I drew the diagram by hand. I measured the angles with my protractor, and I drew the long radius lines with a length of two inches in black and the short radius lines with a length of one inch in red. Sure enough, it just so happens that the endpoints of the short radius lines are right on the lines of the main triangle. The program *is* drawing a star, with the sides pushed in by zero.
 
