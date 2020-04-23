@@ -1,3 +1,7 @@
+    Pessoal eu vou querer traduzir este aqui no Modo Python também tá? E mais:
+    - https://github.com/arteprog/Processando-Processing/blob/master/tutoriais-PT/java-tranformacoes_2D.md
+    - https://github.com/arteprog/Processando-Processing/blob/master/tutoriais-PT/java-tranformacoes_2D.md
+
 # Anatomia de um programa
 
  Autor to artigo orginal em inglês: **J David Eisenberg**
@@ -23,18 +27,18 @@ O primeiro passo foi desenhar um diagrama tosco para desenterrar velhas memória
 
 Eu só precisava ter uma ideia do que era a tarefa, e um diagrama desenhado a mão resolveu isso. Eu não precisei gerar o diagrama em um programa de desenho.
 
-> Dica de Programacão: Quando fizer seu plano, faça este processo longe do computador. Se estiver sentado em frente ao cmputador, a tela irá sussurrar, "Olhe pra mim! Olhe pra mim!" o teclado irá sussurrar Digite algo! Digite algo!" Ao invés disso, vá para mesa da cozinha.
+> Dica de Programacão: Quando fizer seu plano, faça este processo longe do computador. Se estiver sentado em frente ao cmputador, a tela irá sussurrar, "Olhe pra mim! Olhe pra mim!" o teclado irá sussurrar "Digite algo! Digite algo!" Ao invés disso, vá para mesa da cozinha.
 
 ### Passo 2: Um pouco de trigonometria básica
 
-Então se você tem uma linha do tamanho de *r* iniciando em (0,0) em um anguo theta (0), o que são estas coordenadas em termos de *x* e *y*? Se você conhce um pouco de trigonometria , a resposta é que ponto final da linha está em (*r* cos θ,*sen*),Se você não conhece trigonometria, ^de uma olhada,[Neste tutorial](http://catcode.com/trig/) (Uma introdução geral a trigonometrial),[Neste tutorial](http://processing.org/learning/trig/) (Trigonometria orientada a Processing) e [Neste exemple a partit capitulo 13 de *Learning Processing*]
+Então se você tem uma linha do tamanho de *r* iniciando em (0,0) em um anguo theta (0), o que são estas coordenadas em termos de *x* e *y*? Se você conhece um pouco de trigonometria , a resposta é que ponto final da linha está em (*r* cos θ,*sen*),Se você não conhece trigonometria, ^de uma olhada,[Neste tutorial](http://catcode.com/trig/) (Uma introdução geral a trigonometrial),[Neste tutorial](http://processing.org/learning/trig/) (Trigonometria orientada a Processing) e [Neste exemple a partit capitulo 13 de *Learning Processing*]
 (http://learningprocessing.com/examples/chp13/example-13-05-polar-cartesian). No seguinte diagrama, os angulos sao desenhados em sentido horário, no qual é como são mensurados no Processing.
 
 So, if you have a line of length *r* starting at (0,0) at an angle theta (θ), what are its coordinates in terms of *x* and *y*? If you know a little bit of  trigonometry, the answer is that the endpoint of the line is at (*r* cos θ, *r* sin θ). If you don’t  know trigonometry, take a look at [this tutorial](http://catcode.com/trig/) (a general and very light introduction to  trigonometry), [this tutorial](http://processing.org/learning/trig/) (oriented towards Processing), and [this example from chapter 13 of *Learning Processing*](http://learningprocessing.com/examples/chp13/example-13-05-polar-cartesian). In the following diagram, angles are drawn clockwise, which is how they are measured in Processing.
 
 ### Passo 3: Decisões de projeto
 
-It looks like this is a job for a `for` loop that runs from 0 to *n* (the number of sides), calculating the points for each vertex and drawing lines connecting them. At each step, the angle at which we draw is increased by 360°/*n*.
+Isso parece um trabalho para um loop `for` que corre de 0 a *n* (o número de lados), calculando os pontos de cada vértice e desenhando as linhas os conectando. A cada passo, o ângulo no qual desenhamos aumenta 360°/*n*.
 
 The problem with drawing a group of lines is that they are just lines—you don’t get a true shape that you can fill, like `rect()` or `triangle()`. Luckily, Processing lets you create your own shapes with the [`beginShape()`](http://processing.org/reference/beginShape_.html), [`vertex()`](file:///home/david/processing-1.0.9/reference/vertex_.html), and [`endShape()`](http://processing.org/reference/endShape_.html) functions. The first example on the reference page for `beginShape()` is the model to follow. So the next design decision is to make polygons as true shapes.
 
@@ -83,7 +87,7 @@ Well, that was a dead end. That sort of thing happens in programming all the tim
 
 ![diagrams showing stretched circle](https://processing.org/tutorials/anatomy/imgs/stretchy.jpg)
 
-```
+```pde
 void setup() {
   size(300, 300);
   background(255);
@@ -137,7 +141,7 @@ Em Processing, você pode ter duas funções com o mesmo nome, desde que tenham 
 
 Eis o código para acrescentar ao exemplo anterior. Quando você der `polygon()` apenas quatro números, vai chamar a seguinte função, que chama a versão "grande" da função com largura e altura iguais ao dobro do seu raio desejado e com o ângulo zero.
 
-```
+```pde
 void polygon(int n, float cx, float cy, float r) {
   polygon(n, cx, cy, r * 2.0, r * 2.0, 0.0);
 }
@@ -146,7 +150,7 @@ void polygon(int n, float cx, float cy, float r) {
 
 E aqui código para testar a função sobrecarregada.
 
-```
+```pde
 void setup() {
   size(300, 300);
   background(255);
@@ -170,7 +174,7 @@ O que acontece se alguém tentar desenhar um polígono com 2 lados, 1 lado ou pi
 
 What happens if someone tries to draw a polygon with 2 sides, 1 side, or worse, 0 sides?  The first two will generate a line and a point, but the third one will cause a division by zero error when trying to figure out the angle. And what would happen with negative numbers? Since polygons with fewer than three sides don’t make a lot of sense, I wrapped the body of the `polygon()` function inside of an `if` statement. Now, when someone specifies two or fewer sides, the function just won’t draw anything.
 
-```
+```pde
 void polygon(int n, float cx, float cy, float w, float h, float startAngle) {
   if (n > 2) {
 float angle = TWO_PI/ n;
@@ -203,7 +207,7 @@ When you push in the sides, you push them in at the midpoint so that you get a n
 
 This code would be fairly easy to write. I would need one extra parameter: the proportion of the small radius to the big radius. In the following code, an `if` statement controls whether to use the short radius or the long radius. I also put in an overloaded version that draws a star with equal width and height and a start angle of zero. For the test, I made the short radius one half the long radius.
 
-```
+```pde
 void setup() {
   size(300, 300);
   background(255);
@@ -278,7 +282,7 @@ So, if you are drawing a star with *n* sides and you set the proportion for the 
 
 Of course, the way to get a three-sided star is to set the proportion  to an amount less than 0.5, which I did in the following setup code,  with much better results. I also changed the proportions for the other  stars just to see what they would look like.
 
-```
+```pde
 void setup(){
   size(300, 300);
   background(255);
@@ -342,7 +346,7 @@ Finally, in order to use the functions in something other than a test, I decided
 
 Here is the code for `setup()` and `draw()`:
 
-```
+```pde
 void setup() {
   size(300, 300);
   background(255);
