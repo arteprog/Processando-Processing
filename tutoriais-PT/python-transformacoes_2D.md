@@ -4,11 +4,11 @@ Autor to artigo orginal em inglês: **J David Eisenberg**
 
 > Esta é uma tradução de [2D Transformations](https://py.processing.org/tutorials/transform2d/) disponível em processing.org/tutorials mantendo a licença [Creative Commons BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/).
 
-[Download the files from this tutoria](https://py.processing.org/tutorials/transform2d/imgs/transform2d.zip)
+[Baixe os arquivos deste tutorial](https://py.processing.org/tutorials/transform2d/imgs/transform2d.zip)
 
-Processing has built-in functions that make it easy for youto have objects in a sketch move, spin, and growor shrink. This tutorial will introduce you to the `translate`, `rotate`, and`scale` functions so that you can use themin your sketches.
+Processing tem funções embutidas que tornam fácil você fazer objetos em um *sketch* mover, girar, ecrescer ou encolher. Este tutorial vai apresentar você às funções `translate`, `rotate`, e `scale`. De maneira que você as possa usar nos seus *sketches*.
 
-### Translation: Moving the Grid
+### Translação: Movendo a grade
 
 As you know, your Processing window works like a piece of graph paper. When youwant to draw something, you specify its coordinates on the graph.Here is a simple rectangle drawn with the code`rect(20, 20, 40, 40)`. The coordinatesystem (a fancy word for “graph paper”) is shown in gray.
 
