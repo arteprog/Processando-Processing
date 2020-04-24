@@ -44,35 +44,32 @@ The problem with drawing a group of lines is that they are just lines—you don�
 
 Since you probably want to draw many polygons during a program, it makes sense to have a `polygon()` function. What parameters does it need? Four come to mind: the number of sides, the center *x* and *y* coordinate, and the radius.  Here’s the code. I wrote several different calls to `polygon()` in the `setup()` function. Although I calculated `angle` in degrees, sine and cosine measure angles in radians, so I had to use the `radians()` function to do a conversion.
 
-```pde
-void setup() {
-  size(300, 300);
-  background(255);
+ ```python
+def setup():
+    size(300, 300)
+    background(255)
+    smooth()
+  
+    noFill()
+    polygon(3, 50, 75, 50)
+    polygon(4, 170, 75, 50)
+  
+    fill(255, 204, 255)
+    stroke(128, 0, 128)
+    polygon(5, 50, 180, 50)
+  
+    noFill()
+    stroke(0)
+    polygon(6, 170, 180, 50)
 
-  noFill();
-  polygon(3, 50, 75, 50);
-  polygon(4, 170, 75, 50);
-
-  fill(255, 204, 255);
-  stroke(128, 0, 128);
-  polygon(5, 50, 180, 50);
-
-  noFill();
-  stroke(0);
-  polygon(6, 170, 180, 50);
-}
-
-void polygon(int n, float cx, float cy, float r) {
-  float angle = 360.0 / n;
-
-  beginShape();
-  for (int i = 0; i < n; i++) {
-vertex(cx + r * cos(radians(angle * i)),
-  cy + r * sin(radians(angle * i)));
-  }
-  endShape(CLOSE);
-}
-
+def polygon(n, cx, cy, r):
+    angle = 360.0 / n
+  
+    beginShape();
+    for i in xrange(n):
+        vertex(cx + r * cos(radians(angle * i)),
+          cy + r * sin(radians(angle * i)))
+    endShape(CLOSE)
 ```
 
 ### Dois passos para frente, um para trás
@@ -87,84 +84,86 @@ Well, that was a dead end. That sort of thing happens in programming all the tim
 
 ![diagrams showing stretched circle](https://processing.org/tutorials/anatomy/imgs/stretchy.jpg)
 
-```pde
-void setup() {
-  size(300, 300);
-  background(255);
+ ```python
+def setup():
+    size(300, 300)
+    background(255)
+    smooth()
+    
+    noFill()
+    polygon(3, 50, 75, 100, 100, -PI / 2.0)   # -90 degrees
+    polygon(4, 170, 75, 50, 125, -PI / 4.0)   # -45 degrees
+    
+    fill(255, 204, 255)
+    stroke(128, 0, 128)
+    polygon(5, 50, 200, 75, 50, -PI / 2.0)    # -90 degrees
+    
+    noFill()
+    stroke(0)
+    polygon(6, 170, 200, 50, 100, 0)
 
-  noFill();
-  polygon(3, 50, 75, 100, 100, -PI / 2.0); // -90 degrees
-  polygon(4, 170, 75, 50, 125, -PI / 4.0); // -45 degrees
+    stroke(128)
+    # draw enclosing ellipses to make sure we did it right
+    ellipse(50, 75, 100, 100)
+    ellipse(170, 75, 50, 125)
+    ellipse(50, 200, 75, 50)
+    ellipse(170, 200, 50, 100)
 
-  fill(255, 204, 255);
-  stroke(128, 0, 128);
-  polygon(5, 50, 200, 75, 50, -PI / 2.0); // -90 degrees
-
-  noFill();
-  stroke(0);
-  polygon(6, 170, 200, 50, 100, 0);
-
-  stroke(128);
-  // Draw enclosing ellipses to make sure we did it right
-  ellipse(50, 75, 100, 100);
-  ellipse(170, 75, 50, 125);
-  ellipse(50, 200, 75, 50);
-  ellipse(170, 200, 50, 100);
-}
-
-void polygon(int n, float cx, float cy, float w, float h, float startAngle) {
-  float angle = TWO_PI/ n;
-
-  // The horizontal "radius" is one half the width,
-  // the vertical "radius" is one half the height
-  w = w / 2.0;
-  h = h / 2.0;
-
-  beginShape();
-  for (int i = 0; i < n; i++) {
-vertex(cx + w * cos(startAngle + angle * i), 
-  cy + h * sin(startAngle + angle * i));
-  }
-  endShape(CLOSE);
-}
-
+def polygon(n, cx, cy, w, h, startAngle):
+    angle = TWO_PI/ n
+    
+    # The "radius" is one half the total width and height
+    w = w / 2.0
+    h = h / 2.0
+    
+    beginShape()
+    for i in xrange(n):
+        vertex(cx + w * cos(startAngle + angle * i),
+          cy + h * sin(startAngle + angle * i))
+    endShape(CLOSE)
 ```
 
 Since everything was in radians, I now described angles in terms of `PI` and `TWO_PI` (2π), since 2π radians equals 360°. In addition to the code in `setup()` to test the new features, I drew ellipses with the same center and width and height as the polygons to make sure that the vertices were within the proper area.
 
 ### Parâmetros demais
 
-Agore eu tinha uma função muito mais flexível para desenhar polígonos, mas isso veio ao custo de mais parâmetros. Seria legal ser caoaz de desenhar os casos mais comuns (com largura e altura iguais, ângulo inicial zero) sem ter que ficar especificando todos esses parâmetros. A solução é uma sobrecarga de função (*function overloading*). 
-Em Processing, você pode ter duas funções com o mesmo nome, desde que tenham diferente número de parâmetros e/ou diferentes tipos de parânetros. Um exemplo disso é a função `stroke()` do Processing, que é sobrecarregada de maneira que você pode chamá-la com um número para cinza, três números para cor, ou quatro números para cor com opacidade. Processing olha para o número de argumentos que você provê e escolhe qual versão do `stroke()` chamar. 
+Agore eu tinha uma função muito mais flexível para desenhar polígonos, mas isso veio ao custo de mais parâmetros. Seria legal ser caoaz de desenhar os casos mais comuns (com largura e altura iguais, ângulo inicial zero) sem ter que ficar especificando todos esses parâmetros. A solução é usar parâmetros default. Em Python, vocÊ pode fazer com que certo parâmetros funcionem como defaults,
 
-**[Na versão Python que não tem sobrecarga de função, a solução são os parânetros default https://py.processing.org/tutorials/anatomy/]**
+ In Python, you can have certain parameters to a function act as defaults, meaning if the user does not define themour defaults will step in. This means that a function can be calledwith a different number of parameters depending on what the user would like to do! An example of this is Processing’s stroke() function, which allows you to call it with a single number for grayscale, threenumbers for color, or four numbers for color with opacity.
+
+Here is what we'll change the definition of our polygon()function to look like to adjust for default parameters. Notice how we've changed our fourth parameter w to r, this is(stylistically) to account for the fact that we can now represent width and height as r * 2.0. Within our function, we can now make a check to see if the user defined an h and startAngle and then adjust our parameters accordingly.
 
 Eis o código para acrescentar ao exemplo anterior. Quando você der `polygon()` apenas quatro números, vai chamar a seguinte função, que chama a versão "grande" da função com largura e altura iguais ao dobro do seu raio desejado e com o ângulo zero.
 
-```pde
-void polygon(int n, float cx, float cy, float r) {
-  polygon(n, cx, cy, r * 2.0, r * 2.0, 0.0);
-}
+ ```python
+def polygon(n, cx, cy, r, h=None, startAngle=None):
+    w = h = startAngle = 0 # Define these variables outside the scope of the if statement
+    if h is None and startAngle is None: # User defined 4 parameters
+        # If not, adjust our parameters.
+        w = r * 2.0
+        h = r * 2.0
+        startAngle = 0
+    else: # User defined 6 parameters
+        w = r
 
 ```
 
-E aqui código para testar a função sobrecarregada.
+E aqui código para testar a função com defaults.
 
-```pde
-void setup() {
-  size(300, 300);
-  background(255);
-  smooth();
-  
-  noFill();
-  polygon(3, 70, 75, 50); // use the defaults
-  polygon(4, 170, 75, 25);
-  
-  stroke(128);
-  // draw enclosing ellipses to make sure we did it right
-  ellipse(70, 75, 100, 100);
-  ellipse(170, 75, 50, 50);
-}
+ ```python
+def setup():
+    size(300, 300)
+    background(255)
+    smooth()
+    
+    noFill()
+    polygon(3, 70, 75, 50)   # use the defaults
+    polygon(4, 170, 75, 25)
+    
+    stroke(128)
+    # draw enclosing ellipses to make sure we did it right
+    ellipse(70, 75, 100, 100)
+    ellipse(170, 75, 50, 50)
 
 ```
 
@@ -174,18 +173,25 @@ O que acontece se alguém tentar desenhar um polígono com 2 lados, 1 lado ou pi
 
 What happens if someone tries to draw a polygon with 2 sides, 1 side, or worse, 0 sides?  The first two will generate a line and a point, but the third one will cause a division by zero error when trying to figure out the angle. And what would happen with negative numbers? Since polygons with fewer than three sides don’t make a lot of sense, I wrapped the body of the `polygon()` function inside of an `if` statement. Now, when someone specifies two or fewer sides, the function just won’t draw anything.
 
-```pde
-void polygon(int n, float cx, float cy, float w, float h, float startAngle) {
-  if (n > 2) {
-float angle = TWO_PI/ n;
-.
-.
-beginShape()
-.
-.
-endShape(CLOSE);
-  }
-}
+ ```python
+def polygon(n, cx, cy, r, h = None, startAngle = None):
+    if (h == None and startAngle == None): # User defined 4 parameters
+        # If not, adjust our parameters.
+        w = r * 2.0
+        h = r * 2.0
+        startAngle = 0
+    else: # User defined 6 parameters
+        w = r
+
+    if (n > 2):
+        angle = TWO_PI/ n;
+        .
+        .
+        beginShape()
+        .
+        .
+        endShape(CLOSE)
+
 
 ```
 
@@ -207,62 +213,59 @@ When you push in the sides, you push them in at the midpoint so that you get a n
 
 This code would be fairly easy to write. I would need one extra parameter: the proportion of the small radius to the big radius. In the following code, an `if` statement controls whether to use the short radius or the long radius. I also put in an overloaded version that draws a star with equal width and height and a start angle of zero. For the test, I made the short radius one half the long radius.
 
-```pde
-void setup() {
-  size(300, 300);
-  background(255);
-  smooth();
+ ```python
+def setup():
+    size(300, 300)
+    background(255)
+    smooth()
 
-  noFill();
-  star(3, 60, 75, 100, 100, -PI / 2.0, 0.50); // -90 degrees
-  star(4, 170, 75, 25, 0.50);  // use simpler call
+    noFill()
+    star(3, 60, 75, 100, 100, -PI / 2.0, 0.50)   # -90 degrees
+    star(4, 170, 75, 25, proportion = 0.50)   # use simpler call
 
-  fill(255, 204, 255);
-  stroke(128, 0, 128);
-  star(5, 60, 200, 75, 50, -PI / 2.0, 0.50); // -90 degrees
+    fill(255, 204, 255)
+    stroke(128, 0, 128)
+    star(5, 60, 200, 75, 50, -PI / 2.0, 0.50)    # -90 degrees
 
-  noFill();
-  stroke(0);
-  star(6, 170, 200, 50, 100, 0, 0.50);
-  stroke(128);
-  
-  // draw enclosing ellipses to make sure we did it right
-  ellipse(60, 75, 100, 100);
-  ellipse(170, 75, 50, 50);
-  ellipse(60, 200, 75, 50);
-  ellipse(170, 200, 50, 100);
-}
+    noFill()
+    stroke(0)
+    star(6, 170, 200, 50, 100, 0, 0.50)
+    stroke(128)
+    
+    # draw enclosing ellipses to make sure we did it right
+    ellipse(60, 75, 100, 100)
+    ellipse(170, 75, 50, 50)
+    ellipse(60, 200, 75, 50)
+    ellipse(170, 200, 50, 100)
 
-void star(int n, float cx, float cy, float r, float proportion) {
-  star(n, cx, cy, 2.0 * r, 2.0 * r, 0.0, proportion);
-}
+def star(n, cx, cy, r, h = None, startAngle = None, proportion = 1.0):
+    if (h == None and startAngle == None): # User defined 4 parameters
+        # If not, adjust our parameters.
+        w = r * 2.0
+        h = r * 2.0
+        startAngle = 0
+    else: # User defined 6 parameters
+        w = r
 
-void star(int n, float cx, float cy, float w, float h,
-  float startAngle, float proportion) {
-
-  if (n > 2) {
-float angle = TWO_PI/ (2 *n);  // twice as many sides
-float dw; // draw width
-float dh; // draw height
-
-w = w / 2.0;
-h = h / 2.0;
-
-beginShape();
-for (int i = 0; i < 2 * n; i++) {
-  dw = w;
-  dh = h;
-  if (i % 2 == 1) { // for odd vertices, use short radius
-  
-dw = w * proportion;
-dh = h * proportion;
-  }
-  vertex(cx + dw * cos(startAngle + angle * i),
-cy + dh * sin(startAngle + angle * i));
-}
-endShape(CLOSE);
-  }
-}
+    if (n > 2):
+        angle = TWO_PI/ (2*n)   # twice as many sides
+        dw = 0  # draw width
+        dh = 0  # draw height
+        
+        w = w / 2.0
+        h = h / 2.0
+        
+        beginShape()
+        for i in xrange(2 * n):
+            print dw, w, h, dh
+            dw = w
+            dh = h
+            if (i % 2 == 1): # for odd vertices, use short radius
+              dw = w * proportion
+              dh = h * proportion
+            vertex(cx + dw * cos(startAngle + angle * i),
+              cy + dh * sin(startAngle + angle * i))
+        endShape(CLOSE)
 
 ```
 
@@ -282,61 +285,30 @@ So, if you are drawing a star with *n* sides and you set the proportion for the 
 
 Of course, the way to get a three-sided star is to set the proportion  to an amount less than 0.5, which I did in the following setup code,  with much better results. I also changed the proportions for the other  stars just to see what they would look like.
 
-```pde
-void setup(){
-  size(300, 300);
-  background(255);
+ ```python
+def setup():
+    size(300, 300)
+    background(255)
+    smooth()
 
-  noFill();
-  star(3, 60, 75, 100, 100, -PI / 2.0, 0.3); // -90 degrees
-  star(4, 170, 75, 25, 0.5);  // use simpler call
+    noFill()
+    star(3, 60, 75, 100, 100, -PI / 2.0, 0.3)   # -90 degrees
+    star(4, 170, 75, 25, proportion = 0.5)   # use simpler call
 
-  fill(255, 204, 255);
-  stroke(128, 0, 128);
-  star(5, 60, 200, 75, 50, -PI / 2.0, 0.75); // -90 degrees
+    fill(255, 204, 255)
+    stroke(128, 0, 128)
+    star(5, 60, 200, 75, 50, -PI / 2.0, 0.75)   # -90 degrees
 
-  noFill();
-  stroke(0);
-  star(6, 170, 200, 50, 100, 0, 0.4);
-  stroke(128);
-  
-  // Draw enclosing ellipses to make sure we did it right
-  ellipse(60, 75, 100, 100);
-  ellipse(170, 75, 50, 50);
-  ellipse(60, 200, 75, 50);
-  ellipse(170, 200, 50, 100);
-}
-
-
-void star(int n, float cx, float cy, float r, float proportion) {
-  star(n, cx, cy, 2.0 * r, 2.0 * r, 0.0, proportion);
-}
-
-void star(int n, float cx, float cy, float w, float h,
-  float startAngle, float proportion) {
-
-  if (n > 2) {
-float angle = TWO_PI/ (2 *n);  // twice as many sides
-float dw; // draw width
-float dh; // draw height
-
-w = w / 2.0;
-h = h / 2.0;
-
-beginShape();
-for (int i = 0; i < 2 * n; i++) {
-  dw = w;
-  dh = h;
-  if (i % 2 == 1) {
-dw = w * proportion;
-dh = h * proportion;
-  }
-  vertex(cx + dw * cos(startAngle + angle * i),
-cy + dh * sin(startAngle + angle * i));
-}
-endShape(CLOSE);
-  }
-}
+    noFill()
+    stroke(0)
+    star(6, 170, 200, 50, 100, 0, 0.4)
+    stroke(128)
+    
+    # draw enclosing ellipses to make sure we did it right
+    ellipse(60, 75, 100, 100)
+    ellipse(170, 75, 50, 50)
+    ellipse(60, 200, 75, 50)
+    ellipse(170, 200, 50, 100)
 
 ```
 
@@ -346,89 +318,45 @@ Finally, in order to use the functions in something other than a test, I decided
 
 Here is the code for `setup()` and `draw()`:
 
-```pde
-void setup() {
-  size(300, 300);
-  background(255);
-  frameRate(6);
-  rectMode(CENTER);
-}
+ ```python
+def setup():
+    size(300, 300)
+    background(255)
+    frameRate(6)
+    smooth()
+    rectMode(CENTER)
 
-void draw() {
-  // Choose a random stroke color
-  int r = int(random(0, 255));
-  int g = int(random(0, 255));
-  int b = int(random(0, 255));
-  // Fill opacity
-  int opacity = int(random(100, 255));
-  int nSides = int(random(3, 9));
+def draw():
+    # choose a random stroke color
+    r = int(random(0, 255))
+    g = int(random(0, 255))
+    b = int(random(0, 255))
+    # and fill opacity
+    opacity = int(random(100, 255))
+    nSides = int(random(3, 9))
 
-  // Determine the center x and y coordinates
-  int cx = 25 + 50 * int(random(0, 6));
-  int cy = 25 + 50 * int(random(0, 6));
-
-  // If a random number (0 or 1) is 0, draw a polygon;
-  // otherwise, draw a star
-  boolean isPolygon = int(random(2)) == 0;
-
-  // For stars, you need the proportion of short to long radius
-  float proportion;
-
-  stroke(255); // erase any previous drawing in this area
-  fill(255);
-  rect(cx, cy, 50, 50); 
-
-  stroke(r, g, b);
-  fill(r, g, b, opacity);
-  if (isPolygon) {
-polygon(nSides, cx, cy, 24);
-  } else {
-proportion = random(0.2, 0.8) * cos(PI / nSides);
-star(nSides, cx, cy, 24, proportion);
-  }
-}
-
-void polygon(int n, float cx, float cy, float r) {
-  float angle = 360.0 / n;
-  beginShape();
-  for (int i = 0; i < n; i++) {
-vertex(cx + r * cos(radians(angle * i)),
-  cy + r * sin(radians(angle * i)));
-  }
-  endShape(CLOSE);
-}
-
-void star(int n, float cx, float cy, float r, float proportion) {
-  star(n, cx, cy, 2.0 * r, 2.0 * r, 0.0, proportion);
-}
-
-void star(int n, float cx, float cy, float w, float h,
-  float startAngle, float proportion) {
-  if (n > 2) {
-float angle = TWO_PI/ (2 *n);  // twice as many sides
-float dw; // draw width
-float dh; // draw height
-
-w = w / 2.0;
-h = h / 2.0;
-
-beginShape();
-for (int i = 0; i < 2 * n; i++)
-{
-  dw = w;
-  dh = h;
-  if (i % 2 == 1) // for odd vertices, use short radius
-  {
-dw = w * proportion;
-dh = h * proportion;
-  }
-  vertex(cx + dw * cos(startAngle + angle * i),
-cy + dh * sin(startAngle + angle * i));
-}
-endShape(CLOSE);
-  }
-}
-
+    # determine the center x and y coordinates
+    cx = 25 + 50 * int(random(0, 6))
+    cy = 25 + 50 * int(random(0, 6))
+    
+    # if a random number (0 or 1) is 0, draw a polygon;
+    # otherwise, draw a star
+    isPolygon = int(random(2)) == 0
+    
+    # for stars, you need the proportion of short to long radius
+    # proportion
+    
+    stroke(255)   # erase any previous drawing in this area
+    fill(255)
+    rect(cx, cy, 50, 50)
+      
+    stroke(r, g, b)
+    fill(r, g, b, opacity)
+    if (isPolygon):
+        polygon(nSides, cx, cy, 24)
+    else:
+        proportion = random(0.2, 0.8) * cos(PI / nSides)
+        star(nSides, cx, cy, 24, proportion)
 ```
 
 ### Polígonos e estrelas como objetos
