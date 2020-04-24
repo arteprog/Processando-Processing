@@ -1,7 +1,3 @@
-    Pessoal eu vou querer traduzir este aqui no Modo Python também tá? E mais:
-    - https://github.com/arteprog/Processando-Processing/blob/master/tutoriais-PT/java-tranformacoes_2D.md
-    - https://github.com/arteprog/Processando-Processing/blob/master/tutoriais-PT/java-tranformacoes_2D.md
-
 # Anatomia de um programa
 
  Autor to artigo orginal em inglês: **J David Eisenberg**
