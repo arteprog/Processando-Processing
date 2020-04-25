@@ -1,12 +1,13 @@
-    Pessoal eu vou querer traduzir este aqui no Modo Python também tá? E mais:
-    - https://github.com/arteprog/Processando-Processing/blob/master/tutoriais-PT/java-tranformacoes_2D.md
-    - https://github.com/arteprog/Processando-Processing/blob/master/tutoriais-PT/java-tranformacoes_2D.md
+- Pessoal eu vou querer traduzir este aqui no Modo Python também depois OK? [py.processing.org/tutorials/anatomy](http://py.processing.org/tutorials/anatomy) -> https://github.com/arteprog/Processando-Processing/blob/master/tutoriais-PT/Anatomia_de_um_Programa_py.md ?
+- E mais:
+    - Transformações 2D (Python) https://hackmd.io/WX8HQeDzSaqD83J-6xybHg
+    - Transformações 2D (Java) https://github.com/arteprog/Processando-Processing/blob/master/tutoriais-PT/java-tranformacoes_2D.md
 
 # Anatomia de um programa
 
  Autor to artigo orginal em inglês: **J David Eisenberg**
 
-> Esta é uma tradução de [Anatomy of a Program](https://processing.org/tutorials/anatomy/) dispinível em processing.org/tutorials mantendo a licença [Creative Commons BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/).
+> Esta é uma tradução de [Anatomy of a Program](https://processing.org/tutorials/anatomy/) disponível em processing.org/tutorials mantendo a licença [Creative Commons BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/).
 >
 >[TO DO: Adaptar também para a versão com Processing modo Python em https://py.processing.org/tutorials/anatomy/ ]
 
@@ -31,19 +32,18 @@ Eu só precisava ter uma ideia do que era a tarefa, e um diagrama desenhado a m�
 
 ### Passo 2: Um pouco de trigonometria básica
 
-Então se você tem uma linha do tamanho de *r* iniciando em (0,0) em um anguo theta (0), o que são estas coordenadas em termos de *x* e *y*? Se você conhece um pouco de trigonometria , a resposta é que ponto final da linha está em (*r* cos θ,*sen*),Se você não conhece trigonometria, ^de uma olhada,[Neste tutorial](http://catcode.com/trig/) (Uma introdução geral a trigonometrial),[Neste tutorial](http://processing.org/learning/trig/) (Trigonometria orientada a Processing) e [Neste exemple a partit capitulo 13 de *Learning Processing*]
-(http://learningprocessing.com/examples/chp13/example-13-05-polar-cartesian). No seguinte diagrama, os angulos sao desenhados em sentido horário, no qual é como são mensurados no Processing.
+Então se você tem uma linha do tamanho de *r* iniciando em (0,0) em um anguo theta (0), o que são estas coordenadas em termos de *x* e *y*? Se você conhece um pouco de trigonometria , a resposta é que ponto final da linha está em (*r* cos θ,*sen*),Se você não conhece trigonometria, dê uma olhada,[Neste tutorial](http://catcode.com/trig/) (Uma introdução geral a trigonometrial), [neste tutorial](http://processing.org/learning/trig/) (Trigonometria com Processing) e [neste exemplo a partir do capítulo 13 de *Learning Processing*](http://learningprocessing.com/examples/chp13/example-13-05-polar-cartesian). No seguinte diagrama, os ângulos são desenhados em sentido horário, da mesma maneira como medimos no Processing.
 
-So, if you have a line of length *r* starting at (0,0) at an angle theta (θ), what are its coordinates in terms of *x* and *y*? If you know a little bit of  trigonometry, the answer is that the endpoint of the line is at (*r* cos θ, *r* sin θ). If you don’t  know trigonometry, take a look at [this tutorial](http://catcode.com/trig/) (a general and very light introduction to  trigonometry), [this tutorial](http://processing.org/learning/trig/) (oriented towards Processing), and [this example from chapter 13 of *Learning Processing*](http://learningprocessing.com/examples/chp13/example-13-05-polar-cartesian). In the following diagram, angles are drawn clockwise, which is how they are measured in Processing.
+ - [ ] So, if you have a line of length *r* starting at (0,0) at an angle theta (θ), what are its coordinates in terms of *x* and *y*? If you know a little bit of  trigonometry, the answer is that the endpoint of the line is at (*r* cos θ, *r* sin θ). If you don’t  know trigonometry, take a look at [this tutorial](http://catcode.com/trig/) (a general and very light introduction to  trigonometry), [this tutorial](http://processing.org/learning/trig/) (oriented towards Processing), and [this example from chapter 13 of *Learning Processing*](http://learningprocessing.com/examples/chp13/example-13-05-polar-cartesian). In the following diagram, angles are drawn clockwise, which is how they are measured in Processing.
 
 ### Passo 3: Decisões de projeto
 
 Isso parece um trabalho para um loop `for` que corre de 0 a *n* (o número de lados), calculando os pontos de cada vértice e desenhando as linhas os conectando. A cada passo, o ângulo no qual desenhamos aumenta 360°/*n*.
 
-The problem with drawing a group of lines is that they are just lines—you don’t get a true shape that you can fill, like `rect()` or `triangle()`. Luckily, Processing lets you create your own shapes with the [`beginShape()`](http://processing.org/reference/beginShape_.html), [`vertex()`](file:///home/david/processing-1.0.9/reference/vertex_.html), and [`endShape()`](http://processing.org/reference/endShape_.html) functions. The first example on the reference page for `beginShape()` is the model to follow. So the next design decision is to make polygons as true shapes.
+O problema de desenhar um grupo de linhas é que elas são só linhas—você fica sem uma forma verdadeira que pode preencher, como `rect()` ou `triangle()`. Por sorte, Processing deixa você criar suas próprias formas com as funções [`beginShape()`](http://processing.org/reference/beginShape_.html), [`vertex()`](file:///home/david/processing-1.0.9/reference/vertex_.html), e [`endShape()`]. O primeiro exemplo da página de referência para o `beginShape()` é o modelo a seguir. Então a próxima decisão é fazer o polígono como verdadeira forma.
 
-Since you probably want to draw many polygons during a program, it makes sense to have a `polygon()` function. What parameters does it need? Four come to mind: the number of sides, the center *x* and *y* coordinate, and the radius.  Here’s the code. I wrote several different calls to `polygon()` in the `setup()` function. Although I calculated `angle` in degrees, sine and cosine measure angles in radians, so I had to use the `radians()` function to do a conversion.
-
+Uma vez que provavelmente você quer desenhar muitos polígonos durante o programa, faz sentido ter uma função `polygon()`. Quais parâmetros ela precisa? Quatro vem à mente: O número de lados, as coordenadas do centro *x* e *y*, e o raio. Aqui está o código. Eu escrevei várias chamadas diferentes a `polygon()` dentro da função `setup()`. Apesar de ter calculado `angle` em graus, seno e coseno usam radianos, então eu tive que usar `radians()` para fazer a conversão.
+ 
 ```pde
 void setup() {
   size(300, 300);
@@ -76,6 +76,8 @@ vertex(cx + r * cos(radians(angle * i)),
 ```
 
 ### Dois passos para frente, um para trás
+
+O programa funciona, então é hora de ver se tem coisas que podem ser acrescentadas ou mudadas. Primeiro, o triângulo e o pentágono parecem de alguma maneira errados; eles são normalmente desenhados apontando pra cima em vez de pro lado. A razão deles parecerem estranhos é que o primeiro vértice (em 0°) aponta pra direita em vez de direto pra cima. Seria legal ter um parâmetro extra que desse o ângulo inicial
 
 The program works, so it’s time to see if there are things that could be added or changed.  First, the triangle and pentagon seem somehow wrong; they are usually drawn pointing upwards instead of to the side. The reason they look odd is that the first vertex (at 0°) points to the right instead of straight up. It would be nice to have an extra parameter that gives the starting angle for the first vertex. (Another solution is to leave things as they are and let programmers use `rotate()` [[see this tutorial](http://processing.org/learning/transform2d)], but I made the design decision to use an extra parameter.) Should the angle be given in degrees or in radians? The answer: radians, in order to be consistent with everything else that Processing does.
 
