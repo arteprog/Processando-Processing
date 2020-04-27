@@ -25,6 +25,7 @@ Ninguém pensa em construir uma casa sem um projeto executivo, e você não deve
 
 O primeiro passo foi desenhar um diagrama tosco para desenterrar velhas memórias de como polígonos regulares funcionam. O hexágono foi o primeiro que eu desenhei. Como você pode ver pelo lacinho que eu desenhei no interior, os ângulos centrais das fatias somam um círculo completo, ou 360°, e o "raio" do polígono é a linha do centro até cada vértice.O angulo entre cada linha do raio é, portanto, 360º dividido pelo número de lados.
 
+![sketch1](https://processing.org/tutorials/anatomy/imgs/sketch1.jpg)
 
 Eu só precisava ter uma ideia do que era a tarefa, e um diagrama desenhado a mão resolveu isso. Eu não precisei gerar o diagrama em um programa de desenho.
 
@@ -34,7 +35,8 @@ Eu só precisava ter uma ideia do que era a tarefa, e um diagrama desenhado a m�
 
 Então se você tem uma linha do tamanho de *r* iniciando em (0,0) em um anguo theta (0), o que são estas coordenadas em termos de *x* e *y*? Se você conhece um pouco de trigonometria , a resposta é que ponto final da linha está em (*r* cos θ,*sen*),Se você não conhece trigonometria, dê uma olhada,[Neste tutorial](http://catcode.com/trig/) (Uma introdução geral a trigonometrial), [neste tutorial](http://processing.org/learning/trig/) (Trigonometria com Processing) e [neste exemplo a partir do capítulo 13 de *Learning Processing*](http://learningprocessing.com/examples/chp13/example-13-05-polar-cartesian). No seguinte diagrama, os ângulos são desenhados em sentido horário, da mesma maneira como medimos no Processing.
 
- - [ ] So, if you have a line of length *r* starting at (0,0) at an angle theta (θ), what are its coordinates in terms of *x* and *y*? If you know a little bit of  trigonometry, the answer is that the endpoint of the line is at (*r* cos θ, *r* sin θ). If you don’t  know trigonometry, take a look at [this tutorial](http://catcode.com/trig/) (a general and very light introduction to  trigonometry), [this tutorial](http://processing.org/learning/trig/) (oriented towards Processing), and [this example from chapter 13 of *Learning Processing*](http://learningprocessing.com/examples/chp13/example-13-05-polar-cartesian). In the following diagram, angles are drawn clockwise, which is how they are measured in Processing.
+![](https://processing.org/tutorials/anatomy/imgs/sketch2.jpg)
+
 
 ### Passo 3: Decisões de projeto
 
@@ -43,6 +45,8 @@ Isso parece um trabalho para um loop `for` que corre de 0 a *n* (o número de la
 O problema de desenhar um grupo de linhas é que elas são só linhas—você fica sem uma forma verdadeira que pode preencher, como `rect()` ou `triangle()`. Por sorte, Processing deixa você criar suas próprias formas com as funções [`beginShape()`](http://processing.org/reference/beginShape_.html), [`vertex()`](file:///home/david/processing-1.0.9/reference/vertex_.html), e [`endShape()`]. O primeiro exemplo da página de referência para o `beginShape()` é o modelo a seguir. Então a próxima decisão é fazer o polígono como verdadeira forma.
 
 Uma vez que provavelmente você quer desenhar muitos polígonos durante o programa, faz sentido ter uma função `polygon()`. Quais parâmetros ela precisa? Quatro vem à mente: O número de lados, as coordenadas do centro *x* e *y*, e o raio. Aqui está o código. Eu escrevei várias chamadas diferentes a `polygon()` dentro da função `setup()`. Apesar de ter calculado `angle` em graus, seno e coseno usam radianos, então eu tive que usar `radians()` para fazer a conversão.
+
+![](https://processing.org/tutorials/anatomy/imgs/polytest1.jpg)
  
 ```pde
 void setup() {
@@ -88,6 +92,8 @@ My next thought was that it would be nice to be able to specify a width and heig
 Well, that was a dead end. That sort of thing happens in programming all the time, so I didn’t spend too much time worrying about it. It was time for another approach. Since I didn't have an accurate way of drawing ellipses, I had to think about the problem a different way. Presume you have a circle drawn on a square sheet of rubber, and you stretch it out so that it’s twice as wide but the same height. The vertical position of the points on the circle does not change, but the horizontal positions are now twice as far away from the center as they used to be. The same idea applies if you stretch the sheet vertically. The following crude drawings seemed to bear this out, so it was time to rewrite the `polygon()` function.
 
 ![diagrams showing stretched circle](https://processing.org/tutorials/anatomy/imgs/stretchy.jpg)
+
+![more complex polygon tests](https://processing.org/tutorials/anatomy/imgs/poly2.png)
 
 ```pde
 void setup() {
@@ -152,6 +158,8 @@ void polygon(int n, float cx, float cy, float r) {
 
 E aqui código para testar a função sobrecarregada.
 
+![](https://processing.org/tutorials/anatomy/imgs/poly3.png)
+
 ```pde
 void setup() {
   size(300, 300);
@@ -208,6 +216,8 @@ When you push in the sides, you push them in at the midpoint so that you get a n
 ![Stars drawn by pushing in the sides](https://processing.org/tutorials/anatomy/imgs/good_stars.jpg)
 
 This code would be fairly easy to write. I would need one extra parameter: the proportion of the small radius to the big radius. In the following code, an `if` statement controls whether to use the short radius or the long radius. I also put in an overloaded version that draws a star with equal width and height and a start angle of zero. For the test, I made the short radius one half the long radius.
+
+![](https://processing.org/tutorials/anatomy/imgs/surprise.png)
 
 ```pde
 void setup() {
@@ -283,6 +293,8 @@ So, if you are drawing a star with *n* sides and you set the proportion for the 
 > **Programming Challenge:** What happens if you set the  proportion to something *greater* than the “non-star”  ratio? Try it and find out.  
 
 Of course, the way to get a three-sided star is to set the proportion  to an amount less than 0.5, which I did in the following setup code,  with much better results. I also changed the proportions for the other  stars just to see what they would look like.
+
+![](https://processing.org/tutorials/anatomy/imgs/better_stars.png)
 
 ```pde
 void setup(){
