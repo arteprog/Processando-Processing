@@ -6,25 +6,25 @@ Autor to artigo orginal em inglês: **J David Eisenberg**
 
 [Baixe os arquivos deste tutorial](https://py.processing.org/tutorials/transform2d/imgs/transform2d.zip)
 
-Processing tem funções embutidas que tornam fácil você fazer objetos em um *sketch* mover, girar, ecrescer ou encolher. Este tutorial vai apresentar você às funções `translate`, `rotate`, e `scale`. De maneira que você as possa usar nos seus *sketches*.
+Processing tem funções embutidas que tornam fácil você mover, girar, ecrescer ou encolher objetos em um *sketch*. Este tutorial vai apresentar você às funções `translate`, `rotate`, e `scale`. De maneira que você as possa usar nos seus *sketches*.
 
 ### Translação: Movendo a grade
 
-As you know, your Processing window works like a piece of graph paper. When youwant to draw something, you specify its coordinates on the graph.Here is a simple rectangle drawn with the code`rect(20, 20, 40, 40)`. The coordinatesystem (a fancy word for “graph paper”) is shown in gray.
+Como você sabe, sua janela do Processing funciona como um pedaço de papel milimetrado. Quando você quer desenhar alguma coisa, especifica as cordenadas. Veja um retângulo simples desenhado com o código `rect(20, 20, 40, 40)`. O sistema de coordenadas (um nome sofisticado para o nosso "papel milimetrado") está mostrado em cinza.
 
 ![Black rectangle on gray numbered grid](https://py.processing.org/tutorials/transform2d/imgs/original.png)
 
-If you want to move the rectangle 60 units right and 80 units down,you can just change the coordinates by adding to the *x* and *y*starting point:`rect(20 + 60, 20 + 80, 40, 40)` and the rectangle will appearin a different place. (We put the arrow in there for dramatic effect.)
+Se você quiser mover o retângulo 60 unidades para a direita e 80 unidades para baixo, pode mudar as coordenadas somando ao *x* e *y* do ponto inicial: `rect(20 + 60, 20 + 80, 40, 40)` e o retângulo vai aparecer em um local diferente. (Pusemos a seta aí para efeito dramático.)
 
 ![Black rectangle on gray numbered grid, moved](https://py.processing.org/tutorials/transform2d/imgs/new_coords.png)
 
-But there is a more interesting way to do it: **move the graph paper instead**.If you move the graph paper 60 units right and 80 units down,you will get exactly the same visual result. Movingthe coordinate system is called translation.
+Mas tem uma maneira mais interessante de fazer isso: **em vez disso mover o papel milimetrado**. Se você moveo o papel milimetrado 60 unidades para a direita e 80 para baixo vai obter exatamente o mesmo resultado visual. Mover o sistema de coordenadas é chamado de translação.
 
 ![grid moved with arrow showing motion](https://py.processing.org/tutorials/transform2d/imgs/moved_grid.png)
 
-The important thing to notice in the preceding diagram is that, as far asthe rectangle is concerned, it hasn’t moved at all. Its upper leftcorner is still at (20,20). When you use transformations, the things youdraw *never* change position; the coordinate system does.
+A coisa importante de se notar no diagrama anterior é que, do ponto de vista do retângulo, ele não se moveu nada. O canto superior esquerdo continual em (20,20). Quando você usa transformações, as coisas que você desenha *nunca* mudam de posição; o sistema de cordenadas muda.
 
-Here is code that draws the rectangle in red by changing its coordinates,then draws it in blue by moving the grid. The rectangles are translucentso that you can see that they are (visually) at the same place. Only the method used tomove them has changed. Copy and paste this code into Processing and give it a try.
+Abaixo o código que desenha o retângulo em vermelho mudando suas coordenadas, e então desenha em azul movendo a grade. Os retângulos são translúcidos de maneira que você pode ver que estão (visualmente) no mesmo lugar. Apenas o método usado para movê-los mudou. Copie este código no Processing e experimente:
 
 ```python
 def setup():
@@ -94,12 +94,9 @@ def house(int x, int y):
 
 ```
 
-### Rotation
+### Rotação
 
-
-Além da translação que move a grade, é possível girar o sistema de coordenadas com a função `rotate()`. Essa função tem um parâmetro ou argumento, um número de *radianos* que você quer rodar. Em graus, um círculo tem 360°. Quando descrevemos os ângulos em radianos, a circuferência completa tem  2π radianos.
-
-In addition to moving the grid, you can also rotate it with the`rotate()` function. This function takes one argument, which isthe number of *radians* that you want to rotate. In Processing, allthe functions that have to do with rotation measure angles in radians ratherthan degrees.  When you talk about angles in degrees, you say that a full circlehas 360°. When you talk about angles in radians, you say that a full circle has2π radians. Here is a diagram of how Processing measures angles in degrees (black)and radians (red).
+Além da translação que move a grade, é possível girar o sistema de coordenadas com a função `rotate()`. Essa função tem um parâmetro ou argumento, um número de *radianos* que você quer rodar. Em graus, um círculo tem 360°. Quando descrevemos os ângulos em radianos, a circuferência completa tem 2π radianos. Eis aqui um diagrama de como Processing mede ângulos em graus (preto) e radianos (vermelho).
 
 ![Degrees are measured clockwise with zero being at 3 o'clock](https://py.processing.org/tutorials/transform2d/imgs/degrees.png)
 
@@ -127,20 +124,11 @@ Hey, what happened? How come the square got moved and cut off?The answer is: the
 
 ![shows grid rotated 45 degrees clockwise](https://py.processing.org/tutorials/transform2d/imgs/rotated_grid.png)
 
-### Rotating the Correct Way
-
-The correct way to rotate the square is to:
-
-1. Translate the coordinatesystem’s origin (0, 0) to where you wantthe upper left of the square to be.
-2. Rotate the grid π/4 radians (45°)
-3. Draw the square at the origin.
-
-
 ### Girando da maneira certa
 
 A maneira certa de girar o quadrado é:
 
-1. Mova a origem do sistema de coordenadas (0, 0) para onde você quer que seja o canto superior esquerdo do quadrado.
+1. Faça a translação da origem do sistema de coordenadas (0, 0) para onde você quer que seja o canto superior esquerdo do quadrado.
 2. Gire a grade π/4 radianos (45°)
 3. Desenhe o quadrado na origem.
 
@@ -216,11 +204,12 @@ def setup():
 
 First, you can see that the square appears to have moved. It hasn’t, ofcourse. Its upper left corner is still at (20, 20) on thescaled-up grid, but that point isnow twice as far away from the origin as it was in the original coordinatesystem. You can also see that the lines are thicker. That’s no opticalillusion—the lines really are twice as thick, because the coordinate systemhas been scaled to double its size.
 
-> **Programming Challenge:** Scale up the black square, but keep itsupper left corner in the same place as the gray square. Hint: use `translate()` to move the origin, then use `scale()`.
+> **Desafio de programação** aumente a o tamnaho do quadrado preto, mas mantenha o cantto superior esquerdo dele no mesmo lugar do quadrado cinza. Dica: use `translate()` para mover a origem, então use `scale()`.
 
-There is no law saying that you have to scale the *x* and *y* dimensionsequally. Try using `scale(3.0, 0.5)` to make the *x* dimensionthree times its normal size and the *y* dimension only half its normal size.
 
-### Order Matters
+Não tem um lei que diz que você tem que escalar as dimensões em *x* e *y* igualmente. Tente usar `scale(3.0, 0.5)` para fazer a dimensão em  *x* três vezes maior e a dimensão em *y* metado do tamanho normal.
+
+### A ordem importa
 
 When you do multiple transformations, the order makes a difference. A rotationfollowed by a translate followed by a scale will not give the same results as atranslate followed by a rotate by a scale. Here is some sample code andthe results.
 
@@ -251,11 +240,11 @@ def setup():
 
 ```
 
-### The Transformation Matrix
+### A matriz de transformação
 
 Every time you do a rotation, translation, or scaling, the informationrequired to do the transformation is accumulated into a table ofnumbers. This table, or matrix has only a few rowsand columns, yet, through the miracle of mathematics, it contains all theinformation needed to do any series of transformations. And that’swhy the `pushMatrix()` and `popMatrix()` have thatword in their name.
 
-### Push and Pop
+### Push e Pop
 
 What, about the *push* and *pop* part of the names? These come from a computerconcept known as a stack, which works like a spring-loaded traydispenser in a cafeteria. When someone returns a tray to the stack, its weight pushes the platform down.When someone needs a tray, he takes it from the top of the stack,and the remaining trays pop up a little bit.
 
@@ -263,13 +252,13 @@ In a similar manner, `pushMatrix()` puts the current status ofthe coordinate sys
 
 Note: in Processing, the coordinate system is restored to its original state(origin at the upper left of the window, no rotation, and no scaling) everytime that the `draw()` function is executed.
 
-### Three-dimensional Transforms
+### Transformações Tri-dimensionais
 
 If you are working in three dimensions, you can call the`translate()` function with three arguments for the*x*, *y*, and *z* distances. Similarly, you cancall `scale()` with three arguments that tell howmuch you want the grid scaled in each of those dimensions.
 
 For rotation, call the `rotateX()`, `rotateY()`, or `rotateZ()` functionto rotate around each of the axes. All three of these functionsexpect one argument: the number of radians to rotate.
 
-### Case Study: An Arm-Waving Robot
+### Estudo de caso: Um robô que balança os braços
 
 Let’s use these transformations to animate a bluerobot waving its arms. Rather than try to write it all atonce, we will do the work in stages. The first step isto draw the robot without any animation.
 
@@ -332,8 +321,6 @@ def drawRightArm():
     translate(66, 32)
     rect(0, 0, 12, 37)
     popMatrix()
-
-
 ```
 
 Now test to see if the arms rotate properly.Rather than attempt a full animation, we will justrotate the left side arm 135 degreesand the right side arm -45 degrees as a test. Hereis the code that needs to be added, and the result.The left side arm is cut off because of the windowboundaries, but we’ll fix that in the finalanimation.
@@ -422,10 +409,9 @@ def drawRightArm():
 
     rect(0, 0, 12, 37)     # right arm
     popMatrix()
-
 ```
 
-### Case Study: Interactive Rotation
+### Estudo de caso: Rotação interativa
 
 Instead of having the arms move on their own, we will modify the programso that the arms follow the mouse while the mouse button is pressed. Insteadof just writing the program at the keyboard, we first think about theproblem and figure out what the program needs to do. 
 
@@ -435,10 +421,8 @@ The remaining problem is to figure out the angle of rotation. Given thepivot poi
 
 But what about finding the angle of a line that doesn’t startfrom the origin, such as the line from (10, 37) to (48, 59)?No problem; it’s the same as the angle of a line from(0, 0) to (48-10, 59-37). In general, to find theangle of the line from (*x*0, *y*0)to (*x*1, *y*1), calculate
 
-```
+```pyde
    atan2(y1 - y0, x1 - x0)
-
-
 ```
 
 Because this is a new concept, rather than integrate it into the robotprogram, you should write a simple test program to see that you understand how `atan2()`works. This program draws a rectangle whose center of rotation isits upper left corner at (100, 100) and tracks the mouse.
@@ -499,10 +483,10 @@ def draw():
   background(255)
   pushMatrix()
   translate(ROBOT_X, ROBOT_Y)   # place robot so arms are always on screen
-  if (mousePressed):
+  if mousePressed:
       mX = mouseX - ROBOT_X
       mY = mouseY - ROBOT_Y
-      if (mX < MIDPOINT_X):    # left side of robot
+      if mX < MIDPOINT_X:    # left side of robot
         leftArmAngle = atan2(mY - PIVOT_Y, mX - LEFT_PIVOT_X) - HALF_PI
   else:
         rightArmAngle = atan2(mY - PIVOT_Y, mX - RIGHT_PIVOT_X) - HALF_PI;
@@ -513,21 +497,21 @@ def draw():
 
 ```
 
-The `drawRobot()` function remains unchanged, but aminor change to `drawLeftArm()` and `drawRightArm()`is now necessary. Because `leftArmAngle` and`rightArmAngle` are now computed in radians, thefunctions don’t have to do any conversion. The changesto the two functions are in bold.
+The `drawRobot()` function remains unchanged, but a minor change to `drawLeftArm()` and `drawRightArm()`is now necessary. Because `leftArmAngle` and`rightArmAngle` are now computed in radians, thefunctions don’t have to do any conversion. As mudanças nas funções foram indicadas com comentários.
 
 ```python
 def drawLeftArm():
     pushMatrix()
     translate(12, 32)
-    rotate(leftArmAngle)
-    rect(-12, 0, 12, 37)   # left arm
+    rotate(leftArmAngle)  # mudou
+    rect(-12, 0, 12, 37)  # braço esquerdo
     popMatrix()
 
 def drawRightArm():
     pushMatrix()
     translate(66, 32)
-    rotate(rightArmAngle)
-    rect(0, 0, 12, 37)    # right arm
+    rotate(rightArmAngle)  # mudou
+    rect(0, 0, 12, 37)     # braço direito
     popMatrix()
 
 
