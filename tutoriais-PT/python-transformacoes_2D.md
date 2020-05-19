@@ -49,41 +49,39 @@ def setup():
 
 ```
 
-Let’s look at the translation code in more detail.`pushMatrix()` is a built-in function thatsaves the current position of the coordinate system. The `translate(60, 80)` moves the coordinate system 60 units rightand 80 units down. The `rect(20, 20, 40, 40)` draws therectangle at the same place it was originally. Remember, the things you drawdon’t move—the grid moves instead. Finally,`popMatrix()` restores the coordinate system to the way it wasbefore you did the translate.
+Vamos olhar o código de conversão em mais detalhes.`pushMatrix()` é uma função embutida que salva a posição atual do sistema de coordendas. O `translate(60, 80)` movbaixo. O `rect(20, 20, 40, 40)` desenha o retângulo no mesmo local em que estava originalmente. Lembre-se de que as coisas que você desenha não se movem - a grade se move. Por fim,`popMatrix()` restaura o sistema de coordenadas como estava antes de você fazer a translação.
 
-Yes, you could have done a `translate(-60, -80)` tomove the grid back to its original position. However, when you startdoing more sophisticated operations with the coordinate system, it’seasier to use `pushMatrix()` and `popMatrix()` tosave and restore the status rather than having to undo all your operations.Later on in this tutorial, you will find out why those functionsseem to have such strange names.
+Sim, você podia ter feito uma translação `translate(-60, -80)` para mover a grade de volta a sua posição original. No entanto, quando você começa a executar operações mais sofisticadas com o sistema de coordenadas, é mais fácil usar `pushMatrix()` e `popMatrix()` para salvar e restaurar o status em vez de precisar desfazer todas as suas operações. Mais adiante neste tutorial, você descobrirá por que essas funções parecem ter nomes tão estranhos.
 
-### What’s the Advantage?
+### Qual é a vantagem?
 
-You may be thinking that picking up the coordinate system and moving itis a lot more trouble than just adding to coordinates. For a simple examplelike the rectangle, you are correct. But let’s take an example ofwhere `translate()` can make life easier. Here is somecode that draws a row of houses. It uses a loop that callsfunction named `house()`, which takesthe *x* and *y* location of the house’s upper-left corner as its parameters.
+Você pode estar pensando que pegar o sistema de coordenadas e movê-lo é muito mais complicado do que apenas adicionar às coordenadas. Para um exemplo simples, como o retângulo, você está correto. Mas vamos dar um exemplo de onde o `translate()` pode facilitar a vida. Aqui está um código que desenha uma fileira de casas. Ele usa um loop que chama a função chamada `casa()`, que recebe o *x* e *y* da posição do canto superioe esquerdo da casa como parâmetros.
 
-![Row of stick-figure houses](https://py.processing.org/tutorials/transform2d/imgs/houses.png)
+![Row of stick-figure casas](https://py.processing.org/tutorials/transform2d/imgs/houses.png)
 
 ```python
 def setup():
   size(400, 100)
   background(255)
   for i in xrange(10,350,50):
-    house(i, 20)
+    casa(i, 20)
 
 ```
 
-This is the code for drawing the house by changing itsposition. Look at all the additions that youhave to keep track of.
+Este é o código para desenhar a casa alterando sua posição. Veja todos os acréscimos que você precisa acompanhar.
 
 ```python
-def house(int x, int y):
+def casa(int x, int y):
   triangle(x + 15, y, x, y + 15, x + 30, y + 15)
   rect(x, y + 15, 30, 30)
   rect(x + 12, y + 30, 10, 15)
 
 ```
 
-Compare isso com esta versão da função que usa `translate()`. Neste caso o código desenha a casa no mesmo lugar, com o canto superior esquerdo em (0, 0), e deixa a translação fazer todo o trabalho.
-
-Compare that to the version of the function that uses `translate()`. In this case, the code draws the house in the same place every time,with its upper left corner at (0, 0), and lets translation do all thework instead.
+Compare isso com a versão da função que usa `translate()`. Neste caso o código desenha a casa no mesmo lugar, com o canto superior esquerdo em (0, 0), e deixa a translação fazer todo o trabalho.
 
 ```python
-def house(int x, int y):
+def casa(int x, int y):
   pushMatrix()
   translate(x, y)
   triangle(15, 0, 0, 15, 30, 15)
@@ -100,7 +98,7 @@ Além da translação que move a grade, é possível girar o sistema de coordena
 
 ![Degrees are measured clockwise with zero being at 3 o'clock](https://py.processing.org/tutorials/transform2d/imgs/degrees.png)
 
-Since most people think in degrees, Processing has a built-in `radians()` functionwhich takes a number of degrees as its argument and converts it for you.  It also hasa `degrees()` function that converts radians to degrees. Given that background,let’s try rotating a square clockwise 45 degrees.
+Como a maioria das pessoas pensa em graus, o Processing possui uma função embutida `radians()` que recebe um número em graus como argumento e o converte para você. Ele também possui uma função  `degrees()` que converte radianos em graus. Dado esse cenário, vamos tentar girar um quadrado 45 graus no sentido horário.
 
 ```python
 def setup():
@@ -116,11 +114,8 @@ def setup():
   fill(0)
   rect(40, 40, 40, 40)
   popMatrix()
-
-
 ```
-
-Hey, what happened? How come the square got moved and cut off?The answer is: the square did not move. The **grid** was rotated.Here is what really happened. As you can see, on the rotated coordinate system,the square still has its upper left corner at (40, 40).
+Ei o que aconteceu? Como o quadrado foi movido e cortadao A resposta é: o quadrado não se moveu. A ** grade ** foi girada. Aqui está o que realmente aconteceu. Como você pode ver, no sistema de coordenadas girado, o quadrado ainda tem seu canto superior esquerdo em (40, 40).
 
 ![shows grid rotated 45 degrees clockwise](https://py.processing.org/tutorials/transform2d/imgs/rotated_grid.png)
 
@@ -134,7 +129,7 @@ A maneira certa de girar o quadrado é:
 
 ![Grid translated, then rotated](https://py.processing.org/tutorials/transform2d/imgs/correct_rotate_grid.png)
 
-And here is the code and its result, without the grid marks.
+E aqui está o código que gera o resultado, sem as marcas de grade.
 
 ```python
 def setup():
@@ -146,21 +141,19 @@ def setup():
     rect(40, 40, 40, 40)
     
     pushMatrix()
-    # move the origin to the pivot point
+    # mova a origem para o ponto de giro
     translate(40, 40)
     
-    # then pivot the grid
+    # em seguida gire a grade
     rotate(radians(45))
     
-    # and draw the square at the origin
+    # e desenhe o quadrado na origem
     fill(0)
     rect(0, 0, 40, 40)
     popMatrix()
-
-
 ```
 
-And here is a program that generates a wheel of colors by usingrotation. The screenshot is reduced to save space.
+E aqui está um programa que gera uma roda de cores usando rotação. A captura de tela é reduzida para economizar espaço.
 
 ```python
 def setup():
@@ -181,9 +174,9 @@ def draw():
 
 ```
 
-### Scaling
+### Escalando
 
-The final coordinate system transformation isscaling, which changes the size of the grid. Take a look at this example,which draws a square, then scales the grid to twice its normal size,and draws it again.
+A transformação final do sistema de coordenadas é a mudançã de escala, que altera o tamanho da grade. Dê uma olhada neste exemplo, que desenha um quadrado, depois redimensiona a grade para o dobro do tamanho normal e a desenha novamente.
 
 ```python
 def setup():
@@ -201,8 +194,7 @@ def setup():
 
 
 ```
-
-First, you can see that the square appears to have moved. It hasn’t, ofcourse. Its upper left corner is still at (20, 20) on thescaled-up grid, but that point isnow twice as far away from the origin as it was in the original coordinatesystem. You can also see that the lines are thicker. That’s no opticalillusion—the lines really are twice as thick, because the coordinate systemhas been scaled to double its size.
+Primeiro, você pode ver que o quadrado parece ter se movido. Claro que não. Seu canto superior esquerdo ainda está em (20, 20) na grade escalada para cima, mas esse ponto está agora duas vezes mais distante da origem do que no sistema de coordenadas original. Você também pode ver que as linhas são mais grossas. Isso não é ilusão de ótica - as linhas realmente têm o dobro da espessura, porque o sistema de coordenadas foi dimensionado para dobrar seu tamanho.
 
 > **Desafio de programação** aumente a o tamnaho do quadrado preto, mas mantenha o cantto superior esquerdo dele no mesmo lugar do quadrado cinza. Dica: use `translate()` para mover a origem, então use `scale()`.
 
@@ -211,18 +203,18 @@ Não tem um lei que diz que você tem que escalar as dimensões em *x* e *y* igu
 
 ### A ordem importa
 
-When you do multiple transformations, the order makes a difference. A rotationfollowed by a translate followed by a scale will not give the same results as atranslate followed by a rotate by a scale. Here is some sample code andthe results.
+Quando você faz várias transformações, a ordem faz diferença. Uma rotação seguida de uma translação seguida por uma mudança de escala não produzirá os mesmos resultados que uma translação seguida de uma rotação e uma mudança de escala. Aqui está um exemplo de código e os resultados.
 
 ```python
 def setup():
     size(200, 200)
     background(255)
     smooth()
-    line(0, 0, 200, 0)  # draw axes
+    line(0, 0, 200, 0)  # desenha eixos
     line(0, 0, 0, 200)
     
     pushMatrix()
-    fill(255, 0, 0)     # red square
+    fill(255, 0, 0)     # quadrado vermelho
     rotate(radians(30))
     translate(70, 70)
     scale(2.0)
@@ -230,7 +222,7 @@ def setup():
     popMatrix()
 
     pushMatrix()
-    fill(255)           # white square
+    fill(255)           # quadrado branco
     translate(70, 70)
     rotate(radians(30))
     scale(2.0)
@@ -242,29 +234,32 @@ def setup():
 
 ### A matriz de transformação
 
-Every time you do a rotation, translation, or scaling, the informationrequired to do the transformation is accumulated into a table ofnumbers. This table, or matrix has only a few rowsand columns, yet, through the miracle of mathematics, it contains all theinformation needed to do any series of transformations. And that’swhy the `pushMatrix()` and `popMatrix()` have thatword in their name.
+Sempre que você faz uma rotação, translação ou mudança de escla, as informações necessárias para a transformação são acumuladas em uma tabela de números. Essa tabela, ou matriz, possui apenas algumas linhas e colunas; no entanto, através do milagre da matemática, ela contém todas as informações necessárias para realizar qualquer série de transformações. E é por isso que `pushMatrix ()` e `popMatrix ()` têm essa palavra em seu nome.
 
 ### Push e Pop
 
-What, about the *push* and *pop* part of the names? These come from a computerconcept known as a stack, which works like a spring-loaded traydispenser in a cafeteria. When someone returns a tray to the stack, its weight pushes the platform down.When someone needs a tray, he takes it from the top of the stack,and the remaining trays pop up a little bit.
+Sobre a parte *push* e *pop* dos nomes? Elas vêm de um conceito de computação conhecido como pilha, que funciona como um dispensador de bandejas com mola em uma lanchonete. Quando alguém devolve uma bandeja para a pilha, seu peso empurra a plataforma para baixo. Quando alguém precisa de uma bandeja, ela a pega da parte superior da pilha e as bandejas restantes aparecem um pouco.
 
-In a similar manner, `pushMatrix()` puts the current status ofthe coordinate system at the top of a memory area, and `popMatrix()`pulls that status back out. The preceding example used`pushMatrix()` and `popMatrix()` to make sure that thecoordinate system was “clean” before each part of the drawing.In all of the other examples, the calls to those two functions weren’treally necessary, but it doesn’t hurt anything to save and restorethe grid status.
 
-Note: in Processing, the coordinate system is restored to its original state(origin at the upper left of the window, no rotation, and no scaling) everytime that the `draw()` function is executed.
+De maneira semelhante, `pushMatrix()` coloca o status atual do sistema de coordenadas no topo de uma área de memória, e `popMatrix()` pega de volta o status. O exemplo anterior usou `pushMatrix()` e `popMatrix()` para garantir que o sistema de coordenação estivesse "limpo" antes de cada parte do desenho. Em todos os outros exemplos, as chamadas para essas duas funções não eram realmente necessárias, mas não custa nada salvar e restaurar o status da grade.
+
+
+Nota: Em Processing, o sistema de coordenadas é restaurado ao seu estado original (origem na parte superior esquerda da janela, sem rotação e sem mudança de escala) toda vez que a função `draw \()` é executada.
 
 ### Transformações Tri-dimensionais
 
-If you are working in three dimensions, you can call the`translate()` function with three arguments for the*x*, *y*, and *z* distances. Similarly, you cancall `scale()` with three arguments that tell howmuch you want the grid scaled in each of those dimensions.
 
-For rotation, call the `rotateX()`, `rotateY()`, or `rotateZ()` functionto rotate around each of the axes. All three of these functionsexpect one argument: the number of radians to rotate.
+Se você estiver trabalhando em três dimensões, poderá chamar a função `translate()` com três argumentos para as distâncias *x*, *y*, e *z*. Da mesma forma, você vhama `scale()` com três argumentos que indicam o quanto você deseja que a grade seja redimensionada em cada uma dessas dimensões
+
+Para rotação, chame as funções `rotateX()`, `rotateY()`, ou `rotateZ()` para girar em torno de cada um dos eixos. Todas essas três funções esperam um argumento: o número de radianos a serem rotacionados.
 
 ### Estudo de caso: Um robô que balança os braços
 
-Let’s use these transformations to animate a bluerobot waving its arms. Rather than try to write it all atonce, we will do the work in stages. The first step isto draw the robot without any animation.
+Vamos usar essas transformações para animar um robô azul agitando os braços. Em vez de tentar escrever tudo de uma vez, faremos o trabalho em etapas. O primeiro passo é desenhar o robô sem nenhuma animação.
 
-The robot is modeled on[thisdrawing](http://www.openclipart.org/detail/5457), although it will not look as charming.First, we draw the robot so that itsleft and top side touch the *x* and *y* axes. Thatwill allow us to use `translate()` to easily placethe robot anywhere we want or to make multiple copies ofthe robot, as we did in the example of the houses.
+O robô é baseado em [thisdrawing](http://www.openclipart.org/detail/5457), embora não pareça tão charmoso. Primeiro, desenhamos o robô para que sua esquerda e a parte superior toquem os eixos *x* e *y*. Isso nos permitirá usar `translate()` para posicionar facilmente o robô em qualquer lugar que desejarmos ou que façamos várias cópias do robô, como fizemos no exemplo das casas.
 
-When we refer to left and right in this drawing, we mean yourleft and right (the left and right side of your monitor),not the robot’s left and right.
+Quando nos referimos à esquerda e à direita neste desenho, queremos dizer sua esquerda e direita (o lado esquerdo e direito do monitor), não o esquerdo e o direito do robô.
 
 ```python
 def setup():
@@ -276,39 +271,41 @@ def setup():
 def drawRobot():
     noStroke()
     fill(38, 38, 200)
-    rect(20, 0, 38, 30)      # head
-    rect(14, 32, 50, 50)     # body
+    rect(20, 0, 38, 30)      # cabeça
+    rect(14, 32, 50, 50)     # corpo
     
-    rect(0, 32, 12, 37)      # left arm
-    rect(66, 32, 12, 37)     # right arm
+    rect(0, 32, 12, 37)      # braço esquerdo
+    rect(66, 32, 12, 37)     # braço direito
     
-    rect(22, 84, 16, 50)     # left leg
+    rect(22, 84, 16, 50)     # perna esquerda
     rect(40, 84, 16, 50)     # right leg
     
     fill(222, 222, 249)
-    ellipse(30, 12, 12, 12)  # left eye
-    ellipse(47, 12, 12, 12)  # right eye
+    ellipse(30, 12, 12, 12)  # olho esquerdo
+    ellipse(47, 12, 12, 12)  # olho direito
 
 ```
 
-![robot with red dots at shoulder joints](https://py.processing.org/tutorials/transform2d/imgs/pivot.png)The next step is to identify the points wherethe arms pivot. That is shown in this drawing.The pivot points are (12, 32) and(66, 32). Note: the term “center of rotation”is a more formal term for the pivot point.
+![robô com pontos vermelhos nas articulações dos ombros](https://py.processing.org/tutorials/transform2d/imgs/pivot.png)
 
-Now, separate the code for drawing the left and rightarms, and move the center of rotation for each arm to the origin, becauseyou always rotate around the (0, 0) point. To save space,we are not repeating the code for `setup()`.
+O próximo passo é identificar os pontos nos quais os braços giram. Isso é mostrado neste desenho. Os pontos de articulação são (12, 32) e (66, 32). Nota: o termo "centro de rotação" é um termo mais formal para o ponto de articulação.
+
+Agora separe o código para desenhar os braços direito e esquerdo, e mova o centro de rotação de cada braço para a orgigem, porque você sempre gira em torno do ponto (0, 0). Para economizar espaço, não estamos repetindo o código para `setup()`.
 
 ```python
 def drawRobot():
     noStroke()
     fill(38, 38, 200)
-    rect(20, 0, 38, 30)      # head
-    rect(14, 32, 50, 50)     # body
+    rect(20, 0, 38, 30)      # cabeça
+    rect(14, 32, 50, 50)     # corpo
     drawLeftArm()
     drawRightArm()
-    rect(22, 84, 16, 50)     # left leg
-    rect(40, 84, 16, 50)     # right leg
+    rect(22, 84, 16, 50)     # perna esquerda
+    rect(40, 84, 16, 50)     # perna direita
     
     fill(222, 222, 249)
-    ellipse(30, 12, 12, 12)  # left eye
-    ellipse(47, 12, 12, 12)  # right eye
+    ellipse(30, 12, 12, 12)  # olho esquerdo
+    ellipse(47, 12, 12, 12)  # olho direito
 
 def drawLeftArm():
     pushMatrix()
@@ -323,7 +320,8 @@ def drawRightArm():
     popMatrix()
 ```
 
-Now test to see if the arms rotate properly.Rather than attempt a full animation, we will justrotate the left side arm 135 degreesand the right side arm -45 degrees as a test. Hereis the code that needs to be added, and the result.The left side arm is cut off because of the windowboundaries, but we’ll fix that in the finalanimation.
+
+Agora, teste para ver se os braços giram corretamente. Em vez de tentar uma animação completa, iremos apenas girar o braço esquerdo esquerdo 135 graus e o braço direito -45 graus como teste. Aqui está o código que precisa ser adicionado e o resultado. O braço esquerdo foi cortado por causa dos limites da janela, mas corrigiremos isso na animação final.
 
 ```python
 def drawLeftArm():
@@ -332,7 +330,7 @@ def drawLeftArm():
 
     rotate(radians(135))
 
-    rect(-12, 0, 12, 37)    # left arm
+    rect(-12, 0, 12, 37)    # braço esquerdo
     popMatrix()
 
 def drawRightArm():
@@ -341,13 +339,13 @@ def drawRightArm():
 
     rotate(radians(-45))
 
-    rect(0, 0, 12, 37)     # right arm
+    rect(0, 0, 12, 37)     # braço direito
     popMatrix()
-
-
 ```
 
-Now we complete the program by putting in the animation. Theleft arm has to rotate from 0° to 135° and back.Since the arm-waving is symmetric, theright-arm angle will always be the negative value ofthe left-arm angle. To make things simple,we will go in increments of 5degrees. 
+Agora, concluímos o programa inserindo a animação. O braço esquerdo deve girar de 0 ° a 135 ° e vice-versa. Como o movimento do braço é simétrico, o ângulo do braço direito sempre será o valor negativo do ângulo do braço esquerdo. Para simplificar, iremos em incrementos de 5 graus.
+
+Now we complete the program by putting in the animation. Thebraço esquerdo has to rotate from 0° to 135° and back.Since the arm-waving is symmetric, theright-arm angle will always be the negative value ofthe left-arm angle. To make things simple,we will go in increments of 5degrees. 
 
 ```
 armAngle = 0
@@ -364,13 +362,13 @@ def draw():
     print armAngle
     background(255)
     pushMatrix()
-    translate(50, 50)       # place robot so arms are always on screen
+    translate(50, 50)  # para que os braços caibam na tela
     drawRobot()
     armAngle += angleChange
   
-    # if the arm has moved past its limit,
-    # reverse direction and set within limits.
-    if (armAngle > ANGLE_LIMIT or armAngle < 0):
+    # se o braço ultrapassou seu limite,
+    # inversta a direção e ponha no limite.
+    if armAngle > ANGLE_LIMIT or armAngle < 0:
         angleChange = -angleChange
         armAngle += angleChange
     popMatrix()
@@ -379,16 +377,16 @@ def draw():
 def drawRobot():
     noStroke()
     fill(38, 38, 200)
-    rect(20, 0, 38, 30)     # head
-    rect(14, 32, 50, 50)    # body
+    rect(20, 0, 38, 30)     # cabeça
+    rect(14, 32, 50, 50)    # corpo
     drawLeftArm()
     drawRightArm()
-    rect(22, 84, 16, 50)    # left leg
+    rect(22, 84, 16, 50)    # perna esquerda
     rect(40, 84, 16, 50)    # right leg
     
     fill(222, 222, 249)
-    ellipse(30, 12, 12, 12) # left eye
-    ellipse(47, 12, 12, 12) # right eye
+    ellipse(30, 12, 12, 12) # olho esquerdo
+    ellipse(47, 12, 12, 12) # olho direito
 
 def drawLeftArm():
     global armAngle
@@ -397,7 +395,7 @@ def drawLeftArm():
 
     rotate(radians(armAngle))
 
-    rect(-12, 0, 12, 37)    # left arm
+    rect(-12, 0, 12, 37)    # braço esquerdo
     popMatrix()
 
 def drawRightArm():
@@ -407,7 +405,7 @@ def drawRightArm():
 
     rotate(radians(-armAngle))
 
-    rect(0, 0, 12, 37)     # right arm
+    rect(0, 0, 12, 37)     # braço direito
     popMatrix()
 ```
 
@@ -415,7 +413,7 @@ def drawRightArm():
 
 Instead of having the arms move on their own, we will modify the programso that the arms follow the mouse while the mouse button is pressed. Insteadof just writing the program at the keyboard, we first think about theproblem and figure out what the program needs to do. 
 
-Since the two arms move independently ofone another, we need to have one variable for each arm’s angle.It’s easy to figure out which arm to track. If the mouse is at theleft side of the robot’s center, track the left arm; otherwise,track the right arm.
+Since the two arms move independently ofone another, we need to have one variable for each arm’s angle.It’s easy to figure out which arm to track. If the mouse is at theleft side of the robot’s center, track the braço esquerdo; otherwise,track the braço direito.
 
 The remaining problem is to figure out the angle of rotation. Given thepivot point position and the mouse position, how do you determine theangle of a line connecting those two points?  The answer comes from the`atan2()` function, which gives (in radians) the angleof a line from the origin to a given *y* and *x* coordinate.In constrast to most other functions, the *y* coordinate comesfirst. `atan2()` returns a value from -π to π radians,which is the equivalent of -180° to 180°.
 
@@ -475,22 +473,24 @@ The `draw()` function is next. It determines if themouse is pressed and the angl
 ```python
 def draw():
    """
-   These variables are for mouseX and mouseY,
-   adjusted to be relative to the robot's coordinate system
-   instead of the window's coordinate system.
+   Estas variáveis são para mouseX and mouseY,
+   adjustadas para serem relativas ao sistema de coordenadas
+   do robô em vez do sistema de coordenadas da janela.
    """
   
   background(255)
   pushMatrix()
-  translate(ROBOT_X, ROBOT_Y)   # place robot so arms are always on screen
+  translate(ROBOT_X, ROBOT_Y)   # locar robô para caber braços
   if mousePressed:
       mX = mouseX - ROBOT_X
       mY = mouseY - ROBOT_Y
-      if mX < MIDPOINT_X:    # left side of robot
-        leftArmAngle = atan2(mY - PIVOT_Y, mX - LEFT_PIVOT_X) - HALF_PI
-  else:
-        rightArmAngle = atan2(mY - PIVOT_Y, mX - RIGHT_PIVOT_X) - HALF_PI;
-  drawRobot()
+      if mX < MIDPOINT_X:    # lado direito do robô
+        leftArmAngle = atan2(mY - PIVOT_Y,
+                             mX - LEFT_PIVOT_X) - HALF_PI
+      else:
+        rightArmAngle = atan2(mY - PIVOT_Y,
+                              mX - RIGHT_PIVOT_X) - HALF_PI;
+      drawRobot()
   
   popMatrix()
 
@@ -517,4 +517,4 @@ def drawRightArm():
 
 ```
 
-You can [download the files from this tutorial](https://py.processing.org/tutorials/transform2d/imgs/transform2d.zip),including the program that made the grid diagrams.
+Você pode [baixar os arquivos do tutorial original ](https://py.processing.org/tutorials/transform2d/imgs/transform2d.zip) (py.processing.org/tutorials/transform2d), incluido o programa para fazer os diagramas de grade.
