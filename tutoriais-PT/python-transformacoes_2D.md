@@ -94,7 +94,7 @@ def casa(int x, int y):
 
 ### Rotação
 
-Além da translação que move a grade, é possível girar o sistema de coordenadas com a função `rotate()`. Essa função tem um parâmetro ou argumento, um número de *radianos* que você quer rodar. Em graus, um círculo tem 360°. Quando descrevemos os ângulos em radianos, a circuferência completa tem 2π radianos. Eis aqui um diagrama de como Processing mede ângulos em graus (preto) e radianos (vermelho).
+Além da translação, que move a grade, é possível girar o sistema de coordenadas com a função `rotate()`. Essa função tem um parâmetro ou argumento, um número de *radianos* que você quer rodar. Em graus, um círculo tem 360°. Quando descrevemos os ângulos em radianos, a circuferência completa tem 2π radianos. Eis aqui um diagrama de como Processing mede ângulos em graus (preto) e radianos (vermelho).
 
 ![Degrees are measured clockwise with zero being at 3 o'clock](https://py.processing.org/tutorials/transform2d/imgs/degrees.png)
 
@@ -115,7 +115,7 @@ def setup():
   rect(40, 40, 40, 40)
   popMatrix()
 ```
-Ei o que aconteceu? Como o quadrado foi movido e cortadao A resposta é: o quadrado não se moveu. A ** grade ** foi girada. Aqui está o que realmente aconteceu. Como você pode ver, no sistema de coordenadas girado, o quadrado ainda tem seu canto superior esquerdo em (40, 40).
+Ei o que aconteceu? Como o quadrado foi movido e cortadao A resposta é: o quadrado não se moveu. A **grade** foi girada. Aqui está o que realmente aconteceu. Como você pode ver, no sistema de coordenadas girado, o quadrado ainda tem seu canto superior esquerdo em (40, 40).
 
 ![shows grid rotated 45 degrees clockwise](https://py.processing.org/tutorials/transform2d/imgs/rotated_grid.png)
 
@@ -176,7 +176,7 @@ def draw():
 
 ### Escalando
 
-A transformação final do sistema de coordenadas é a mudançã de escala, que altera o tamanho da grade. Dê uma olhada neste exemplo, que desenha um quadrado, depois redimensiona a grade para o dobro do tamanho normal e a desenha novamente.
+A transformação final do sistema de coordenadas é a mudança de escala, que altera o tamanho da grade. Dê uma olhada neste exemplo, que desenha um quadrado, depois redimensiona a grade para o dobro do tamanho normal e a desenha novamente.
 
 ```python
 def setup():
@@ -278,7 +278,7 @@ def drawRobot():
     rect(66, 32, 12, 37)     # braço direito
     
     rect(22, 84, 16, 50)     # perna esquerda
-    rect(40, 84, 16, 50)     # right leg
+    rect(40, 84, 16, 50)     # perna direita
     
     fill(222, 222, 249)
     ellipse(30, 12, 12, 12)  # olho esquerdo
@@ -343,9 +343,7 @@ def drawRightArm():
     popMatrix()
 ```
 
-Agora, concluímos o programa inserindo a animação. O braço esquerdo deve girar de 0 ° a 135 ° e vice-versa. Como o movimento do braço é simétrico, o ângulo do braço direito sempre será o valor negativo do ângulo do braço esquerdo. Para simplificar, iremos em incrementos de 5 graus.
-
-Now we complete the program by putting in the animation. Thebraço esquerdo has to rotate from 0° to 135° and back.Since the arm-waving is symmetric, theright-arm angle will always be the negative value ofthe left-arm angle. To make things simple,we will go in increments of 5degrees. 
+Agora, concluímos o programa inserindo a animação. O braço esquerdo deve girar de 0° a 135° e vice-versa. Como o movimento do braço é simétrico, o ângulo do braço direito sempre será o valor negativo do ângulo do braço esquerdo. Para simplificar, iremos em incrementos de 5 graus.
 
 ```
 armAngle = 0
@@ -382,7 +380,7 @@ def drawRobot():
     drawLeftArm()
     drawRightArm()
     rect(22, 84, 16, 50)    # perna esquerda
-    rect(40, 84, 16, 50)    # right leg
+    rect(40, 84, 16, 50)    # perna direita
     
     fill(222, 222, 249)
     ellipse(30, 12, 12, 12) # olho esquerdo
@@ -411,19 +409,19 @@ def drawRightArm():
 
 ### Estudo de caso: Rotação interativa
 
-Instead of having the arms move on their own, we will modify the programso that the arms follow the mouse while the mouse button is pressed. Insteadof just writing the program at the keyboard, we first think about theproblem and figure out what the program needs to do. 
+Em vez de mover dos braços se mexerem sozinhos, modificaremos o programa para que os braços sigam o mouse quando o botão do mouse é pressionado. Em vez de sair escrevendo o programa com o teclado, vamos primeiro pensar no problema e descobrir o que o programa precisa fazer.
 
-Since the two arms move independently ofone another, we need to have one variable for each arm’s angle.It’s easy to figure out which arm to track. If the mouse is at theleft side of the robot’s center, track the braço esquerdo; otherwise,track the braço direito.
+Como os dois braços se movem independentemente um do outro, precisamos ter uma variável para o ângulo de cada braço. É fácil descobrir qual braço rastrear. Se o mouse estiver no lado esquerdo do centro do robô, acompanhe o braço esquerdo; caso contrário, acompanhe o braço direito.
 
-The remaining problem is to figure out the angle of rotation. Given thepivot point position and the mouse position, how do you determine theangle of a line connecting those two points?  The answer comes from the`atan2()` function, which gives (in radians) the angleof a line from the origin to a given *y* and *x* coordinate.In constrast to most other functions, the *y* coordinate comesfirst. `atan2()` returns a value from -π to π radians,which is the equivalent of -180° to 180°.
+O problema restante é descobrir o ângulo de rotação. Dada a posição do ponto de articulação e a posição do mouse, como você determina a alteração de uma linha que liga esses dois pontos? A resposta vem da função`atan2()`,  que fornece (em radianos) o ângulo de uma linha da origem até uma determinada coordenada *y* e *x*. Em contraste com a maioria das outras funções, a coordenada *y* vem primeiro. `atan2()` devolve um valor de -π a π radianos, que é equivalente a de -180° a 180°.
 
-But what about finding the angle of a line that doesn’t startfrom the origin, such as the line from (10, 37) to (48, 59)?No problem; it’s the same as the angle of a line from(0, 0) to (48-10, 59-37). In general, to find theangle of the line from (*x*0, *y*0)to (*x*1, *y*1), calculate
+Mas e quanto a encontrar o ângulo de uma linha que não começa na origem, como a linha de (10, 37) a (48, 59)? Sem problema; É o mesmo que o ângulo de uma linha de (0, 0) a (48-10, 59-37). Generalizando, para encontrar o ângulo da linha de (*x*0, *y*0) a (*x*1, *y*1), calcule
 
 ```pyde
    atan2(y1 - y0, x1 - x0)
 ```
 
-Because this is a new concept, rather than integrate it into the robotprogram, you should write a simple test program to see that you understand how `atan2()`works. This program draws a rectangle whose center of rotation isits upper left corner at (100, 100) and tracks the mouse.
+Como esse é um conceito novo, em vez de integrá-lo ao programa do robô, você deve escrever um programa de teste simples para entender como o `atan2()` funciona. Este programa desenha um retângulo cujo centro de rotação está no canto superior esquerdo em (100, 100) e rastreia o mouse.
 
 ```python
 def setup():
@@ -438,13 +436,11 @@ def draw():
     rotate(angle)
     rect(0, 0, 50, 10)
     popMatrix()
-
-
 ```
 
-That works great. What happens if we draw the rectangle so it istaller than it is wide? Change the preceding code to read`rect(0, 0, 10, 50)`. How come itdoesn’t seem to follow the mouse any more? The answer isthat the rectangle really *is* still following the mouse,but it’s the short side of the rectangle that does the following.Our eyes are trained to want the long side to be tracked. Becausethe long side is at a 90 degree angle to the short side,you have to subtract 90° (or π/2 radians) to get thedesired effect. Change the preceding code to read`rotate(angle - HALF_PI)` and try it again.Since Processing deals almost exclusively in radians,the language has defined the constants `PI` (180°),`HALF_PI` (90°), `QUARTER_PI` (45°)and `TWO_PI` (360°) for your convenience.
+Isso funciona muito bem. O que acontece se desenharmos o retângulo para que fique mais alto do que largo? Mude o código anterior para ler`rect (0, 0, 10, 50)`. Como é que não parece mais seguir o mouse? A resposta é que o retângulo ainda *segue* o mouse, mas é o lado mais curto do retângulo que segue. Nossos olhos são treinados para que o lado mais longo seja rastreado. Como o lado longo está em um ângulo de 90 graus em relação ao lado mais curto, é necessário subtrair 90° (ou π/2 radianos) para obter o efeito desejado. Altere o código anterior para `rotate(angle - HALF_PI)` e tente novamente. Como o Processing trabalha quase exclusivamente com radianos, a linguagem definiu as constantes` PI` (180°), `HALF_PI` (90°),` QUARTER_PI` (45°) e `TWO_PI` (360°) para sua conveniência.
 
-At this point, we can write the final version of thearm-tracking program. We start off with definitionsof constants and variables. The number 39in the definition of `MIDPOINT_X`comes from the fact that the body of the robot starts at*x*-coordinate 14 and is 50 pixels wide, so 39 (14 + 25)is the horizontal midpoint of the robot’s body.
+Neste ponto, podemos escrever a versão final do programa de rastreamento dos braços. Começamos com definições de constantes e variáveis. O número 39 na definição de `MIDPOINT_X` deriva do fato de que o corpo do robô começa na coordenada *x* 14 e tem 50 pixels de largura, então 39 (14 + 25) é o ponto médio horizontal do corpo do robô.
 
 ```
 # Where upper left of robot appears on screen 
@@ -468,36 +464,34 @@ def setup():
 
 ```
 
-The `draw()` function is next. It determines if themouse is pressed and the angle between the mouse locationand the pivot point, setting `leftArmAngle` and`rightArmAngle` accordingly.
+A função `draw()` é a próxima. Ela vai determinar que se o mouse está apertado e o ângulo entre o mouse e o ponto de articulação, definindo `leftArmAngle` (ângulo do braço esquerdo) e `rightArmAngle` (ângulo do braço direito) de acordo.
 
 ```python
 def draw():
-   """
-   Estas variáveis são para mouseX and mouseY,
-   adjustadas para serem relativas ao sistema de coordenadas
-   do robô em vez do sistema de coordenadas da janela.
-   """
+    """
+    Estas variáveis são adjustadas com mouseX and mouseY,
+    para serem relativas ao sistema de coordenadas
+    do robô em vez do sistema de coordenadas da janela.
+    """
   
-  background(255)
-  pushMatrix()
-  translate(ROBOT_X, ROBOT_Y)   # locar robô para caber braços
-  if mousePressed:
-      mX = mouseX - ROBOT_X
-      mY = mouseY - ROBOT_Y
-      if mX < MIDPOINT_X:    # lado direito do robô
-        leftArmAngle = atan2(mY - PIVOT_Y,
-                             mX - LEFT_PIVOT_X) - HALF_PI
-      else:
-        rightArmAngle = atan2(mY - PIVOT_Y,
-                              mX - RIGHT_PIVOT_X) - HALF_PI;
+    background(255)
+    pushMatrix()
+    translate(ROBOT_X, ROBOT_Y)   # locar robô para caber braços
+    if mousePressed:
+        mX = mouseX - ROBOT_X
+        mY = mouseY - ROBOT_Y
+        if mX < MIDPOINT_X:    # lado direito do robô
+            leftArmAngle = atan2(mY - PIVOT_Y,
+                                 mX - LEFT_PIVOT_X) - HALF_PI
+        else:
+            rightArmAngle = atan2(mY - PIVOT_Y,
+                                  mX - RIGHT_PIVOT_X) - HALF_PI;
       drawRobot()
   
-  popMatrix()
-
-
+    popMatrix()
 ```
 
-The `drawRobot()` function remains unchanged, but a minor change to `drawLeftArm()` and `drawRightArm()`is now necessary. Because `leftArmAngle` and`rightArmAngle` are now computed in radians, thefunctions don’t have to do any conversion. As mudanças nas funções foram indicadas com comentários.
+A função `drawRobot()` continua inalterada, mas uma pequena mudança em `drawLeftArm()` e `drawRightArm()` agora é necessária. Uma vez que `leftArmAngle` e`rightArmAngle` são agora computadas em radianos, as funções não tem mais que fazer nenhuma conversão. As mudanças nas funções foram indicadas com comentários.
 
 ```python
 def drawLeftArm():
