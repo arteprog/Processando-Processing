@@ -21,11 +21,15 @@ Grupo ]no Telegram: **@processando_processing** (`https:// t.me / processando_pr
 
 ## Atividades
 
-Trabalhando recentemente a tradução dos tutoriais:
+Trabalhando recentemente a tradução dos tutoriais
 
-- Transformações 2D do J David Eisenberg [Python](/tutoriais-PT/python-transformacoes_2D.md) [Java (inacabado)](/tutoriais-PT/java-transformacoes_2D.md)
-- Anatomia de um Programa do J David Eisenberg [Python (inacabado)](/tutoriais-PT/Anatomia_de_um_Programa_py.md) [Java (inacabado)](/tutoriais-PT/Anatomia_de_um_Programa.md)
-
+- Transformações 2D do J David Eisenberg
+  - [Python](/tutoriais-PT/python-transformacoes_2D.md) 
+  - [Java (inacabado)](/tutoriais-PT/java-transformacoes_2D.md)
+- Anatomia de um Programa do J David Eisenberg 
+  - [Python (inacabado)](/tutoriais-PT/Anatomia_de_um_Programa_py.md) 
+  - [Java (inacabado)](/tutoriais-PT/Anatomia_de_um_Programa.md)
+  
 ## Objetivos discutidos 
 
 * Atualizar a tradução da referência da linguagem versão 1.0 http://www.dainf.ct.utfpr.edu.br/~merkle/processing/reference/ptBR/index.html
