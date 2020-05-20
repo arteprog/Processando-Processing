@@ -17,9 +17,16 @@ Os resultados serão sempre publicados com licenças abertas semelhantes às do 
 
 Depois do agito do PCD 2020 @ São Paulo e um encontro para falar sobre tadução na Noite de Processing de fevereiro de 2020, temos uma grupo de interssados em traduzir material!
 
-Grupo no Telegram: **@processando_processing** (`https:// t.me / processando_processing`)
+Grupo ]no Telegram: **@processando_processing** (`https:// t.me / processando_processing`)
 
-## Principal meta
+## Atividades
+
+Trabalhando recentemente a tradução dos tutoriais:
+
+- Transformações 2D do J David Eisenberg [Python](/tutoriais-PT/python-transformacoes_2D.md) [Java (inacabado)](/tutoriais-PT/java-transformacoes_2D.md)
+- Anatomia de um Programa do J David Eisenberg [Python (inacabado)](/tutoriais-PT/Anatomia_de_um_Programa_py.md) [Java (inacabado)](/tutoriais-PT/Anatomia_de_um_Programa.md)
+
+## Objetivos discutidos 
 
 * Atualizar a tradução da referência da linguagem versão 1.0 http://www.dainf.ct.utfpr.edu.br/~merkle/processing/reference/ptBR/index.html
 
