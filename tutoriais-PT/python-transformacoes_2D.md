@@ -18,7 +18,7 @@ Se você quiser mover o retângulo 60 unidades para a direita e 80 unidades para
 
 ![Black rectangle on gray numbered grid, moved](https://py.processing.org/tutorials/transform2d/imgs/new_coords.png)
 
-Mas tem uma maneira mais interessante de fazer isso: **em vez disso mover o papel milimetrado**. Se você moveo o papel milimetrado 60 unidades para a direita e 80 para baixo vai obter exatamente o mesmo resultado visual. Mover o sistema de coordenadas é chamado de translação.
+Mas tem uma maneira mais interessante de fazer isso: **em vez disso mover o papel milimetrado**. Se você move o papel milimetrado 60 unidades para a direita e 80 para baixo vai obter exatamente o mesmo resultado visual. Mover o sistema de coordenadas é chamado de translação.
 
 ![grid moved with arrow showing motion](https://py.processing.org/tutorials/transform2d/imgs/moved_grid.png)
 
@@ -32,21 +32,20 @@ def setup():
     background(255)
     noStroke()
 
-    # draw the original position in gray
+    # desenha na posição original em cinza
     fill(192)
     rect(20, 20, 40, 40)
     
-    # draw a translucent red rectangle by changing the coordinates
+    # vermelho translúcido mudando as coordenadas
     fill(255, 0, 0, 128)
     rect(20 + 60, 20 + 80, 40, 40)
-    
-    # draw a translucent blue rectangle by translating the grid
+        
+    # azul translúcido mudando a grade
     fill(0, 0, 255, 128)
     pushMatrix()
     translate(60, 80)
     rect(20, 20, 40, 40)
     popMatrix()
-
 ```
 
 Vamos olhar o código de conversão em mais detalhes.`pushMatrix()` é uma função embutida que salva a posição atual do sistema de coordendas. O `translate(60, 80)` move o sistema de coordenadas 60 para direita e 80 para baixo. O `rect(20, 20, 40, 40)` desenha o retângulo no mesmo local em que estava originalmente. Lembre-se de que as coisas que você desenha não se movem - a grade se move. Por fim,`popMatrix()` restaura o sistema de coordenadas como estava antes de você fazer a translação.
