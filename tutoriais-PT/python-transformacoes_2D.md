@@ -198,7 +198,7 @@ Primeiro, você pode ver que o quadrado parece ter se movido. Claro que não. Se
 > **Desafio de programação** aumente a o tamnaho do quadrado preto, mas mantenha o cantto superior esquerdo dele no mesmo lugar do quadrado cinza. Dica: use `translate()` para mover a origem, então use `scale()`.
 
 
-Não tem um lei que diz que você tem que escalar as dimensões em *x* e *y* igualmente. Tente usar `scale(3.0, 0.5)` para fazer a dimensão em  *x* três vezes maior e a dimensão em *y* metado do tamanho normal.
+Não tem uma lei que diz que você tem que escalar as dimensões em *x* e *y* igualmente. Tente usar `scale(3.0, 0.5)` para fazer a dimensão em *x* três vezes maior e a dimensão em *y* metade do tamanho normal.
 
 ### A ordem importa
 
