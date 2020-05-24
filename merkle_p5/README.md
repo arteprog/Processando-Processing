@@ -7,10 +7,11 @@
     - html
     - imagens
 - `r1` html
-- `r2` markdown -> movendo pro repositório-wiki (não vou deixar aqui)
+- `r2` markdown -> movendo pro repositório-wiki
+    (não vou deixar aqui)
  
 #### `cleanup_scripts`
-- scripts pra converter o HTML original em HTML simplificado (ptBR -> r1)
+- scripts pra converter o HTML original simplificado (ptBR -> r1)
   - `modify_html_index_first_cleanup.py` 4 arquivos index__ 
   - `modify_html_files_first_cleanup.py` todos os outros
 - scripts pra converter o HTML simplifcado em markdown (r1 -> r2)
