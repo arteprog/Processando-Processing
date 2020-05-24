@@ -49,6 +49,7 @@ detalhe
 int:
 resolução da curva
 
+
 #### Retorno
  Nenhum
 
@@ -57,4 +58,10 @@ resolução da curva
 Applicações
 
 #### Relacionado
-[curve()](curve_)[curveVertex()](curveVertex_)[curveTightness()](curveTightness_)
+[curve()](curve_
+)
+[curveVertex()](curveVertex_
+)
+[curveTightness()](curveTightness_
+)
+

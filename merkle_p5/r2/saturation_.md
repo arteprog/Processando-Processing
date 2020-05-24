@@ -29,6 +29,8 @@ Parâmetros
 cor
 qualquer valor do tipo de dados color
 
+
+
 #### Retorno
 
 	
@@ -40,4 +42,14 @@ float
 Web & Applicações
 
 #### Relacionado
-[red() ](red_)[green() ](green_)[blue() ](blue_)[hue() ](hue_)[brightness() ](brightness_)
+[red() ](red_
+)
+[green() ](green_
+)
+[blue() ](blue_
+)
+[hue() ](hue_
+)
+[brightness() ](brightness_
+)
+

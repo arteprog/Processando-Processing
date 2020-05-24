@@ -21,8 +21,10 @@ switch(letter) {
 
 ```
 
+
+
 #### Descrição
-Palavara chave que define a condição assumida como padrão de um**switch()**. Caso nenhum dos parâmetros coincidir com o parâmetro do**switch()**, o(s) comando(s) após o rótulo**default**  são executados. Estruturas de controle swith() não requerem a presença de**default.**
+Palavara chave que define a condição assumida como padrão de um **switch()**. Caso nenhum dos parâmetros coincidir com o parâmetro do `switch()`, o(s) comando(s) após o rótulo `default`  são executados. Estruturas de controle swith() não requerem a presença de `default.`
 
 #### Sintaxe
 ```pde
@@ -33,10 +35,18 @@ Parâmetros
 comandos
 um ou mais comandos a serem executados
 
+
+
 #### Utilização
 
 	
 Web & Applicações
 
 #### Relacionado
-[switch()](switch_)[break](break)[case](case)
+[switch()](switch_
+)
+[break](break
+)
+[case](case
+)
+

@@ -11,8 +11,10 @@ a += b; // Atribui 73 à "a"
 
 ```
 
+
+
 #### Descrição
-Combina adição à atribuição. A expressão**a += b** é equivalente à**a = a + b**.
+Combina adição à atribuição. A expressão **a += b** é equivalente à **a = a + b**.
 
 #### Sintaxe
 ```pde
@@ -22,8 +24,12 @@ valor1 += valor2
 Parâmetros
 valor1
 int ou float
+
+
 valor2
 qualquer valor numérico do mesmo tipo de valor1
+
+
 
 #### Utilização
 
@@ -31,4 +37,10 @@ qualquer valor numérico do mesmo tipo de valor1
 Web & Applicações
 
 #### Relacionado
-[= (atribuição)](assign)[+ (adição)](addition)[-= (subtração e atribuição)](subtractassign)
+[= (atribuição)](assign
+)
+[+ (adição)](addition
+)
+[-= (subtração e atribuição)](subtractassign
+)
+

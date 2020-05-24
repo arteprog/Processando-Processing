@@ -21,11 +21,13 @@ void draw() {
 
 ```
 
+
+
 #### Descrição
-A variável de sistema**key**
+A variável de sistema `key`
 sempre contém o valor da tecla pressionada mais recentemente no
 teclado. Para se detetar as teclas de direcionamento, é
-atribuído à variável**keyCode** um dos valores entre  UP, DOWN, LEFT, ou RIGHT.
+atribuído à variável `keyCode` um dos valores entre  UP, DOWN, LEFT, ou RIGHT.
 
 #### Sintaxe
 ```pde
@@ -39,4 +41,12 @@ key
 Web & Applicações
 
 #### Relacionado
-[keyPressed ](keyPressed)[keyCode](keyCode)[keyPressed() ](keyPressed_)[keyReleased() ](keyReleased_)
+[keyPressed ](keyPressed
+)
+[keyCode](keyCode
+)
+[keyPressed() ](keyPressed_
+)
+[keyReleased() ](keyReleased_
+)
+

@@ -14,11 +14,13 @@ int b = numeros[1] + numeros[2]; // Atribui 180 à variável b
 
 ```
 
+
+
 #### Descrição
 O operador de acessa a vetor é utilizado
 para especificar a localização de um elemento em um
 vetor. O dado nesta localização pode ser definido pela
-sintaxe**vetor[elemento] ** ou lido com a sintaxe**valor =  vetor[elemento].**
+sintaxe `vetor[elemento] ` ou lido com a sintaxe `valor =  vetor[elemento].`
 
 #### Sintaxe
 ```pde
@@ -29,10 +31,16 @@ vetor[element]
 Parâmetros
 tipodedado
 qualquer tipo de dado primitivo, incluindo classes definidas pelos usuários
+
+
 vetor
 qualquer nome válido de variável
+
+
 elemento
 int: não pode exceder o comprimento do vetor-1
+
+
 
 #### Utilização
 
@@ -40,4 +48,6 @@ int: não pode exceder o comprimento do vetor-1
 Web & Applicações
 
 #### Relacionado
-[Array](Array)
+[Array](Array
+)
+

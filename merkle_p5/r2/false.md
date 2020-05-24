@@ -15,8 +15,10 @@ if(b == false) {
 
 ```
 
+
+
 #### Descrição
-Palavra chace que representa o valor lógico "falso". O valor**falso ** pode ser atribuído apenas a variáveis do tipo**boolean****. **
+Palavra chace que representa o valor lógico "falso". O valor `falso ` pode ser atribuído apenas a variáveis do tipo **boolean** `. `
 
 #### Sintaxe
 ```pde
@@ -30,4 +32,8 @@ false
 Web & Applicações
 
 #### Relacionado
-[true](true)[boolean](boolean)
+[true](true
+)
+[boolean](boolean
+)
+

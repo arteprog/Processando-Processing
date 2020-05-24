@@ -11,8 +11,10 @@ int c = a;    // Atribui 4  à "c"
 
 ```
 
+
+
 #### Descrição
-Subtrai o valor de uma variável inteira em 1.  Equivale a operação**i = i - 1**. Se o valor da variável**i** for cinco, então a expressão**i-- ** decrementará o valor de**i **para quatro.
+Subtrai o valor de uma variável inteira em 1.  Equivale a operação **i = i - 1**. Se o valor da variável **i** for cinco, então a expressão `i-- ` decrementará o valor de `i `para quatro.
 
 #### Sintaxe
 ```pde
@@ -23,10 +25,18 @@ Parâmetros
 var
 int
 
+
+
 #### Utilização
 
 	
 Web & Applicações
 
 #### Relacionado
-[- (subtração)](minus)[-= (subtração e atribuição)](subtractassign)[++ (incremento)](increment)
+[- (subtração)](minus
+)
+[-= (subtração e atribuição)](subtractassign
+)
+[++ (incremento)](increment
+)
+

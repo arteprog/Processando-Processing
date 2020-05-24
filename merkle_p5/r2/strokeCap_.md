@@ -22,7 +22,7 @@ Estabelece o estilo de renderização
 do começo efinal das linhas.  Estas
 terminações são quadradas, estendidas ou
 arredondadas, e são especidicadas respectivamente através
-dos parâmetrosSQUARE, PROJECT, ou ROUND. A capa (*cap*) padrão é ROUND. Esta função
+dos parâmetrosSQUARE, PROJECT, ou ROUND. A capa ( *cap*) padrão é ROUND. Esta função
 não funciona com os renderizadores P2D, P3D, OR
 OPENGL (favor ver a referência de size() para mais
 informações)
@@ -36,6 +36,8 @@ Parâmetros
 MODO
 qualquer um entre: SQUARE, PROJECT, ou ROUND
 
+
+
 #### Retorno
 
 	
@@ -47,4 +49,10 @@ Nenhum
 Web & Applicações
 
 #### Relacionado
-[stroke()](stroke_)[strokeWeight()](strokeWeight_)[strokeJoin()](strokeJoin_)
+[stroke()](stroke_
+)
+[strokeWeight()](strokeWeight_
+)
+[strokeJoin()](strokeJoin_
+)
+

@@ -45,6 +45,8 @@ Parâmetros
 n00-n15
 float: números que definem a matriz 4x4 a ser multiplicada
 
+
+
 #### Retorno
 
 	
@@ -56,4 +58,12 @@ Nenhum
 Web & Applicações
 
 #### Relacionado
-[pushMatrix()](pushMatrix_)[popMatrix()](popMatrix_)[resetMatrix()](resetMatrix_)[printMatrix()](printMatrix_)
+[pushMatrix()](pushMatrix_
+)
+[popMatrix()](popMatrix_
+)
+[resetMatrix()](resetMatrix_
+)
+[printMatrix()](printMatrix_
+)
+

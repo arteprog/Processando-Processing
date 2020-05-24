@@ -12,6 +12,8 @@ print(sa3);  // Imprime "OH NY CA KY IN MA "
 
 ```
 
+
+
 #### Descrição
 Concatena dois arrays. Por exemplo, a
 concatenação do array { 1, 2, 3 } com o array { 4,
@@ -27,6 +29,8 @@ Parâmetros
 array1, array2
 booleans[], bytes[], chars[], ints[], floats[], ou Strings[]
 
+
+
 #### Retorno
 
 	
@@ -38,4 +42,6 @@ Array ( do mesmo tipo de dados que as entradas)
 Web & Applicações
 
 #### Relacionado
-[splice()](splice_)
+[splice()](splice_
+)
+

@@ -15,8 +15,10 @@ println(c + " : " + i);  // Imprime "E : 69"
 
 ```
 
+
+
 #### Descrição
-Converte um tipo de dados primitivo, string ou*array *na sua representação em número inteiro.
+Converte um tipo de dados primitivo, string ou *array *na sua representação em número inteiro.
 
 #### Sintaxe
 ```pde
@@ -26,6 +28,8 @@ int(valor)
 Parâmetros
 valor
 float, char, byte, boolean, String, float[], char[], byte[], boolean[], String[]
+
+
 
 #### Retorno
 
@@ -38,4 +42,8 @@ int
 Web & Applicações
 
 #### Relacionado
-[int](int)[float()](float_)
+[int](int
+)
+[float()](float_
+)
+

@@ -10,7 +10,8 @@ int d = c - 5;   // Atribui 40 à "d"
 int e = d - 60;  // Atribui -20 à "e"
 
 ```
-<hr align="left" noshade="noshade" size="1" width="150"/>
+
+
 
 ```pde
 int a = 5;         // Atribui 5  à "a"
@@ -18,6 +19,8 @@ int b = -a;        // Atribui -5 à "b"
 int c = -(5 + 3);  // Atribui -8 à "c"
 
 ```
+
+
 
 #### Descrição
 Faz a subtração de dois
@@ -37,8 +40,12 @@ value1 - value2
 Parâmetros
 valor1
 int ou float
+
+
 valor2
 int ou float
+
+
 
 #### Utilização
 
@@ -46,4 +53,10 @@ int ou float
 Web & Applicações
 
 #### Relacionado
-[-- (decremento)](decrement)[-= (subtração e atribuição)](subtractassign)[+ (adição)](addition)
+[-- (decremento)](decrement
+)
+[-= (subtração e atribuição)](subtractassign
+)
+[+ (adição)](addition
+)
+

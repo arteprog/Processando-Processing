@@ -19,10 +19,12 @@ void draw() {
 
 ```
 
+
+
 #### Descrição
 
 	
-Define o início e o fim de blocos de funções e blocos de comandos tais como nas estruturas** for()** e**if()**. Chaves também são utilizadas para definir os valores iniciais em declarações de vetores.
+Define o início e o fim de blocos de funções e blocos de comandos tais como nas estruturas ` for()` e `if()`. Chaves também são utilizadas para definir os valores iniciais em declarações de vetores.
 
 #### Sintaxe
 ```pde
@@ -33,8 +35,12 @@ Define o início e o fim de blocos de funções e blocos de comandos tais como n
 Parâmetros
 comandos
 qualquer seqüência válida de comandos
+
+
 ele0 ... eleN
 lista de elementos separados por vírgulas
+
+
 
 #### Utilização
 
@@ -42,4 +48,6 @@ lista de elementos separados por vírgulas
 Web & Applicações
 
 #### Relacionado
-[() (parentheses)](parentheses)
+[() (parentheses)](parentheses
+)
+

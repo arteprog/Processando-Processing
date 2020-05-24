@@ -9,6 +9,8 @@ Em breve ...
 
 ```
 
+
+
 #### Descrição
 Configura o atual vetor normal. Ist serve para
 formas tridimensionais e superfícies e especifica o vetor
@@ -27,10 +29,16 @@ normal(nx, ny, nz)
 Parâmetros
 nx
 float:  direção x
+
+
 ny
 float: direção y
+
+
 nz
 float: direção z
+
+
 
 #### Retorno
 
@@ -43,4 +51,10 @@ Nenhum
 Web & Applicações
 
 #### Relacionado
-[beginShape()](beginShape_)[endShape()](endShape_)[lights()](lights_)
+[beginShape()](beginShape_
+)
+[endShape()](endShape_
+)
+[lights()](lights_
+)
+

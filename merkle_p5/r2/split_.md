@@ -10,7 +10,8 @@ String list[] = split(men);
 // list[0] é agora Putin, list[1] é agora Yeltsin, ... 
 
 ```
-<hr align="left" noshade="noshade" size="1" width="150"/>
+
+
 
 ```pde
 String men = "Chernenko,Andropov,Brezhnev"; 
@@ -18,7 +19,8 @@ String list[] = split(men, ',');
 // list[0] é agora Chernenko, list[1] é agora Andropov, ... 
 
 ```
-<hr align="left" noshade="noshade" size="1" width="150"/>
+
+
 
 ```pde
 String numbers = "8 67 5 309"; 
@@ -30,6 +32,8 @@ int list[] = int(split(numbers));
 ```pde
 
 ```>>
+
+
 #### Descrição
 <p style="margin-bottom: 0cm;">Uma
 função utilitária que separa uma série de
@@ -53,8 +57,12 @@ split(str, delim)
 Parâmetros
 str
 a string a repartir
+
+
 delim
 o caracter a utilizar na separação dos dados
+
+
 Retorna
 
 	
@@ -66,4 +74,6 @@ String[]
 Web & Applicações
 
 #### Relacionado
-[join()](join_)[](text_)
+[join()](join_
+)[](text_
+)

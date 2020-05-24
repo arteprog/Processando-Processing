@@ -34,6 +34,8 @@ Parâmetros
 espessura
 int ou float: a espessura (em pixeis)  do traço
 
+
+
 #### Retorno
 
 	
@@ -45,4 +47,10 @@ Nenhum
 Web & Applicações
 
 #### Relacionado
-[stroke()](stroke_)[strokeJoin()](strokeJoin_)[strokeCap()](strokeCap_)
+[stroke()](stroke_
+)
+[strokeJoin()](strokeJoin_
+)
+[strokeCap()](strokeCap_
+)
+

@@ -38,6 +38,8 @@ class HLine {
 
 ```
 
+
+
 #### Descrição
 Palavra chave utilizada para indicar a
 declaração de uma classe. Uma classe é um
@@ -45,7 +47,8 @@ compósito de dados e métodos (funções), que
 pode ser instanciada em objetos. Usualmente, a primeira letra do nome
 de uma classe é escolhida maiúscula, de modo a
 diferenciá-la de outros tipos de variáveis.  Um
-tutorial em[Programação Orientada a Objetos](http://java.sun.com/docs/books/tutorial/java/concepts/index), em inglês, pode ser encontrado no sítio da Sun.
+tutorial em[Programação Orientada a Objetos](http://java.sun.com/docs/books/tutorial/java/concepts/index
+), em inglês, pode ser encontrado no sítio da Sun.
 
 #### Sintaxe
 ```pde
@@ -57,8 +60,12 @@ class NomeClasse {
 Parâmetros
 NomeClasse
 Qualquer nome válido de variáveis
+
+
 comandos
 Qualquer comando válido
+
+
 
 #### Utilização
 
@@ -66,4 +73,6 @@ Qualquer comando válido
 Web & Applicações
 
 #### Relacionado
-[Object](Object)
+[Object](Object
+)
+

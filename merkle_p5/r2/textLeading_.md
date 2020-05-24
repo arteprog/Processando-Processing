@@ -26,7 +26,7 @@ text(lines, 68, 25);
 #### Descrição
 
 	
-Sets the spacing between lines of text in units of pixels. This setting will be used in all subsequent calls to the**text()** function.
+Sets the spacing between lines of text in units of pixels. This setting will be used in all subsequent calls to the **text()** function.
 
 #### Sintaxe
 ```pde
@@ -36,6 +36,8 @@ textLeading(dist)
 Parâmetros
 dist
 int or float: the size in pixels for spacing between lines
+
+
 
 #### Retorno
 
@@ -49,7 +51,12 @@ Web & Applicações
 
 #### Relacionado
 
-[loadFont() ](loadFont_)
-[PFont ](PFont)
-[text()](text_)
-[textFont() ](textFont_)
+[loadFont() ](loadFont_
+)
+[PFont ](PFont
+)
+[text()](text_
+)
+[textFont() ](textFont_
+)
+

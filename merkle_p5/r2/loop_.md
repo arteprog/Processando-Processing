@@ -31,8 +31,10 @@ void mouseReleased() {
 
 ```
 
+
+
 #### Descrição
-determina que Processing irá execurar o código em**draw()** continuamente.  Caso**noLoop()** seja chamada, o código em**draw()** parará de executar.
+determina que Processing irá execurar o código em `draw()` continuamente.  Caso `noLoop()` seja chamada, o código em `draw()` parará de executar.
 
 #### Sintaxe
 ```pde
@@ -53,4 +55,6 @@ Nenhum
 Web & Applicações
 
 #### Relacionado
-[noLoop()](noLoop_)
+[noLoop()](noLoop_
+)
+

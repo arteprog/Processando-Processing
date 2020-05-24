@@ -13,6 +13,8 @@ if(b > a) {
 
 ```
 
+
+
 #### Descrição
 Testa se o valor à
 esquerda é maior que o valor à direita.
@@ -26,24 +28,34 @@ Parâmetros
 valor1
 int
 ou float
+
+
 valor2
 int
 ou float
+
+
 
 #### Utilização
  Web &
 Applicações
 
 #### Relacionado
-[ ](file:///F:/Software/Processing/Tradu%E7%E3o/www.processing.org/reference/br/greaterthan)[ >= ](greaterthanorequalto)
+[ ](file:///F:/Software/Processing/Tradu%E7%E3o/www.processing.org/reference/br/greaterthan
+)[ >= ](greaterthanorequalto
+)
 maior
 ou igual
-[ < ](lessthan)
+[ < ](lessthan
+)
 menor
-[ <= ](lessthanorequalto)
+[ <= ](lessthanorequalto
+)
 menor
 ou igual
-[ == ](equality)
+[ == ](equality
+)
 igual
-[ != ](inequality)
+[ != ](inequality
+)
 diferente

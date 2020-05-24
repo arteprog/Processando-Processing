@@ -19,7 +19,7 @@ if (a) {
 ```
 
 #### Descrição
-Boolean é o tipo de dados prádefinido para os valores**true **e** false **(n.t. verdadeiro e falso). É comum utilizar valores**boolean**
+Boolean é o tipo de dados prádefinido para os valores `true `e ` false `(n.t. verdadeiro e falso). É comum utilizar valores `boolean`
 em comandos de controle que determinam o fluxo de
 execução de um programa. Na primeira vez que uma
 variável é escrita, ela deve ser declarada com um comando
@@ -34,8 +34,12 @@ boolean var = valorbooleano
 Parâmetros
 var
 nome da variável que fará referência ao valor
+
+
 valorbooleano
 true ou false (verdadeiro ou falso, respectivamente)
+
+
 
 #### Utilização
 
@@ -43,4 +47,8 @@ true ou false (verdadeiro ou falso, respectivamente)
 Web & Applicações
 
 #### Relacionado
-[true](true) (verdadeiro)[false](false) (falso)
+[true](true
+) (verdadeiro)
+[false](false
+) (falso)
+

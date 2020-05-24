@@ -20,7 +20,7 @@ endShape();
 PI é uma constante matemática de valor constante igual à
 3.14159265358979323846. É a razão entre a circunferência de
 um círculo e seu diâmetro. É útil em combinações com as funções
-trigonométricas**sin()** e**cos()**.
+trigonométricas **sin()** e **cos()**.
 
 #### Sintaxe
 ```pde
@@ -34,4 +34,8 @@ PI
 Web & Applicações
 
 #### Relacionado
-[TWO_PI](TWO_PI)[HALF_PI](HALF_PI)
+[TWO_PI](TWO_PI
+)
+[HALF_PI](HALF_PI
+)
+

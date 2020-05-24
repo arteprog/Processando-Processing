@@ -16,10 +16,12 @@ void draw() {
 
 ```
 
+
+
 #### Descrição
-A variável**framerate**
+A variável `framerate`
 contém o número aproximado de quadros por segundo que o
-software consegue executar. O valor inicial é 10 fps (n.t.*frames per second*
+software consegue executar. O valor inicial é 10 fps (n.t. *frames per second*
 ou quadros por segundo) e é atualizado a cada quadro. O valor
  é a média (integrativa) de vários quadros.
 Como tal, este valor não será válido ante de 5 ou
@@ -37,4 +39,6 @@ framerate
 Web & Applicações
 
 #### Relacionado
-[framerate()](framerate_)
+[framerate()](framerate_
+)
+

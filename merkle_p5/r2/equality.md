@@ -13,6 +13,8 @@ if(a == b) {
 
 ```
 
+
+
 #### Descrição
 Determina se dois valores são equivalentes.
 O operdor de igualdade "==" é diferente do operador de
@@ -27,8 +29,12 @@ valor1 == valor2
 Parâmetros
 valor1
 int, float, char, byte, boolean, String
+
+
 valor2
 int, float, char, byte, boolean, String
+
+
 
 #### Utilização
 
@@ -36,15 +42,20 @@ int, float, char, byte, boolean, String
 Web & Applicações
 
 #### Relacionado
-[>_ ](greaterthan)
+[>_ ](greaterthan
+)
 maior
-[ >= ](greaterthanorequalto)
+[ >= ](greaterthanorequalto
+)
 maior
 ou igual
-[ < ](lessthan)
+[ < ](lessthan
+)
 menor
-[_<= ](lessthanorequalto)
+[_<= ](lessthanorequalto
+)
 menor ou igual
-[ != ](inequality)
+[ != ](inequality
+)
 diferente
-<<[](inequality)>>
+<<[](inequality>><<)>>

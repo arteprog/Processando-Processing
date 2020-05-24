@@ -13,6 +13,8 @@ if(a <= b) {
 
 ```
 
+
+
 #### Descrição
 Testa se o valor à
 esquerda é menor que o valor à direita ou se os valores são equivalentes.
@@ -25,20 +27,30 @@ valor1 <= valor2
 Parâmetros
 valor1
 int ou float
+
+
 valor2
 int ou float
+
+
 
 #### Utilização
 
 #### Relacionado
-[ ](inequality)[>_ ](greaterthan)
+[ ](inequality
+)[>_ ](greaterthan
+)
 maior
-[ >= ](greaterthanorequalto)
+[ >= ](greaterthanorequalto
+)
 maior
 ou igual
-[ < ](lessthan)
+[ < ](lessthan
+)
 menor
-[ == ](equality)
+[ == ](equality
+)
 igual
-[ != ](inequality)
+[ != ](inequality
+)
 diferente

@@ -10,6 +10,8 @@ int h = g / 5;   // Atribui 2 a "h"
 
 ```
 
+
+
 #### Descrição
 Divide o valor do primeiro parâmetro pelo
 valor do segundo parâmetro.  A expressão 20 / 4
@@ -24,8 +26,12 @@ valor1 / valor2
 Parâmetros
 valor1
 int or float
+
+
 valor2
 int or float, but not zero (it is not possible  divide by zero)
+
+
 
 #### Utilização
 
@@ -33,4 +39,8 @@ int or float, but not zero (it is not possible  divide by zero)
 Web & Applicações
 
 #### Relacionado
-[* (multiplicação)](multiply)[% (módulo ou resto)](modulo)
+[* (multiplicação)](multiply
+)
+[% (módulo ou resto)](modulo
+)
+

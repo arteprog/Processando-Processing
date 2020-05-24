@@ -25,8 +25,10 @@ void mouseMoved()
 
 ```
 
+
+
 #### Descrição
-A função**mouseMoved() **é chamada cada vez que o mouse move e que um botão não é pressionado.
+A função `mouseMoved() `é chamada cada vez que o mouse move e que um botão não é pressionado.
 
 #### Sintaxe
 ```pde
@@ -45,4 +47,16 @@ Nenhum
 Web & Applicações
 
 #### Relacionado
-[mouseX](mouseX)[mouseY](mouseY)[mousePressed](mousePressed)[mousePressed()](mousePressed_)[mouseReleased()](mouseReleased_)[mouseDragged()](mouseDragged_)
+[mouseX](mouseX
+)
+[mouseY](mouseY
+)
+[mousePressed](mousePressed
+)
+[mousePressed()](mousePressed_
+)
+[mouseReleased()](mouseReleased_
+)
+[mouseDragged()](mouseDragged_
+)
+

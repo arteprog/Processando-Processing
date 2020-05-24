@@ -26,8 +26,10 @@ void mousePressed()
 
 ```
 
+
+
 #### Descrição
-A função**mousePressed()** é chamada cada vez que um botão do mouse é pressionada. A variável**mousButton **é utilizada para se determinar qual botão está pressionado.
+A função `mousePressed()` é chamada cada vez que um botão do mouse é pressionada. A variável `mousButton `é utilizada para se determinar qual botão está pressionado.
 
 #### Sintaxe
 ```pde
@@ -46,4 +48,18 @@ Nenhum
 Web & Applicações
 
 #### Relacionado
-[mouseX](mouseX)[mouseY](mouseY)[mouseButton](mouseButton)[mousePressed](mousePressed)[mouseReleased()](mouseReleased_)[mouseMoved()](mouseMoved_)[mouseDragged()](mouseDragged_)
+[mouseX](mouseX
+)
+[mouseY](mouseY
+)
+[mouseButton](mouseButton
+)
+[mousePressed](mousePressed
+)
+[mouseReleased()](mouseReleased_
+)
+[mouseMoved()](mouseMoved_
+)
+[mouseDragged()](mouseDragged_
+)
+

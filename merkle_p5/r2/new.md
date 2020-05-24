@@ -33,8 +33,10 @@ class HLine {
 
 ```
 
+
+
 #### Descrição
-Cira um "novo" objeto. A palavra chave**new**
+Cira um "novo" objeto. A palavra chave `new`
 é tipicamente usada de modo similar à suas
 aplicações no exemplo acima. Neste exemplo, um novo
 objeto "h1"do tipo "HLine"é criado. Na linha seguinte,  um

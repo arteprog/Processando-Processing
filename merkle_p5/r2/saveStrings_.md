@@ -13,6 +13,8 @@ saveStrings("nouns.txt", list);
 
 ```
 
+
+
 #### Descrição
 Escreve um array de strings em um arquivo. Este arquivo é
 salvo na pasta de esboços, a qual pode ser aberta ao
@@ -26,8 +28,12 @@ saveStrings(filename, strings)
 Parâmetros
 filename
 nome do arquivo a escrever
+
+
 strings
 array de string a ser escrito no arquivo
+
+
 
 #### Utilização
 
@@ -35,4 +41,10 @@ array de string a ser escrito no arquivo
 Application
 
 #### Relacionado
-[loadStrings()](loadStrings_)[loadBytes() ](loadBytes_)[saveBytes()](saveBytes_)
+[loadStrings()](loadStrings_
+)
+[loadBytes() ](loadBytes_
+)
+[saveBytes()](saveBytes_
+)
+

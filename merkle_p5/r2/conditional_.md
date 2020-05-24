@@ -14,12 +14,19 @@ for(int i=5; i<100; i+=5) {
 
 ```
 
+
+
 #### Descrição
-Uma abreviação para se escrever uma estrutura de controle**se() **e**senão **(**if()** e**else**). Se a condição for avaliada como verdadeira (**true**) , a**expressão1 ** é valiada e retornada. Se a condição for avaliada como falsa (**false**) , a**expressão2 ** é valiada e retornada.
-A seguinte estrutura conticional :```pde
+Uma abreviação para se escrever uma estrutura de controle `se() `e `senão `( **if()** e **else**). Se a condição for avaliada como verdadeira ( `true`) , a `expressão1 ` é valiada e retornada. Se a condição for avaliada como falsa ( `false`) , a `expressão2 ` é valiada e retornada.
+
+
+A seguinte estrutura conticional :
+```pde
 condição : expressão1 ? expressão2
 ```
-is equivalent to this structure:```pde
+
+is equivalent to this structure:
+```pde
 if(condição) {
   expressão1 
 } else { 
@@ -35,10 +42,16 @@ condição ? expressão1 : expressão2
 Parâmetros
 condição
 qualquer expressão que possa ser avaliada como verdadeira ou falsa
+
+
 expressão1
 qualquer expressão válida
+
+
 expressão2
 qualquer expressão válida
+
+
 
 #### Retorno
 Variável, dependendo do tipo de dados das expressões
@@ -49,4 +62,8 @@ Variável, dependendo do tipo de dados das expressões
 Web & Applicações
 
 #### Relacionado
-[if()](if_)[else](else)
+[if()](if_
+)
+[else](else
+)
+

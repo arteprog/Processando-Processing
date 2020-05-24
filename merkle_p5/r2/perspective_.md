@@ -21,7 +21,7 @@ box(45);
 ```
 
 #### Descrição
-Configura a perspecitva padrão ao aplicar encurtamento (n.t.*foreshortening*),
+Configura a perspecitva padrão ao aplicar encurtamento (n.t. *foreshortening*),
 o que faz com que objetos mais distantes aparecem menores que os mais
 próximos, Os parâmetros definem um volume de
 visualização com a forma de pirâmide truncada.
@@ -42,12 +42,20 @@ perspective(fov, aspecto, zProx, zDist)
 Parâmetros
 fov
 float: ângulo do campo de visão  (em radianos) da direção vertical
+
+
 aspecto
 float: taxa entre largura e altura
+
+
 zProx
 float: posição z do plano de recorte mais próximo
+
+
 zDist
 float: posição z do plano de recorte mais distante
+
+
 
 #### Retorno
 

@@ -13,6 +13,8 @@ for (int i=0; i < lines.length; i++) {
 
 ```
 
+
+
 #### Descrição
 Lê o conteúdo de um arquivo ou de uma
 url e cria um array String de suas linhas individuais. Se um arquivo
@@ -28,6 +30,8 @@ Parâmetros
 filename
 String: nome do arquivo ou url a carregar
 
+
+
 #### Retorno
 
 	
@@ -39,4 +43,10 @@ String[]
 Web & Applicações
 
 #### Relacionado
-[loadBytes() ](loadBytes_)[saveStrings()](saveStrings_)[saveBytes()](saveBytes_)
+[loadBytes() ](loadBytes_
+)
+[saveStrings()](saveStrings_
+)
+[saveBytes()](saveBytes_
+)
+

@@ -31,10 +31,10 @@ for(int i = 5; i < 95; i += 5) {
 ```
 
 #### Descrição
-Estende a estrutura de controle**if()**,
+Estende a estrutura de controle `if()`,
 permitindo a execução do programa escolher entre dois ou
 mais blocos de código.  Especifica um bloco de
-código a ser executado nos casos em que a expressão no**if()** for falsa.
+código a ser executado nos casos em que a expressão no `if()` for falsa.
 
 #### Sintaxe
 ```pde
@@ -56,8 +56,12 @@ if(expressão) {
 Parâmetros
 expressão
 qualquer expressão que possa ser avaliada como verdadeira ou falsa
+
+
 comandos
 um ou mais comandos a executar
+
+
 
 #### Utilização
 
@@ -65,4 +69,6 @@ um ou mais comandos a executar
 Web & Applicações
 
 #### Relacionado
-[if()](if_)
+[if()](if_
+)
+

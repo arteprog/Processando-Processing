@@ -26,8 +26,10 @@ void keyPressed() {
 
 ```
 
+
+
 #### Descrição
-A variável de sistema**keyCode**
+A variável de sistema `keyCode`
 é utilizada para se detetar teclas especiais como as techas UP,
 DOWN, LEFT, or RIGHT  (n.t. para cime, para  baixo, para a
 esquerda e para a direita, respectivamente) do teclado. Outras
@@ -50,4 +52,12 @@ keyCode
 Web & Applicações
 
 #### Relacionado
-[key](key)[keyPressed ](keyPressed)[keyPressed() ](keyPressed_)[keyReleased() ](keyReleased_)
+[key](key
+)
+[keyPressed ](keyPressed
+)
+[keyPressed() ](keyPressed_
+)
+[keyReleased() ](keyReleased_
+)
+

@@ -15,6 +15,8 @@ println(unbinary(s3));  // Imprime 4
 
 ```
 
+
+
 #### Descrição
 Converte uma representação em String
 de um número binario em seu equivalente valor inteiro. Por
@@ -29,6 +31,8 @@ Parâmetros
 str
 String
 
+
+
 #### Retorno
 
 	
@@ -40,4 +44,10 @@ int
 Web & Applicações
 
 #### Relacionado
-[hex()](hex_)[binary()](binary_)[unbinary()](unbinary_)
+[hex()](hex_
+)
+[binary()](binary_
+)
+[unbinary()](unbinary_
+)
+

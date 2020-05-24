@@ -21,8 +21,10 @@ switch(letra) {
 
 ```
 
+
+
 #### Descrição
-Denota os diferentes rótulos a serem avaliados com o parâmetro repassado  a estrutura**switch()**.
+Denota os diferentes rótulos a serem avaliados com o parâmetro repassado  a estrutura **switch()**.
 
 #### Sintaxe
 ```pde
@@ -32,8 +34,12 @@ case rotulo: comandos
 Parâmetros
 rotulo
 byte, char, ou int
+
+
 comandos
 um ou mais comandos válidos
+
+
 
 #### Utilização
 
@@ -41,4 +47,10 @@ um ou mais comandos válidos
 Web & Applicações
 
 #### Relacionado
-[switch()](switch_)[default](default)[break](break)
+[switch()](switch_
+)
+[default](default
+)
+[break](break
+)
+

@@ -20,10 +20,10 @@ box(45);
 ```
 
 #### Descrição
-As funções**beginCamera() ** e** endCamera() **permitem alterar o espaço da câmera através de chamadas à transformações como**lookar()**
+As funções `beginCamera() ` e ` endCamera() `permitem alterar o espaço da câmera através de chamadas à transformações como `lookar()`
 e outras. Esta função especifica o modo matriz à matriz da câmera, e
 conseqüentemente chamadas à applyMatrix() e resetMatrix() afetam a
-câmara. A função**beginCamera() ** deve ser  sempre utilizada com conjunto com**endCamera() **e pares de**beginCamera()** e**endCamera() ** não podem  ser aninhados.
+câmara. A função **beginCamera() ** deve ser  sempre utilizada com conjunto com **endCamera() **e pares de **beginCamera()** e **endCamera() ** não podem  ser aninhados.
 
 #### Sintaxe
 ```pde
@@ -42,4 +42,8 @@ Nenhum
 Web & Applicações
 
 #### Relacionado
-[camera()](camera_)[beginCamera()](beginCamera_)
+[camera()](camera_
+)
+[beginCamera()](beginCamera_
+)
+

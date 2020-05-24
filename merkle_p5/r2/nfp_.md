@@ -23,14 +23,16 @@ println(sf);  // Imprime "-009.01200"
 
 ```
 
+
+
 #### Descrição
 Função utilitária para se
-formatar números em strings.É similar a**nf() m**
+formatar números em strings.É similar a `nf() m`
 mas coloca um "+"em frente dos números positivos e um "-"em
 frente dos números negativos.  Há duas
 versões, uma
 para formatar floats e outra para formatar ints. Os valores dos
-parâmentros**digitos**,**esquerda**, e**direita **devem ser sempre números inteiros positivos.
+parâmentros **digitos**, **esquerda**, e **direita **devem ser sempre números inteiros positivos.
 
 #### Sintaxe
 ```pde
@@ -41,18 +43,29 @@ nfp(floatValor, esquerda, direita)
 Parâmetros
 intValor
 int ou int[]: o(s) número(s) a formatar
+
+
 digitos
 int: números de dígitos a preencher com zeros
+
+
 floatValor
 float ou float[]:  o(s) número(s) a formatar
+
+
 esquerda
 int: numero de
 algarismos à esqueda do ponto decimal (n.t. em inglês se
 utiliza ponto ao invés de vírgula)
+
+
 direita
 int: numero de
 algarismos à direita do ponto decimal (n.t. em inglês se
 utiliza ponto ao invés de vírgula)
+
+
+
 
 #### Retorno
 
@@ -65,4 +78,10 @@ String or String[]
 Web & Applicações
 
 #### Relacionado
-[nfs()](nfs_)[nf()](nf_)[nfc()](nfc_)
+[nfs()](nfs_
+)
+[nf()](nf_
+)
+[nfc()](nfc_
+)
+

@@ -15,8 +15,10 @@ void draw()
 
 ```
 
+
+
 #### Descrição
-A variável de sistema**pmouseX**
+A variável de sistema `pmouseX`
 sempre contém a coordenada horizontal anterior do mouse. Esta
 é a posição horizontal do mouse no quadro
 imediatamente anterior ao quadro atual.
@@ -33,4 +35,20 @@ pmouseX
 Web & Applicações
 
 #### Relacionado
-[pmouseY](pmouseY)[mouseX](mouseX)[mouseY](mouseY)[mousePressed](mousePressed)[mousePressed()](mousePressed_)[mouseReleased()](mouseReleased_)[mouseMoved()](mouseMoved_)[mouseDragged()](mouseDragged_)
+[pmouseY](pmouseY
+)
+[mouseX](mouseX
+)
+[mouseY](mouseY
+)
+[mousePressed](mousePressed
+)
+[mousePressed()](mousePressed_
+)
+[mouseReleased()](mouseReleased_
+)
+[mouseMoved()](mouseMoved_
+)
+[mouseDragged()](mouseDragged_
+)
+

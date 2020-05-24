@@ -26,12 +26,14 @@ void keyReleased()
 
 ```
 
+
+
 #### Descrição
 
 
-	A função**keyReleased() ** é
+	A função `keyReleased() ` é
 chamada cada vez que uma tecla é pressionada. Como regra geral,
-nada deve ser desenhado no escopo do bloco de**keyReleased().**
+nada deve ser desenhado no escopo do bloco de `keyReleased().`
 
 #### Sintaxe
 ```pde
@@ -52,4 +54,12 @@ Nenhum
 Web & Applicações
 
 #### Relacionado
-[keyPressed ](keyPressed)[key ](key)[keyCode](keyCode)[keyPressed() ](keyPressed_)
+[keyPressed ](keyPressed
+)
+[key ](key
+)
+[keyCode](keyCode
+)
+[keyPressed() ](keyPressed_
+)
+

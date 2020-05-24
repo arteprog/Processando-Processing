@@ -12,7 +12,8 @@ float at = atan(t);
 println(a + " : " + t + " : " +  at); 
 
 ```
-<hr align="left" noshade="noshade" size="1" width="150"/>
+
+
 
 ```pde
 float a = PI + PI/3.0; 
@@ -23,8 +24,10 @@ println(a + " : " + t + " : " +  at);
 
 ```
 
+
+
 #### Descrição
-A oposta a**tan()**; retorna o arco tangente de um valor.<b></b> This function expects the valors in the range of -Infinity to Infinity (exclusive) and valors are returned in the range**-PI/2** to**PI/2 **.
+A oposta a **tan()**; retorna o arco tangente de um valor.<b></b> This function expects the valors in the range of -Infinity to Infinity (exclusive) and valors are returned in the range **-PI/2** to **PI/2 **.
 
 #### Sintaxe
 ```pde
@@ -34,6 +37,8 @@ atan(valor)
 Parâmetros
 valor
 float: -Infinito a +Infinito (exclusivo)
+
+
 
 #### Retorno
 
@@ -46,4 +51,10 @@ float
 Web & Applicações
 
 #### Relacionado
-[tan()](tan_)[asin()](asin_)[acos()](acos_)
+[tan()](tan_
+)
+[asin()](asin_
+)
+[acos()](acos_
+)
+

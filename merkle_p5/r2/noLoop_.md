@@ -15,7 +15,8 @@ void draw() {
 } 
 
 ```
-<hr align="left" noshade="noshade" size="1" width="150"/>
+
+
 
 ```pde
 void setup() { 
@@ -43,8 +44,10 @@ void mouseReleased() {
 
 ```
 
+
+
 #### Descrição
-Para o Processind de continuamente executar o código em**draw()**.  Caso**loop() **seja chamada,  o código em**draw() **é executado continuamente.
+Para o Processind de continuamente executar o código em `draw()`.  Caso `loop() `seja chamada,  o código em `draw() `é executado continuamente.
 
 #### Sintaxe
 ```pde
@@ -65,4 +68,6 @@ Nenhum
 Web & Applicações
 
 #### Relacionado
-[loop()](loop_)
+[loop()](loop_
+)
+

@@ -17,8 +17,10 @@ void draw() {
 
 ```
 
+
+
 #### Descrição
-Processing se comunica com o relógio de seu computador. A função**minute()** retorna o minuto corrente como um valor entre 0 e 59.
+Processing se comunica com o relógio de seu computador. A função `minute()` retorna o minuto corrente como um valor entre 0 e 59.
 
 #### Sintaxe
 ```pde
@@ -37,4 +39,18 @@ int
 Web & Applicações
 
 #### Relacionado
-[millis() ](millis_)[second()](second_)[minute()](minute_)[hour()](hour_)[day()](day_)[month()](month_)[year()](year_)
+[millis() ](millis_
+)
+[second()](second_
+)
+[minute()](minute_
+)
+[hour()](hour_
+)
+[day()](day_
+)
+[month()](month_
+)
+[year()](year_
+)
+

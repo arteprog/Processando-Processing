@@ -11,6 +11,8 @@ a = a + 40;  // Atribui o valor  70 à variável "a"
 
 ```
 
+
+
 #### Descrição
 Atribui valor a uma variável. O simbolo "="
 não significa "igual", mas é utilizado para colocar dados
@@ -19,7 +21,7 @@ operador de atribuição. Há muitos tipos de
 variáveis (int, float, sting, etc) e o operador de
 atribuição pode atribuir valores cujo tipos seja o mesmo
 da variável ao qual está atribuindo. Por exemplo, se a
-variável é do tipo**int**, p valor também deve ser do tipo**int**.
+variável é do tipo `int`, p valor também deve ser do tipo `int`.
 
 #### Sintaxe
 ```pde
@@ -29,10 +31,14 @@ var = valor
 Parâmetros
 var
 qualquer nome válido de variável
+
+
 valor
 qualquer valor do mesmo
 tipo da variável. Por exemplo, se a variável é do
 tipo "int", p valor também deve ser do tipo "int".
+
+
 
 #### Utilização
 
@@ -40,4 +46,8 @@ tipo "int", p valor também deve ser do tipo "int".
 Web & Applicações
 
 #### Relacionado
-[+= (adiciona e atribui)](addassign)[-= (subtrai e atribui)](subtractassign)
+[+= (adiciona e atribui)](addassign
+)
+[-= (subtrai e atribui)](subtractassign
+)
+

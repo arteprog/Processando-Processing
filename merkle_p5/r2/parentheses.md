@@ -13,6 +13,8 @@ if (a > 10) {          // que contenham expressões
 
 ```
 
+
+
 #### Descrição
 Parênteses agrupam ou contém
 expressões ou parâmetros.  Têm múltiplas
@@ -34,12 +36,20 @@ estrutura(expressao)
 Parâmetros
 funcao
 qualquer função
+
+
 p1...pN
 lista de parâmetros específicos à função
+
+
 estrutura
 Estrutura de controle como if(), for(), while(), e switch()
+
+
 expressao
 qualquer expressão válida ou grupo de expressões
+
+
 
 #### Utilização
 
@@ -47,4 +57,6 @@ qualquer expressão válida ou grupo de expressões
 Web & Applicações
 
 #### Relacionado
-[, (vírgula)](comma)
+[, (vírgula)](comma
+)
+

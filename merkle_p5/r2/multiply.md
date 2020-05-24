@@ -10,6 +10,8 @@ int f = e * 5;   //Atribui 1250 à f
 
 ```
 
+
+
 #### Descrição
 Multiplica o valor de dois parâmetros. A
 multiplicação é equivalente a uma
@@ -24,8 +26,12 @@ value1 * value2
 Parâmetros
 valor1
 int, float, byte, oi char
+
+
 valor2
 int, float, byte, ou char
+
+
 
 #### Utilização
 
@@ -33,4 +39,8 @@ int, float, byte, ou char
 Web & Applicações
 
 #### Relacionado
-[+ (add)](addition)[/ (divide)](divide)
+[+ (add)](addition
+)
+[/ (divide)](divide
+)
+

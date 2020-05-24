@@ -15,7 +15,7 @@ ellipse(30, 48, 36, 36);
 ```
 
 #### Descrição
-Desenha todas as formas geométricas com arestas serrilhas (*aliased*).
+Desenha todas as formas geométricas com arestas serrilhas ( *aliased*).
 
 #### Sintaxe
 ```pde
@@ -34,4 +34,6 @@ Nenhum
 Web & Applicações
 
 #### Relacionado
-[smooth()](smooth_)
+[smooth()](smooth_
+)
+

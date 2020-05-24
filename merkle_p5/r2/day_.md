@@ -26,8 +26,10 @@ void draw() {
 
 ```
 
+
+
 #### Descrição
-Processing se comunica com o relógio de seu computador. A função**day()** retorna o dia de hoje como um valor entre 1 e 31.
+Processing se comunica com o relógio de seu computador. A função `day()` retorna o dia de hoje como um valor entre 1 e 31.
 
 #### Sintaxe
 ```pde
@@ -46,4 +48,18 @@ int
 Web & Applicações
 
 #### Relacionado
-[millis() ](millis_)[second()](second_)[minute()](minute_)[hour()](hour_)[day()](day_)[month()](month_)[year()](year_)
+[millis() ](millis_
+)
+[second()](second_
+)
+[minute()](minute_
+)
+[hour()](hour_
+)
+[day()](day_
+)
+[month()](month_
+)
+[year()](year_
+)
+

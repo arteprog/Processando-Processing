@@ -9,7 +9,8 @@ int a = 50 + 5;  // Atribui 55 à a
 int b = a + 5;   // Atribui 60 à b
 
 ```
-<hr align="left" noshade="noshade" size="1" width="150"/>
+
+
 
 ```pde
 String s1 = "Chernenko"; 
@@ -20,7 +21,8 @@ println(sc1);  // Prints ChernenkoBrezhnev
 println(sc2);  // Prints Chernenko, Andropov, Brezhnev 
 
 ```
-<hr align="left" noshade="noshade" size="1" width="150"/>
+
+
 
 ```pde
 String s1 = "Gorbachev"; 
@@ -29,6 +31,8 @@ String sc1 = s1 + i;
 println(sc1);  // Prints Gorbachev1987 
 
 ```
+
+
 
 #### Descrição
 Adiciona dois valores ou concatena duas strings.
@@ -45,8 +49,12 @@ valor1 + valor2
 Parâmetros
 valor1
 String, int, float, char, byte, boolean
+
+
 valor2
 String, int, float, char, byte, boolean
+
+
 
 #### Utilização
 
@@ -54,4 +62,10 @@ String, int, float, char, byte, boolean
 Web & Applicações
 
 #### Relacionado
-[++ (incremento)](increment)[+= (atribuição e soma)](addassign)[- (subtração)](minus)
+[++ (incremento)](increment
+)
+[+= (atribuição e soma)](addassign
+)
+[- (subtração)](minus
+)
+

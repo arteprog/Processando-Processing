@@ -35,6 +35,8 @@ Parâmetros
 data
 char or String
 
+
+
 #### Retorno
 
 	
@@ -47,7 +49,12 @@ Web & Applicações
 
 #### Relacionado
 
-[loadFont() ](loadFont_)
-[PFont ](PFont)
-[text()](text_)
-[textFont() ](textFont_)
+[loadFont() ](loadFont_
+)
+[PFont ](PFont
+)
+[text()](text_
+)
+[textFont() ](textFont_
+)
+

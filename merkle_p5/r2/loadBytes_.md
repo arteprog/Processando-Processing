@@ -26,6 +26,8 @@ println();
 
 ```
 
+
+
 #### Descrição
 Lê o conteúdo de um arquivo ou de uma
 url e o coloca em um array de bytes. Se um arquivo é
@@ -41,6 +43,7 @@ Parâmetros
 filename
 String: nome do arquivo ou url a carregar
 
+
 #### Retorno
 
 	
@@ -52,4 +55,10 @@ byte[]
 Web & Applicações
 
 #### Relacionado
-[loadStrings()](loadStrings_)[saveStrings()](saveStrings_)[saveBytes() ](saveBytes_)
+[loadStrings()](loadStrings_
+)
+[saveStrings()](saveStrings_
+)
+[saveBytes() ](saveBytes_
+)
+

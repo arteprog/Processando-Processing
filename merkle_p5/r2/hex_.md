@@ -11,7 +11,8 @@ println(hex(c));     // Imprime FFFFCC00
 println(hex(c, 6));  // Imprime FFCC00 
 
 ```
-<hr align="left" noshade="noshade" size="1" width="150"/>
+
+
 
 ```pde
 color c = color(255, 204, 0); 
@@ -20,6 +21,8 @@ println(hex(c));     // Imprime FFFFCC00
 println(hex(c, 6));  // Imprime FFCC00 
 
 ```
+
+
 
 #### Descrição
 Converte um byte, char, int, ou color em
@@ -39,8 +42,12 @@ hex(valor, digitos)
 Parâmetros
 valor
 byte, char, int, color: value to convert
+
+
 digitos
 int: number of digits to return
+
+
 
 #### Retorno
 
@@ -53,4 +60,10 @@ String
 Web & Applicações
 
 #### Relacionado
-[unhex()](unhex_)[binary()](binary_)[unbinary()](unbinary_)
+[unhex()](unhex_
+)
+[binary()](binary_
+)
+[unbinary()](unbinary_
+)
+

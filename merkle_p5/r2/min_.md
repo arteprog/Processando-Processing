@@ -11,6 +11,8 @@ float f = min(12.3, 230.24);  // Atribui 12.3 à "f"
 
 ```
 
+
+
 #### Descrição
 Determina o menor valor entre dois ou três números.
 
@@ -23,10 +25,16 @@ min(valor1, valor2, valor3)
 Parâmetros
 valor1
 int ou float
+
+
 valor2
 int ou float
+
+
 valor3
 int ou float
+
+
 
 #### Retorno
 
@@ -39,4 +47,6 @@ int ou float (dependendo do tipo das entradas)
 Web & Applicações
 
 #### Relacionado
-[max()](max_)
+[max()](max_
+)
+

@@ -35,4 +35,8 @@ Nenhum
 Web & Applicações
 
 #### Relacionado
-[tint()](tint_)[image()](image_)
+[tint()](tint_
+)
+[image()](image_
+)
+

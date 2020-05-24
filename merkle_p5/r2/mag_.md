@@ -41,12 +41,21 @@ mag(a, b, c)
 Parâmetros
 a
 float ou int: primeiro valor<description>
+
+
+
 </description>
 b
 float ou int: segundo valor<description>
+
+
+
 </description>
 c
 float ou int: terceiro valor<description>
+
+
+
 </description>
 
 #### Retorno
@@ -60,4 +69,6 @@ float
 Web & Applicações
 
 #### Relacionado
-[dist()](dist_)
+[dist()](dist_
+)
+

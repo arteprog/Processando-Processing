@@ -16,7 +16,7 @@ for(int i=0; i<25; i++) {
 ```
 
 #### Descrição
-Calcula o coseno de um ângulo. Esta função espera que os valores do parâmetro**angulo** correspondam a valores em radianos (valores entre 0 e 2*PI). Valores são retornados no intervalo entre -1.0 e 1.0.
+Calcula o coseno de um ângulo. Esta função espera que os valores do parâmetro `angulo` correspondam a valores em radianos (valores entre 0 e 2*PI). Valores são retornados no intervalo entre -1.0 e 1.0.
 
 #### Sintaxe
 ```pde
@@ -26,6 +26,9 @@ cos(angulo)
 Parâmetros
 angulo
 float: um ângulo em radianos<description>
+
+
+
 </description>
 
 #### Retorno
@@ -39,4 +42,8 @@ float
 Web & Applicações
 
 #### Relacionado
-[sin()](sin_)[tan()](tan_)
+[sin()](sin_
+)
+[tan()](tan_
+)
+

@@ -13,8 +13,10 @@ void draw()
 
 ```
 
+
+
 #### Descrição
-A variável de sistema**mouseY** sempre contém a coordenada vertical corrente do mouse.
+A variável de sistema `mouseY` sempre contém a coordenada vertical corrente do mouse.
 
 #### Sintaxe
 ```pde
@@ -28,4 +30,16 @@ mouseY
 Web & Applicações
 
 #### Relacionado
-[mouseX](mouseX)[mousePressed](mousePressed)[mousePressed()](mousePressed_)[mouseReleased()](mouseReleased_)[mouseMoved()](mouseMoved_)[mouseDragged()](mouseDragged_)
+[mouseX](mouseX
+)
+[mousePressed](mousePressed
+)
+[mousePressed()](mousePressed_
+)
+[mouseReleased()](mouseReleased_
+)
+[mouseMoved()](mouseMoved_
+)
+[mouseDragged()](mouseDragged_
+)
+

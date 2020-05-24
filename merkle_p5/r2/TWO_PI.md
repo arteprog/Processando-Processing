@@ -20,7 +20,7 @@ endShape();
 TWO_PI é uma constante matemática de valor constante igual à
 6.28318530717958647693. É o dobro da razão entre a circunferência de
 um círculo e seu diâmetro. É útil em combinações com as funções
-trigonométricas**sin()** e**cos()**.
+trigonométricas **sin()** e **cos()**.
 
 #### Sintaxe
 ```pde
@@ -34,4 +34,8 @@ TWO_PI
 Web & Applicações
 
 #### Relacionado
-[PI](PI)[HALF_PI](HALF_PI)
+[PI](PI
+)
+[HALF_PI](HALF_PI
+)
+

@@ -18,8 +18,11 @@ line(d[0], d[1], d[2], d[1]);
 
 ```
 
+
+
 #### Descrição
 Separa parâmetros em chamadas de função em elementos em atribuições
+
 
 #### Sintaxe
 ```pde
@@ -29,6 +32,8 @@ valor, ..., valorN
 Parâmetros
 valor1, ..., valorN
 qualquer int, float, byte, boolean, color, char, String
+
+
 
 #### Utilização
 

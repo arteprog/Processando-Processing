@@ -41,7 +41,7 @@ não vem de uma direção específica, pois os
 raioz lunminosos já refletiram tanto que os objetos são
 iluminados igualmente de todos os lados. Luzes ambientes geralmente
 são utilizadas em combinação com outros tipos de
-luzes. Luzes precisam ser incluidas em**draw()** para se manterem persistentes em programas em laço. A sua colocação no**setup()**
+luzes. Luzes precisam ser incluidas em `draw()` para se manterem persistentes em programas em laço. A sua colocação no `setup()`
 de um programa em laço causará edeito apenas
  durante a primeira passagem pelo laço. O efeito de seus
 parâmetros é determinado pelo atual modo de cor.
@@ -55,16 +55,28 @@ ambientLight(v1, v2, v3, x, y, z)
 Parâmetros
 v1
 int ou float: valor de vermelho ou de matiz
+
+
 v2
 int ou float: valor de verde ou de saturação
+
+
 v3
 int ou float: valor de azul ou de brilho
+
+
 x
 int ou float: coordenada-x da luz
+
+
 y
 int ou float: coordenada-y da luz
+
+
 z
 int ou float: coordenada-z da luz
+
+
 
 #### Retorno
 
@@ -77,4 +89,12 @@ Nenhum
 Web & Applicações
 
 #### Relacionado
-[lights()](lights_)[directionalLight()](directionalLight_)[pointLight()](pointLight_)[spotLight()](spotLight_)
+[lights()](lights_
+)
+[directionalLight()](directionalLight_
+)
+[pointLight()](pointLight_
+)
+[spotLight()](spotLight_
+)
+

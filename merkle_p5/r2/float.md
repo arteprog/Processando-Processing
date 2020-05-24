@@ -13,6 +13,8 @@ float c = a + b;  // declara uma variável "c" e lhe atribui
 
 ```
 
+
+
 #### Descrição
 Tipos de dados para números com
 ponto-flutuante, que são aqueles com casas depois da
@@ -27,6 +29,7 @@ resolução que números inteiros.
 quanto 3.40282347E+38 e tão pequenos quanto -3.40282347E+38.
  Eles são armazenados em 32 bits (4 bytes) de
 informação.
+
 
             Na primeira vez que uma
 variável é escrita, ela deve ser declarada com um comando
@@ -43,8 +46,11 @@ float var = valor
 Parâmetros
 var
 nome da variável que faz referência a valor do tipo float
+
 valor
 qualquer valor numérico do tipo ponto -flutuante
+
+
 
 #### Utilização
 
@@ -52,4 +58,8 @@ qualquer valor numérico do tipo ponto -flutuante
 Web & Applicações
 
 #### Relacionado
-[splitFloats()](splitFloats_)[int](int)
+[splitFloats()](splitFloats_
+)
+[int](int
+)
+

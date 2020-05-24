@@ -15,7 +15,8 @@ int p = 13 << 1;  // Em binário: 1101 à 11010
 println(p);  // Imprime "26" 
 
 ```
-<hr align="left" noshade="noshade" size="1" width="150"/>
+
+
 
 ```pde
 // Empacota quatro números de 8 bits em um de 32 bits
@@ -33,6 +34,8 @@ fill(argb);
 rect(30, 20, 55, 55); 
 
 ```
+
+
 
 #### Descrição
 Desloca bits à esquerda. O número
@@ -54,8 +57,12 @@ valor << n
 Parâmetros
 valor
 int: o número a deslocar
+
+
 n
 int: o número de lugares a deslocar à esquerda
+
+
 
 #### Utilização
 
@@ -63,4 +70,6 @@ int: o número de lugares a deslocar à esquerda
 Web & Applicações
 
 #### Relacionado
-[>> (deslocamento à direita)](rightshift)
+[>> (deslocamento à direita)](rightshift
+)
+

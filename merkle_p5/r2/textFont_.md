@@ -17,7 +17,7 @@ text("word", 15, 50);
 #### Descrição
 
 	
-Sets the current font. The font must be loaded with**loadFont()** before it can be used. This font will be used in all subsequent calls to the**text()** function. If no**size** parameter is input, the font will appear at its original size (the size it was created at with the "Create Font..." tool) until it is changed with**textSize()**.
+Sets the current font. The font must be loaded with **loadFont()** before it can be used. This font will be used in all subsequent calls to the **text()** function. If no **size** parameter is input, the font will appear at its original size (the size it was created at with the "Create Font..." tool) until it is changed with **textSize()**.
 
 #### Sintaxe
 ```pde
@@ -28,8 +28,12 @@ textFont(font, size)
 Parâmetros
 font
 PFont: any variable of the type PFont
+
+
 size
 int or float: the size of the letters in units of pixels
+
+
 
 #### Retorno
 
@@ -43,6 +47,10 @@ Web & Applicações
 
 #### Relacionado
 
-[loadFont() ](loadFont_)
-[PFont ](PFont)
-[text() ](text_)
+[loadFont() ](loadFont_
+)
+[PFont ](PFont
+)
+[text() ](text_
+)
+

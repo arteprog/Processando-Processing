@@ -19,7 +19,7 @@ if (a) {
 ```
 
 #### Descrição
-Inverte o valor Booleano de uma expressão.  Retorna verdadeiro (**true**)** ** se a expressão é falsa (**false**) e retorna falso (**false**) se a expressão é verdadeira (**true**).  No caso da expressão**(a>b)** ser avaliada como verdadeira , então**!(a>b)** será avaliada como falsa.
+Inverte o valor Booleano de uma expressão.  Retorna verdadeiro ( `true`) ` ` se a expressão é falsa ( `false`) e retorna falso ( `false`) se a expressão é verdadeira ( `true`).  No caso da expressão **(a>b)** ser avaliada como verdadeira , então **!(a>b)** será avaliada como falsa.
 
 #### Sintaxe
 ```pde
@@ -30,10 +30,18 @@ Parâmetros
 expressão
 qualquer expressão válida
 
+
+
 #### Utilização
 
 	
 Web & Applicações
 
 #### Relacionado
-[|| (lógico OU)](logicalOR)[&& (lógico E)]()[if()](if_)
+[|| (lógico OU)](logicalOR
+)
+[&& (lógico E)](
+)
+[if()](if_
+)
+

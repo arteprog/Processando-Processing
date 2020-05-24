@@ -12,7 +12,8 @@ float as = asin(s);
 println(a + " : " + s + " : " +  as); 
 
 ```
-<hr align="left" noshade="noshade" size="1" width="150"/>
+
+
 
 ```pde
 float a = PI + PI/3.0; 
@@ -23,9 +24,11 @@ println(a + " : " + s + " : " +  as);
 
 ```
 
+
+
 #### Descrição
-A oposta de**sin()**; retorna  o arco seno de um valor. Esta função espera valores no
-intervalo entre -1.0 e 1.0 e retona valores no intervalo entre**0** e**PI (3.1415927)**.
+A oposta de `sin()`; retorna  o arco seno de um valor. Esta função espera valores no
+intervalo entre -1.0 e 1.0 e retona valores no intervalo entre **0** e **PI (3.1415927)**.
 
 #### Sintaxe
 ```pde
@@ -35,6 +38,8 @@ asin(valor)
 Parâmetros
 valor
 float: números entre -1.0 e 1.0
+
+
 
 #### Retorno
 
@@ -47,4 +52,10 @@ float
 Web & Applicações
 
 #### Relacionado
-[sin()](sin_)[acos()](acos_)[atan()](atan_)
+[sin()](sin_
+)
+[acos()](acos_
+)
+[atan()](atan_
+)
+

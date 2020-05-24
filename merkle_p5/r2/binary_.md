@@ -13,6 +13,8 @@ println(binary(c, 16)); // Prints 1100110000000000
 
 ```
 
+
+
 #### Descrição
 Converte um byte, char, int, ou color em uma
 String contendo o equivalente en notação binária.
@@ -30,8 +32,12 @@ binary(valor, digitos)
 Parâmetros
 valor
 byte, char, int, color: value à converter
+
+
 digitos
 int: número de dígitos a retornar
+
+
 
 #### Retorno
 
@@ -44,4 +50,10 @@ String
 Web & Applicações
 
 #### Relacionado
-[unhex()](unhex_)[hex()](hex_)[unbinary()](unbinary_)
+[unhex()](unhex_
+)
+[hex()](hex_
+)
+[unbinary()](unbinary_
+)
+

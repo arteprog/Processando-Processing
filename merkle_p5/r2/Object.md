@@ -38,6 +38,8 @@ class HLine {
 
 ```
 
+
+
 #### Descrição
 Objetos são instâncias de classes. Uma
 classe é um agregado de métodos (funções)
@@ -51,8 +53,12 @@ class instancia
 Parâmetros
 class
 o tipo da classe que o objeto será instanciado ou criado
+
+
 instancia
 qualquer nome válido de variável
+
+
 
 #### Utilização
 
@@ -60,4 +66,6 @@ qualquer nome válido de variável
 Web & Applicações
 
 #### Relacionado
-[class](class)
+[class](class
+)
+

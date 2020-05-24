@@ -17,7 +17,7 @@ text("word", 15, 50);
 #### Descrição
 
 	
-Loads a font into a variable of type**PFont**. To load correctly, fonts must be located in the data directory of the current sketch.
+Loads a font into a variable of type **PFont**. To load correctly, fonts must be located in the data directory of the current sketch.
 
 #### Sintaxe
 ```pde
@@ -27,6 +27,8 @@ loadFont(fontname)
 Parâmetros
 fontname
 string: name of the font to load
+
+
 
 #### Retorno
 
@@ -40,6 +42,10 @@ Web & Applicações
 
 #### Relacionado
 
-[PFont ](PFont)
-[textFont() ](textFont_)
-[text() ](text_)
+[PFont ](PFont
+)
+[textFont() ](textFont_
+)
+[text() ](text_
+)
+

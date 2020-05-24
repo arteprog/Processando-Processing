@@ -11,6 +11,8 @@ println(rad + " radianos é " + deg + " degrees");
 
 ```
 
+
+
 #### Descrição
 Converte uma medida em radianos para seu valor
 correspondente em graus. Radianos e graus são duas maneiras de
@@ -28,6 +30,8 @@ Parâmetros
 angulo
 int ou float
 
+
+
 #### Retorno
 
 	
@@ -39,4 +43,6 @@ float
 Web & Applicações
 
 #### Relacionado
-[radians()](radians_)
+[radians()](radians_
+)
+

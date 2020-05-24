@@ -25,6 +25,8 @@ Parâmetros
 radius
 int ou float: o raio da espera
 
+
+
 #### Retorno
 
 	

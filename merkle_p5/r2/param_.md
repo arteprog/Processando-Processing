@@ -15,11 +15,13 @@ background(bi);
 
 ```
 
+
+
 #### Descrição
 Lê o valor de um param. Valores são
 frequentemente lidos como uma String, de modo que quando se quer que
 eles sejam de outro tipo de dado, estes precisam ser convertidos, A
-função**param()**  funcionará apenas em navegador web.
+função `param()`  funcionará apenas em navegador web.
 
 #### Sintaxe
 ```pde
@@ -29,6 +31,8 @@ param(s)
 Parâmetros
 s
 String: nome do parâmetro a ler
+
+
 
 #### Retorno
 

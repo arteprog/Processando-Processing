@@ -17,8 +17,10 @@ int rz = round(z);  // Atribui 10 à rz
 
 ```
 
+
+
 #### Descrição
-Calcula o inteiro mais próximo ao valor do parâmetro. Por exemplo,**round(9.2)** retorna 9.
+Calcula o inteiro mais próximo ao valor do parâmetro. Por exemplo, **round(9.2)** retorna 9.
 
 #### Sintaxe
 ```pde
@@ -28,6 +30,8 @@ round(valor)
 Parâmetros
 valor
 float
+
+
 
 #### Retorno
 
@@ -40,4 +44,8 @@ int
 Web & Applicações
 
 #### Relacionado
-[floor()](floor_)[ceil()](ceil_)
+[floor()](floor_
+)
+[ceil()](ceil_
+)
+

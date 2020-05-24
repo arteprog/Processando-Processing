@@ -22,7 +22,8 @@ valor constante igual à 1.57079632679489661923. É a
 metade da razão entre a circunferência de um
 círculo e seu diâmetro. É útil em
 combinações com as funções
-trigonométricas**sin()** e**cos()**.
+trigonométricas **sin()** e **cos()**.
+
 
 #### Sintaxe
 ```pde
@@ -36,4 +37,8 @@ HALF_PI
 Web & Applicações
 
 #### Relacionado
-[PI](PI)[TWO_PI](TWO_PI)
+[PI](PI
+)
+[TWO_PI](TWO_PI
+)
+

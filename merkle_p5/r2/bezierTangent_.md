@@ -51,7 +51,8 @@ for (int i = 0; i <= steps; i++) {
 #### Descrição
 Calcula a tangente de um ponto sobre uma curva de
 bezier. Há uma boa definição de tangente na
-Wikipedia:[http://en.wikipedia.org/wiki/Tangent](http://en.wikipedia.org/wiki/Tangent)
+Wikipedia:[http://en.wikipedia.org/wiki/Tangent](http://en.wikipedia.org/wiki/Tangent
+)
 
 #### Sintaxe
 ```pde
@@ -61,14 +62,24 @@ bezierPoint(a, b, c, d, t)
 Parâmetros
 a
 int ou float: coordenada do primeiro ponto na curva
+
+
 b
 int ou float: coordenada do primeiro ponto de controle
+
+
 c
 int ou float: coordenada do segundo ponto de controle
+
+
 d
 int ou float: coordenada do segundo ponto na curva
+
+
 t
 float: valor entre 0 e 1
+
+
 
 #### Utilização
 
@@ -76,4 +87,10 @@ float: valor entre 0 e 1
 Web & Applicações
 
 #### Relacionado
-[bezier()](bezier_)[bezierVertex()](bezierVertex_)[curvePoint()](curvePoint_)
+[bezier()](bezier_
+)
+[bezierVertex()](bezierVertex_
+)
+[curvePoint()](curvePoint_
+)
+

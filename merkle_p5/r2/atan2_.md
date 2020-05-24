@@ -15,10 +15,12 @@ void draw() {
 
 ```
 
+
+
 #### Descrição
 Calcula o ângulo (em radianos) de um ponto
 especificado em relação à origem e medido em
-relação ao eixo-x. Valores são retornados como**float** e no intervalo entre**-Pi ** e**PI.** A função** atan2()**
+relação ao eixo-x. Valores são retornados como `float` e no intervalo entre `-Pi ` e `PI.` A função ` atan2()`
 é ferqüentemente utilizada para na orientação
 de formas geométricas através da posição do
 cursor. A coordenada-y do ponto é o primeiro parâmetro e a
@@ -33,8 +35,12 @@ atan2(y, x);
 Parâmetros
 y
 int ou float: coordenada-y do ponto
+
+
 x
 int ou float: coordenada-x do ponto
+
+
 
 #### Retorno
 
@@ -47,4 +53,6 @@ float
 Web & Applicações
 
 #### Relacionado
-[tan()](tan_)
+[tan()](tan_
+)
+

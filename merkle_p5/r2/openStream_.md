@@ -10,6 +10,8 @@ Vindo em breve...
 
 ```
 
+
+
 #### Descrição
 Método simplificado para se abrir uma
 InputStream em Java. Esta função é útil
@@ -25,7 +27,8 @@ openStream(arquivo)
 ```
 Parâmetros
 arquivo
-String: nome de um arquivo na pasta de dados (*data), *URl, ou outro arquivo local e sua localização.
+String: nome de um arquivo na pasta de dados ( *data), * URl, ou outro arquivo local e sua localização.
+
 
 #### Retorno
 
@@ -38,4 +41,12 @@ byte[]
 Web & Applicações
 
 #### Relacionado
-[loadBytes()](loadBytes_)[loadStrings()](loadStrings_)[saveStrings()](saveStrings_)[saveBytes() ](saveBytes_)
+[loadBytes()](loadBytes_
+)
+[loadStrings()](loadStrings_
+)
+[saveStrings()](saveStrings_
+)
+[saveBytes() ](saveBytes_
+)
+

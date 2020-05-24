@@ -13,8 +13,10 @@ void draw()
 
 ```
 
+
+
 #### Descrição
-A variável de sistema**mouseX** sempre contém a coordenada horizontal corrente do mouse.
+A variável de sistema `mouseX` sempre contém a coordenada horizontal corrente do mouse.
 
 #### Sintaxe
 ```pde
@@ -28,4 +30,16 @@ mouseX
 Web & Applicações
 
 #### Relacionado
-[mouseY](mouseY)[mousePressed](mousePressed)[mousePressed()](mousePressed_)[mouseReleased()](mouseReleased_)[mouseMoved()](mouseMoved_)[mouseDragged()](mouseDragged_)
+[mouseY](mouseY
+)
+[mousePressed](mousePressed
+)
+[mousePressed()](mousePressed_
+)
+[mouseReleased()](mouseReleased_
+)
+[mouseMoved()](mouseMoved_
+)
+[mouseDragged()](mouseDragged_
+)
+

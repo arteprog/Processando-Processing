@@ -12,6 +12,8 @@ float d = abs(-9.23);  // Atribui 9.23 à d
 
 ```
 
+
+
 #### Descrição
 Calcula o valor absoluto (magnitude) de um número. O valor absoluto de um número é sempre positivo.
 
@@ -23,6 +25,8 @@ abs(valor)
 Parâmetros
 valor
 float ou int
+
+
 
 #### Retorno
 

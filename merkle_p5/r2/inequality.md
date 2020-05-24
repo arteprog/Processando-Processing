@@ -13,6 +13,8 @@ if(a != b) {
 
 ```
 
+
+
 #### Descrição
 Determina se uma
 expressão não é equivalente a outra.
@@ -26,24 +28,34 @@ Parâmetros
 valor1
 int,
 float, char, byte, boolean, String
+
+
 valor2
 int,
 float, char, byte, boolean, String
+
+
 
 #### Utilização
  Web &
 Applicações
 
 #### Relacionado
-[ == ](equality)
+[ == ](equality
+)
 igual
-[ ](file:///F:/Software/Processing/Tradu%E7%E3o/www.processing.org/reference/br/inequality)[>_ ](greaterthan)
+[ ](file:///F:/Software/Processing/Tradu%E7%E3o/www.processing.org/reference/br/inequality
+)[>_ ](greaterthan
+)
 maior
-[ >= ](greaterthanorequalto)
+[ >= ](greaterthanorequalto
+)
 maior
 ou igual
-[ < ](lessthan)
+[ < ](lessthan
+)
 menor
-[ <= ](lessthanorequalto)
+[ <= ](lessthanorequalto
+)
 menor
 ou igual

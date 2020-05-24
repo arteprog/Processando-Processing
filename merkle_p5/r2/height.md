@@ -14,10 +14,10 @@ rect(60, 0, 20, height/2);
 ```
 
 #### Descrição
-A variável de sistema<span style="font-style: italic;"></span>**height**<span style="font-style: italic;"></span>
+A variável de sistema<span style="font-style: italic;"></span> `height`<span style="font-style: italic;"></span>
 armazena a altura da tela de visualização. Este valor
 é atribuído através do segundo parâmetro da
-função**size()**. Por exemplo, a chamada de função**size(320,240) ** atribui a variável**height **o valor de 240. O valor de**height  **é zero até que**size()** seja chamada.
+função `size()`. Por exemplo, a chamada de função `size(320,240) ` atribui a variável `height `o valor de 240. O valor de `height  `é zero até que `size()` seja chamada.
 
 #### Sintaxe
 ```pde
@@ -31,4 +31,6 @@ height
 Web & Applicações
 
 #### Relacionado
-[width](width) (largura)
+[width](width
+) (largura)
+

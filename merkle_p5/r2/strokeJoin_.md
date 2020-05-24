@@ -61,6 +61,8 @@ Parâmetros
 MODO
 Qualquer um entre: MITER, BEVEL, ou ROUND
 
+
+
 #### Retorno
 
 	
@@ -72,4 +74,10 @@ Nenhum
 Web & Applicações
 
 #### Relacionado
-[stroke()](stroke_)[strokeWeight()](strokeWeight_)[strokeCap()](strokeCap_)
+[stroke()](stroke_
+)
+[strokeWeight()](strokeWeight_
+)
+[strokeCap()](strokeCap_
+)
+

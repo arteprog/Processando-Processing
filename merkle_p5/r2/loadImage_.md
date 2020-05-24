@@ -28,11 +28,11 @@ void draw() {
 ```
 
 #### Descrição
-Carrega uma imagem em uma variável do tipo**PImage**. Três tipos de imagems (**.gif**,**.jpg**,**.tga**)
+Carrega uma imagem em uma variável do tipo `PImage`. Três tipos de imagems ( **.gif**, **.jpg**, **.tga**)
 podem ser carregadas. Para se carregar corretamente, as imagem precisam
-estar no diretório "data" do esboço corrente.** ** Na maioria dos casos, carregam-se todas as imagems dentro do**setup()** para pré-carregá-las no início do programa. Carregar as imagems em** draw() **reduz
+estar no diretório "data" do esboço corrente. ` ` Na maioria dos casos, carregam-se todas as imagems dentro do `setup()` para pré-carregá-las no início do programa. Carregar as imagems em ` draw() `reduz
 dramaticamente a valocidade do programa. Para se carregar corretamente
-imagens .tga, estas devem ser de 32 bits e sem compressão (*n.t. 32-bit uncompressed*)*. *
+imagens .tga, estas devem ser de 32 bits e sem compressão ( *n.t. 32-bit uncompressed*) *. *
 
 #### Sintaxe
 ```pde
@@ -42,6 +42,8 @@ loadImage(nomearquivo)
 Parâmetros
 nomearquivo
 string: nome do arquivo a carregar. deve ser do tipo .gif, .jpg, ou .tga
+
+
 
 #### Retorno
 
@@ -54,4 +56,12 @@ PImage
 Web & Applicações
 
 #### Relacionado
-[PImage ](PImage)[image() ](image_)[imageMode() ](imageMode_)[background() ](background_)
+[PImage ](PImage
+)
+[image() ](image_
+)
+[imageMode() ](imageMode_
+)
+[background() ](background_
+)
+

@@ -11,7 +11,8 @@ float c = 75.0%100.0;   // Atribui 75.0 à c
 float d = 275.0%100.0;  // Atribui 75.0 à d
 
 ```
-<hr align="left" noshade="noshade" size="1" width="150"/>
+
+
 
 ```pde
 float a = 0.0; 
@@ -22,6 +23,8 @@ void draw() {
 } 
 
 ```
+
+
 
 #### Descrição
 Clacula o resto de uma divisão de um
@@ -37,8 +40,12 @@ value1%valor2
 Parâmetros
 valor1
 int ou float
+
+
 valor2
 int ou float
+
+
 
 #### Retorno
 
@@ -51,4 +58,6 @@ int ou float
 Web & Applicações
 
 #### Relacionado
-[/ (divisão)](divide)
+[/ (divisão)](divide
+)
+

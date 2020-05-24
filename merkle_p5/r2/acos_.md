@@ -12,7 +12,8 @@ float ac = acos(c);
 println(a + " : " + c + " : " +  ac); 
 
 ```
-<hr align="left" noshade="noshade" size="1" width="150"/>
+
+
 
 ```pde
 float a = PI + PI/4.0; 
@@ -23,10 +24,13 @@ println(a + " : " + c + " : " +  ac);
 
 ```
 
+
+
 #### Descrição
-A oposta a**cos()**, retorna o arco
+
+A oposta a **cos()**, retorna o arco
 cosseno de um valor. Esta função espera valores no
-intervalo entre -1.0 e 1.0 e  retona valores no intervalo entre**0** e**PI (3.1415927)**.
+intervalo entre -1.0 e 1.0 e  retona valores no intervalo entre **0** e **PI (3.1415927)**.
 
 #### Sintaxe
 ```pde
@@ -37,15 +41,23 @@ Parâmetros
 valor
 float: números entre -1.0 e 1.0
 
+
+
 #### Retorno
 
-	
+
 float
 
 #### Utilização
 
-	
+
 Web & Applicações
 
 #### Relacionado
-[cos()](cos_)[asin()](asin_)[atan()](atan_)
+[cos()](cos_
+)
+[asin()](asin_
+)
+[atan()](atan_
+)
+

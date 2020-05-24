@@ -26,10 +26,12 @@ void keyPressed()
 
 ```
 
+
+
 #### Descrição
-A função**keyPressed() ** é
+A função `keyPressed() ` é
 chamada cada vez que uma tecla é pressionada. Como regra geral,
-nada deve ser desenhado no escopo do bloco de**keyPressed().**
+nada deve ser desenhado no escopo do bloco de `keyPressed().`
 
 #### Sintaxe
 ```pde
@@ -50,4 +52,12 @@ Nenhum
 Web & Applicações
 
 #### Relacionado
-[keyPressed ](keyPressed)[key ](key)[keyCode](keyCode)[keyReleased() ](keyReleased_)
+[keyPressed ](keyPressed
+)
+[key ](key
+)
+[keyCode](keyCode
+)
+[keyReleased() ](keyReleased_
+)
+

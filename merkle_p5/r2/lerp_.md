@@ -37,7 +37,7 @@ for(int i=0; i<=10; i++) {
 ```
 
 #### Descrição
-Calcula um número entre dois números em um incremento expecífico. O parâmetro**amt **representa
+Calcula um número entre dois números em um incremento expecífico. O parâmetro `amt `representa
 a quantidade a interpolar entre os dois valores, onde 0.0 equivale ao
 primeiro ponto;  0.1 está muito próximo deste
 primeire ponto;  0.5  está a meio caminho entre os
@@ -53,10 +53,16 @@ lerp(valor1, valor2, amt)
 Parâmetros
 valor1
 float ou int: primeiro valor
+
+
 valor2
 float ou int: segundo valor
+
+
 amt
 float: entre 0.0 e 1.0
+
+
 
 #### Retorno
 
@@ -69,4 +75,8 @@ float
 Web & Applicações
 
 #### Relacionado
-[curvePoint()](curvePoint_)[bezierPoint()](bezierPoint_)
+[curvePoint()](curvePoint_
+)
+[bezierPoint()](bezierPoint_
+)
+

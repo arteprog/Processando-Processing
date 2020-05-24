@@ -18,7 +18,9 @@ for(int i=5; i<=95; i+=5) {
 ```
 
 #### Descrição
-Compara duas expressões e retorna verdadeiro (**true**) se ambas forem avaliadas como verdadeiras (**true**). Retorna false (**false**) se uma ou ambas forem avaliadas como falsas (**false**). A seguinte linstas mostra todas as possíveis combinações<tt>true &amp;&amp; false    // É avaliada como falsa porquê a segunda é falsa
+Compara duas expressões e retorna verdadeiro ( `true`) se ambas forem avaliadas como verdadeiras ( `true`). Retorna false ( `false`) se uma ou ambas forem avaliadas como falsas ( `false`). A seguinte linstas mostra todas as possíveis combinações
+
+<tt>true &amp;&amp; false    // É avaliada como falsa porquê a segunda é falsa
 
 false &amp;&amp; true    // É avaliada como falsa porquê a primeira é falsa
 
@@ -34,8 +36,12 @@ expressão1 && expressão2
 Parâmetros
 expressão1
 qualquer expressão válida
+
+
 expressão2
 qualquer expressão válida
+
+
 
 #### Utilização
 
@@ -43,4 +49,10 @@ qualquer expressão válida
 Web & Applicações
 
 #### Relacionado
-[|| (lógico OU)](logicalOR)[! (lógico NÃO)](logicalNOT)[if()](if_)
+[|| (lógico OU)](logicalOR
+)
+[! (lógico NÃO)](logicalNOT
+)
+[if()](if_
+)
+

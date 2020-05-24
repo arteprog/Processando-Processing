@@ -11,6 +11,8 @@ float c = max(12.3, 230.24);  // Atribui 230.24 à "c"
 
 ```
 
+
+
 #### Descrição
 Determina o maior valor entre dois ou três números.
 
@@ -23,10 +25,16 @@ max(valor1, valor2, valor 3)
 Parâmetros
 valor1
 int ou float
+
+
 valor2
 int ou float
+
+
 valor3
 int ou float
+
+
 
 #### Retorno
 
@@ -39,4 +47,6 @@ int ou float (dependendo do tipo das entradas)
 Web & Applicações
 
 #### Relacionado
-[min()](min_)
+[min()](min_
+)
+

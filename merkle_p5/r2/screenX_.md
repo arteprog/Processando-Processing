@@ -35,6 +35,8 @@ void draw() {
 
 ```
 
+
+
 #### Descrição
 Recebe uma posição
 tri-diemensional X,Y,Z e retorna o valor x de onde ela iria
@@ -48,10 +50,16 @@ screenX(x, y, z)
 Parâmetros
 x
 int ou float: coordenada 3D x a ser mapeada
+
+
 y
 int ou float: coordenada 3D y a ser mapeada
+
+
 z
 int ou float: coordenada 3D x a ser mapeada
+
+
 
 #### Retorno
 
@@ -64,4 +72,8 @@ float
 Web & Applicações
 
 #### Relacionado
-[screenY()](screenY_)[screenZ()](screenZ_)
+[screenY()](screenY_
+)
+[screenZ()](screenZ_
+)
+

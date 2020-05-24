@@ -24,9 +24,12 @@ void draw() {
 
 ```
 
+
+
 #### Descrição
 
-A variável booleana**keyPressed** é  verdadeira (<span style="font-style: italic;">**true**)</span> se uma tecla está pressionada e falsa (<span style="font-weight: bold;">*false*)</span> se uma tecla não está pressionada.
+
+A variável booleana **keyPressed** é  verdadeira (<span style="font-style: italic;"> `true` )</span> se uma tecla está pressionada e falsa (<span style="font-weight: bold;"> *false* )</span> se uma tecla não está pressionada.
 
 #### Sintaxe
 ```pde
@@ -40,4 +43,12 @@ keyPressed
 Web & Applicações
 
 #### Relacionado
-[key ](key)[keyCode](keyCode)[keyPressed() ](keyPressed_)[keyReleased() ](keyReleased_)
+[key ](key
+)
+[keyCode](keyCode
+)
+[keyPressed() ](keyPressed_
+)
+[keyReleased() ](keyReleased_
+)
+

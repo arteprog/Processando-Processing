@@ -15,7 +15,8 @@ int p = 26 >> 1;   // Em binário: 11010 to 1101
 println(p);  // Imprime "13" 
 
 ```
-<hr align="left" noshade="noshade" size="1" width="150"/>
+
+
 
 ```pde
 color argb = color(204, 204, 51, 255); 
@@ -28,7 +29,10 @@ rect(30, 20, 55, 55);
 
 ```
 
+
+
 #### Descrição
+
 
 Desloca bits à direira. O número à esquerda do operador é deslocado na
 quantidade de bits especificada pelo número à direita.  Cada
@@ -47,8 +51,12 @@ valor >> n
 Parâmetros
 valor
 int: o valor a deslocar
+
+
 n
 int: o número de lugares a deslocar à direita
+
+
 
 #### Utilização
 
@@ -56,4 +64,6 @@ int: o número de lugares a deslocar à direita
 Web & Applicações
 
 #### Relacionado
-[<< (deslocamento à esquerda)](leftshift)
+[<< (deslocamento à esquerda)](leftshift
+)
+

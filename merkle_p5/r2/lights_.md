@@ -41,7 +41,7 @@ void draw() {
 ```
 
 #### Descrição
-Especifica o valor padrão de luz ambiente, direcionada,*falloff *(n.t.
+Especifica o valor padrão de luz ambiente, direcionada, *falloff *(n.t.
 decaimento), e especular. Os valores padrão são
 ambientLight(128, 128, 128), directionalLight(128, 128, 128, 0, 0, -1),
 falloff(1, 0, 0), e specular(0, 0, 0). Luzes são
@@ -67,4 +67,12 @@ Nenhum
 Web & Applicações
 
 #### Relacionado
-[ambientLight()](ambientLight_)[directionalLight()](directionalLight_)[pointLight()](pointLight_)[spotLight()](spotLight_)
+[ambientLight()](ambientLight_
+)
+[directionalLight()](directionalLight_
+)
+[pointLight()](pointLight_
+)
+[spotLight()](spotLight_
+)
+

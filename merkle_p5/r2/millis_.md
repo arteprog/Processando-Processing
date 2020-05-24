@@ -13,6 +13,8 @@ void draw() {
 
 ```
 
+
+
 #### Descrição
 Retorna o número de milisegundos
 (milésimos de segundo) desde que uma  applet foi iniciada.
@@ -36,4 +38,18 @@ int
 Web & Applicações
 
 #### Relacionado
-[millis() ](millis_)[second()](second_)[minute()](minute_)[hour()](hour_)[day()](day_)[month()](month_)[year()](year_)
+[millis() ](millis_
+)
+[second()](second_
+)
+[minute()](minute_
+)
+[hour()](hour_
+)
+[day()](day_
+)
+[month()](month_
+)
+[year()](year_
+)
+

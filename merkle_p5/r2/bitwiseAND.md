@@ -11,7 +11,8 @@ int c = a & b; // Em binário: 00001101
 println(c);    // Imprime "13", O número decimal equivalente à 00001101 
 
 ```
-<hr align="left" noshade="noshade" size="1" width="150"/>
+
+
 
 ```pde
 color argb = color(204, 204, 51, 255); 
@@ -28,13 +29,17 @@ rect(30, 20, 55, 55);
 
 ```
 
+
+
 #### Descrição
 Compara cada bit da representação
 binária de dois números. Para cada
 comparação, dois 1  resulta em 1,  um 1 e um 0
 resulta em 0, e dois 0 resulta em 0. É mais fácil de ver o
 reusultado quando se visualiza a representação
-binária dos números.```pde
+binária dos números.
+
+```pde
   11010110  // 214
 & 01011100  // 92
   --------
@@ -42,7 +47,9 @@ binária dos números.```pde
 ```
 
 
-Para se ver a representação binária de um número, utilizar a função**binary()** em conjunto com**println()**.
+
+Para se ver a representação binária de um número, utilizar a função **binary()** em conjunto com **println()**.
+
 
 #### Sintaxe
 ```pde
@@ -52,8 +59,12 @@ valor & valor2
 Parâmetros
 valor1
 int, char, byte
+
+
 valor2
 int, char, byte
+
+
 
 #### Utilização
 
@@ -61,4 +72,8 @@ int, char, byte
 Web & Applicações
 
 #### Relacionado
-[| (binário OU de bit)](bitwiseOR)[binary()](binary_)
+[| (binário OU de bit)](bitwiseOR
+)
+[binary()](binary_
+)
+

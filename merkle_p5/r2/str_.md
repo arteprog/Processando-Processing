@@ -23,10 +23,12 @@ println(sb);  // Imprime 'false-28R-32.61024'
 
 ```
 
+
+
 #### Descrição
-Retorna uma representação em  String  de tipos de dados primitivos e*arrays. *Por
+Retorna uma representação em  String  de tipos de dados primitivos e *arrays. *Por
 exemplo, o inteiro  3 retornará "3", o  float -12.6
-retornará a string "-12.6", e o valor booleano*true* retornará a string "true".
+retornará a string "-12.6", e o valor booleano *true* retornará a string "true".
 
 #### Sintaxe
 ```pde
@@ -36,6 +38,8 @@ str(dado)
 Parâmetros
 dado
 boolean, byte, char, float, int, boolean[], byte[], char[], float[], int[]
+
+
 
 #### Retorno
 

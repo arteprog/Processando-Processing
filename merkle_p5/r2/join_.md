@@ -6,18 +6,19 @@
 
 ```pde
 <span style="font-family: monospace;">String[]
-animals = new String[3]; </span>
-
+animals = new String[3]; </span><br style="font-family: monospace;"/>
 ```<p lang="en-US" style="margin-bottom: 0cm;"><span style="font-family: monospace;">animals[0] = "cat";
-                        </span>
-<span style="font-family: monospace;">animals[1] = "seal"; </span>
+                        </span><br style="font-family: monospace;"/>
+<span style="font-family: monospace;">animals[1] = "seal"; </span><br style="font-family: monospace;"/>
 <span style="font-family: monospace;">animals[2] = "bear";
-                        </span>
+                        </span><br style="font-family: monospace;"/>
 <span style="font-family: monospace;">String joinedAnimals = join(animals, " : ");
-                        </span>
+                        </span><br style="font-family: monospace;"/>
 <span style="font-family: monospace;">println(joinedAnimals); // Imprime "cat : seal : bear"</span>
+
 </p>
-<hr align="left" noshade="noshade" size="1" width="150"/>
+
+
 
 ```pde
 // Juntar um array de ints requer que primeiro
@@ -50,8 +51,12 @@ join(stringArray, delim)
 Parâmetros
 stringArray
 a string a repartir
+
+
 delim
 o caracter a utilizar na delimitação dos dados
+
+
 Retorna
 
 	
@@ -64,4 +69,7 @@ Web & Applicações
 
 #### Relacionado
 [
-](join_)[split()](../split_)[](text_)
+](join_
+)[split()](../split_
+)[](text_
+)

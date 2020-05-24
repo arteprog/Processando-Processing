@@ -16,8 +16,11 @@ printProjection();
 
 ```
 
+
+
 #### Descrição
 Imprime a matriz de projeção corrente na jenela de texto.
+
 
 #### Sintaxe
 ```pde
@@ -36,4 +39,6 @@ Nenhum
 Web & Applicações
 
 #### Relacionado
-[camera()](camera_)
+[camera()](camera_
+)
+

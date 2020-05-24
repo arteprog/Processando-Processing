@@ -37,11 +37,13 @@ class DrawDot extends Dot {
 
 ```
 
+
+
 #### Descrição
-permite a uma nova classe*herdar*
+permite a uma nova classe *herdar*
 os métodos e campos(dados membro) de uma classe existente.
  Ao escrever o código, se coloca o nome da nova classe,,
-seguido da palavra chave**extends**, e do nome da*classe de base.* O conceito de herança é um do princípios fundamentais a programação orientada a objetos.
+seguido da palavra chave `extends`, e do nome da *classe de base.* O conceito de herança é um do princípios fundamentais a programação orientada a objetos.
 
 #### Sintaxe
 ```pde

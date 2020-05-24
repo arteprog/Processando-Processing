@@ -13,7 +13,10 @@ em breve ...
 
 #### Descrição
 Ajusta fator associado ao brilho dos materiais das formas geométricas a desenhar na tela.
-É utilizada em combinação com**ambient()**,**emissive()**,**e specular()**,<b></b>para se configurar as propriedades materiais de formas geométricas.<b></b>
+
+É utilizada em combinação com **ambient()**, **emissive()**, **e specular()**,<b></b>para se configurar as propriedades materiais de formas geométricas.<b></b>
+
+
 (n.t. Sets the shine grade of materials used for drawing shapes drawn to the screen.)
 
 #### Sintaxe
@@ -26,6 +29,8 @@ Parâmetros
 shine
 int or float: número entre branco e preto|??
 
+
+
 #### Retorno
 
 	
@@ -37,4 +42,10 @@ Nenhum
 Web & Applicações
 
 #### Relacionado
-[ambient()](ambient_)[specular()](specular_)[shininess()](shininess_)
+[ambient()](ambient_
+)
+[specular()](specular_
+)
+[shininess()](shininess_
+)
+

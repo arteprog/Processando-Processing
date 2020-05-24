@@ -12,7 +12,7 @@ rect(30, 20, 55, 55);
 ```
 
 #### Descrição
-desabilita o desenho do traço (contorno). Caso**noStroke()** e**noFill()** sejam chamdadas, nada será desenhado na tela.
+desabilita o desenho do traço (contorno). Caso **noStroke()** e **noFill()** sejam chamdadas, nada será desenhado na tela.
 
 #### Sintaxe
 ```pde
@@ -31,4 +31,6 @@ Nenhum
 Web & Applicações
 
 #### Relacionado
-[stroke()](stroke_)
+[stroke()](stroke_
+)
+

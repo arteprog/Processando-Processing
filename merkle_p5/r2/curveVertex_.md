@@ -18,7 +18,7 @@ endShape();
 ```
 
 #### Descrição
-Especifica as coordenadas de vértices para curvas. Esta função só pode ser chamada entre**beginShape()** e**endShape()** e pode ser utilizada apenas para desenhar os
+Especifica as coordenadas de vértices para curvas. Esta função só pode ser chamada entre **beginShape()** e **endShape()** e pode ser utilizada apenas para desenhar os
 tipos  POLYGON, LINE_LOOP, e LINE_STRIP. O uso da versão 3D
 requer a renderização com P3D ou OPENGL (ver a
 referência ao Ambiente para mais informações).
@@ -32,10 +32,16 @@ curveVertex(x, y, z)
 Parâmetros
 x
 float ou int: A coordenada-x do vértice
+
+
 y
 float ou int: A coordenada-y do vértice
+
+
 z
 float ou int: A coordenada-z do vértice
+
+
 
 #### Retorno
 
@@ -48,4 +54,14 @@ Nenhum
 Application & Web
 
 #### Relacionado
-[curve()](curve_)[beginShape()](beginShape_)[endShape()](endShape_)[vertex()](vertex_)[bezierVertex()](bezierVertex_)
+[curve()](curve_
+)
+[beginShape()](beginShape_
+)
+[endShape()](endShape_
+)
+[vertex()](vertex_
+)
+[bezierVertex()](bezierVertex_
+)
+

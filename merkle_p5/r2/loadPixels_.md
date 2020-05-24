@@ -19,10 +19,10 @@ updatePixels();
 ```
 
 #### Descrição
-Carrega no array**pixel[]**
+Carrega no array `pixel[]`
 dados de pixels para a janela de visualização. Esta
 função deve ser chamada sempre antes de se ler ou
-escrever em**pixels[].**
+escrever em `pixels[].`
 
 #### Sintaxe
 ```pde
@@ -36,4 +36,8 @@ loadPixels()
 Web & Applicações
 
 #### Relacionado
-[pixels[]](pixels)[updatePixels()](updatePixels_)
+[pixels[]](pixels
+)
+[updatePixels()](updatePixels_
+)
+

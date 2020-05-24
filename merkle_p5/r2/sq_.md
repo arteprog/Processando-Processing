@@ -32,6 +32,8 @@ Parâmetros
 valor
 int ou float
 
+
+
 #### Retorno
 
 	
@@ -43,4 +45,6 @@ float
 Web & Applicações
 
 #### Relacionado
-[sqrt()](sqrt_)
+[sqrt()](sqrt_
+)
+

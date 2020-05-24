@@ -16,7 +16,7 @@ visualização.  Um retângulo é uma forma
 de quatro lados com todos os ângulos internos em noventa graus.
 Os primeiros dois parâmetros especificam a posição,
 o terceiro a largura, e o quarto a altura.  A origem é
-modificada com a função**rectMode()**.
+modificada com a função **rectMode()**.
 
 #### Sintaxe
 ```pde
@@ -26,12 +26,20 @@ rect(x, y, width, height);
 Parâmetros
 x
 int ou float: coordenada-x do retângulo
+
+
 y
 int ou float: coordenada-y do retângulo
+
+
 width
 int ou float: largura do retângulo
+
+
 height
 int ou float: altura do retângulo
+
+
 
 #### Retorno
 
@@ -44,4 +52,8 @@ Nenhum
 Web & Applicações
 
 #### Relacionado
-[rectMode()](rectMode_)[quad()](quad_)
+[rectMode()](rectMode_
+)
+[quad()](quad_
+)
+

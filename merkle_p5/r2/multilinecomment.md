@@ -15,6 +15,8 @@ line(50, 0, 50, 100);
 
 ```
 
+
+
 #### Descrição
 Notas explanatórias incorporadas ao
 código. Comentários são utilizados para a
@@ -37,10 +39,16 @@ Parâmetros
 commentário
 qualquer següencia de caracteres
 
+
+
 #### Utilização
 
 	
 Web & Applicações
 
 #### Relacionado
-[// (commentário)](comment)[/** */ (commentário documental)](doccomment)
+[// (commentário)](comment
+)
+[/** */ (commentário documental)](doccomment
+)
+

@@ -34,12 +34,20 @@ box(largura, altura, profundidade);
 Parâmetros
 tamanho
 int ou float: dimensão da caixa em todas as dimensões; cria um cubo
+
+
 largura
 int ou float: dimensão da caixa na dimensão x
+
+
 altura
 int ou float: dimensão da caixa na  dimensão y
+
+
 profundidade
 int ou float: dimensão da caixa na  dimensão z
+
+
 
 #### Retorno
 
@@ -52,4 +60,6 @@ Nenhum
 Web & Applicações
 
 #### Relacionado
-[sphere()](sphere_)
+[sphere()](sphere_
+)
+

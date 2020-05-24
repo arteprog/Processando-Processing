@@ -15,10 +15,10 @@ while(i<80) {
 ```
 
 #### Descrição
-Controla uma seqüência de repetições. A estrutura**while**  executa uma série de comandos continuamente enguanto a**expressão **for verdadeira (**true**).
+Controla uma seqüência de repetições. A estrutura `while`  executa uma série de comandos continuamente enguanto a `expressão `for verdadeira ( `true`).
 A expressão precisa ser atualizada durante as
 repetições ou a execução não
-sairão do laço do**while(). **
+sairão do laço do `while(). `
 
 #### Sintaxe
 ```pde
@@ -30,8 +30,12 @@ while(expressão) {
 Parâmetros
 expressão
 uma expresão válida
+
+
 comandos
 um ou mais comandos a executar
+
+
 
 #### Utilização
 
@@ -39,4 +43,6 @@ um ou mais comandos a executar
 Web & Applicações
 
 #### Relacionado
-[for()](for_)
+[for()](for_
+)
+

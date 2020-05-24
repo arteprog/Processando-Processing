@@ -24,11 +24,13 @@ void mousePressed() {
 
 ```
 
+
+
 #### Descrição
-Executa o código incluso em**draw() ** uma
+Executa o código incluso em `draw() ` uma
 vez. Esta função permite ao programa atualizar a janela
 de visualização apenas quando necessário, por
-exemplo, quando um evento registrado por**mousPressed() **ou**keyPressed()** ocorrer. Na estruturação de um programa, apenas faz sentido chamar redraw() em evento tais como**mousPressed().  **Chamá-la em**draw()** não tem efeito, pois esta é executada continuamente de qualquer modo.
+exemplo, quando um evento registrado por `mousPressed() `ou `keyPressed()` ocorrer. Na estruturação de um programa, apenas faz sentido chamar redraw() em evento tais como `mousPressed().  `Chamá-la em `draw()` não tem efeito, pois esta é executada continuamente de qualquer modo.
 
 #### Sintaxe
 ```pde
@@ -47,4 +49,8 @@ Nenhum
 Web & Applicações
 
 #### Relacionado
-[noLoop()](noLoop_)[loop()](loop_)
+[noLoop()](noLoop_
+)
+[loop()](loop_
+)
+

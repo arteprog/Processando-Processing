@@ -14,7 +14,8 @@ void mousePressed() {
 } 
 
 ```
-<hr align="left" noshade="noshade" size="1" width="150"/>
+
+
 
 ```pde
 void draw() { 
@@ -28,6 +29,8 @@ void mousePressed() {
 
 ```
 
+
+
 #### Descrição
 Faz um link a uma página web na mesma janela ou em uma nova janele. A URL completa deve ser especificada.
 
@@ -40,8 +43,12 @@ link(url, alvo)
 Parâmetros
 url
 String: complete url as a String in quotes
+
+
 alvo
 String: nome da janela a carregar a url como uma string entre aspas
+
+
 
 #### Retorno
 

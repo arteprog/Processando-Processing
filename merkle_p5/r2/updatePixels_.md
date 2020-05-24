@@ -56,14 +56,22 @@ updatePixels(x1, y1, largura, altura)
 Parâmetros
 x1
 int: coordenada-x do canto superior esquerdo
+
+
 y1
 int: coordenada-y do canto superior esquerdo
+
+
 largura
 largura
 ou coordenadax do canto oposto, dependendo do atual modo configurado por  imageMode()
+
+
 altura
 altura
 ou coordenada-y do canto oposto, dependendo do atual modo configurado por imageMode()
+
+
 
 #### Utilização
 
@@ -71,4 +79,8 @@ ou coordenada-y do canto oposto, dependendo do atual modo configurado por image
 Web & Applicações
 
 #### Relacionado
-[pixels[]](pixels)[loadPixels()](loadPixels_)
+[pixels[]](pixels
+)
+[loadPixels()](loadPixels_
+)
+

@@ -20,25 +20,58 @@ void draw() {
 
 ```
 
+
+
 #### Descrição
 Classe para armazenar e tocar sons no formato .wav.
 Métodos
-[play()](PSound_play_)
+[play()](PSound_play_
+)
+
 Tocar o som uma vez
-[loop()](PSound_loop_)
+
+
+[loop()](PSound_loop_
+)
+
 Tocar o som continuamente
-[noLoop()](PSound_noLoop_)
+
+
+[noLoop()](PSound_noLoop_
+)
+
 Parar de tocar o som continuamente
-[pause()](PSound_pause_)
+
+
+[pause()](PSound_pause_
+)
+
 Pausar a reprodução do som em playback
-[stop()](PSound_stop_)
+
+
+[stop()](PSound_stop_
+)
+
 Parar a reprodução do som em playback
-[volume()](PSound_volume_)
+
+[volume()](PSound_volume_
+)
+
 Ajusta o volume da reprodução do som em playback
-[duration()](PSound_duration_)
+
+
+[duration()](PSound_duration_
+)
+
 Retorna a duração do som em segundos
-[time()](PSound_time_)
+
+
+[time()](PSound_time_
+)
+
 Retorna o momento atual de reprodução do som em playback
+
+
 Construtores
 ```pde
 PSound(file)
@@ -47,6 +80,8 @@ PSound(file)
 Parâmetros
 file
 String: nome do arquivo de som a carregar
+
+
 
 #### Utilização
 

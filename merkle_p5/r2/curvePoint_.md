@@ -38,14 +38,24 @@ curvePoint(a, b, c, d, t)
 Parâmetros
 a
 int ou float: coordenada do primeiro ponto sobre a curva
+
+
 b
 int ou float: coordenada do segundo ponto sobre a curva
+
+
 c
 int ou float: coordenada do terceiro ponto sobre a curva
+
+
 d
 int ou float: coordenada do quarto ponto sobre a curva
+
+
 t
 float: valor entre 0 e 1
+
+
 
 #### Utilização
 
@@ -53,4 +63,10 @@ float: valor entre 0 e 1
 Web & Applicações
 
 #### Relacionado
-[curve()](curve_)[curveVertex()](curveVertex_)[bezierPoint()](bezierPoint_)
+[curve()](curve_
+)
+[curveVertex()](curveVertex_
+)
+[bezierPoint()](bezierPoint_
+)
+

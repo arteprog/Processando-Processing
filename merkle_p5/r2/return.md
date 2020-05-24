@@ -18,7 +18,8 @@ int timestwo(int dVal) {
 } 
 
 ```
-<hr align="left" noshade="noshade" size="1" width="150"/>
+
+
 
 ```pde
 int[] vals = {10, 20, 30}; 
@@ -37,7 +38,8 @@ int[] timestwo(int[] dVals) {
 } 
 
 ```
-<hr align="left" noshade="noshade" size="1" width="150"/>
+
+
 
 ```pde
 void draw() { 
@@ -52,12 +54,14 @@ void draw() {
 
 ```
 
+
+
 #### Descrição
-A palavra chave**return**
+A palavra chave `return`
 é utilizada para indicar o tipo de valor a retornar de uma
 função. O valor sendo retornado deve ser de tipo igual ao
 definido na declaração da função.
-Funções declaradas com**void **não podem retornar valores e não podem incluir um valor de retorno. A palavara chace**return ** também
+Funções declaradas com `void `não podem retornar valores e não podem incluir um valor de retorno. A palavara chace `return ` também
 pode ser usada para  sair de uma função, e
 consequentemente não permitindo que o program leia e execute os
 comandos restantes nela contidos (veja o terceiro exemplo acima).
@@ -73,12 +77,20 @@ tipo funcao {
 Parâmetros
 tipo
 boolean, byte, char, int, float, String, boolean[], byte[], char[], int[], float[], String[]
+
+
 funcao
 qualquer função que esteja sendo definida
+
+
 comandos
 qualquer comando válido
+
+
 valor
 deve ser do mesmo tipo de dados que o parâmtro "tipo"
+
+
 
 #### Utilização
 

@@ -14,6 +14,8 @@ print(sa2);  // Imprime "OH "
 
 ```
 
+
+
 #### Descrição
 Decrementa o tamanho de um array em um elemento e retorna o array menor.
 
@@ -26,6 +28,8 @@ Parâmetros
 array
 boolean[], byte[], char[], int[], float[], or String[]
 
+
+
 #### Retorno
 
 	
@@ -37,4 +41,8 @@ Array (do mesmo tipo de dados da entrada)
 Web & Applicações
 
 #### Relacionado
-[append()](append_)[expand()](expand_)
+[append()](append_
+)
+[expand()](expand_
+)
+

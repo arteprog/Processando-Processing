@@ -17,7 +17,8 @@ switch(num) {
 } 
 
 ```
-<hr align="left" noshade="noshade" size="1" width="150"/>
+
+
 
 ```pde
 char letter = 'N'; 
@@ -35,7 +36,8 @@ switch(letter) {
 } 
 
 ```
-<hr align="left" noshade="noshade" size="1" width="150"/>
+
+
 
 ```pde
 // A remoção de um "break" permite testar por mais  
@@ -56,16 +58,18 @@ switch(letra) {
 
 ```
 
+
+
 #### Descrição
-Funciona como uma estrutura de controle condicional**if else**, mas o**swith()**
+Funciona como uma estrutura de controle condicional `if else`, mas o `swith()`
 é mais conveniente quando se tem a necessidade de
 seleção de três ou mais alternatias.  A
-execução do programa segue ao ponto onde o caso  (*case*)
+execução do programa segue ao ponto onde o caso  ( *case*)
 tem valor equivalente à expressão de controle. Todos os
 demais comandos no switch são executados exceto quando a
-execução for redirecionalda por um comando**break.**
+execução for redirecionalda por um comando `break.`
 Apenas dados primitivos que podem ser convertidos para um inteiro
-(byte, char, and int) podem ser utilizados com parâmetro**expressão. ** O caso padrão (*default*) é opcional.
+(byte, char, and int) podem ser utilizados com parâmetro **expressão. ** O caso padrão ( *default*) é opcional.
 
 #### Sintaxe
 ```pde
@@ -83,10 +87,16 @@ switch(expressão)
 Parâmetros
 expressão
 byte, char, or int
+
+
 rotulo
 byte, char, or int
+
+
 comandos
 um ou mais comando a executar
+
+
 
 #### Utilização
 
@@ -94,4 +104,14 @@ um ou mais comando a executar
 Web & Applicações
 
 #### Relacionado
-[case](case)[default](default)[break](break)[if()](if_)[else](else)
+[case](case
+)
+[default](default
+)
+[break](break
+)
+[if()](if_
+)
+[else](else
+)
+

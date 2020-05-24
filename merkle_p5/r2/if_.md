@@ -17,7 +17,7 @@ for(int i=5; i<height; i+=5) {
 ```
 
 #### Descrição
-Permite ao programa decidir entre a execução de um código a executar.  Caso a**expressão **seja avaliada como verdadeira, os comandos contidos no bloco serão executados. Caso a**expressão **seja avaliada como falsa, os comandos contidos no bloco não serão executados.
+Permite ao programa decidir entre a execução de um código a executar.  Caso a `expressão `seja avaliada como verdadeira, os comandos contidos no bloco serão executados. Caso a `expressão `seja avaliada como falsa, os comandos contidos no bloco não serão executados.
 
 #### Sintaxe
 ```pde
@@ -29,8 +29,11 @@ if(expresão) {
 Parâmetros
 expresão
 qualquer expressão que possa ser avaliada como verdadeira ou falsa
+
 comandos
 um ou mais comandos a executar
+
+
 
 #### Utilização
 
@@ -38,4 +41,6 @@ um ou mais comandos a executar
 Web & Applicações
 
 #### Relacionado
-[else](else)
+[else](else
+)
+

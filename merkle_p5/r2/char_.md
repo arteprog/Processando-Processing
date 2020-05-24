@@ -19,8 +19,10 @@ println(b + " : " + c);  // Imprime "true : t"
 
 ```
 
+
+
 #### Descrição
-Converte um tipo de dados primitivo, string ou*array *na sua representação em char
+Converte um tipo de dados primitivo, string ou *array *na sua representação em char
 
 #### Sintaxe
 ```pde
@@ -30,6 +32,8 @@ char(valor)
 Parâmetros
 valor
 int, float, byte, boolean, String, int[], float[], byte[], boolean[], String[]
+
+
 
 #### Retorno
 
@@ -42,4 +46,12 @@ char
 Web & Applicações
 
 #### Relacionado
-[char](char)[int()](int_)[float()](float_)[byte()](byte_)
+[char](char
+)
+[int()](int_
+)
+[float()](float_
+)
+[byte()](byte_
+)
+

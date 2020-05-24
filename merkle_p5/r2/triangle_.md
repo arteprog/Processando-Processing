@@ -24,16 +24,28 @@ triangle(x1, y1, x2, y2, x3, y3);
 Parâmetros
 x1
 int ou float: coordenada-x do primeiro ponto
+
+
 y1
 int ou float: coordenada-y do promeiro ponto
+
+
 x2
 int ou float: coordenada-x do segundo ponto
+
+
 y2
 int ou float: coordenada-y do segundo ponto
+
+
 x3
 int ou float: coordenada-x do terceiro ponto
+
+
 y3
 int ou float: coordenada-y do terceiro ponto
+
+
 
 #### Retorno
 
@@ -46,4 +58,6 @@ Nenhum
 Web & Applicações
 
 #### Relacionado
-[beginShape()](beginShape_)
+[beginShape()](beginShape_
+)
+

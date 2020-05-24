@@ -20,7 +20,7 @@ endShape();
 #### Descrição
 
 	
-Sets a texture to be applied to vertex points. The**texture()** function must be called between**beginShape()** and**endShape()** and before any calls to**vertex()**.
+Sets a texture to be applied to vertex points. The **texture()** function must be called between **beginShape()** and **endShape()** and before any calls to **vertex()**.
 
 #### Sintaxe
 ```pde
@@ -30,6 +30,8 @@ texture(img);
 Parâmetros
 img
 PImage: the texture to apply
+
+
 
 #### Retorno
 
@@ -43,7 +45,12 @@ Application & Web
 
 #### Relacionado
 
-[textureMode()](textureMode_)
-[beginShape()](beginShape_)
-[endShape()](endShape_)
-[vertex()](vertex_)
+[textureMode()](textureMode_
+)
+[beginShape()](beginShape_
+)
+[endShape()](endShape_
+)
+[vertex()](vertex_
+)
+

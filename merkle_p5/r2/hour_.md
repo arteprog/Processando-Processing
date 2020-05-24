@@ -17,8 +17,10 @@ void draw() {
 
 ```
 
+
+
 #### Descrição
-Processing se comunica com o relógio de seu computador. A função**hour()** retorna a hora corrente como um valor entre 0 e 23.
+Processing se comunica com o relógio de seu computador. A função `hour()` retorna a hora corrente como um valor entre 0 e 23.
 
 #### Sintaxe
 ```pde
@@ -37,4 +39,16 @@ int
 Web & Applicações
 
 #### Relacionado
-[millis() ](millis_)[second()](second_)[minute()](minute_)[day()](day_)[month()](month_)[year()](year_)
+[millis() ](millis_
+)
+[second()](second_
+)
+[minute()](minute_
+)
+[day()](day_
+)
+[month()](month_
+)
+[year()](year_
+)
+

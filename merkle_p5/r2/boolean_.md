@@ -19,8 +19,10 @@ println(i + " : " + b);  // Imprime "3445 : true"
 
 ```
 
+
+
 #### Descrição
-Converte um tipo de dados primitivo, string ou*array *na sua representação booleana. O número o é convertido para*false* (n.t. falso)  e todos os demais números como*true *(n.t. verdadeiro).
+Converte um tipo de dados primitivo, string ou *array *na sua representação booleana. O número o é convertido para *false* (n.t. falso)  e todos os demais números como *true *(n.t. verdadeiro).
 
 #### Sintaxe
 ```pde
@@ -30,6 +32,8 @@ boolean(valor)
 Parâmetros
 valor
 int, float, char, byte, String, int[], float[], char[], byte[], String[]
+
+
 
 #### Retorno
 
@@ -42,4 +46,6 @@ boolean
 Web & Applicações
 
 #### Relacionado
-[boolean](boolean)
+[boolean](boolean
+)
+

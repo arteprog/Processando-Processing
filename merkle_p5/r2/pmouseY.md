@@ -15,11 +15,14 @@ void draw()
 
 ```
 
+
+
 #### Descrição
-A variável de sistema**pmouseY**
+A variável de sistema `pmouseY`
 sempre contém a coordenada vertical anterior do mouse. Esta é a
 posição vertical do mouse no quadro imediatamente anterior ao quadro
 atual.
+
 
 #### Sintaxe
 ```pde
@@ -33,4 +36,20 @@ pmouseY
 Web & Applicações
 
 #### Relacionado
-[pmouseX](pmouseX)[mouseX](mouseX)[mouseY](mouseY)[mousePressed](mousePressed)[mousePressed()](mousePressed_)[mouseReleased()](mouseReleased_)[mouseMoved()](mouseMoved_)[mouseDragged()](mouseDragged_)
+[pmouseX](pmouseX
+)
+[mouseX](mouseX
+)
+[mouseY](mouseY
+)
+[mousePressed](mousePressed
+)
+[mousePressed()](mousePressed_
+)
+[mouseReleased()](mouseReleased_
+)
+[mouseMoved()](mouseMoved_
+)
+[mouseDragged()](mouseDragged_
+)
+

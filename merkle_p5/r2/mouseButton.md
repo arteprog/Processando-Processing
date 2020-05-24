@@ -20,7 +20,8 @@ void draw() {
 } 
 
 ```
-<hr align="left" noshade="noshade" size="1" width="150"/>
+
+
 
 ```pde
 // Clique sobre a imagem e pressione os botões
@@ -42,11 +43,13 @@ void mousePressed() {
 
 ```
 
+
+
 #### Descrição
 Processing rastreia automaticamente se o
 botão do mouse é pressionando, assim como qual
 botão é pressionando. O valor da variável de
-sistema**mouseButton** pode ser um entre**LEFT**,**RIGHT**, ou**CENTER**, dependendo de qual botão foi pressionado.
+sistema **mouseButton** pode ser um entre **LEFT**, **RIGHT**, ou **CENTER**, dependendo de qual botão foi pressionado.
 
 #### Utilização
 
@@ -54,4 +57,16 @@ sistema**mouseButton** pode ser um entre**LEFT**,**RIGHT**, ou**CENTER**, depend
 Web & Applicações
 
 #### Relacionado
-[mouseX](mouseX)[mouseY](mouseY)[mousePressed()](mousePressed_)[mouseReleased()](mouseReleased_)[mouseMoved()](mouseMoved_)[mouseDragged()](mouseDragged_)
+[mouseX](mouseX
+)
+[mouseY](mouseY
+)
+[mousePressed()](mousePressed_
+)
+[mouseReleased()](mouseReleased_
+)
+[mouseMoved()](mouseMoved_
+)
+[mouseDragged()](mouseDragged_
+)
+

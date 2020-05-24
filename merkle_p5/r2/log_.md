@@ -18,8 +18,10 @@ float log10 (int x) {
 
 ```
 
+
+
 #### Descrição
-Calcula o logaritmo natural (logaritmo na base*e*) de um número. Esta função espera que valoressejam maiores que 0.0.
+Calcula o logaritmo natural (logaritmo na base *e*) de um número. Esta função espera que valoressejam maiores que 0.0.
 
 #### Sintaxe
 ```pde
@@ -29,6 +31,8 @@ log(valor)
 Parâmetros
 valor
 int ou float: número dever ser maior que 0.0
+
+
 
 #### Retorno
 

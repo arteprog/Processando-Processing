@@ -44,16 +44,28 @@ tint(color)
 Parâmetros
 cinza
 int ou float: qualquer número válido
+
+
 alpha
 int ou float: opacidade da imagem
+
+
 valor1
 int ou float: valor de vermelho ou de matiz
+
+
 valor2
 int ou float: valor de verde ou de saturação
+
+
 valor3
 int ou float: valor de azul ou de brilho
+
+
 color
 color: qualquer valor do tipo de dados color
+
+
 
 #### Retorno
 
@@ -66,4 +78,8 @@ Nenhum
 Web & Applicações
 
 #### Relacionado
-[noTint()](noTint_)[image()](image_)
+[noTint()](noTint_
+)
+[image()](image_
+)
+

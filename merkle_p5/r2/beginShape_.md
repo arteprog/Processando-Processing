@@ -143,18 +143,18 @@ endShape();
 ```
 
 #### Descrição
-O uso das funções**beginShape() ** e**endShape()** permite a criação de formas mais complexas. A função**beginShape()** inicia o armazenmento dos vértices de uma forma e**endShape()** o interrompe. O valor do parâmetro**MODO**
+O uso das funções `beginShape() ` e `endShape()` permite a criação de formas mais complexas. A função `beginShape()` inicia o armazenmento dos vértices de uma forma e `endShape()` o interrompe. O valor do parâmetro `MODO`
 LINES, LINE_STRIP, LINE_LOOP, TRIANGLES, TRIANGLE_FAN, TRIANGLE_STRIP,
 QUADS, QUAD_STRIP, e POLYGON. especifica qual o tipo de formas
 serão criadas a partir dos vértices providos. Os
 par6ametros disponíveis para beginShape() são  Caso
-não haja**MODO** especificado, o padrão utilizado é POLYGON. Após a chamada a função**beginShape()**, deve seguir uma série de comandos**vertex()**.  Para se parar o desenho da forma, chama-se**endShape()**. Enguanto a função**vertex()**
+não haja `MODO` especificado, o padrão utilizado é POLYGON. Após a chamada a função `beginShape()`, deve seguir uma série de comandos `vertex()`.  Para se parar o desenho da forma, chama-se `endShape()`. Enguanto a função `vertex()`
  com dois parâmetros especifica uma posição em
 2D, uma com tr6es parâmetros  especifica uma
 posição em 3D. Cada forma será delineada com a cor
 do traço corrente e preenchida com  a atual cor de
 preenchimento.   Transformações geométricas
-como**translate()**,**rotate()**, e**scale() **não funcionam no escopo de**beginShape()**.
+como **translate()**, **rotate()**, e **scale() **não funcionam no escopo de **beginShape()**.
 
 #### Sintaxe
 ```pde
@@ -167,6 +167,8 @@ qualquer um
 entre: LINES, LINE_STRIP, LINE_LOOP, TRIANGLES, TRIANGLE_FAN,
 TRIANGLE_STRIP, QUADS, QUAD_STRIP, ou  POLYGON
 
+
+
 #### Retorno
 
 	
@@ -178,4 +180,12 @@ Nenhum
 Web & Applicações
 
 #### Relacionado
-[endShape()](endShape_)[vertex()](vertex_)[curveVertex()](curveVertex_)[bezierVertex()](bezierVertex_)
+[endShape()](endShape_
+)
+[vertex()](vertex_
+)
+[curveVertex()](curveVertex_
+)
+[bezierVertex()](bezierVertex_
+)
+

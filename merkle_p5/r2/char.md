@@ -11,14 +11,18 @@ int n = '&'; // Declara a variável "n" e atribiu a ela o valor '&'
 
 ```
 
+
+
 #### Descrição
-Tipo de dados para caracteres, simbolos tipográficos tais como A, d e $. Um**char ** armazena
+Tipo de dados para caracteres, simbolos tipográficos tais como A, d e $. Um `char ` armazena
 letras e outros símbolos em formato Unicode, um sistema de
 codificação desenvolvido para dar suporte a uma variedade
-de línguas utilizadas no mundo. Cada**char ** tem
+de línguas utilizadas no mundo. Cada `char ` tem
 2 bytes (16 bits) de comprimento  e é distinguido ao estar
 entre apóstrofos. Por exemplo, a representação da
 tecla "delete" é '\377'.
+
+
 Na primeira vez que uma
 variável é escrita, ela deve ser declarada com um comando
 que expressa seu tipo de dados. Usos subseqüentes desta variável não
@@ -34,8 +38,12 @@ char var = valor
 Parâmetros
 var
 nome da variável que faz referência a valor do tipo char
+
+
 valor
 qualquer caracter
+
+
 
 #### Utilização
 
@@ -43,4 +51,6 @@ qualquer caracter
 Web & Applicações
 
 #### Relacionado
-[String](String)
+[String](String
+)
+

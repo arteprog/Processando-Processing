@@ -22,7 +22,7 @@ text("word", 50, 70);
 #### Descrição
 
 	
-Sets the current alignment for drawing text. The parameters LEFT, CENTER, and RIGHT set the display characteristics of the letters in relation to the values for the**x** and**y** parameters of the**text()** function.
+Sets the current alignment for drawing text. The parameters LEFT, CENTER, and RIGHT set the display characteristics of the letters in relation to the values for the **x** and **y** parameters of the **text()** function.
 
 #### Sintaxe
 ```pde
@@ -32,6 +32,8 @@ textAlign(MODE)
 Parâmetros
 MODE
 Either LEFT, CENTER, or RIGHT
+
+
 
 #### Retorno
 
@@ -45,6 +47,10 @@ Web & Applicações
 
 #### Relacionado
 
-[loadFont() ](loadFont_)
-[PFont ](PFont)
-[text() ](text_)
+[loadFont() ](loadFont_
+)
+[PFont ](PFont
+)
+[text() ](text_
+)
+

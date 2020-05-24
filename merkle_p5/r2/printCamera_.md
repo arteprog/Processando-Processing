@@ -17,6 +17,8 @@ printCamera();
 
 ```
 
+
+
 #### Descrição
 Imprime a matrix corrente na janela de texto.
 
@@ -37,4 +39,6 @@ Nenhum
 Web & Applicações
 
 #### Relacionado
-[camera()](camera_)
+[camera()](camera_
+)
+

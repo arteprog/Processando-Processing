@@ -17,7 +17,7 @@ for(int i=0; i<100; i=i+4) {
 ```
 
 #### Descrição
-Calcula o seno de um ângulo. Esta função espera que os valores do parâmetro**angulo** correspondam a valores em radianos (valores entre 0 e 2*PI). Valores são retornados no intervalo entre -1.0 e 1.0.
+Calcula o seno de um ângulo. Esta função espera que os valores do parâmetro `angulo` correspondam a valores em radianos (valores entre 0 e 2*PI). Valores são retornados no intervalo entre -1.0 e 1.0.
 
 #### Sintaxe
 ```pde
@@ -27,6 +27,9 @@ sin(rad)
 Parâmetros
 rad
 float: an angle in radians<description>
+
+
+
 </description>
 
 #### Retorno
@@ -40,4 +43,8 @@ float
 Web & Applicações
 
 #### Relacionado
-[cos()](cos_)[radians()](radians_)
+[cos()](cos_
+)
+[radians()](radians_
+)
+

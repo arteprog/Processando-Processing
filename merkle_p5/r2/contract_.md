@@ -11,10 +11,12 @@ println(ia.length);  // Prints "5"
 
 ```
 
+
+
 #### Descrição
 
 	
-Decreases the size of an array. The required**newSize** parameter provides precise control over the decrease in size.
+Decreases the size of an array. The required **newSize** parameter provides precise control over the decrease in size.
 
 #### Sintaxe
 ```pde
@@ -24,8 +26,12 @@ contract(array, newSize)
 Parâmetros
 array
 booleans[], bytes[], chars[], ints[], floats[], or Strings[]
+
+
 newSize
 positive int: new size for the array
+
+
 
 #### Retorno
 
@@ -39,4 +45,6 @@ Web & Applicações
 
 #### Relacionado
 
-[expand()](expand_)
+[expand()](expand_
+)
+

@@ -17,10 +17,13 @@ void draw() {
 
 ```
 
+
+
 #### Descrição
 Visualiza uma mensagem na área de status do
 navegador. Esta é a área de texto no canto inferior
-esqurdo do navegador. A função**status()** só funcionará quando um programa Processing estiver executando em um navegador web.
+esqurdo do navegador. A função `status()` só funcionará quando um programa Processing estiver executando em um navegador web.
+
 
 #### Sintaxe
 ```pde
@@ -30,6 +33,8 @@ status(texto)
 Parâmetros
 texto
 String: qualquer String válida
+
+
 
 #### Retorno
 

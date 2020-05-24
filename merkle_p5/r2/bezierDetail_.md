@@ -42,6 +42,8 @@ Parâmetros
 detalhe
 int: resolução das curvas
 
+
+
 #### Retorno
 
 	
@@ -53,4 +55,10 @@ Nenhum
 Web & Applicações
 
 #### Relacionado
-[curve()](curve_)[curveVertex()](curveVertex_)[curveTightness()](curveTightness_)
+[curve()](curve_
+)
+[curveVertex()](curveVertex_
+)
+[curveTightness()](curveTightness_
+)
+

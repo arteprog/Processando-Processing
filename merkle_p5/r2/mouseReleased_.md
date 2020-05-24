@@ -26,10 +26,12 @@ void mouseReleased()
 
 ```
 
+
+
 #### Descrição
 
 	
-TA função**mouseReleased()** é chamada cada vez que um botão do mouse é solto.
+TA função **mouseReleased()** é chamada cada vez que um botão do mouse é solto.
 
 #### Sintaxe
 ```pde
@@ -48,4 +50,16 @@ Nenhum
 Web & Applicações
 
 #### Relacionado
-[mouseX](mouseX)[mouseY](mouseY)[mousePressed](mousePressed)[mousePressed()](mousePressed_)[mouseMoved()](mouseMoved_)[mouseDragged()](mouseDragged_)
+[mouseX](mouseX
+)
+[mouseY](mouseY
+)
+[mousePressed](mousePressed
+)
+[mousePressed()](mousePressed_
+)
+[mouseMoved()](mouseMoved_
+)
+[mouseDragged()](mouseDragged_
+)
+

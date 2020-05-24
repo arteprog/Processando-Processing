@@ -39,19 +39,26 @@ for(int i=30; i<80; i=i+5) {
 ```
 
 #### Descrição
-Controla uma seqüência de repetições. A estrutura**for ** tem três partes:**início**,**teste**, e**coda**. Cada parte deve ser separada por um ponto e vírgula (';'). O laço continua ate que**teste** seja avaliada como**false***. *Quando a estrutura**for()**é executada, a seguinte seqüência passos ocorre:
+Controla uma seqüência de repetições. A estrutura `for ` tem três partes: **início**, **teste**, e **coda**. Cada parte deve ser separada por um ponto e vírgula (';'). O laço continua ate que `teste` seja avaliada como `false` *. *Quando a estrutura `for()`é executada, a seguinte seqüência passos ocorre:
+
 
 1. os comandos em "início" são executados;
 
+
 2. a expressão "teste" é avaliada verdadeira ou falsa;
 
-3. Caso "teste" seja verdadeira (*true*), passa-se ao passo 4.   Caso "teste" seja falsa (*false*), passa-se ao passo 6;
+
+3. Caso "teste" seja verdadeira ( *true*), passa-se ao passo 4.   Caso "teste" seja falsa ( *false*), passa-se ao passo 6;
+
 
 4. Executam-se os comandos contidos no bloco da estrutura em laço;
 
+
 5. Executam-se os comandos em "coda" e  passa-se ao passo 2;
 
+
 6.  Sai-se do laço.
+
 
 #### Sintaxe
 ```pde
@@ -63,12 +70,23 @@ for(início; teste; coda) {
 Parâmetros
 início
 inclui os comandos execudados uma única vez antes do início do laço
+
+
 teste
-caso "teste"seja avaliado verdadeiro (**true**), os comando são executados
+caso "teste"seja avaliado verdadeiro ( **true** ), os comando são executados
+
+
 comandos
+
 conjunto de comandos executados em cada iteração do laço
+
+
 coda
 inclui comandos executadas ao final de cada iteração do laço
+
+
+
+
 
 #### Utilização
 
@@ -76,4 +94,6 @@ inclui comandos executadas ao final de cada iteração do laço
 Web & Applicações
 
 #### Relacionado
-[while()](while_)
+[while()](while_
+)
+

@@ -29,7 +29,7 @@ visualização de dimensão de um píxel. O
 primeiro parâmetro é o valor da coordenada horizontal do
 ponto, o segundo o valor da vertical, e o terceiro, opcional, o valor
 da profundidade.  Para desenhar esta forma em 3D através da
-utilização do parâmetro**z**,
+utilização do parâmetro `z`,
 requer-se que o parâmetro P3D ou OPENGL tenha sido repassado
 à função size(), que configura a janela de
 visualização, como ilustrado no exemplo acima.
@@ -43,10 +43,15 @@ point(x, y, z);
 Parâmetros
 x
 int ou float: coordenada-x do ponto
+
+
 y
 int ou float: coordenada-y do ponto
+
+
 z
 int ou float: coordenada-z do ponto
+
 
 #### Retorno
 
@@ -59,4 +64,6 @@ Nenhum
 Web & Applicações
 
 #### Relacionado
-[beginShape()](beginShape_)
+[beginShape()](beginShape_
+)
+

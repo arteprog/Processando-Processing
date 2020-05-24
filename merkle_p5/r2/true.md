@@ -15,8 +15,10 @@ if(b == true) {
 
 ```
 
+
+
 #### Descrição
-Palavra chace que representa o valor lógico "verdadeiro". O valor<span style="font-weight: bold;">**true** </span> pode ser atribuído apenas a variáveis do tipo**boolean****. **
+Palavra chace que representa o valor lógico "verdadeiro". O valor<span style="font-weight: bold;"> `true`  </span> pode ser atribuído apenas a variáveis do tipo **boolean** `. `
 
 #### Sintaxe
 ```pde
@@ -30,4 +32,8 @@ true
 Web & Applicações
 
 #### Relacionado
-[false](false)[boolean](boolean)
+[false](false
+)
+[boolean](boolean
+)
+

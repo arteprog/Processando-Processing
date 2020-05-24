@@ -23,8 +23,11 @@ printMatrix();
 
 ```
 
+
+
 #### Descrição
 Imprime a matiz corrente na janela de texto do console.
+
 
 #### Sintaxe
 ```pde
@@ -43,4 +46,12 @@ Nenhum
 Web & Applicações
 
 #### Relacionado
-[pushMatrix()](pushMatrix_)[popMatrix()](popMatrix_)[resetMatrix()](resetMatrix_)[applyMatrix()](applyMatrix_)
+[pushMatrix()](pushMatrix_
+)
+[popMatrix()](popMatrix_
+)
+[resetMatrix()](resetMatrix_
+)
+[applyMatrix()](applyMatrix_
+)
+

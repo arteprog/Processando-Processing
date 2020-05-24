@@ -16,12 +16,12 @@ image(b, 35, 35, 50, 50);
 ```
 
 #### Descrição
-Modifica a localização da qual uma imagem é desenhada.  O modo padrão é**imageMode(CORNER)**
+Modifica a localização da qual uma imagem é desenhada.  O modo padrão é `imageMode(CORNER)`
 o qual especifica a localização como sendo o canto
-superior esquerdo, e utiliza o quarto e quinto parâmetos de**image()** como a largura e a altura da imagem. A sintaxe**imageMode(CORNERS)**
+superior esquerdo, e utiliza o quarto e quinto parâmetos de `image()` como a largura e a altura da imagem. A sintaxe `imageMode(CORNERS)`
 utiliza o segundo e terceiro parâmetros para se especificar um
 canto da imagem, e o quarto e quinto parâmetros para especificar
-o canto oposto. O parâmentre de**imageMode()** deve ser escrito "TODO EM MAIÚSCULAS**"** pelo fato de Processing ser sensitiva a caixa das letras (n.t.*case sensitive language*).
+o canto oposto. O parâmentre de `imageMode()` deve ser escrito "TODO EM MAIÚSCULAS `"` pelo fato de Processing ser sensitiva a caixa das letras (n.t. *case sensitive language*).
 
 #### Sintaxe
 ```pde
@@ -31,6 +31,8 @@ imageMode(MODO)
 Parâmetros
 MODO
 Qualquer um entre CORNER ou CORNERS
+
+
 
 #### Retorno
 
@@ -43,4 +45,14 @@ Nenhum
 Web & Applicações
 
 #### Relacionado
-[loadImage() ](loadImage_)[PImage ](PImage)[image() ](image_)[imageMode() ](imageMode_)[background() ](background_)
+[loadImage() ](loadImage_
+)
+[PImage ](PImage
+)
+[image() ](image_
+)
+[imageMode() ](imageMode_
+)
+[background() ](background_
+)
+

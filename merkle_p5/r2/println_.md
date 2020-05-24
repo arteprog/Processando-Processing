@@ -17,7 +17,8 @@ println(s);
 // end 
 
 ```
-<hr align="left" noshade="noshade" size="1" width="150"/>
+
+
 
 ```pde
 float[] f = { 0.3, 0.4, 0.5 }; 
@@ -29,6 +30,8 @@ println(f);
 // 0.5 
 
 ```
+
+
 
 #### Descrição
 Escreve na área do console do ambiente
@@ -54,6 +57,8 @@ Parâmetros
 dado
 boolean, byte, char, color, int, float, ou String
 
+
+
 #### Retorno
 
 	
@@ -65,4 +70,6 @@ Nenhum
 IDE
 
 #### Relacionado
-[print()](print_)
+[print()](print_
+)
+

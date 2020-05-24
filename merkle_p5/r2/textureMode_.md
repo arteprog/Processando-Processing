@@ -46,6 +46,8 @@ Parâmetros
 MODE
 either IMAGE or NORMALIZED
 
+
+
 #### Retorno
 
 	
@@ -58,4 +60,6 @@ Application & Web
 
 #### Relacionado
 
-[texture()](texture_)
+[texture()](texture_
+)
+

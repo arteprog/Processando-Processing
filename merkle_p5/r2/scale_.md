@@ -37,13 +37,13 @@ box(20, 20, 20);
 Incrementar ou decrementar o tamanho de um objeto
 ao expandir ou contrair vértices. Valores de escala são
 especificados em percentagens decimais. A chamada de
-função**scale(2.0)** incrementa a dimensão de uma forma em 200%. Objetos sempre são translacionados em relação a sua
+função `scale(2.0)` incrementa a dimensão de uma forma em 200%. Objetos sempre são translacionados em relação a sua
 posição relativa à
 origem do sistema de coordenadas.  Transformações se aplicam a
 todos eventos que aconteçam após
-sua chamada, e chamadas subseqüentes multiplicam seu efeito.  Por exemplo, ao se chamar**scale(2.0) ** e em seguida** scale(1.5) **equivale a se chamar**scale(2.5)**. Quando** scale****() **é chamada dentro de**draw()**,
+sua chamada, e chamadas subseqüentes multiplicam seu efeito.  Por exemplo, ao se chamar `scale(2.0) ` e em seguida ` scale(1.5) `equivale a se chamar `scale(2.5)`. Quando ` scale` `() `é chamada dentro de `draw()`,
 a transformação é reinicializada ao começo
-do novo laço.  A utilização desta função com o parâmetro**z ** requer a passagem
+do novo laço.  A utilização desta função com o parâmetro `z ` requer a passagem
 de P3D ou OPENGL como parâmetro à função
 size(),  como mostrado no exemplo acima.
 
@@ -57,12 +57,20 @@ scale(x, y, z);
 Parâmetros
 size
 float: razão a se escalar um objeto
+
+
 x
 float: razão a escalar um objeto no eixo "x"
+
+
 y
 float: razão a escala um objeto no eixo "y"
+
+
 z
 float: razão a escalar um objeto no eixo "z"
+
+
 
 #### Retorno
 
@@ -75,4 +83,18 @@ Nenhum
 Web & Applicações
 
 #### Relacionado
-[translate()](translate_)[rotate()](rotate_)[rotateX()](rotateX_)[rotateY()](rotateY_)[rotateZ(](rotateZ_)[pushMatrix()](pushMatrix_)[popMatrix()](popMatrix_)
+[translate()](translate_
+)
+[rotate()](rotate_
+)
+[rotateX()](rotateX_
+)
+[rotateY()](rotateY_
+)
+[rotateZ(](rotateZ_
+)
+[pushMatrix()](pushMatrix_
+)
+[popMatrix()](popMatrix_
+)
+

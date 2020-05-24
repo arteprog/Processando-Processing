@@ -19,7 +19,7 @@ text(lines, 3, 70);
 #### Descrição
 
 	
-Sets the way text draws to the screen. In the default configuration, it's possible to rotate, scale, and place letters in three dimensional space. Changing to SCREEN mode draws letters directly to the front of the windows and increases the rendering quality of the letters. The letters draw at the actual size of the font (in pixels) and therefore calls to**textSize()** will not affect the size of the letters. To create a font at the size you desire, use the "Create font..." option in the Tools menu.
+Sets the way text draws to the screen. In the default configuration, it's possible to rotate, scale, and place letters in three dimensional space. Changing to SCREEN mode draws letters directly to the front of the windows and increases the rendering quality of the letters. The letters draw at the actual size of the font (in pixels) and therefore calls to **textSize()** will not affect the size of the letters. To create a font at the size you desire, use the "Create font..." option in the Tools menu.
 
 #### Sintaxe
 ```pde
@@ -29,6 +29,8 @@ textMode(MODE)
 Parâmetros
 MODE
 either MODEL or SCREEN
+
+
 
 #### Retorno
 
@@ -42,7 +44,12 @@ Web & Applicações
 
 #### Relacionado
 
-[loadFont() ](loadFont_)
-[PFont ](PFont)
-[text()](text_)
-[textFont() ](textFont_)
+[loadFont() ](loadFont_
+)
+[PFont ](PFont
+)
+[text()](text_
+)
+[textFont() ](textFont_
+)
+

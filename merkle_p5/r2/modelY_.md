@@ -10,6 +10,8 @@ Em breve ...
 
 ```
 
+
+
 #### Descrição
 Retorna o valor y do espaço de
 modelo para uma coordenada x,y,z. Isto fornece a coordenada após
@@ -28,12 +30,19 @@ Parâmetros
 x
 int
 ou float: coordenada x do ponto a avaliar
+
+
 y
 int
 ou float: coordenada y do ponto a avaliar
+
+
 z
 int
 ou float: coordenada x do ponto a avaliar
+
+
+
 
 #### Retorno
  float
@@ -43,4 +52,8 @@ ou float: coordenada x do ponto a avaliar
 Applicações
 
 #### Relacionado
-[modelX()](modelX_)[modelZ()](modelZ_)
+[modelX()](modelX_
+)
+[modelZ()](modelZ_
+)
+

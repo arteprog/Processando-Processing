@@ -15,6 +15,8 @@ void draw() {
 
 ```
 
+
+
 #### Descrição
 Palavra chave  utilizada para indicar que uma
 função não retorna valor. Cada
@@ -32,8 +34,12 @@ void funcao {
 Parâmetros
 funcao
 qualquer função que está sendo definida ou implementada
+
+
 comandos
 quaisquer comandos válidos
+
+
 
 #### Utilização
 

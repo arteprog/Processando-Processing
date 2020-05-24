@@ -13,12 +13,15 @@ float c = a + b;  // declara uma variável "c" e lhe atribui
 
 ```
 
+
+
 #### Descrição
 Tipo de dados para inteiros, números sem
 casas depois da vírgula. Inteiros podem variar de magnitude
 no intervalo de números tão negativos quanto
 -2,147,483,648 até tão positivos  quanto
 2,147,483,647.
+
 Na primeira vez que uma
 variável é escrita, ela deve ser declarada com um comando
 que expressa seu tipo de dados. Usos subseqüentes desta variável não
@@ -34,8 +37,12 @@ int var = valor
 Parâmetros
 var
 nome de variávels que faz referência a valor inteiro
+
+
 value
 qualquer valor inteiro
+
+
 
 #### Utilização
 
@@ -43,4 +50,8 @@ qualquer valor inteiro
 Web & Applicações
 
 #### Relacionado
-[splitInts()](splitInts_)[float](float)
+[splitInts()](splitInts_
+)
+[float](float
+)
+

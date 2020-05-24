@@ -21,8 +21,10 @@ void draw()
 
 ```
 
+
+
 #### Descrição
-Atribui um valor de semente para**noise()**. Como padrão,**noise()** produz resultados diferentes cada vez que é chamada.  Atribua ao parâmetro**valor **uma constante para se obter os mesmos números pseudo-randômicos cada vez que o software for executado.
+Atribui um valor de semente para `noise()`. Como padrão, `noise()` produz resultados diferentes cada vez que é chamada.  Atribua ao parâmetro `valor `uma constante para se obter os mesmos números pseudo-randômicos cada vez que o software for executado.
 
 #### Sintaxe
 ```pde
@@ -32,6 +34,8 @@ noiseSeed(valor)
 Parâmetros
 valor
 int: semente para se calcular os números
+
+
 
 #### Retorno
 
@@ -44,4 +48,12 @@ float
 Web & Applicações
 
 #### Relacionado
-[noise()](noise_)[noiseDetail()](noiseDetail_)[random()](random_)[randomSeed()](randomSeed_)
+[noise()](noise_
+)
+[noiseDetail()](noiseDetail_
+)
+[random()](random_
+)
+[randomSeed()](randomSeed_
+)
+

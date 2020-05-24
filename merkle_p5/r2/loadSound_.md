@@ -18,8 +18,10 @@ void draw() {
 
 ```
 
+
+
 #### Descrição
-Carrega um som em uma variável to tipo**PSound. ** Somente
+Carrega um som em uma variável to tipo `PSound. ` Somente
 arquivos do tipo .wave podem ser carregados. Para carregar
 corretamente, os arquivos de audio devem estar localizados no
 diretório data do esboço corrente.
@@ -33,6 +35,8 @@ Parâmetros
 filename
 String: nome do arquivo a carregar; deve ser to tipo .wav.
 
+
+
 #### Retorno
 
 	
@@ -44,4 +48,6 @@ PSound
 Web & Applicações
 
 #### Relacionado
-[PSound](PSound)
+[PSound](PSound
+)
+

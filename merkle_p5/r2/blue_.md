@@ -17,17 +17,20 @@ rect(50, 20, 35, 60);
 ```
 
 #### Descrição
-Extrai o valor de azul de uma cor,  já feita a escala de acordo com o**coloMode()**
+Extrai o valor de azul de uma cor,  já feita a escala de acordo com o `coloMode()`
 corrente. este valor é sempre retornado como um float, e
 portanto, deve-se tomar o cuidado de não atribuí-lo a
 variáveis do tipo inteiro.
 
-A função**blue()**
+
+
+A função `blue()`
 é fácil de utilizar e entender, mas é mais lenta
 que outra técnica. Para se obter os mesmos resultados em maior
-velocidade, mas trabalhando em**colorMode(RGB, 255)**, utiliza-se
+velocidade, mas trabalhando em **colorMode(RGB, 255)**, utiliza-se
 um máscara de bitspara remover os demais componentes de cor. Por
-exemplo, as duas linhas de código são equivalentes:```pde
+exemplo, as duas linhas de código são equivalentes:
+```pde
 float r1 = blue(myColor);
 float r2 = myColor & 0xFF;
 ```
@@ -41,6 +44,8 @@ Parâmetros
 cor
 qualquer valor do tipo de dados color
 
+
+
 #### Retorno
 
 	
@@ -52,4 +57,14 @@ float
 Web & Applicações
 
 #### Relacionado
-[red() ](red_)[green() ](green_)[hue() ](hue_)[saturation() ](saturation_)[brightness() ](brightness_)
+[red() ](red_
+)
+[green() ](green_
+)
+[hue() ](hue_
+)
+[saturation() ](saturation_
+)
+[brightness() ](brightness_
+)
+

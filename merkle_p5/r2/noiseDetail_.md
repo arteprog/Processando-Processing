@@ -30,6 +30,8 @@ void draw() {
 
 ```
 
+
+
 #### Descrição
 Ajusta o caráter e o nível de detalhe
 produzido pela função de ruído de Perlin. De modo
@@ -41,15 +43,17 @@ altas criam detalhes mais finos na seqüência de
 ruído.  Como padrão, a função noise()
 computa sobre 4 oitavas, onde cada uma contribui para exatamente a
 metade de sua predecessora, e iniciando em 50% de intensidade para a
-primeira oitava.  A declinação (*fallof amount*)
+primeira oitava.  A declinação ( *fallof amount*)
 pode ser alterado ao se adicionar um par6ametro adicional à
 função.  Por exemplo,  uma
 declinação de 0.75 significa que cada oitava terá
 75% de impacto (25% a menos) que a próxima menor oitava.
 Qualquer valor entre 0.0 e 1.0 é válido.
  Entretanto, notar que valores acima de 0.5 podem resultar em
-valores acima de 1.0 retornados por**noise()**.
-Ao alterar estes parâmetros, o sinal criado pela função**noise()** pode ser adaptado para se adequar a necessidades e características bem específicas.
+valores acima de 1.0 retornados por `noise()`.
+
+
+Ao alterar estes parâmetros, o sinal criado pela função `noise()` pode ser adaptado para se adequar a necessidades e características bem específicas.
 
 #### Sintaxe
 ```pde
@@ -59,9 +63,13 @@ noiseDetail(oitavas, declinação)
 ```
 Parâmetros
 oitavas
-int: número de oitavas a ser utilizada pela função **noise()**.
+int: número de oitavas a ser utilizada pela função  `noise()` .
+
+
 declinação
-float: declinação (n.t. *falloff factor*) para cada oitava
+float: declinação (n.t.  *falloff factor* ) para cada oitava
+
+
 
 #### Utilização
 
@@ -69,4 +77,6 @@ float: declinação (n.t. *falloff factor*) para cada oitava
 Web & Applicações
 
 #### Relacionado
-[noise()](noise_)
+[noise()](noise_
+)
+

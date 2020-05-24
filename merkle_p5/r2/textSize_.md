@@ -19,7 +19,7 @@ text("word", 15, 70);
 #### Descrição
 
 	
-Sets the current font size. This size will be used in all subsequent calls to the**text()** function. Font size is measured in units of pixels.
+Sets the current font size. This size will be used in all subsequent calls to the **text()** function. Font size is measured in units of pixels.
 
 #### Sintaxe
 ```pde
@@ -29,6 +29,8 @@ textSize(size)
 Parâmetros
 size
 int or float: the size of the letters in units of pixels
+
+
 
 #### Retorno
 
@@ -42,7 +44,12 @@ Web & Applicações
 
 #### Relacionado
 
-[loadFont() ](loadFont_)
-[PFont ](PFont)
-[text()](text_)
-[textFont() ](textFont_)
+[loadFont() ](loadFont_
+)
+[PFont ](PFont
+)
+[text()](text_
+)
+[textFont() ](textFont_
+)
+

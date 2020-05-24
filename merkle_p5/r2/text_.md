@@ -41,7 +41,7 @@ text(s, 15, 20, 70, 70);
 #### Descrição
 
 	
-Draws text to the screen. Displays the information specified in the**data** or**stringdata** parameters on the screen in the position specified by the**x** and**y** parameters and the optional**z** parameter. A font must be set with the**textFont()** function before**text()** may be called. The**width** and**height** parameters define a rectangular area to display within and may only be used with string data. The text displays in relation to the**textAlign()** function, which gives the option to draw to the left, right, and center of the coordinates. Use the**textMode()** function with the**SCREEN** parameter to display text in 2D at the surface of the window. Change the color of the text with the**fill()** function.
+Draws text to the screen. Displays the information specified in the **data** or **stringdata** parameters on the screen in the position specified by the **x** and **y** parameters and the optional **z** parameter. A font must be set with the **textFont()** function before **text()** may be called. The **width** and **height** parameters define a rectangular area to display within and may only be used with string data. The text displays in relation to the **textAlign()** function, which gives the option to draw to the left, right, and center of the coordinates. Use the **textMode()** function with the **SCREEN** parameter to display text in 2D at the surface of the window. Change the color of the text with the **fill()** function.
 
 #### Sintaxe
 ```pde
@@ -54,18 +54,32 @@ text(stringdata, x, y, width, height, z)
 Parâmetros
 data
 String, char, int, or float: the alphanumeric symbols to be displayed
+
+
 x
 int or float: coordenada-x of text
+
+
 y
 int or float: coordenada-y of text
+
+
 z
 int or float: coordenada-z of text
+
+
 stringdata
 String: letters to be displayed
+
+
 width
 int or float: width of text box
+
+
 height
 int or float: height of text box
+
+
 
 #### Retorno
 
@@ -79,8 +93,14 @@ Web & Applicações
 
 #### Relacionado
 
-[textAlign()](textAlign_)
-[textMode()](textMode_)
-[loadFont() ](loadFont_)
-[PFont ](PFont)
-[textFont() ](textFont_)
+[textAlign()](textAlign_
+)
+[textMode()](textMode_
+)
+[loadFont() ](loadFont_
+)
+[PFont ](PFont
+)
+[textFont() ](textFont_
+)
+

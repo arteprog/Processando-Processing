@@ -24,7 +24,7 @@ endShape();
 ```
 
 #### Descrição
-Especifica as coordenadas de vértices para curvas de Bezier. Cada chamada a função**bezierVertex()**
+Especifica as coordenadas de vértices para curvas de Bezier. Cada chamada a função `bezierVertex()`
 define a posição de dois pontos de controle e um de
 ancoragem de uma cruva de Bezier, e adiciona um novo segmento de uma
 linha ou forma.  A primeira vez que bezierVertex() é
@@ -45,22 +45,40 @@ bezierVertex(x1, y1, z1, x2, y2, z2, x3, y3, z3)
 Parâmetros
 x1
 floar ou int: A coordenada-x do primeiro ponto de controle
+
+
 y1
 floar ou int: A coordenada-y do primeiro ponto de controle
+
+
 z1
 floar ou int: A coordenada-z do primeiro ponto de controle
+
+
 x2
 floar ou int: A coordenada-x of segundo ponto de controle
+
+
 y2
 floar ou int: A coordenada-y of segundo ponto de controle
+
+
 z2
 floar ou int: A coordenada-z of segundo ponto de controle
+
+
 x3
 floar ou int: A coordenada-x of ponto de ancoragem
+
+
 y3
 floar ou int: A coordenada-y of ponto de ancoragem
+
+
 z3
 floar ou int: A coordenada-z of ponto de ancoragem
+
+
 
 #### Utilização
 
@@ -68,4 +86,10 @@ floar ou int: A coordenada-z of ponto de ancoragem
 Web & Applicações
 
 #### Relacionado
-[curveVertex()](curveVertex_)[vertex()](vertex_)[bezier()](bezier_)
+[curveVertex()](curveVertex_
+)
+[vertex()](vertex_
+)
+[bezier()](bezier_
+)
+

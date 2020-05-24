@@ -45,12 +45,19 @@ bezier(x1, y1, z1, x2, y2, z2, x3, y3, z3, x4, y4, z4);
 Parâmetros
 x1, y1, z1
 int ou float: coordenadas do primeiro ponto de ancoragem
+
+
 x2, y2, y3
 int ou float: coordenadas do primeiro ponto de controle
+
 x3, y3, z3
 int ou float: coordenadas do segundo ponto de controle
+
+
 x4, y4, z4
 int ou float: coordenadas do segundo ponto de ancoragem
+
+
 
 #### Retorno
 
@@ -63,4 +70,8 @@ Nenhum
 Web & Applicações
 
 #### Relacionado
-[bezierVertex()](bezierVertex_)[curve()](curve_)
+[bezierVertex()](bezierVertex_
+)
+[curve()](curve_
+)
+

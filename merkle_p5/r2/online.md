@@ -14,10 +14,12 @@ if(online) {  // of "if (online == true)"
 
 ```
 
+
+
 #### Descrição
 Confirma se um programa Processing está
 executando em um navegador web. Esta variável é "true"
-(n.t. verdadeira)  se o programa estiver*online *e "*fasle"* caso não esteja.
+(n.t. verdadeira)  se o programa estiver *online *e " *fasle"* caso não esteja.
 
 #### Sintaxe
 ```pde

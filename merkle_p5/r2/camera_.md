@@ -41,22 +41,40 @@ camera(olhoX, olhoY, olhoZ, centroX, centroY, centroZ, upX, upY, upZ)
 Parâmetros
 olhoX
 float: x coordenada  do olho
+
+
 olhoY
 float: y coordenada  do olho
+
+
 olhoZ
 float: z coordenada  do olho
+
+
 centroX
 float: coordenada x do centro da cena
+
+
 centroY
 float: coordenada y  do centro da cena
+
+
 centroZ
 float: coordenada z do centro da cena
+
+
 upX
 float: usualmente 0.0, 1.0, ou -1.0
+
+
 upY
 float: usualmente 0.0, 1.0, ou -1.0
+
+
 upZ
 float: usualmente 0.0, 1.0, ou -1.0
+
+
 
 #### Retorno
 
@@ -69,4 +87,10 @@ Nenhum
 Web & Applicações
 
 #### Relacionado
-[camera()](camera_)[endCamera()](endCamera_)[frustum()](frustum_)
+[camera()](camera_
+)
+[endCamera()](endCamera_
+)
+[frustum()](frustum_
+)
+

@@ -21,6 +21,8 @@ switch(letter) {
 
 ```
 
+
+
 #### Descrição
 Termina a execução de uma estrutura como  switch(), for(), or while(), e pula para o comando imediatamente seguinte
 
@@ -36,4 +38,10 @@ break
 Web & Applicações
 
 #### Relacionado
-[switch()](switch_)[for()](for_)[while()](while_)
+[switch()](switch_
+)
+[for()](for_
+)
+[while()](while_
+)
+

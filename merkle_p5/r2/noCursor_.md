@@ -17,6 +17,8 @@ void draw()
 
 ```
 
+
+
 #### Descrição
 Esconde o cursor de vista.  Não irá funcionar quando o programa for executado em um navegador web.
 
@@ -37,4 +39,6 @@ Nenhum
 Application
 
 #### Relacionado
-[cursor()](cursor_)
+[cursor()](cursor_
+)
+

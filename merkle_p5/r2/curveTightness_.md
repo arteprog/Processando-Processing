@@ -44,7 +44,7 @@ endShape();
 ```
 
 #### Descrição
-Modivida a qualidade das curvas criadas com<span style="font-weight: bold;">curve**()**</span> e**curveVertex()**.  O parâmetro**squishy **define como a curva se ajusta aos pontos que são vértices.  O valor 0.o é o valor padrão de**squishy **(este
+Modivida a qualidade das curvas criadas com<span style="font-weight: bold;">curve `()` </span> e `curveVertex()`.  O parâmetro `squishy `define como a curva se ajusta aos pontos que são vértices.  O valor 0.o é o valor padrão de `squishy `(este
 parâmetro defina as curvas como sendo Catmul-Rom splines) e o
 calor 1.0 conecta todos os pontos com linhas retas. Valores no
 intervalo de -5.0 a +5.0 deformarão a curva  mas a
@@ -61,6 +61,8 @@ Parâmetros
 squishy
 float ou int: quantidade de deformacão relativa aos vértices originais.
 
+
+
 #### Retorno
 
 	
@@ -72,4 +74,8 @@ Nenhum
 Web & Applicações
 
 #### Relacionado
-[curve()](curve_)[curveVertex()](curveVertex_)
+[curve()](curve_
+)
+[curveVertex()](curveVertex_
+)
+

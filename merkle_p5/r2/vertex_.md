@@ -48,17 +48,21 @@ endShape();
 ```
 
 #### Descrição
-Todos as formas são construídas pela conexão de uma série de vértices.**vertex() ** é
+Todos as formas são construídas pela conexão de uma série de vértices. `vertex() ` é
 utilizada para especificar as coordenadas de pontos, linhas,
 triângulos, quadriláteros e  polígonos, e
-é utilizada exclusivamente entre chamadas à**beginShape() **e**endShape()**.
+é utilizada exclusivamente entre chamadas à `beginShape() `e `endShape()`.
 
-O desenho de um vértice em 3D através dop uso do parâmetro**z ** requer o uso do parâmetro P3D ou  OPENGL em combinação co size, como ilustrado no exemplo acima.
+
+
+O desenho de um vértice em 3D através dop uso do parâmetro `z ` requer o uso do parâmetro P3D ou  OPENGL em combinação co size, como ilustrado no exemplo acima.
+
+
 Esta função também é utilizada para mapear
-uma textura sobre uma forma geométrica. A função**texture() ** decalra a textura a ser aplicada sobre a forma geométrica e as coordenadas**u** e**v** definem o mapeamento desta textura à forma. Como padrão, as coordenadas utilizadas para**u** e**v**
+uma textura sobre uma forma geométrica. A função `texture() ` decalra a textura a ser aplicada sobre a forma geométrica e as coordenadas `u` e `v` definem o mapeamento desta textura à forma. Como padrão, as coordenadas utilizadas para `u` e `v`
 são especificadas em relação ao tamanho da imagem
 em pixels, mas esta relação pode ser modificada
-através da função**textureMode()**.
+através da função **textureMode()**.
 
 #### Sintaxe
 ```pde
@@ -71,14 +75,24 @@ vertex(x, y, z, u, v);
 Parâmetros
 x
 int ou float: coordenada-x do vértice
+
+
 y
 int ou float: coordenada-y do vértice
+
+
 z
 int ou float: coordenada-z do vértice
+
+
 u
 int ou float: coordenada horizontal da textura de mapeamento
+
+
 v
 int ou float: coordenada vertica da textura de mapeamento
+
+
 
 #### Retorno
 
@@ -91,4 +105,14 @@ Nenhum
 Application & Web
 
 #### Relacionado
-[beginShape()](beginShape_)[endShape()](endShape_)[bezierVertex()](bezierVertex_)[curveVertex()](curveVertex_)[texture()](texture_)
+[beginShape()](beginShape_
+)
+[endShape()](endShape_
+)
+[bezierVertex()](bezierVertex_
+)
+[curveVertex()](curveVertex_
+)
+[texture()](texture_
+)
+

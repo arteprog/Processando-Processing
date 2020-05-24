@@ -13,7 +13,10 @@ rect(30, 20, 55, 55);
 
 ```
 
+
+
 #### Descrição
+
 
 Converte uma representação em String
 de um número hexadecimal  em seu equivalente valor inteiro.
@@ -27,6 +30,8 @@ Parâmetros
 str
 String
 
+
+
 #### Retorno
 
 	
@@ -38,4 +43,10 @@ int
 Web & Applicações
 
 #### Relacionado
-[hex()](hex_)[binary()](binary_)[unbinary()](unbinary_)
+[hex()](hex_
+)
+[binary()](binary_
+)
+[unbinary()](unbinary_
+)
+

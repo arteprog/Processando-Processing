@@ -11,8 +11,10 @@ int c = a;   // Atribui 2 à  "c"
 
 ```
 
+
+
 #### Descrição
-Incrementa o valor de uma variável inteira em 1. Equivale a operação**i = i + 1**. Se o valor da vairável**i** é cinco, então a expressão**i++** incrementará o valor de**i** para 6.
+Incrementa o valor de uma variável inteira em 1. Equivale a operação **i = i + 1**. Se o valor da vairável **i** é cinco, então a expressão **i++** incrementará o valor de **i** para 6.
 
 #### Sintaxe
 ```pde
@@ -23,10 +25,18 @@ Parâmetros
 valor
 int
 
+
+
 #### Utilização
 
 	
 Web & Applicações
 
 #### Relacionado
-[+ (adição)](addition)[+= (atribui e soma)](addassign)[-- (decremento)](decrement)
+[+ (adição)](addition
+)
+[+= (atribui e soma)](addassign
+)
+[-- (decremento)](decrement
+)
+

@@ -19,9 +19,12 @@ println(f + " : " + b);  // Imprime "130.0 : -126"
 
 ```
 
+
+
 #### Descrição
 
-Converte um tipo de dados primitivo, string ou*array *na
+
+Converte um tipo de dados primitivo, string ou *array *na
 sua representação em bytes. Um byte é um
 número inteiro entre -128 e 127. Conseqüentemente, quando
 um número fora deste intervalo é convertido, seu valor
@@ -37,6 +40,8 @@ Parâmetros
 valor
 int, float, char, boolean, String, int[], float[], char[], boolean[], String[]
 
+
+
 #### Retorno
 
 	
@@ -48,4 +53,8 @@ byte
 Web & Applicações
 
 #### Relacionado
-[byte](byte)[int()](int_)
+[byte](byte
+)
+[int()](int_
+)
+

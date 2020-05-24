@@ -15,6 +15,8 @@ line(50, 0, 50, 100);
 
 ```
 
+
+
 #### Descrição
 Notas explanatórias incorporadas ao
 código e escritas ao arquivo "index.html" criado quando um este
@@ -35,10 +37,16 @@ Parâmetros
 comentário
 qualquer seqüência de caracteres
 
+
+
 #### Utilização
 
 	
 Web & Applicações
 
 #### Relacionado
-[// (comment)](comment)[/* */ (multiline comment)](multilinecomment)
+[// (comment)](comment
+)
+[/* */ (multiline comment)](multilinecomment
+)
+

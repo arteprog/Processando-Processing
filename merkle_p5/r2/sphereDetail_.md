@@ -18,6 +18,8 @@ void draw() {
 
 ```
 
+
+
 #### Descrição
 Controla o nível de detalhe utilizado para
 renderizar uma espera ao ajustar o número de vértices
@@ -27,7 +29,7 @@ rasoavalmente detalhada com vértices a cada  360/30 = 12
 graus. Caso se vá renderizar um grande número de esferas
 por  quadro, recomenda-se que se reduza o nível de detalhe
 através do uso desta função. O ajuste permanece
-ativo ate que**sphereDetail()** seja chamada novamente  com umm novo parâmetod, e portanto, não precisa ser chamada antes de cada comando**sphere()**,
+ativo ate que `sphereDetail()` seja chamada novamente  com umm novo parâmetod, e portanto, não precisa ser chamada antes de cada comando `sphere()`,
 a não ser que se queira esferas com diferentes atributos; por
 exemplo, quando se utiliza menores detalhes em esferas menores, ou
 quando se distancia da câmara.
@@ -41,6 +43,8 @@ Parâmetros
 n
 int: número de segmentos (mínimo de 3) utilizados por revolução de um  círculo.
 
+
+
 #### Retorno
 
 	
@@ -52,4 +56,6 @@ Nenhum
 Web & Applicações
 
 #### Relacionado
-[sphere()](sphere_)
+[sphere()](sphere_
+)
+

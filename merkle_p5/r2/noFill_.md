@@ -13,7 +13,7 @@ rect(30, 20, 55, 55);
 ```
 
 #### Descrição
-Desbilta o preenchimento de formas geométricas. Caso**noStroke()** e**noFill()** sejam chamdadas, nada será desenhado na tela.
+Desbilta o preenchimento de formas geométricas. Caso **noStroke()** e **noFill()** sejam chamdadas, nada será desenhado na tela.
 
 #### Sintaxe
 ```pde
@@ -32,4 +32,6 @@ Nenhum
 Web & Applicações
 
 #### Relacionado
-[fill()](fill_)
+[fill()](fill_
+)
+
