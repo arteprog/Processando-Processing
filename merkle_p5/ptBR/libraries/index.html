@@ -1,0 +1,320 @@
+<html>
+<head>
+<title>Processing 1.0 (BETA) &gt;&gt; Libraries</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../processing_beta.css">
+
+<script language="JavaScript">
+<!--
+function gogo(dropdown) {
+  var tempURL = dropdown.options[dropdown.selectedIndex].value;
+  if(tempURL!="") {
+    document.location.href = tempURL;
+  }
+}
+//-->
+</script>
+</head>
+<body bgcolor="#FFFFFF" text="#333333" link="#CC6600" vlink="#CC6600" 
+               alink="#CC6600" marginwidth="0" marginheight="0" topmargin="0" leftmargin="0">
+<table width="750" border="0" cellspacing="0" cellpadding="0" bgcolor="#000000">
+  <tr> 
+    <td width="550" colspan="2" bgcolor="#000000"> <a href="../../index.html"><img src="../../images/processing_beta.gif" width="500" height="50" border="0"></a></td>
+    <td width="180" align="right" valign="top" bgcolor="#000000"><img src="../../images/1pix.gif" width="180" height="8"><br> 
+       <a href="../../faq/index.html"><font color="#CCCCBE">FAQ</font></a> </td>
+    <td width="20" bgcolor="#000000">&nbsp;</td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55" height="25" bgcolor="#333323">&nbsp;</td>
+    <td width="675" valign="middle" rowspan="2"> <table = width="675" valign="middle" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td width="1" height="25" bgcolor="#333323"><a href="../../index.html"><font color="#FFFFFF">Cover</font></a>&nbsp;</td>
+          <td width="1" height="25" bgcolor="#333323"><font color="#ccccbe">\</font>&nbsp;<a href="../../exhibition/index.html"><font color="#FFFFFF">Exhibition</font></a>&nbsp;</td>
+          <td width="1" height="25" bgcolor="#333323"><font color="#ccccbe">\</font>&nbsp;<a href="../../learning/index.html"><font color="#FFFFFF">Learning</font></a>&nbsp;</td>
+          <td width="1" height="25" bgcolor="#333323"><font color="#ccccbe">\</font>&nbsp;<a href="../index.html"><font color="#CCCCBE">Reference</font></a>&nbsp;</td>
+          <td width="1" height="25" bgcolor="#333323"><font color="#ccccbe">\</font>&nbsp;<a href="../../download/index.html"><font color="#FFFFFF">Download</font></a>&nbsp;</td>
+          <td width="1" height="25" bgcolor="#333323"><font color="#ccccbe">\</font>&nbsp;<a href="../../discourse/index.html"><font color="#FFFFFF">Discourse</font></a>&nbsp;</td>
+          <td width="672" height="25" bgcolor="#333323">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td width="1"  height="25">&nbsp;</td>
+          <td width="1"  height="25">&nbsp;</td>
+          <td width="1"  height="25">&nbsp;</td>
+          <td width="672" height="25" colspan="4" bgcolor="#5A5A46" valign="middle"> 
+            <font color="#000000"><img src="../../images/nav_bottomarrow.gif" width="33" height="25" align="absmiddle"><a href="../index.html"><font color="#FFFFFF">Language</font></a> 
+            <font color="#CCCCBE">\ </font><a href="../environment/index.html"><font color="#FFFFFF">Environment</font></a> 
+            <font color="#CCCCBE">\ </font></font><a href="index.html"><font color="#CCCCBE">Libraries</font></a><font color="#000000"><font color="#5A5A46"> 
+            </font><font color="#CCCCBE">\ </font></font><a href="../compare/index.html"><font color="#ffffff">Comparison</font></a></td>
+        </tr>
+      </table></td>
+    <td width="20" bgcolor="#333323" valign="top">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="55" height="25">&nbsp;</td>
+    <td width="20" bgcolor="#5A5A46">&nbsp;</td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tr> 
+    <td width="55"><img src="../images/1pix.gif" width="55" height="40"></td>
+    <td width="695">&nbsp;</td>
+  </tr>
+</table>
+<table width="730" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tr> 
+    <td width="55">&nbsp;</td>
+    <td width="675"> <img src="images/header.gif" width="675" height="48" alt="Libraries. Extending Processing beyond graphics and image, libraries enable audio, video, and communicating with other devices."></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tr> 
+    <td width="55"><img src="../images/1pix.gif" width="55" height="40"></td>
+    <td width="695">&nbsp;</td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tr> 
+    <td width="55">&nbsp;</td>
+    <td width="695"><font color="#5A5A46"><b><img src="images/corelibraries.gif" width="200" height="20"><br>
+      </b><br>
+      </font> <table width="675" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td width="200" valign="top"><b><a href="video/index.html">Video</a></b> 
+            <br>
+            Interface to Apple's QuickTime for using a camera and playing movie 
+            files.<a href="serial/index.html"><b><br>
+            <br>
+            Serial</b></a> <br>
+            Supports sending data between Processing and external hardware via 
+            serial communication (RS-232). </td>
+          <td width="25">&nbsp;</td>
+          <td width="200" valign="top"><strong><a href="opengl/index.html">OpenGL</a></strong><br>
+            Support for exporting OpenGL accelerated sketches. Utilizes the JOGL 
+            library.<font color="#5A5A46"><b><br>
+            <br>
+            <a href="net/index(1).html">Net</a></b><br>
+            Sending and receiving data via the Internet through the creation of 
+            simple clients and servers. </font></td>
+          <td width="25">&nbsp;</td>
+          <td width="200" valign="top"><a href="http://wp.netscape.com/eng/mozilla/3.0/handbook/javascript/packages.htm#1003191" target="_new"><b>&raquo; 
+            Netscape.JavaScript</b></a><br>
+            Methods for interfacing between Javascript and Java Applets exported 
+            from Processing. <br> <br>
+          </td>
+          <td width="25">&nbsp;</td>
+        </tr>
+      </table>
+      <font color="#5A5A46"><br>
+      <br>
+      <br>
+      <img src="images/contributions.gif" width="200" height="20"><br>
+      <br>
+      </font> <table width="675" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td width="200" valign="top"><b><font color="#5A5A46"><b><a href="http://www.tree-axis.com/Ess/">&raquo; 
+            Ess</a></b><br>
+            </font></b>by <a href="http://www.tree-axis.com/" target="new">Krister 
+            Olsson</a><br>
+            Library allowing sound data to be loaded (AIFF, WAVE, AU, MP3), played, 
+            generated, manipulated, saved, and analyzed.<font color="#5A5A46">&nbsp;</font><b></b><br>
+            <br>
+            <font color="#5A5A46"><a href="http://users.design.ucla.edu/%7Etatsuyas/tools/google/index.htm" target="_new"><b>&raquo; 
+            </b></a><a href="http://users.design.ucla.edu/%7Etatsuyas/tools/google/index.htm" target="new"><b>Google 
+            API </b></a> <br>
+            by <a href="http://users.design.ucla.edu/%7Etatsuyas/" target="new">Tatsuya 
+            SAITO</a><br>
+            Interface to query web pages through Google search.</font> <br>
+            <br>
+            <font color="#5A5A46"><b><a href="http://users.design.ucla.edu/%7Etatsuyas/tools/objloader/index.htm">&raquo; 
+            </a></b><a href="http://users.design.ucla.edu/%7Etatsuyas/tools/objloader/index.htm"><b>.OBJ 
+            Loader</b></a> <br>
+            </font>by <a href="http://users.design.ucla.edu/%7Etatsuyas/" target="new">Tatsuya 
+            SAITO</a><br>
+            Loads .OBJ files into Processing, includes geometry and texture data.<br>
+            <br>
+            <font color="#5A5A46"><a href="http://wp.netscape.com/eng/mozilla/3.0/handbook/javascript/packages.htm#1003191" target="_new"><b>&raquo; 
+            </b></a><a href="http://processing.unlekker.net/SimplePostscript/index.html" target="new"><b>SimplePostScript</b></a><br>
+            </font>by <a href="http://processing.unlekker.net/" target="new">Marius 
+            Watz</a> <br>
+            Writing vector files in the PostScript format.<br>
+            <br>
+            <font color="#5A5A46"><a href="http://wp.netscape.com/eng/mozilla/3.0/handbook/javascript/packages.htm#1003191" target="_new"><b>&raquo; 
+            </b></a><a href="http://www.mark-hill.co.uk/AIExport/" target="new"><b>Adobe 
+            Illustrator Export</b></a><br>
+            </font>by <a href="http://pantheon.yale.edu/%7Eawm9/" target="new">Allan 
+            William Martin</a> &amp; <a href="http://www.mark-hill.co.uk/">Mark 
+            Hill</a><br>
+            Writing vector files in the Adobe Illustrator (*.ai) native file format. 
+            <br>
+            <!--<br>
+            <font color="#5A5A46"><b><a href="http://www.repeatwhiletrue.com/SpringGUI/index.html">&raquo; 
+            SpringGUI</a></b> <br>
+            </font>by <a href="http://www.repeatwhiletrue.com/" target="new">Philipp 
+            Seifried </a><br>
+            Manager for creating and updating user interface elements such as 
+            check boxes, radio buttons, text boxes, etc.<br>-->
+            <font color="#5A5A46"><br>
+            <b><font color="#5A5A46">&raquo; </font>Particles<br>
+            </b>by Simon Greenwold<br>
+            Simple classes for constructing particle systems. Documentation coming 
+            soon... <br>
+            </font> </td>
+          <td width="25">&nbsp;</td>
+          <td width="200" valign="top"><font color="#5A5A46"><b><a href="http://pitaru.com/sonia/">&raquo; 
+            Sonia</a></b> <br>
+            </font>by <a href="http://www.pitaru.com/" target="new">Amit Pitaru</a><br>
+            Advanced audio library for playback and synthesis. Integrates <a href="http://www.softsynth.com/jsyn/" target="new">Jsyn</a> 
+            and requires a browser plugin for playback.<font color="#5A5A46"><br>
+            <br>
+            <a href="http://wp.netscape.com/eng/mozilla/3.0/handbook/javascript/packages.htm#1003191" target="_new"><b>&raquo; 
+            </b></a><a href="http://webcamxtra.sourceforge.net/" target="new"><b>JMyron 
+            (WebCamXtra)</b></a><br>
+            </font>by <a href="http://www.jtnimoy.net" target="new">Josh Nimoy</a> 
+            et al.<br>
+            Camera library for motion detection, color tracking, glob distinction, 
+            and pixel addressing.<font color="#5A5A46">&nbsp;</font><font color="#5A5A46"> 
+            <br>
+            <br>
+            <a href="http://v3ga.net/processing/BlobDetection/Library/" target="_new"><b>&raquo; 
+            BlobDetection</b></a><br>
+            </font>by <a href="http://v3ga.net/" target="_new">v3ga</a><br>
+            Performs the computer vision technique of finding &quot;blobs&quot; 
+            in an image.<font color="#5A5A46">&nbsp; &nbsp;<br>
+            <br>
+            <a href="http://www.texone.org/promidi/" target="_new"><b>&raquo; 
+            proMidi</b></a><br>
+            </font>by <a href="http://www.texone.org/" target="_new">Christian 
+            Riekoff</a><br>
+            Allows Processing to send and receive midi information.<font color="#5A5A46">&nbsp;</font><font color="#5A5A46">&nbsp;</font><font color="#5A5A46"> 
+            <br>
+            <br>
+            <a href="http://www.texone.org/prohtml/" target="_new"><b>&raquo; 
+            proHTML</b></a><br>
+            </font>by <a href="http://www.texone.org/" target="_new">Christian 
+            Riekoff</a><br>
+            Allows Processing to take an HTML document and change it from a linear 
+            string to a tree structure.<font color="#5A5A46">&nbsp;<br>
+            <br>
+            <a href="http://www.texone.org/proxml/" target="_new"><b>&raquo; proXML</b></a><br>
+            </font>by <a href="http://www.texone.org/" target="_new">Christian 
+            Riekoff</a><br>
+            Allows Processing to read and write XML files.<font color="#5A5A46"><br>
+            </font></td>
+          <td width="25">&nbsp;</td>
+          <td width="200" valign="top"><font color="#5A5A46"><b><a href="http://jklabs.net/maxlink/">&raquo; 
+            </a></b><a href="http://rhizome.org/carnivore/processing.php"><b>Carnivore</b></a><br>
+            by <a href="http://itserve.cc.ed.nyu.edu/RSG/" target="new">RSG</a><br>
+            A TCP/UDP packet sniffer library for the Processing programming language.<b><a href="http://jklabs.net/maxlink/"><br>
+            <br>
+            &raquo; </a></b><a href="http://jklabs.net/maxlink/"><b>MaxLink</b></a><br>
+            by <a href="http://jklabs.net/" target="new">Jesse Kriss</a><br>
+            Enables communication between Processing and Max/MSP 4.5<br>
+            <br>
+            <b><a href="http://www.sojamo.de/iv/index.php?n=11">&raquo; </a></b><a href="http://www.sojamo.de/iv/index.php?n=11"><b>oscP5</b></a><br>
+            by <a href="http://www.sojamo.de" target="new">Andreas Schlegel</a><br>
+            An <a href="http://cnmat.cnmat.berkeley.edu/OpenSoundControl/" target="new">OpenSound 
+            Control</a> (OSC) implementation for Processing.&nbsp;<br>
+            <br>
+            <b><a href="http://www.bezier.de/mysql/" target="new">&raquo; MySQL</a></b><br>
+            by <a href="http://www.bezier.de/" target="new">Florian Jenett</a><br>
+            Faciliates communication with a MySQL database.<br>
+            <br>
+            <strong><a href="http://www.cise.ufl.edu/%7Ekdamkjer/processing/libraries/ocd/" target="new">&raquo; 
+            OCD</a></strong><br>
+            by <a href="http://www.cise.ufl.edu/%7Ekdamkjer/" target="new">Kristian 
+            Linn Damkjer</a><br>
+            The Obsessive Camera Direction (OCD) library allows intuitive control 
+            and creation of Processing viewport Cameras.<br>
+            <br>
+            <a href="http://www.fladdict.net/p5/library/oscillator/" target="_new"><b>&raquo; 
+            Oscillator</b></a><br>
+            </font>by <a href="http://www.fladdict.net/" target="_new">taka</a><br>
+            Useful for generating series of waves.<font color="#5A5A46">&nbsp;</font><font color="#5A5A46">&nbsp; 
+            </font><font color="#5A5A46">&nbsp; </font><font color="#5A5A46">&nbsp; 
+            </font><font color="#5A5A46">&nbsp; </font></td>
+          <td width="25">&nbsp;</td>
+        </tr>
+      </table>
+      <font color="#5A5A46"> <br>
+      <br>
+      <i>Information about contributing a library is included in &quot;howto.txt&quot;, 
+      located in the &quot;libraries&quot; folder included with the Processing 
+      software. For further information, <a href="http://processing.org/discourse/yabb_beta/YaBB.cgi?board=os_libraries_tools">visit 
+      the discourse</a>.<br>
+      </i></font></td>
+  </tr>
+</table>
+<br>
+<br>
+<br>
+<br>
+<table width="750" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tr> 
+    <td width="55">&nbsp;</td>
+    <td width="695"><font color="#5A5A46"><b><strong><font color="#5A5A64">Processing 
+      ALPHA Libraries: Compatible only with pre-beta software versions 68, 69</font></strong><br>
+      <br>
+      </b><br>
+      </font> <table width="675" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td width="200" valign="top"><font color="#5A5A46"><a href="http://wp.netscape.com/eng/mozilla/3.0/handbook/javascript/packages.htm#1003191" target="_new"><b>&raquo; 
+            </b></a><a href="http://www.architecture.yale.edu/872a/assignment5/dxfWriter.html" target="new"><b>DXF 
+            Export</b></a><br>
+            by <a href="http://www.aproposinteractive.com" target="new">Simon 
+            Greenwold</a> <br>
+            Exporting DXF files which may be imported into Maya, FormZ, Rhino, 
+            and other 3D programs. </font> </td>
+          <td width="25">&nbsp;</td>
+          <td width="200" valign="top"><font color="#5A5A46"><a href="http://wp.netscape.com/eng/mozilla/3.0/handbook/javascript/packages.htm#1003191" target="_new"><b>&raquo; 
+            </b></a><a href="http://www.thbbpt.net/interfascia/" target="new"><b>Interfasia 
+            (GUI)</b></a><br>
+            by <a href="http://www.thbbpt.net/" target="new">Brendan Berg</a><br>
+            A graphical user interface (GUI) library for the Processing programming 
+            environment.<i></i> <br>
+            <br>
+            <a href="http://wp.netscape.com/eng/mozilla/3.0/handbook/javascript/packages.htm#1003191" target="_new"><b>&raquo; 
+            </b></a><a href="http://jim.jklabs.net/" target="new"><b>Animation</b></a><br>
+            by Jim Garretson<br>
+            Simplifies creating animation with Processing. <br>
+            <br>
+            </font></td>
+          <td width="25">&nbsp;</td>
+          <td width="200" valign="top"><p><a href="http://wp.netscape.com/eng/mozilla/3.0/handbook/javascript/packages.htm#1003191" target="_new"><b>&raquo; 
+              </b></a><a href="http://www.processing.co.il/toolkit/controller/" target="new"><b>Controller</b></a><br>
+              by <a href="http://www.chronotext.org/arielm/" target="new">Ariel 
+              Malka</a><br>
+              A versatile input provider, a popup window with a set of interactive 
+              user-interface components. <br>
+              <br>
+            </p></td>
+          <td width="25">&nbsp;</td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55"><img src="../../images/1pix.gif" width="55" height="160"></td>
+    <td width="20">&nbsp;</td>
+  </tr>  <tr> 
+    <td width="55" height="25" bgcolor="#5A5A46" valign="top">&nbsp;</td>
+    <td width="675" valign="middle" bgcolor="#5A5A46"><font color="#ffffff">Processing 
+      is an open project initiated by</font> <a href="http://benfry.com"><font color="#ffffff">Ben 
+      Fry</font></a> <font color="#ffffff">and</font> <a href="http://reas.com"><font color="#ffffff">Casey 
+      Reas</font></a></td>
+    <td width="20" bgcolor="#5A5A46" valign="top">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="55" height="25" bgcolor="#000000">&nbsp;</td>
+        
+    <td width="675" valign="middle" bgcolor="#000000"><a href="../../copyright.html"><font color="#FFFFFF">&copy; 
+      Info</font></a> <font color="#999999">\</font><font color="#FFFFFF"> Site 
+      hosted by <a href="index(1).html"><font color="#FFFFFF">Media Temple!</font></a></font></td>
+    <td width="20" bgcolor="#000000">&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>
+

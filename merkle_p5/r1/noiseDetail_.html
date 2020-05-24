@@ -1,0 +1,130 @@
+<table border="0" cellpadding="0" cellspacing="0" width="675">
+<tbody>
+<tr>
+<td width="100"><img height="40" src="../images/1pix.gif" width="100"/></td>
+<td width="20"><img height="1" src="../images/1pix.gif" width="20"/></td>
+<td width="555"><img height="1" src="../images/1pix.gif" width="555"/></td>
+</tr>
+<tr>
+<td valign="top">Nome</td>
+<td valign="top"> </td>
+<td valign="top">
+<h3>noiseDetail()</h3>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Exemplos</td>
+<td valign="top"> </td>
+<td valign="top">
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="550">
+<pre>float noiseVal; <br/>float noiseScale=0.02; <br/>void draw() { <br/>  for(int y=0; y&lt;height; y++) { <br/>    for(int x=0; x&lt;width/2; x++) { <br/>      noiseDetail(3,0.5); <br/>      noiseVal=noise( <br/>        (mouseX+x)*noiseScale, <br/>        (mouseY+y)*noiseScale <br/>      ); <br/>      stroke(noiseVal*255); <br/>      point(x,y); <br/>      noiseDetail(8,0.65); <br/>      noiseVal=noise( <br/>        (mouseX+x+width/2)*noiseScale, <br/>        (mouseY+y)*noiseScale <br/>      ); <br/>      stroke(noiseVal*255); <br/>      point(x+width/2,y); <br/>    } <br/>  } <br/>} <br/></pre>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<br/>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td valign="top">Descrição</td>
+<td valign="top"> </td>
+<td valign="top">Ajusta o caráter e o nível de detalhe
+produzido pela função de ruído de Perlin. De modo
+similar a harmônicas em física, o ruído de
+Perlin é computado sobre várias oitavas. Oitavas mais
+baixas contribuem  mais para o sinal de saida, e como tal definem
+a intensidade predominante do ruído, enquanto que oitavas mais
+altas criam detalhes mais finos na seqüência de
+ruído.  Como padrão, a função noise()
+computa sobre 4 oitavas, onde cada uma contribui para exatamente a
+metade de sua predecessora, e iniciando em 50% de intensidade para a
+primeira oitava.  A declinação (<span style="font-style: italic;">fallof amount</span>)
+pode ser alterado ao se adicionar um par6ametro adicional à
+função.  Por exemplo,  uma
+declinação de 0.75 significa que cada oitava terá
+75% de impacto (25% a menos) que a próxima menor oitava.
+Qualquer valor entre 0.0 e 1.0 é válido.
+ Entretanto, notar que valores acima de 0.5 podem resultar em
+valores acima de 1.0 retornados por <span style="font-weight: bold;">noise()</span>. <br/>
+<br/>
+Ao alterar estes parâmetros, o sinal criado pela função <span style="font-weight: bold;">noise()</span> pode ser adaptado para se adequar a necessidades e características bem específicas. 	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Sintaxe</td>
+<td valign="top"> </td>
+<td valign="top">
+<pre>noiseDetail(<font color="#996600">oitavas</font>)<br/>noiseDetail(<font color="#996600">oitavas</font>, <font color="#996600">declinação</font>)<br/></pre>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Parâmetros</td>
+<td valign="top"> </td>
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="90">oitavas</td>
+<td width="20"> </td>
+<td valign="top" width="440">int: número de oitavas a ser utilizada pela função <span style="font-weight: bold;">noise()</span>.<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">declinação</td>
+<td width="20"> </td>
+<td valign="top" width="440">float: declinação (n.t. <span style="font-style: italic;">falloff factor</span>) para cada oitava<br/>
+<br/>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Utilização</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Web &amp; Applicações	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Relacionado</td>
+<td valign="top"> </td>
+<td valign="top">
+<a href="noise_.html">noise()</a><br/>
+</td>
+</tr>
+</tbody>
+</table>

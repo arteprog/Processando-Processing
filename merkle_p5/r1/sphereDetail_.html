@@ -1,0 +1,127 @@
+<table border="0" cellpadding="0" cellspacing="0" width="675">
+<tbody>
+<tr>
+<td width="100"><img height="40" src="../images/1pix.gif" width="100"/></td>
+<td width="20"><img height="1" src="../images/1pix.gif" width="20"/></td>
+<td width="555"><img height="1" src="../images/1pix.gif" width="555"/></td>
+</tr>
+<tr>
+<td valign="top">Nome</td>
+<td valign="top"> </td>
+<td valign="top">
+<h3>sphereDetail()</h3>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Exemplos</td>
+<td valign="top"> </td>
+<td valign="top">
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="550">
+<pre>void draw() { <br/>  background(200); <br/>  stroke(255,50); <br/>  translate(50,50,0); <br/>  rotateX(mouseY*0.05); <br/>  rotateY(mouseX*0.05); <br/>  fill(mouseX*2,0,160); <br/>  sphereDetail(mouseX/4); <br/>  sphere(40); <br/>} <br/></pre>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<br/>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td valign="top">Descrição</td>
+<td valign="top"> </td>
+<td valign="top">Controla o nível de detalhe utilizado para
+renderizar uma espera ao ajustar o número de vértices
+utilisado na respectiva malha. A resolução padrão
+é 30, a qual cria uma definição de espefra
+rasoavalmente detalhada com vértices a cada  360/30 = 12
+graus. Caso se vá renderizar um grande número de esferas
+por  quadro, recomenda-se que se reduza o nível de detalhe
+através do uso desta função. O ajuste permanece
+ativo ate que <span style="font-weight: bold;">sphereDetail()</span> seja chamada novamente  com umm novo parâmetod, e portanto, não precisa ser chamada antes de cada comando <span style="font-weight: bold;">sphere()</span>,
+a não ser que se queira esferas com diferentes atributos; por
+exemplo, quando se utiliza menores detalhes em esferas menores, ou
+quando se distancia da câmara. 	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Sintaxe</td>
+<td valign="top"> </td>
+<td valign="top">
+<pre>sphereDetail(n);<br/></pre>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Parâmetros</td>
+<td valign="top"> </td>
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="90">n</td>
+<td width="20"> </td>
+<td valign="top" width="440">int: número de segmentos (mínimo de 3) utilizados por revolução de um  círculo.<br/>
+<br/>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Retorno</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Nenhum	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Utilização</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Web &amp; Applicações	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Relacionado</td>
+<td valign="top"> </td>
+<td valign="top">
+<a href="sphere_.html">sphere()</a><br/>
+</td>
+</tr>
+</tbody>
+</table>

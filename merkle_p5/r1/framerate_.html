@@ -1,0 +1,121 @@
+<table border="0" cellpadding="0" cellspacing="0" width="675">
+<tbody>
+<tr>
+<td width="100"><img height="40" src="../images/1pix.gif" width="100"/></td>
+<td width="20"><img height="1" src="../images/1pix.gif" width="20"/></td>
+<td width="555"><img height="1" src="../images/1pix.gif" width="555"/></td>
+</tr>
+<tr>
+<td valign="top">Nome</td>
+<td valign="top"> </td>
+<td valign="top">
+<h3>framerate()</h3>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Exemplos</td>
+<td valign="top"> </td>
+<td valign="top">
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="550">
+<pre>void setup() { <br/>  framerate(4); <br/>} <br/>int pos = 0; <br/>void draw() { <br/>  background(204); <br/>  pos++; <br/>  line(pos, 20, pos, 80); <br/>  if(pos &gt; width) { <br/>    pos = 0; <br/>  } <br/>} <br/></pre>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<br/>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td valign="top">Descrição</td>
+<td valign="top"> </td>
+<td valign="top">Especifica o número de quadros a ser visualizado por segundo. Isto é feito através de chamadas a <span style="font-weight: bold;">delay() </span>ao final de <span style="font-weight: bold;">draw()</span>,
+de modo a tornar mais lenta a visualização. Se o
+processador não for rápido o suficiente para manter uma
+taxa de visualização específica, a taxa
+especificada não será alcançada. Por exemplo, a
+chamada a função <span style="font-weight: bold;">framerate(30) </span>tentará reatualizar  a tela 30 vezes por segundo. É recomendado configurar <span style="font-style: italic;">framerate</span>  em <span style="font-weight: bold;">setup().</span> </td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Sintaxe</td>
+<td valign="top"> </td>
+<td valign="top">
+<pre>framerate(<font color="#996600">fps</font>)<br/></pre>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Parâmetros</td>
+<td valign="top"> </td>
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="90">fps</td>
+<td width="20"> </td>
+<td valign="top" width="440">int: number of frames per second<br/>
+<br/>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Retorno</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Nenhum	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Utilização</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Web &amp; Applicações	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Relacionado</td>
+<td valign="top"> </td>
+<td valign="top">
+<a href="delay_.html">delay()</a><br/>
+</td>
+</tr>
+</tbody>
+</table>

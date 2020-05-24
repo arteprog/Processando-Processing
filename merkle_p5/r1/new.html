@@ -1,0 +1,80 @@
+<table border="0" cellpadding="0" cellspacing="0" width="675">
+<tbody>
+<tr>
+<td width="100"><img height="40" src="../images/1pix.gif" width="100"/></td>
+<td width="20"><img height="1" src="../images/1pix.gif" width="20"/></td>
+<td width="555"><img height="1" src="../images/1pix.gif" width="555"/></td>
+</tr>
+<tr>
+<td valign="top">Nome</td>
+<td valign="top"> </td>
+<td valign="top">
+<h3>new</h3>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Exemplos</td>
+<td valign="top"> </td>
+<td valign="top">
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="550">
+<pre>HLine h1 = new HLine(); <br/>float[] speeds = new float[3]; <br/>float ypos; <br/> <br/>void setup() { <br/>  size(200, 200); <br/>  speeds[0] = 0.1; <br/>  speeds[1] = 2.0; <br/>  speeds[2] = 0.5; <br/>} <br/> <br/>void draw() { <br/>  ypos += speeds[int(random(3))]; <br/>  if (ypos &gt; width) { <br/>    ypos = 0; <br/>  } <br/>  h1.update(ypos); <br/>} <br/> <br/>class HLine { <br/>  void update(float y) { <br/>    line(0, y, width, y); <br/>  } <br/>} <br/> <br/></pre>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<br/>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td valign="top">Descrição</td>
+<td valign="top"> </td>
+<td valign="top">Cira um "novo" objeto. A palavra chave <span style="font-weight: bold;">new</span>
+é tipicamente usada de modo similar à suas
+aplicações no exemplo acima. Neste exemplo, um novo
+objeto "h1"do tipo "HLine"é criado. Na linha seguinte,  um
+novo vetor de velocidades do tipo float, chamado "speeds", é
+criado. 	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Sintaxe</td>
+<td valign="top"> </td>
+<td valign="top">
+<pre>new <br/></pre>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Utilização</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Web &amp; Applicações	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody>
+</table>

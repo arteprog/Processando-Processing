@@ -1,0 +1,177 @@
+<table border="0" cellpadding="0" cellspacing="0" width="675">
+<tbody>
+<tr>
+<td width="100"><img height="40" src="../images/1pix.gif" width="100"/></td>
+<td width="20"><img height="1" src="../images/1pix.gif" width="20"/></td>
+<td width="555"><img height="1" src="../images/1pix.gif" width="555"/></td>
+</tr>
+<tr>
+<td valign="top">Nome</td>
+<td valign="top"> </td>
+<td valign="top">
+<h3>line()</h3>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Exemplos</td>
+<td valign="top"> </td>
+<td valign="top">
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="120"><img border="0" height="100" src="media/line_.gif" width="100"/></td>
+<td valign="top" width="430">
+<pre>line(30, 20, 85, 75); <br/></pre>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><img height="25" src="../images/1pix.gif" width="1"/></td>
+</tr>
+<tr>
+<td valign="top" width="120"><img border="0" height="100" src="media/line_2.gif" width="100"/></td>
+<td valign="top" width="430">
+<pre>line(30, 20, 85, 20); <br/>stroke(126); <br/>line(85, 20, 85, 75); <br/>stroke(255); <br/>line(85, 75, 30, 75); <br/></pre>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><img height="25" src="../images/1pix.gif" width="1"/></td>
+</tr>
+<tr>
+<td valign="top" width="120"><img border="0" height="100" src="media/line_3.gif" width="100"/></td>
+<td valign="top" width="430">
+<pre>// O desenho de linhas em 3D requer P3D<br/>// ou OPENGL como parâmetro de sizze()<br/>size(100, 100, P3D); <br/>line(30, 20, 0, 85, 20, 15); <br/>stroke(126); <br/>line(85, 20, 15, 85, 75, 0); <br/>stroke(255); <br/>line(85, 75, 0, 30, 75, -50); <br/></pre>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><img height="25" src="../images/1pix.gif" width="1"/></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td valign="top">Descrição</td>
+<td valign="top"> </td>
+<td valign="top">Desenha uma linha (um caminho direto entre dois pontos) na janela de visualização. A versão de <span style="font-weight: bold;">line()</span> com quatro parâmetros desenha uma linha em 2D. Para se utilizar cor em uma linha, utilize a função <span style="font-weight: bold;">stroke()</span>. Uma linha não pode ser preenchida, e conseqüentemente o método <span style="font-weight: bold;">fill</span>
+não afetará a cor de uma linha. Linhas em 2D são
+desenhadas com espessura padrão de um píxel, mas isto
+pode ser modificado através da funcção <b>strokeWeight(). </b>A
+versão com seis parâmetros permite que uma linha seja
+posicionada em qualquer lugar do espaço XYZ. O desenho desta
+forma em 3D  faz uso do parâmetro <span style="font-weight: bold;">z </span> e deve ser combinado com o uso do parâmerto P3D ou OPENGL em size() , como no exemplo acima. 	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Sintaxe</td>
+<td valign="top"> </td>
+<td valign="top">
+<pre>line(<font color="#996600">x1</font>, <font color="#996600">y1</font>, <font color="#996600">x2</font>, <font color="#996600">y2</font>); <br/>line(<font color="#996600">x1</font>, <font color="#996600">y1</font>, <font color="#996600">z1</font>, <font color="#996600">x2</font>, <font color="#996600">y2</font>, <font color="#996600">z2</font>); <br/></pre>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Parâmetros</td>
+<td valign="top"> </td>
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="90">x1</td>
+<td width="20"> </td>
+<td valign="top" width="440">int ou float: coordenada-x do primeiro ponto<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">y1</td>
+<td width="20"> </td>
+<td valign="top" width="440">int ou float: coordenada-y do primeiro ponto<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">z1</td>
+<td width="20"> </td>
+<td valign="top" width="440">int ou float: coordenada-z do primeiro ponto<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">x2</td>
+<td width="20"> </td>
+<td valign="top" width="440">int ou float: coordenada-x do segundo ponto<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">y2</td>
+<td width="20"> </td>
+<td valign="top" width="440">int ou float: coordenada-y do segundo ponto<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">z2</td>
+<td width="20"> </td>
+<td valign="top" width="440">int ou float: coordenada-z do segundo ponto<br/>
+<br/>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Retorno</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Nenhum	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Utilização</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Web &amp; Applicações	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Relacionado</td>
+<td valign="top"> </td>
+<td valign="top">
+<a href="strokeWeight_.html">strokeWeight()</a><br/>
+<a href="strokeJoin_.html">strokeJoin()</a><br/>
+<a href="strokeCap_.html">strokeCap()</a><br/>
+<a href="beginShape_.html">beginShape()</a><br/>
+</td>
+</tr>
+</tbody>
+</table>

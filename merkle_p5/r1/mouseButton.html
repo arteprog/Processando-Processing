@@ -1,0 +1,88 @@
+<table border="0" cellpadding="0" cellspacing="0" width="675">
+<tbody>
+<tr>
+<td width="100"><img height="40" src="../images/1pix.gif" width="100"/></td>
+<td width="20"><img height="1" src="../images/1pix.gif" width="20"/></td>
+<td width="555"><img height="1" src="../images/1pix.gif" width="555"/></td>
+</tr>
+<tr>
+<td valign="top">Nome</td>
+<td valign="top"> </td>
+<td valign="top">
+<h3>mouseButton</h3>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Exemplos</td>
+<td valign="top"> </td>
+<td valign="top">
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="550">
+<pre>// Clique sobre a imagem e pressione os botões<br/>// esquerdo e direito do mousse para mudar <br/>// o valor do retângulo<br/>void draw() { <br/>  if (mousePressed &amp;&amp; (mouseButton == LEFT)) { <br/>    fill(0); <br/>  } else if (mousePressed &amp;&amp; (mouseButton == RIGHT)) { <br/>    fill(255); <br/>  } else { <br/>    fill(126); <br/>  } <br/>  rect(25, 25, 50, 50); <br/>} <br/></pre>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<hr align="left" noshade="noshade" size="1" width="150"/><br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="550">
+<pre>// Clique sobre a imagem e pressione os botões<br/>// esquerdo e direito do mousse para mudar <br/>// o valor do retângulo<br/>void draw() { <br/>  rect(25, 25, 50, 50); <br/>} <br/> <br/>void mousePressed() { <br/>  if (mouseButton == LEFT) { <br/>    fill(0); <br/>  } else if (mouseButton == RIGHT) { <br/>    fill(255); <br/>  } else { <br/>    fill(126); <br/>  } <br/>} <br/></pre>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<br/>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td valign="top">Descrição</td>
+<td valign="top"> </td>
+<td valign="top">Processing rastreia automaticamente se o
+botão do mouse é pressionando, assim como qual
+botão é pressionando. O valor da variável de
+sistema <b>mouseButton</b> pode ser um entre <b>LEFT</b>, <b>RIGHT</b>, ou <b>CENTER</b>, dependendo de qual botão foi pressionado.	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Utilização</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Web &amp; Applicações	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Relacionado</td>
+<td valign="top"> </td>
+<td valign="top">
+<a href="mouseX.html">mouseX</a><br/>
+<a href="mouseY.html">mouseY</a><br/>
+<a href="mousePressed_.html">mousePressed()</a><br/>
+<a href="mouseReleased_.html">mouseReleased()</a><br/>
+<a href="mouseMoved_.html">mouseMoved()</a><br/>
+<a href="mouseDragged_.html">mouseDragged()</a><br/>
+</td>
+</tr>
+</tbody>
+</table>

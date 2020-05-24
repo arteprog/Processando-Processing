@@ -1,0 +1,155 @@
+<table border="0" cellpadding="0" cellspacing="0" width="675">
+<tbody>
+<tr>
+<td width="100"><img height="40" src="../images/1pix.gif" width="100"/></td>
+<td width="20"><img height="1" src="../images/1pix.gif" width="20"/></td>
+<td width="555"><img height="1" src="../images/1pix.gif" width="555"/></td>
+</tr>
+<tr>
+<td valign="top">Nome</td>
+<td valign="top"> </td>
+<td valign="top">
+<h3>lightFalloff()</h3>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Exemplos</td>
+<td valign="top"> </td>
+<td valign="top">
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="550">
+<pre>Em breve... <br/> <br/></pre>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<br/>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td valign="top">Descrição</td>
+<td valign="top"> </td>
+<td valign="top">Especifica o fator <span style="font-style: italic;">falloff </span>(n.t. <span style="font-style: italic;">fallof rate</span>; decaimento; o como a intensidade de uma fonte de luz diminiu em função da distância)
+para luzes pontuais, luzes spot, e luz ambiente. Os parâmetros
+são utilizados para determinar o decaimento
+através da seguinte equação:<br/>
+<br/>
+
+falloff = 1 / (CONSTANTE + d * LINEAR + (d*d) * QUADRATICO))<br/>
+
+onde d = distância entre a posição da luz e a posição do vértice. <br/>
+<br/>
+
+Como com a função <span style="font-weight: bold;">fill(), </span> a função <b>lightFalloff()</b>
+afeta apenas os elementos que forem criados após sua chamada no
+código.  O valor  padrão equivale à <b>lightFalloff(1.0, 0.0, 0.0). </b>Pensar
+a luz ambiente com decamimento pode exigir certos truques.
+ É utilizada, por exemplo, quando se quer que uma
+região de um cena seja iluminada por luz ambiente de uma cor e
+outra região por outra. Para isto se utilizam a
+posição e a taxa de falloff, ou decaimento.  Pode-se
+concebê-la como uma luz pontual que não  se importa
+com que direção uma superfície está
+orientada. </td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Sintaxe</td>
+<td valign="top"> </td>
+<td valign="top">
+<pre>lightFalloff(<font color="#996600">constante</font>, <font color="#996600">linear</font>, <font color="#996600">quadratico</font>)<br/></pre>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Parâmetros</td>
+<td valign="top"> </td>
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="90">constante</td>
+<td width="20"> </td>
+<td valign="top" width="440">int ou float: valor constante para determinação do decaimento<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">linear</td>
+<td width="20"> </td>
+<td valign="top" width="440">int ou float: valor constante linear para determinação do decaimento<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">quadratico</td>
+<td width="20"> </td>
+<td valign="top" width="440">int ou float: valor constante quadrático para determinação do decaimento<br/>
+<br/>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Retorno</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Nenhum	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Utilização</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Web &amp; Applicações	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Relacionado</td>
+<td valign="top"> </td>
+<td valign="top">
+<a href="lights_.html">lights()</a><br/>
+<a href="ambientLight_.html">ambientLight()</a><br/>
+<a href="pointLight_.html">pointLight()</a><br/>
+<a href="spotLight_.html">spotLight()</a><br/>
+<a href="lightSpecular_.html">lightSpecular()</a><br/>
+</td>
+</tr>
+</tbody>
+</table>

@@ -1,0 +1,184 @@
+<table border="0" cellpadding="0" cellspacing="0" width="675">
+<tbody>
+<tr>
+<td width="100"><img height="40" src="../images/1pix.gif" width="100"/></td>
+<td width="20"><img height="1" src="../images/1pix.gif" width="20"/></td>
+<td width="555"><img height="1" src="../images/1pix.gif" width="555"/></td>
+</tr>
+<tr>
+<td valign="top">Nome</td>
+<td valign="top"> </td>
+<td valign="top">
+<h3>camera()</h3>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Exemplos</td>
+<td valign="top"> </td>
+<td valign="top">
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="120"><img border="0" height="100" src="media/lookat_.gif" width="100"/></td>
+<td valign="top" width="430">
+<pre>size(100, 100, P3D); <br/>noFill(); <br/>background(204); <br/>camera(70.0, 35.0, 120.0, 50.0, 50.0, 0.0, <br/>       0.0, 1.0, 0.0); <br/>translate(50, 50, 0); <br/>rotateX(-PI/6); <br/>rotateY(PI/3); <br/>box(45); <br/></pre>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><img height="25" src="../images/1pix.gif" width="1"/></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td valign="top">Descrição</td>
+<td valign="top"> </td>
+<td valign="top">Configura a posição da câmara
+ao especificar a posição do olho, o centro da cena, e
+qual eixo está direcionado para cima.  O movimento da
+posição do olho e para onde está apontando (centro
+da cena)  permite que imagens sejam vistas de ângulos
+diferentes. A versão sem nenhum parâmetro atribui a
+câmera o valor padrão, que aponta para o centro da janela
+com o eixo Y apontando para cima. Os valores padrão são
+camera(width/2.0, height/2.0, ((height/2.0) / tan(PI*60.0 / 360.0),
+width/2.0, height/2.0, 0, 0, 1, 0). Esta função é
+similar a gluLookAt() em OpenGL, mas primeiro limpa a atual
+configuração da câmera.	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Sintaxe</td>
+<td valign="top"> </td>
+<td valign="top">
+<pre>camera()<br/>camera(<font color="#996600">olhoX</font>, <font color="#996600">olhoY</font>, <font color="#996600">olhoZ</font>, <font color="#996600">centroX</font>, <font color="#996600">centroY</font>, <font color="#996600">centroZ</font>, <font color="#996600">upX</font>, <font color="#996600">upY</font>, <font color="#996600">upZ</font>)<br/></pre>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Parâmetros</td>
+<td valign="top"> </td>
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="90">olhoX</td>
+<td width="20"> </td>
+<td valign="top" width="440">float: x coordenada  do olho<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">olhoY</td>
+<td width="20"> </td>
+<td valign="top" width="440">float: y coordenada  do olho<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">olhoZ</td>
+<td width="20"> </td>
+<td valign="top" width="440">float: z coordenada  do olho<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">centroX</td>
+<td width="20"> </td>
+<td valign="top" width="440">float: coordenada x do centro da cena<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">centroY</td>
+<td width="20"> </td>
+<td valign="top" width="440">float: coordenada y  do centro da cena<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">centroZ</td>
+<td width="20"> </td>
+<td valign="top" width="440">float: coordenada z do centro da cena<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">upX</td>
+<td width="20"> </td>
+<td valign="top" width="440">float: usualmente 0.0, 1.0, ou -1.0<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">upY</td>
+<td width="20"> </td>
+<td valign="top" width="440">float: usualmente 0.0, 1.0, ou -1.0<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">upZ</td>
+<td width="20"> </td>
+<td valign="top" width="440">float: usualmente 0.0, 1.0, ou -1.0<br/>
+<br/>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Retorno</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Nenhum	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Utilização</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Web &amp; Applicações	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Relacionado</td>
+<td valign="top"> </td>
+<td valign="top">
+<a href="camera_.html">camera()</a><br/>
+<a href="endCamera_.html">endCamera()</a><br/>
+<a href="frustum_.html">frustum()</a><br/>
+</td>
+</tr>
+</tbody>
+</table>

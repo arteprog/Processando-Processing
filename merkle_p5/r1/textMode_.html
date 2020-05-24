@@ -1,0 +1,95 @@
+<table border="0" cellpadding="0" cellspacing="0" width="675">
+<tr>
+<td width="100"><img height="40" src="../images/1pix.gif" width="100"/></td>
+<td width="20"><img height="1" src="../images/1pix.gif" width="20"/></td>
+<td width="555"><img height="1" src="../images/1pix.gif" width="555"/></td>
+</tr>
+<tr>
+<td valign="top">Nome</td>
+<td valign="top"> </td>
+<td valign="top">
+<h3>textMode()</h3> </td></tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Exemplos</td>
+<td valign="top"> </td>
+<td valign="top">
+<table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="550"><tr><td valign="top" width="120"><img border="0" height="100" src="media/textMode_.gif" width="100"/></td>
+<td valign="top" width="430"><pre>PFont metaBold; 
+// The font "Meta-Bold.vlw.gz" must be located in the 
+// current sketch's "data" directory to load successfully 
+metaBold = loadFont("Meta-Bold.vlw.gz"); 
+String lines = "screen"; 
+textFont(metaBold); 
+textMode(SCREEN); 
+text(lines, 3, 70); 
+</pre></td></tr>
+<tr><td colspan="2" valign="top"><img height="25" src="../images/1pix.gif" width="1"/></td></tr>
+</table> </td></tr>
+<tr>
+<td valign="top">Descrição</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Sets the way text draws to the screen. In the default configuration, it's possible to rotate, scale, and place letters in three dimensional space. Changing to SCREEN mode draws letters directly to the front of the windows and increases the rendering quality of the letters. The letters draw at the actual size of the font (in pixels) and therefore calls to <b>textSize()</b> will not affect the size of the letters. To create a font at the size you desire, use the "Create font..." option in the Tools menu.	</td></tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Sintaxe</td>
+<td valign="top"> </td>
+<td valign="top">
+<pre>textMode(<font color="#996600">MODE</font>)
+</pre> </td></tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Parâmetros</td>
+<td valign="top"> </td>
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="550"><tr>
+<td valign="top" width="90">MODE</td>
+<td width="20"> </td>
+<td valign="top" width="440">either MODEL or SCREEN<br/><br/></td>
+</tr></table> <tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Retorno</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Nenhum	</td></tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Utilização</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Web &amp; Applicações	</td></tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Relacionado</td>
+<td valign="top"> </td>
+<td valign="top">
+<a href="loadFont_.html">loadFont() </a><br/><a href="PFont.html">PFont </a><br/><a href="text_.html">text()</a><br/><a href="textFont_.html">textFont() </a><br/> </td></tr>
+</td></tr></table>

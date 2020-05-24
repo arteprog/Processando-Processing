@@ -1,0 +1,162 @@
+<table border="0" cellpadding="0" cellspacing="0" width="675">
+<tbody>
+<tr>
+<td width="100"><img height="40" src="../images/1pix.gif" width="100"/></td>
+<td width="20"><img height="1" src="../images/1pix.gif" width="20"/></td>
+<td width="555"><img height="1" src="../images/1pix.gif" width="555"/></td>
+</tr>
+<tr>
+<td valign="top">Nome</td>
+<td valign="top"> </td>
+<td valign="top">
+<h3>colorMode()</h3>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Exemplos</td>
+<td valign="top"> </td>
+<td valign="top">
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="120"><img border="0" height="100" src="media/colorMode_.jpg" width="100"/></td>
+<td valign="top" width="430">
+<pre>noStroke(); <br/>colorMode(RGB, 100); <br/>for(int i=0; i&lt;100; i++) { <br/>  for(int j=0; j&lt;100; j++) { <br/>    stroke(i, j, 0); <br/>    point(i, j); <br/>  } <br/>} <br/></pre>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><img height="25" src="../images/1pix.gif" width="1"/></td>
+</tr>
+<tr>
+<td valign="top" width="120"><img border="0" height="100" src="media/colorMode_2.jpg" width="100"/></td>
+<td valign="top" width="430">
+<pre>noStroke(); <br/>colorMode(HSB, 100); <br/>for(int i=0; i&lt;100; i++) { <br/>  for(int j=0; j&lt;100; j++) { <br/>    stroke(i, j, 100); <br/>    point(i, j); <br/>  } <br/>} <br/></pre>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><img height="25" src="../images/1pix.gif" width="1"/></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td valign="top">Descrição</td>
+<td valign="top"> </td>
+<td valign="top">Modifica a maneira com que o Processing interpreta dados relativos a cores. Como  as cores de <b>fill()</b>, <b>stroke()</b> e<b> </b><b>background()</b>
+são especificadas como valores entre 0 e 255 no modelo RGB de
+cor. É possível modificar o intervalo de cor
+ utilizado para especificar cores e se mudar de sistema de cor.
+Por exemplo, ao chamar (<span style="font-weight: bold;">coloMode(RGB, 1.0)</span>,
+será especificado que os valoreses serão especificados
+entre 0 e 1. Os limites para as definições de cores
+são alterados ao ajustar os parâmetros intervalo1,
+intervalo2, e intervalo3.	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Sintaxe</td>
+<td valign="top"> </td>
+<td valign="top">
+<pre>colorMode(<font color="#996600">mode</font>);<br/>colorMode(<font color="#996600">mode</font>, <font color="#996600">intervalo</font>);<br/>colorMode(<font color="#996600">mode</font>, <font color="#996600">intervalo1</font>, <font color="#996600">intervalo2</font>, <font color="#996600">intervalo3</font>);<br/></pre>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Parâmetros</td>
+<td valign="top"> </td>
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="90">mode</td>
+<td width="20"> </td>
+<td valign="top" width="440">ou RGB ou HSB, o que corresponde a Vermelho/Verde/Azul (n.t.  <span style="font-style: italic;">Red/Green/Blue</span>) e Matiz/Saturação/Brilho (n.t.<span style="font-style: italic;"> Hue/Saturation/Brightness</span>)<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">intervalo</td>
+<td width="20"> </td>
+<td valign="top" width="440">int ou float: intervalo de todos os elemtos de cor elements<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">intervalo1</td>
+<td width="20"> </td>
+<td valign="top" width="440">int ou float: intervalo para o vermelho ou para o matiz, dependendo do atual modo de cor<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">intervalo2</td>
+<td width="20"> </td>
+<td valign="top" width="440">int ou float: intervalo para o verde ou para a saturação, dependendo do atual modo de cor<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">intervalo3</td>
+<td width="20"> </td>
+<td valign="top" width="440">int ou float: intervalo para o azul ou para o brilho, dependendo do atual modo de cor<br/>
+<br/>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Retorno</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Nenhum	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Utilização</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Web &amp; Applicações	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Relacionado</td>
+<td valign="top"> </td>
+<td valign="top">
+<a href="background_.html">background()</a><br/>
+<a href="fill_.html">fill()</a><br/>
+<a href="stroke_.html">stroke()</a><br/>
+</td>
+</tr>
+</tbody>
+</table>

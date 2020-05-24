@@ -1,0 +1,164 @@
+<table border="0" cellpadding="0" cellspacing="0" width="675">
+<tbody>
+<tr>
+<td width="100"><img height="40" src="../images/1pix.gif" width="100"/></td>
+<td width="20"><img height="1" src="../images/1pix.gif" width="20"/></td>
+<td width="555"><img height="1" src="../images/1pix.gif" width="555"/></td>
+</tr>
+<tr>
+<td valign="top">Nome</td>
+<td valign="top"> </td>
+<td valign="top">
+<h3>get()</h3>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Exemplos</td>
+<td valign="top"> </td>
+<td valign="top">
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="120"><img border="0" height="100" src="media/get_.jpg" width="100"/></td>
+<td valign="top" width="430">
+<pre>PImage myImage = loadImage("topanga.jpg"); <br/>image(myImage, 0, 0); <br/>PImage cp = get(); <br/>image(cp, 50, 0); <br/> <br/></pre>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><img height="25" src="../images/1pix.gif" width="1"/></td>
+</tr>
+<tr>
+<td valign="top" width="120"><img border="0" height="100" src="media/get_2.jpg" width="100"/></td>
+<td valign="top" width="430">
+<pre>PImage myImage = loadImage("topanga.jpg"); <br/>image(myImage, 0, 0); <br/>color cp = get(30, 20); <br/>fill(cp); <br/>rect(30, 20, 55, 55); <br/></pre>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><img height="25" src="../images/1pix.gif" width="1"/></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td valign="top">Descrição</td>
+<td valign="top"> </td>
+<td valign="top">Lê a cor de qualquer píxel ou pega a
+seção de uma imagem. Se nenhum parâmetro é
+especificado, a imagem inteira é retornada.  Pega-se o
+valor de um píxel ao especificar as coordenadas x e y. Pega-se a
+seção de uma imagem ao especificar parâmetros
+adicionais de <span style="font-weight: bold;">largura</span> e <span style="font-weight: bold;"> altura</span>.
+Se o píxel requerido estiver fora da janela da imagem, preto
+é retornado. Os números retornados são escalados
+de acordo com as escalas de cor atuais, mas apenas valores RGB
+são retornados por esta função. Por exemplo,
+embora se possa desenhar uma forma em <span style="font-weight: bold;">coloMode(HSB)</span>, os números retornados serão em RGB. <br/>
+<br/>
+
+A função <span style="font-weight: bold;">imageMode() </span>modificará o modo de trabalho dos parâmetros. Por exemplo, uma chamada à <span style="font-weight: bold;">imageMode(CORNERS) </span> modificará
+ os parâmetros de definirem largura e altura para definirem
+os valores dos cantos opostos a x e y.<br/>
+<br/>
+Para se pegar a cor de um único píxel com <span style="font-weight: bold;">get(x,y)</span>
+é fácil, mas não é tão rápido
+quanto se pegar esta informação diretamente de <span style="font-weight: bold;">pixels[]</span>. O comando equivalente à "get(x,y)"que faz uso de <span style="font-weight: bold;">pixels[] </span>é "pixels[y*largura+x]".  A versão BETA de Processing requer que se chame <span style="font-weight: bold;">loadPixels() </span>para se carregar a janela de visualização no array <span style="font-weight: bold;">pixels[]</span> antes que se pegue os valores. ow data into the <b>pixels[]</b> array before getting the values.	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Sintaxe</td>
+<td valign="top"> </td>
+<td valign="top">
+<pre>get()<br/>get(<font color="#996600">x</font>, <font color="#996600">y</font>)<br/>get(<font color="#996600">x</font>, <font color="#996600">y</font>, <font color="#996600">largura</font>, <font color="#996600">altura</font>)<br/></pre>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Parâmetros</td>
+<td valign="top"> </td>
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="90">x</td>
+<td width="20"> </td>
+<td valign="top" width="440">int: coordenada-x do píxel<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">y</td>
+<td width="20"> </td>
+<td valign="top" width="440">int: coordenada-y  do píxel<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">largura</td>
+<td width="20"> </td>
+<td valign="top" width="440">int: largura do retângo de pixels a pegar<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">altura</td>
+<td width="20"> </td>
+<td valign="top" width="440">int: altura do retângulo de pixels a pegar<br/>
+<br/>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Retorno</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+color ou PImage	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Utilização</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Web &amp; Applicações	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Relacionado</td>
+<td valign="top"> </td>
+<td valign="top">
+<a href="set_.html">set()</a><br/>
+<a href="pixels.html">pixels[]</a><br/>
+</td>
+</tr>
+</tbody>
+</table>

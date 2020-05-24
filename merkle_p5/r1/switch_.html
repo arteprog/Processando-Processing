@@ -1,0 +1,150 @@
+<table border="0" cellpadding="0" cellspacing="0" width="675">
+<tbody>
+<tr>
+<td width="100"><img height="40" src="../images/1pix.gif" width="100"/></td>
+<td width="20"><img height="1" src="../images/1pix.gif" width="20"/></td>
+<td width="555"><img height="1" src="../images/1pix.gif" width="555"/></td>
+</tr>
+<tr>
+<td valign="top">Nome</td>
+<td valign="top"> </td>
+<td valign="top">
+<h3>switch()</h3>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Exemplos</td>
+<td valign="top"> </td>
+<td valign="top">
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="550">
+<pre>int num = 1; <br/> <br/>switch(num) { <br/>  case 0: <br/>    println("Zero");  // Não é executado<br/>    break; <br/>  case 1: <br/>    println("Um");  // Imprime "Um" <br/>    break; <br/>} <br/></pre>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<hr align="left" noshade="noshade" size="1" width="150"/><br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="550">
+<pre>char letter = 'N'; <br/> <br/>switch(letter) { <br/>  case 'A': <br/>    println("Alpha");  // Não é executado<br/>    break; <br/>  case 'B': <br/>    println("Bravo");  // Não é executado <br/>    break; <br/>  default:             // É executado caso os rótulos ou casos<br/>    println("Nenhum");   // não beterem com o parâmentro do switch<br/>    break; <br/>} <br/></pre>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<hr align="left" noshade="noshade" size="1" width="150"/><br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="550">
+<pre>// A remoção de um "break" permite testar por mais  <br/>// de um valor em um único momento<br/> <br/>char letra = 'b'; <br/> <br/>switch(letra) { <br/>  case 'a': <br/>  case 'A': <br/>    println("Alpha");  // Não executa <br/>    break; <br/>  case 'b': <br/>  case 'B': <br/>    println("Bravo");  // Imprime "Bravo" <br/>    break; <br/>} <br/></pre>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<br/>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td valign="top">Descrição</td>
+<td valign="top"> </td>
+<td valign="top">Funciona como uma estrutura de controle condicional <span style="font-weight: bold;">if else</span>, mas o <span style="font-weight: bold;">swith()</span>
+é mais conveniente quando se tem a necessidade de
+seleção de três ou mais alternatias.  A
+execução do programa segue ao ponto onde o caso  (<span style="font-style: italic;">case</span>)
+tem valor equivalente à expressão de controle. Todos os
+demais comandos no switch são executados exceto quando a
+execução for redirecionalda por um comando <span style="font-weight: bold;">break.</span>
+Apenas dados primitivos que podem ser convertidos para um inteiro
+(byte, char, and int) podem ser utilizados com parâmetro <b>expressão. </b> O caso padrão (<span style="font-style: italic;">default</span>) é opcional.	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Sintaxe</td>
+<td valign="top"> </td>
+<td valign="top">
+<pre>switch(<font color="#996600">expressão</font>)<br/>{<br/>  case<font color="#996600"> rotulo</font>: <br/>     <font color="#996600">statements</font>          <br/>  case <font color="#996600">rotulo</font>:        // Optional<br/>     <font color="#996600">statements</font>        // "<br/>  default:             // "<br/>     <font color="#996600">statements</font>        // "<br/>}<br/></pre>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Parâmetros</td>
+<td valign="top"> </td>
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="90">expressão</td>
+<td width="20"> </td>
+<td valign="top" width="440">byte, char, or int<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">rotulo</td>
+<td width="20"> </td>
+<td valign="top" width="440">byte, char, or int<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">comandos</td>
+<td width="20"> </td>
+<td valign="top" width="440">um ou mais comando a executar<br/>
+<br/>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Utilização</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Web &amp; Applicações	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Relacionado</td>
+<td valign="top"> </td>
+<td valign="top">
+<a href="case.html">case</a><br/>
+<a href="default.html">default</a><br/>
+<a href="break.html">break</a><br/>
+<a href="if_.html">if()</a><br/>
+<a href="else.html">else</a><br/>
+</td>
+</tr>
+</tbody>
+</table>

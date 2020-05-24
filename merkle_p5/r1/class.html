@@ -1,0 +1,119 @@
+<table border="0" cellpadding="0" cellspacing="0" width="675">
+<tbody>
+<tr>
+<td width="100"><img height="40" src="../images/1pix.gif" width="100"/></td>
+<td width="20"><img height="1" src="../images/1pix.gif" width="20"/></td>
+<td width="555"><img height="1" src="../images/1pix.gif" width="555"/></td>
+</tr>
+<tr>
+<td valign="top">Nome</td>
+<td valign="top"> </td>
+<td valign="top">
+<h3>class</h3>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Exemplos</td>
+<td valign="top"> </td>
+<td valign="top">
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="550">
+<pre>// Declara e constrói dois objetos (h1 e h2) da classe Hline<br/>HLine h1 = new HLine(20, 2.0); <br/>HLine h2 = new HLine(50, 2.5); <br/> <br/>void setup() <br/>{ <br/>  size(200, 200); <br/>  framerate(30); <br/>} <br/> <br/>void draw() { <br/>  background(204); <br/>  h1.update(); <br/>  h2.update();  <br/>} <br/> <br/>class HLine { <br/>  float ypos, speed; <br/>  HLine (float y, float s) {  <br/>    ypos = y; <br/>    speed = s; <br/>  } <br/>  void update() { <br/>    ypos += speed; <br/>    if (ypos &gt; width) { <br/>      ypos = 0; <br/>    } <br/>    line(0, ypos, width, ypos); <br/>  } <br/>} <br/></pre>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<br/>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td valign="top">Descrição</td>
+<td valign="top"> </td>
+<td valign="top">Palavra chave utilizada para indicar a
+declaração de uma classe. Uma classe é um
+compósito de dados e métodos (funções), que
+pode ser instanciada em objetos. Usualmente, a primeira letra do nome
+de uma classe é escolhida maiúscula, de modo a
+diferenciá-la de outros tipos de variáveis.  Um
+tutorial em <a href="http://java.sun.com/docs/books/tutorial/java/concepts/index.html" target="_blank">Programação Orientada a Objetos</a>, em inglês, pode ser encontrado no sítio da Sun.	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Sintaxe</td>
+<td valign="top"> </td>
+<td valign="top">
+<pre>class <font color="#996600">NomeClasse</font> {<br/>  <font color="#996600">comandos</font>
+}
+            </pre>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Parâmetros</td>
+<td valign="top"> </td>
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="90">NomeClasse</td>
+<td width="20"> </td>
+<td valign="top" width="440">Qualquer nome válido de variáveis<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">comandos</td>
+<td width="20"> </td>
+<td valign="top" width="440">Qualquer comando válido<br/>
+<br/>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Utilização</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Web &amp; Applicações	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Relacionado</td>
+<td valign="top"> </td>
+<td valign="top">
+<a href="Object.html">Object</a><br/>
+</td>
+</tr>
+</tbody>
+</table>

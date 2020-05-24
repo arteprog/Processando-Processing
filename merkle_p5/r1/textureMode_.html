@@ -1,0 +1,110 @@
+<table border="0" cellpadding="0" cellspacing="0" width="675">
+<tr>
+<td width="100"><img height="40" src="../images/1pix.gif" width="100"/></td>
+<td width="20"><img height="1" src="../images/1pix.gif" width="20"/></td>
+<td width="555"><img height="1" src="../images/1pix.gif" width="555"/></td>
+</tr>
+<tr>
+<td valign="top">Nome</td>
+<td valign="top"> </td>
+<td valign="top">
+<h3>textureMode()</h3> </td></tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Exemplos</td>
+<td valign="top"> </td>
+<td valign="top">
+<table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="550"><tr><td valign="top" width="120"><img border="0" height="100" src="media/textureMode_.gif" width="100"/></td>
+<td valign="top" width="430"><pre>noStroke(); 
+PImage a = loadImage("arch.jpg"); 
+textureMode(IMAGE); 
+beginShape(); 
+texture(a); 
+vertex(10, 20, 0, 0); 
+vertex(80, 5, 100, 0); 
+vertex(95, 90, 100, 100); 
+vertex(40, 95, 0, 100); 
+endShape(); 
+</pre></td></tr>
+<tr><td colspan="2" valign="top"><img height="25" src="../images/1pix.gif" width="1"/></td></tr>
+<tr><td valign="top" width="120"><img border="0" height="100" src="media/textureMode_2.gif" width="100"/></td>
+<td valign="top" width="430"><pre>noStroke(); 
+PImage a = loadImage("arch.jpg"); 
+textureMode(NORMALIZED); 
+beginShape(); 
+texture(a); 
+vertex(10, 20, 0, 0); 
+vertex(80, 5, 1, 0); 
+vertex(95, 90, 1, 1); 
+vertex(40, 95, 0, 1); 
+endShape(); 
+</pre></td></tr>
+<tr><td colspan="2" valign="top"><img height="25" src="../images/1pix.gif" width="1"/></td></tr>
+</table> </td></tr>
+<tr>
+<td valign="top">Descrição</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Sets the coordinate space for texture mapping. There are two options, IMAGE, which refers to the actual coordinates of the image, and NORMALIZED, which refers to a normalized space of values ranging from 0 to 1. The default mode is IMAGE. In IMAGE, if an image is 100 x 200 pixels, mapping the image onto the entire size of a quad would require the points (0,0) (0,100) (100,200) (0,200). The same mapping in NORMAL_SPACE is (0,0) (0,1) (1,1) (0,1).	</td></tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Sintaxe</td>
+<td valign="top"> </td>
+<td valign="top">
+<pre>texture(<font color="#996600">MODE</font>); 
+</pre> </td></tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Parâmetros</td>
+<td valign="top"> </td>
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="550"><tr>
+<td valign="top" width="90">MODE</td>
+<td width="20"> </td>
+<td valign="top" width="440">either IMAGE or NORMALIZED<br/><br/></td>
+</tr></table> <tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Retorno</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Nenhum	</td></tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Utilização</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Application &amp; Web	</td></tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Relacionado</td>
+<td valign="top"> </td>
+<td valign="top">
+<a href="texture_.html">texture()</a><br/> </td></tr>
+</td></tr></table>

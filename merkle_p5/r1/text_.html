@@ -1,0 +1,142 @@
+<table border="0" cellpadding="0" cellspacing="0" width="675">
+<tr>
+<td width="100"><img height="40" src="../images/1pix.gif" width="100"/></td>
+<td width="20"><img height="1" src="../images/1pix.gif" width="20"/></td>
+<td width="555"><img height="1" src="../images/1pix.gif" width="555"/></td>
+</tr>
+<tr>
+<td valign="top">Nome</td>
+<td valign="top"> </td>
+<td valign="top">
+<h3>text()</h3> </td></tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Exemplos</td>
+<td valign="top"> </td>
+<td valign="top">
+<table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="550"><tr><td valign="top" width="120"><img border="0" height="100" src="media/text_.gif" width="100"/></td>
+<td valign="top" width="430"><pre>PFont font; 
+// The font must be located in the sketch's 
+// "data" directory to load successfully 
+font = loadFont("FFScala-32.vlw"); 
+textFont(font, 32); 
+text("word", 15, 30); 
+fill(0, 102, 153); 
+text("word", 15, 60); 
+fill(0, 102, 153, 51); 
+text("word", 15, 90);  
+</pre></td></tr>
+<tr><td colspan="2" valign="top"><img height="25" src="../images/1pix.gif" width="1"/></td></tr>
+<tr><td valign="top" width="120"><img border="0" height="100" src="media/text_X.gif" width="100"/></td>
+<td valign="top" width="430"><pre>size(100, 100, P3D); 
+PFont font; 
+font = loadFont("FFScala-32.vlw"); 
+textFont(font, 32); 
+text("word", 15, 60, -30); 
+fill(0, 102, 153); 
+text("word", 15, 60); 
+</pre></td></tr>
+<tr><td colspan="2" valign="top"><img height="25" src="../images/1pix.gif" width="1"/></td></tr>
+<tr><td valign="top" width="120"><img border="0" height="100" src="media/text_3.gif" width="100"/></td>
+<td valign="top" width="430"><pre>PFont font; 
+font = loadFont("FFScala-Bold-12.vlw"); 
+textFont(font, 12); 
+String s = "The quick brown fox jumped over the lazy dog."; 
+text(s, 15, 20, 70, 70); 
+</pre></td></tr>
+<tr><td colspan="2" valign="top"><img height="25" src="../images/1pix.gif" width="1"/></td></tr>
+</table> </td></tr>
+<tr>
+<td valign="top">Descrição</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Draws text to the screen. Displays the information specified in the <b>data</b> or <b>stringdata</b> parameters on the screen in the position specified by the <b>x</b> and <b>y</b> parameters and the optional <b>z</b> parameter. A font must be set with the <b>textFont()</b> function before <b>text()</b> may be called. The <b>width</b> and <b>height</b> parameters define a rectangular area to display within and may only be used with string data. The text displays in relation to the <b>textAlign()</b> function, which gives the option to draw to the left, right, and center of the coordinates. Use the <b>textMode()</b> function with the <b>SCREEN</b> parameter to display text in 2D at the surface of the window. Change the color of the text with the <b>fill()</b> function.	</td></tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Sintaxe</td>
+<td valign="top"> </td>
+<td valign="top">
+<pre>text(<font color="#996600">data</font>, <font color="#996600">x</font>, <font color="#996600">y</font>)
+text(<font color="#996600">data</font>, <font color="#996600">x</font>, <font color="#996600">y</font>, <font color="#996600">z</font>)
+text(<font color="#996600">stringdata</font>, <font color="#996600">x</font>, <font color="#996600">y</font>, <font color="#996600">width</font>, <font color="#996600">height</font>)
+text(<font color="#996600">stringdata</font>, <font color="#996600">x</font>, <font color="#996600">y</font>, <font color="#996600">width</font>, <font color="#996600">height</font>, <font color="#996600">z</font>)
+</pre> </td></tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Parâmetros</td>
+<td valign="top"> </td>
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="550"><tr>
+<td valign="top" width="90">data</td>
+<td width="20"> </td>
+<td valign="top" width="440">String, char, int, or float: the alphanumeric symbols to be displayed<br/><br/></td>
+<tr>
+<td valign="top" width="90">x</td>
+<td width="20"> </td>
+<td valign="top" width="440">int or float: coordenada-x of text<br/><br/></td>
+<tr>
+<td valign="top" width="90">y</td>
+<td width="20"> </td>
+<td valign="top" width="440">int or float: coordenada-y of text<br/><br/></td>
+<tr>
+<td valign="top" width="90">z</td>
+<td width="20"> </td>
+<td valign="top" width="440">int or float: coordenada-z of text<br/><br/></td>
+<tr>
+<td valign="top" width="90">stringdata</td>
+<td width="20"> </td>
+<td valign="top" width="440">String: letters to be displayed<br/><br/></td>
+<tr>
+<td valign="top" width="90">width</td>
+<td width="20"> </td>
+<td valign="top" width="440">int or float: width of text box<br/><br/></td>
+<tr>
+<td valign="top" width="90">height</td>
+<td width="20"> </td>
+<td valign="top" width="440">int or float: height of text box<br/><br/></td>
+</tr></tr></tr></tr></tr></tr></tr></table> <tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Retorno</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Nenhum	</td></tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Utilização</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Web &amp; Applicações	</td></tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Relacionado</td>
+<td valign="top"> </td>
+<td valign="top">
+<a href="textAlign_.html">textAlign()</a><br/><a href="textMode_.html">textMode()</a><br/><a href="loadFont_.html">loadFont() </a><br/><a href="PFont.html">PFont </a><br/><a href="textFont_.html">textFont() </a><br/> </td></tr>
+</td></tr></table>

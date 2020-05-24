@@ -1,0 +1,3505 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>Linguagem (API) &raquo; Processing 1.0 (BETA)</title>
+
+
+  <meta http-equiv="Content-Type" content="text/html; charset=">
+
+  <link rel="stylesheet" href="../../processing_beta.css">
+
+  <script language="JavaScript">
+<!--
+function gogo(dropdown) {
+var tempURL = dropdown.options[dropdown.selectedIndex].value;
+if(tempURL!="") {
+document.location.href = tempURL;
+}
+}
+function MM_swapImgRestore() { //v3.0
+var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_findObj(n, d) { //v3.0
+var p,i,x; if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
+}
+function MM_swapImage() { //v3.0
+var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+  </script>
+</head>
+
+
+<body>
+
+<table bgcolor="#000000" border="0" cellpadding="0" cellspacing="0" width="750">
+
+  <tbody>
+
+    <tr>
+
+      <td colspan="2" bgcolor="#000000" width="550">
+      <a href="../index.html"><img src="../../images/processing_beta.gif" align="top" border="0" height="50" width="500"></a><a name="top"></a></td>
+
+      <td align="right" bgcolor="#000000" valign="top" width="180"> <img src="../../images/1pix.gif" height="8" width="180"><br>
+
+      <a href="../faq/index.html"><font color="#ccccbe">FAQ</font></a>
+      </td>
+
+      <td bgcolor="#000000" width="20">&nbsp;</td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="750">
+
+  <tbody>
+
+    <tr>
+
+      <td bgcolor="#333323" height="25" width="55">&nbsp;</td>
+
+      <td rowspan="2" valign="middle" width="675">
+      <table ="width=&quot;675&quot;" valign="middle" border="0" cellpadding="0" cellspacing="0">
+
+        <tbody>
+
+          <tr>
+
+            <td bgcolor="#333323" height="25" width="1"><a href="../index.html"><font color="#ffffff">Cover</font></a>&nbsp;</td>
+
+            <td bgcolor="#333323" height="25" width="1"><font color="#ccccbe">\</font>&nbsp;<a href="../exhibition/index.html"><font color="#ffffff">Exhibition</font></a>&nbsp;</td>
+
+            <td bgcolor="#333323" height="25" width="1"><font color="#ccccbe">\</font>&nbsp;<a href="../learning/index.html"><font color="#ffffff">Learning</font></a>&nbsp;</td>
+
+            <td bgcolor="#333323" height="25" width="1"><font color="#ccccbe">\</font>&nbsp;<a href="index.html"><font color="#ccccbe">Reference</font></a>&nbsp;</td>
+
+            <td bgcolor="#333323" height="25" width="1"><font color="#ccccbe">\</font>&nbsp;<a href="../download/index.html"><font color="#ffffff">Download</font></a>&nbsp;</td>
+
+            <td bgcolor="#333323" height="25" width="1"><font color="#ccccbe">\</font>&nbsp;<a href="../discourse/index.html"><font color="#ffffff">Discourse</font></a>&nbsp;</td>
+
+            <td bgcolor="#333323" height="25" width="672">&nbsp;</td>
+
+          </tr>
+
+          <tr>
+
+            <td bgcolor="#ffffff" height="25" width="1">&nbsp;</td>
+
+            <td bgcolor="#ffffff" height="25" width="1">&nbsp;</td>
+
+            <td bgcolor="#ffffff" height="25" width="1">&nbsp;</td>
+
+            <td colspan="4" bgcolor="#5a5a46" height="25" valign="middle" width="672"> <img src="../../images/nav_bottomarrow.gif" align="middle" height="25" width="33"><a href="index.html"><font color="#ccccbe">Linguagem</font></a> <font color="#ccccbe">\ </font><a href="environment/index.html"><font color="#ffffff">Ambiente</font></a>
+            <font color="#ccccbe">\ </font> <a href="libraries/index.html"><font color="#ffffff">Bibliotecas</font></a>
+            <font color="#ccccbe">\ </font> <a href="compare/index.html"><font color="#ffffff">Compara&ccedil;&atilde;o</font></a></td>
+
+          </tr>
+
+        </tbody>
+      </table>
+
+      </td>
+
+      <td bgcolor="#333323" height="25" valign="middle" width="20">&nbsp;</td>
+
+    </tr>
+
+    <tr>
+
+      <td bgcolor="#ffffff" height="25" valign="middle" width="55">&nbsp;</td>
+
+      <td bgcolor="#5a5a46" height="25" valign="middle" width="20">&nbsp;</td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+  <tbody>
+
+    <tr>
+
+      <td width="80"><img src="../images/1pix.gif" height="40" width="55"></td>
+
+      <td valign="bottom" width="670">&nbsp; </td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="730">
+
+  <tbody>
+
+    <tr>
+
+      <td width="55">&nbsp;</td>
+
+      <td width="675"> <small><img src="images/header.gif" alt="Linguagem (API). The Processing Linguagem has been designed to facilitate the creation of sophisticated visual and conceptual structures." height="70" width="675"></small><br>
+
+      <big style="color: rgb(102, 102, 51);">Linguagem
+(Interface para programa&ccedil;&atilde;o de
+Aplica&ccedil;&otilde;es<span style="font-style: italic;"></span>,
+      </big><big style="color: rgb(102, 102, 51);"><span style="font-style: italic;">Application Programming Interface</span>
+- </big><big style="color: rgb(102, 102, 51);">API).
+A linguagem processing foi projetada para facilitar a
+cria&ccedil;&atilde;o de estruturas visuais e conceituais
+sofisticadas.</big></td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+  <tbody>
+
+    <tr>
+
+      <td width="55"><img src="../images/1pix.gif" height="40" width="55"></td>
+
+      <td width="695">&nbsp;</td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+<table style="width: 750px; height: 1632px;" border="0" cellpadding="0" cellspacing="0">
+
+  <tbody>
+
+    <tr>
+
+      <td width="55">&nbsp;</td>
+
+      <td valign="top" width="225">
+      <table border="0" cellpadding="0" cellspacing="0" width="180">
+
+        <form></form>
+
+        <tbody>
+
+          <tr>
+
+            <td><font color="#666633">Op&ccedil;&otilde;es
+de Visualiza&ccedil;&atilde;o:<br>
+
+            <select name="nav" size="1" class="refnav" onchange="javascript:gogo(this)">
+            <option value="index.html" >Resumida</option>
+            <option value="index_alpha.html">Resumida (A-Z)</option>
+            <option value="index_ext.html"selected="selected">Completa</option>
+            <option value="index_alpha_ext.html">Completa
+(A-Z)</option>
+            </select>
+
+            <br>
+
+            <br>
+
+L&iacute;nguas: <br>
+
+            <select name="nav" size="1" class="refnav" onchange="javascript:gogo(this)">
+            <option value="../index_ext.html" target="new">Ingl&ecirc;s</option>
+            <option value="http://processing.org/reference/zh-cn/" target="new">Chin&ecirc;s (Simplificado)</option>
+            <option value="http://processing.org/reference/zh/" target="new">Chin&ecirc;s (Tradicional)</option>
+            <option value="http://processing.org/reference/es/" target="new">Espanhol</option>
+            <option value="http://processing.org/reference/fr/" target="new">Franc&ecirc;s</option>
+            <option value="http://processing.org/reference/id/" target="new">Indon&eacute;sio</option>
+            <option value="http://processing.org/reference/it/" target="new">Italiano</option>
+            <option value="http://stage.itp.tsoa.nyu.edu/~tk403/proce55ing_reference_jp/" target="new">Japon&ecirc;s</option>
+            <option value="http://www.nabi.or.kr/processing/" target="new">Koreano</option>
+            <option value="index_ext.html" selected="selected">Portugu&ecirc;s (Brasil)</option>
+            <option value="http://processing.org/reference/tr/" target="new">Turco</option>
+            </select>
+
+            <br>
+
+            <br>
+
+            </font></td>
+
+          </tr>
+
+          <tr>
+
+            <td><br>
+
+            <font color="#5a5a46">A
+documenta&ccedil;&atilde;o de refer&ecirc;ncia
+completa inclui todos os aspectos do n&uacute;cleo do software
+processing.</font><font color="#5a5a46"> <br>
+
+            <br>
+
+A
+documenta&ccedil;&atilde;o de refer&ecirc;ncia resumida
+omite descri&ccedil;&otilde;es e fun&ccedil;&otilde;es
+para desenhar em 3D, para o desenho detalhado e a
+manipula&ccedil;&atilde;o de dados. &nbsp;<br>
+
+            </font> </td>
+
+          </tr>
+
+        </tbody>
+      </table>
+
+      <br>
+
+      <br>
+
+      <br>
+
+      <img src="images/structure.gif" alt="Estrutura" border="0" height="20" width="205"><br>
+
+      <span style="color: rgb(102, 102, 0);">ESTRUTURA</span><br>
+
+      <br>
+
+      <table style="text-align: left; width: 100%; height: 5%;" border="0" cellpadding="1" cellspacing="0">
+
+        <tbody>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="parentheses.html">&nbsp;()&nbsp; </a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined" width="60%"><small>par&ecirc;nteses</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="comma.html">&nbsp;, &nbsp; </a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>operador
+v&iacute;rgula</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="multilinecomment.html"> </a><a href="dot.html">&nbsp;. &nbsp;</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>operador
+ponto</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="multilinecomment.html">/* */</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>coment&aacute;rio
+multi-linha</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="doccomment.html">/** */ </a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>coment&aacute;rio
+documental</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="comment.html">&nbsp;//&nbsp;</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>coment&aacute;rio
+linha &uacute;nica</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="semicolon.html">&nbsp;; &nbsp;</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>operador
+ponto
+e
+v&iacute;rgula</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="assign.html">&nbsp;=&nbsp;</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>atribui&ccedil;&atilde;o</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="arrayaccess.html">&nbsp;[]&nbsp;</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>acesso
+a vetor</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="class.html">class</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>classe</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="delay_.html">delay()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>atraso
+            </small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="draw_.html">draw()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>desenhar</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="extends.html">extends</a></td>
+
+            <td align="undefined" valign="undefined"><small><span style="color: rgb(153, 153, 0);">estende</span></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="false.html">false</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>falso</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="implements.html">implements</a></td>
+
+            <td align="undefined" valign="undefined"><small style="color: rgb(153, 153, 0);">implementa</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="loop_.html">loop()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>ativar
+redesenho</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="new.html">new</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>alocar
+objeto</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="noLoop_.html">noLoop()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>desativar
+redesenho</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="redraw_.html">redraw()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>redesenhar</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="return.html">return</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>retornar</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="setup_.html">setup()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>configurar</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="size_.html">size()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>tamanho
+da tela</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="this.html">this</a></td>
+
+            <td align="undefined" valign="undefined"><small style="color: rgb(153, 153, 0);">this</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="true.html">true</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>verdadeiro</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="void.html">void</a> &nbsp;</td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>sem
+retorno</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="curlybraces.html">&nbsp;{}&nbsp;</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>chaves</small></td>
+
+          </tr>
+
+        </tbody>
+      </table>
+
+      <br>
+
+      <br>
+
+      <br>
+
+      <img src="images/environment.gif" alt="Ambiente" border="0" height="20" width="205"><br style="color: rgb(102, 102, 51);">
+
+      <span style="color: rgb(102, 102, 0);"> AMBIENTE</span><span style="color: rgb(102, 102, 0);"></span><br>
+
+      <br>
+
+      <table style="text-align: left; width: 100%; height: 5%;" border="0" cellpadding="1" cellspacing="0">
+
+        <tbody>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="cursor_.html">cursor()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined" width="60%"><small>configurar
+cursor</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="frameCount.html">frameCount</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>n&uacute;mero&nbsp;de
+quadros</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="framerate.html">framerate</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>taxa
+de troca</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="framerate_.html">framerate()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>definir
+taxa
+de troca</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="height.html">height</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>altura
+da tela</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="noCursor_.html">noCursor()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>esconder
+cursor</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="screen.html">screen</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>tela</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="width.html">width</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>largura
+da tela</small></td>
+
+          </tr>
+
+        </tbody>
+      </table>
+
+      <br>
+
+      <br>
+
+      <br>
+
+      <img src="images/data.gif" alt="Data" border="0" height="20" width="205"><br>
+
+      <span style="color: rgb(102, 102, 51);">DADOS</span><span style="color: rgb(102, 102, 0);"></span><br>
+
+      <br>
+
+      <table style="text-align: left; width: 100%; height: 5%;" border="0" cellpadding="1" cellspacing="0">
+
+        <tbody>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><i><font color="#666633">Primitivos</font></i></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined" width="60%"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="boolean.html">boolean</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>booleano</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="byte.html">byte</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>byte</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="char.html">char</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>caracter</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="color.html">color</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>cor</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="float.html">float</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>flutante</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="int.html">int</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>inteiro</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined">&nbsp;</td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined" width="60%"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><i><font color="#666633">Compostos</font></i></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="Array.html">Array</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>vetor
+/ array</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="Object.html">Object</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>objeto</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="String.html">String</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>cadeia
+de caracteres</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"></td>
+
+            <td align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><i><font color="#666633">Convers&atilde;o</font></i></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="binary_.html">binary()</a></td>
+
+            <td align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="boolean_.html">boolean()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined" width="60%"><small>para
+booleano</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="byte_.html">byte()</a> &nbsp;</td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>para
+byte</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="char_.html">char()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>para
+caracter</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="float_.html">float()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>para
+float</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="hex_.html">hex()</a></td>
+
+            <td align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="int_.html">int()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>para
+inteiro</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="str_.html">str()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>para
+string</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="unbinary_.html">unbinary()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small><font size="-2"><small>para int de string bin&aacute;rio</small></font></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="unhex_.html">unhex()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small><font size="-2"><small>para int de string &nbsp;hexa</small></font></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"></td>
+
+            <td align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><i><font color="#666633">Fun&ccedil;&otilde;es
+String&nbsp;</font></i></td>
+
+            <td align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="join_.html">join()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small><small><font size="-1"><small><small>unir strings</small></small></font></small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="nf_.html">nf()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small>n&uacute;meros
+em
+strings </small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="nfc_.html">nfc()</a> <br>
+
+            </td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small>n&uacute;meros
+em
+strings&nbsp; </small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="nfp_.html">nfp()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small>n&uacute;meros
+em
+strings +- </small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="nfs_.html">nfs()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small>n&uacute;meros
+em
+strings </small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="split_.html">split()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small><font size="-2"><small>separar Strings</small></font></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="trim_.html">trim()</a></td>
+
+            <td align="undefined" valign="undefined"><small style="color: rgb(153, 153, 0);">ajustar string</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"></td>
+
+            <td align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><i><font color="#666633">Fun&ccedil;&otilde;es Array</font></i></td>
+
+            <td align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="append_.html">append()</a> <br>
+
+            </td>
+
+            <td align="undefined" valign="undefined"><small><span style="color: rgb(153, 153, 0);">anexar em array</span></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="arraycopy_.html">arraycopy()</a></td>
+
+            <td align="undefined" valign="undefined"><small><font size="-2"><small><span style="color: rgb(153, 153, 0);">copiar array</span></small></font></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="concat_.html">concat()</a></td>
+
+            <td align="undefined" valign="undefined"><small><font size="-2"><small><span style="color: rgb(153, 153, 0);">concatenar arrays</span></small></font></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="contract_.html">contract()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small><small>contrair
+array</small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="expand_.html">expand()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small><small>expandir
+array</small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="reverse_.html">reverse()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small><small>inverter
+array</small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="shorten_.html">shorten()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small>encurtar
+array</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="sort_.html">sort()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small>oredenar
+array</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="splice_.html">splice()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small>separar
+string</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="subset_.html">subset()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small>extrair
+string</small></td>
+
+          </tr>
+
+        </tbody>
+      </table>
+
+      <br>
+
+      <br>
+
+      <br>
+
+      <img style="border: 0px solid ; width: 205px; height: 20px;" src="images/control.gif" alt="Controle"><br>
+
+      <span style="color: rgb(102, 102, 0);">CONTROLE</span><span style="color: rgb(102, 102, 0);"></span><br>
+
+      <br>
+
+      <table style="text-align: left; width: 100%; height: 5%;" border="0" cellpadding="1" cellspacing="0">
+
+        <tbody>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><i><font color="#666633">Operadores Relacionais</font></i></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined" width="60%"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="inequality.html">&nbsp;!=&nbsp;</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>diferente</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="greaterthan.html">&nbsp;&gt;&nbsp;</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>maior</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="greaterthanorequalto.html">&nbsp;&gt;=&nbsp;</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>maior
+ou igual </small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="lessthan.html">&nbsp;&lt;&nbsp;</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>menor</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="lessthanorequalto.html">&nbsp;&lt;=&nbsp;</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>menor
+ou igual</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="equality.html">&nbsp;==&nbsp;</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>igual</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined">&nbsp;</td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined" width="60%"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><i><font color="#666633">Itera&ccedil;&atilde;o</font></i></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="for_.html">for()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>repita
+... enquanto ...</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="while_.html">while()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>enquanto</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined">&nbsp;</td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><i><font color="#666633">Condicionais</font></i></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="conditional_.html">?:</a> <br>
+
+            </td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small>se
+ent&atilde;o sen&atilde;o</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="break.html">break</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small>break</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="case.html">case</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small>case</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="default.html">default</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small>default</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="else.html">else</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>sen&atilde;o</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="if_.html">if()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined" width="60%"><small>se
+/ condicional</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="switch_.html">switch()</a></td>
+
+            <td align="undefined" valign="undefined"><small><span style="color: rgb(153, 153, 0);">switch</span></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"></td>
+
+            <td align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><i><font color="#666633">Operadores
+L&oacute;gicos</font></i></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="logicalNOT.html">&nbsp; ! &nbsp;</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>N&Atilde;O
+            </small><small>l&oacute;gico&nbsp;</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="logicalAND.html">&nbsp;&amp;&amp;
+&nbsp;</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>E </small><small>l&oacute;gico&nbsp;</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="logicalOR.html">&nbsp; || &nbsp;</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>OU </small><small>l&oacute;gico&nbsp;</small></td>
+
+          </tr>
+
+        </tbody>
+      </table>
+
+      </td>
+
+      <td valign="top" width="225"><img src="images/shape.gif" alt="Shape" border="0" height="20" width="205"><br>
+
+      <span style="color: rgb(102, 102, 0);"> FORMA</span><br>
+
+      <br>
+
+      <table style="text-align: left; width: 100%; height: 5%;" border="0" cellpadding="1" cellspacing="0">
+
+        <tbody>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><i><font color="#666633">Primitivas 2D</font></i></td>
+
+            <td align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="arc_.html">arc()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined" width="60%"><small>arco</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="ellipse_.html">ellipse()</a>&nbsp;</td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>elipse</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="line_.html">line()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>segmento
+de linha</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="point_.html">point()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>ponto</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="quad_.html">quad()</a> &nbsp;</td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>quadril&aacute;tero</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="rect_.html">rect()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>ret&acirc;ngulo</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="triangle_.html">triangle()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>tri&acirc;ngulo</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined">&nbsp;</td>
+
+            <td align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><i><font color="#666633">Curvas</font></i></td>
+
+            <td align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="bezier_.html">bezier()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined" width="60%"><small>curva
+bezier</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="bezierDetail_.html">bezierDetail()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small><font size="-2"><small>n&iacute;vel
+de detalhe Bezier</small></font></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="bezierPoint_.html">bezierPoint()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small><font size="-2"><small>avaliar ponto em Bezier</small></font></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="bezierTangent_.html">bezierTangent()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small><font size="-2"><small>calcular tangente</small></font></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="curve_.html">curve()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>curva</small></td>
+
+          </tr>
+
+        </tbody> <tbody>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="curveDetail_.html">curveDetail()</a> <br>
+
+            </td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small>n&iacute;vel
+de detalhe</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="curvePoint_.html">curvePoint()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small>interpolar
+ponto</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="curveTightness_.html">curveTightness()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small>calcular
+tens&atilde;o</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"></td>
+
+            <td align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><i><font color="#666633">Primitivas 3D</font></i></td>
+
+            <td align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="box_.html">box()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small><font size="-2"><small>paralelep&iacute;pedo</small></font></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="sphere_.html">sphere()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small><font size="-2"><small>esfera</small></font></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="sphereDetail_.html">sphereDetail()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small><font size="-2"><small>detalhe de esfera</small></font></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined">&nbsp;
+            </td>
+
+            <td align="undefined" valign="undefined">&nbsp;</td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><i><font color="#666633">Atributos</font></i></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined" width="60%">on</td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="ellipseMode_.html">ellipseMode()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>modo
+elipse</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="noSmooth_.html">noSmooth()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>desativar
+alisamento</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="rectMode_.html">rectMode()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>modo
+ret&acirc;ngulo</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="smooth_.html">smooth()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>com
+alisamento</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="strokeCap_.html">strokeCap()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>final
+do
+tra&ccedil;o</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="strokeJoin_.html">strokeJoin()</a>
+&nbsp;</td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>jun&ccedil;&atilde;o
+de tra&ccedil;o</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="strokeWeight_.html">strokeWeight()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>espessura
+do tra&ccedil;o</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined">&nbsp;</td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><i><font color="#666633">V&eacute;rtice</font></i></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="beginShape_.html">beginShape()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>iniciar
+forma</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="bezierVertex_.html">bezierVertex()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>v&eacute;rtice
+bezier</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="curveVertex_.html">curveVertex()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>v&eacute;rtice
+em
+curva</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="endShape_.html">endShape()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>concluir
+forma</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="texture_.html">texture()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small>mapear
+textura</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="textureMode_.html">textureMode()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small>configurar
+mapeamento</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="vertex_.html">vertex()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>definir
+v&eacute;rtice<br>
+
+            </small></td>
+
+          </tr>
+
+        </tbody>
+      </table>
+
+      <br>
+
+      <br>
+
+      <br>
+
+      <img src="images/input.gif" alt="Input" border="0" height="20" width="205"><br>
+
+      <big><small><span style="color: rgb(102, 102, 51);">ENTRADA</span></small></big><span style="color: rgb(102, 102, 0);"></span><big><br>
+
+      <br>
+
+      </big>
+      <table style="text-align: left; width: 100%; height: 5%;" border="0" cellpadding="1" cellspacing="0">
+
+        <tbody>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><i><font color="#666633">Mouse</font></i></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined" width="60%"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="mouseButton.html">mouseButton</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>bot&atilde;o
+do mouse</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="mouseDragged_.html">mouseDragged()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>ao
+arrastar&nbsp; mouse</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="mouseMoved_.html">mouseMoved()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>ao
+mover mouse</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="mousePressed.html">mousePressed</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>mouse
+pressionado</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="mousePressed_.html">mousePressed()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>ao
+pressionar bot&atilde;o</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="mouseReleased_.html">mouseReleased()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>ao
+soltar &nbsp;bot&atilde;o</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="mouseX.html">mouseX</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>posi&ccedil;&atilde;o
+X atual&nbsp;</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="mouseY.html">mouseY</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>posi&ccedil;&atilde;o
+Y atual&nbsp;</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="pmouseX.html">pmouseX</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>posi&ccedil;&atilde;o
+X anterior&nbsp;</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="pmouseY.html">pmouseY</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>posi&ccedil;&atilde;o
+X anterior&nbsp;</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><i><font color="#666633">Teclado</font></i></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="key.html">key</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>tecla</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="keyCode.html">keyCode</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>c&oacute;digo
+da tecla</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="keyPressed.html">keyPressed</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>tecla
+pressionada</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="keyPressed_.html">keyPressed()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>ao
+pressionar tecla</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="keyReleased_.html">keyReleased()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>ao
+soltar tecla</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined">&nbsp;</td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><i><font color="#666633">Hora&nbsp;&amp;
+Data</font></i></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="day_.html">day()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>dia</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="hour_.html">hour()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>hora</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="millis_.html">millis()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>tempo
+de sess&atilde;o&nbsp;</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="minute_.html">minute()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>minuto</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="month_.html">month()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>m&ecirc;s</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="second_.html">second()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>segundo</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="year_.html">year()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>ano</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined">&nbsp;</td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><i><font color="#666633">Arquivos</font></i></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="loadBytes_.html">loadBytes()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>carregar
+Bytes</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="loadStrings_.html">loadStrings()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>carregar
+Strings</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="open_.html">open()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small>abrir
+arquivo ou processo</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="openStream_.html">openStream()</a> <br>
+
+            </td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small>abrir
+stream</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><i><font color="#666633">Web</font></i></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="link_.html">link()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small>configurar
+link</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="param_.html">param()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small>extrair
+param</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="status_.html">status()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small>mostrar
+mensagem</small></td>
+
+          </tr>
+
+        </tbody>
+      </table>
+
+      <br>
+
+      <br>
+
+      <br>
+
+      <img src="images/output.gif" alt="Output" border="0" height="20" width="205"><br>
+
+      <span style="color: rgb(102, 102, 0);">SA&Iacute;DA<br>
+
+      </span><span style="color: rgb(102, 102, 0);"></span><br>
+
+      <table style="text-align: left; width: 100%; height: 5%;" border="0" cellpadding="1" cellspacing="0">
+
+        <tbody>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><i><font color="#666633">&Aacute;rea de
+Texto da IDE</font></i></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined" width="60%"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="print_.html">print()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>escrever
+no console </small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="println_.html">println()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>escrever
+linha</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined">&nbsp;</td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><i><font color="#666633">Imagens</font></i></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="save_.html">save()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>salvar
+imagem</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="saveFrame_.html">saveFrame()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>salvar
+seq. de quadros</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined">&nbsp;</td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><i><font color="#666633">Arquivos</font></i></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="saveBytes_.html">saveBytes()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>salvar
+            <span style="font-style: italic;">bytes</span></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="saveStrings_.html">saveStrings()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>salvar
+            <span style="font-style: italic;">strings</span></small></td>
+
+          </tr>
+
+        </tbody>
+      </table>
+
+      <br>
+
+      <br>
+
+      <br>
+
+      <img src="images/transform.gif" alt="Transforme" border="0" height="20" width="205"><br>
+
+      <span style="color: rgb(102, 102, 0);">TRANSFORMA&Ccedil;&Atilde;O</span><span style="color: rgb(102, 102, 0);"></span><br>
+
+      <br>
+
+      <table style="text-align: left; width: 223px; height: 68px;" border="0" cellpadding="1" cellspacing="0">
+
+        <tbody>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="applyMatrix_.html">applyMatrix()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small><font size="-2"><small>aplique matriz</small></font></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="modelX_.html">modelX()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small>retornar
+modelo x</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="modelY_.html">modelY()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small>retornar
+modelo y</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="modelZ_.html">modelZ()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small>retornar
+modelo z</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="popMatrix_.html">popMatrix()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined" width="60%"><small>inserir
+matriz da pilha</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="pushMatrix_.html">pushMatrix()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>retirar
+matriz da pilha</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="resetMatrix_.html">resetMatrix()</a></td>
+
+            <td align="undefined" valign="undefined"><small><span style="color: rgb(153, 153, 0);">inicializar matriz</span></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="rotate_.html">rotat</a><a href="rotate_.html">e()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>rotacionar</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="rotateX_.html">rotateX()</a> <br>
+
+            </td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small>rotacionar
+em x</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="rotateY_.html">rotateY()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small>rotacionar
+em y</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="rotateZ_.html">rotateZ()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small>rotacionar
+em z</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="scale_.html">scale()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>mudar
+escala</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="translate_.html">translate()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>translacionar</small></td>
+
+          </tr>
+
+        </tbody>
+      </table>
+
+      <br>
+
+      <br>
+
+      <br>
+
+      <br>
+
+      <img style="width: 205px; height: 20px;" alt="lights and camera" src="images/lightscamera.gif"><br>
+
+      <span style="color: rgb(102, 102, 0);">&nbsp;<br>
+
+      <table style="text-align: left; width: 223px; height: 68px;" border="0" cellpadding="1" cellspacing="0">
+
+        <tbody>
+
+          <tr>
+
+            <td style="font-style: italic;" align="undefined" valign="undefined"><span style="color: rgb(102, 102, 0);">Luzes</span></td>
+
+            <td align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="ambientLight_.html">ambientLight()</a>&nbsp; <br>
+
+            </td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small>configurar
+luz ambiente</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><span style="color: rgb(102, 102, 0);"><a href="directionalLight_.html">directionalLight()</a></span></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small>configurar
+luz dicecional</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="emissive_.html">emissive()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small>emissividade</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><span style="color: rgb(102, 102, 0);"><a href="lightFalloff_.html">lightFalloff()</a> </span></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small>configurar&nbsp;
+decaimento</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><span style="color: rgb(102, 102, 0);"></span><a href="lightSpecular_.html">lightSpecular()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small>configurar
+luz especular</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><span style="color: rgb(102, 102, 0);"><a href="lights_.html">lights()</a>
+            </span></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small>luzes</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><span style="color: rgb(102, 102, 0);"><a href="normal_.html">normal()</a>
+            </span></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small>configurar
+vetor normal</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><span style="color: rgb(102, 102, 0);"><a href="pointLight_.html">pointLight()</a> </span></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small>ponto
+de luz</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><span style="color: rgb(102, 102, 0);"></span><a href="spotLight_.html">spotLight()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small>luz
+spot</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"></td>
+
+            <td align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><span style="color: rgb(102, 102, 0);"><span style="font-style: italic;">C&acirc;mera</span><br>
+
+            </span></td>
+
+            <td align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="beginCamera_.html">beginCamera()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small><font size="-2"><small>iniciar camera</small></font></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><span style="color: rgb(102, 102, 0);"><a href="camera_.html">camera()</a>
+            </span></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small>c&acirc;mera</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><span style="color: rgb(102, 102, 0);"><a href="endCamera_.html">endCamera()</a> </span></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small>terminar
+c&acirc;mera</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><span style="color: rgb(102, 102, 0);"><a href="frustum_.html">frustum()</a> </span></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small>definir
+volume</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><span style="color: rgb(102, 102, 0);"><a href="ortho_.html">ortho()</a>
+            </span></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small>proje&ccedil;&atilde;o
+ortogr&aacute;fica</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><span style="color: rgb(102, 102, 0);"><a href="perspective_.html">perspective()</a> </span></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small>proje&ccedil;&atilde;o
+perspectiva</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><span style="color: rgb(102, 102, 0);"><a href="printCamera_.html">printCamera()</a> </span></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small>imprimir
+c&acirc;mera</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><span style="color: rgb(102, 102, 0);"></span><a href="printProjection_.html">printProjection()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small>imprimir
+proje&ccedil;&atilde;o</small></td>
+
+          </tr>
+
+        </tbody>
+      </table>
+
+      </span><span style="color: rgb(102, 102, 0);"></span><br>
+
+      <span style="color: rgb(102, 102, 0);"><br>
+
+      </span> </td>
+
+      <td valign="top" width="225"><img src="images/color.gif" alt="Color" border="0" height="20" width="205"><br>
+
+      <span style="color: rgb(102, 102, 0);"> COR</span><span style="color: rgb(102, 102, 0);"></span><br>
+
+      <br>
+
+      <table style="text-align: left; width: 100%; height: 5%;" border="0" cellpadding="1" cellspacing="0">
+
+        <tbody>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><i><font color="#666633">Cen&aacute;rio</font></i></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined" width="60%"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="background_.html">background()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>fundo</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="colorMode_.html">colorMode()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>modelo
+de cor&nbsp;</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="fill_.html">fill()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>preenchimento</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="noFill_.html">noFill()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>sem
+preenchimento</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="noStroke_.html">noStroke()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>desativar&nbsp;
+tra&ccedil;o</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="stroke_.html">stroke()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>ativar
+tra&ccedil;o</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined">&nbsp;</td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><i><font color="#666633">Cria&ccedil;&atilde;o &amp;
+Consulta</font></i></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="alpha_.html">alpha()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>coeficeinte
+alfa&nbsp;</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="blue_.html">blue()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>azul</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="brightness_.html">brightness()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>brilho</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="color_.html">color()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>cor</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="green_.html">green()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>verde</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="hue_.html">hue()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>matiz</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="red_.html">red()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>vermelho</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="saturation_.html">saturation()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>satura&ccedil;&atilde;o<br>
+
+            </small></td>
+
+          </tr>
+
+        </tbody>
+      </table>
+
+      <br>
+
+      <br>
+
+&nbsp;<br>
+
+      <img src="images/image.gif" alt="Image" border="0" height="20" width="205"><br>
+
+      <span style="color: rgb(102, 102, 0);"> IMAGEM</span><span style="color: rgb(102, 102, 0);"></span><br>
+
+      <br>
+
+      <table style="text-align: left; width: 100%; height: 5%;" border="0" cellpadding="1" cellspacing="0">
+
+        <tbody>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="PImage.html">PImage</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined" width="60%"><small>tipo
+PImage</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined">&nbsp;</td>
+
+            <td align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><i><font color="#666633">Carregar&nbsp;&amp;
+Visualizar</font></i></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="image_.html">image()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>visualiza&ccedil;&atilde;o
+de imagem</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="imageMode_.html">imageMode()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>modo
+de &nbsp;visualiza&ccedil;&atilde;o</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="loadImage_.html">loadImage()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>carregar
+imagem</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="noTint_.html">noTint()</a> &nbsp;</td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>desativar
+tingimento</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="tint_.html">tint()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>ativar&nbsp;
+tingimento</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined">&nbsp;</td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined" width="60%">&nbsp;
+            </td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><i><font color="#666633">Pixels</font></i></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="blend_.html">blend()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>misturar</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="copy_.html">copy()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>copiar</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="filter_.html">filter()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>filtrar</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="get_.html">get()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>consultar
+e extrair</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="loadPixels_.html">loadPixels()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>carregar
+p&iacute;xels</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="pixels.html">pixels[]</a></td>
+
+            <td align="undefined" valign="undefined"><small style="color: rgb(102, 102, 0);">array de pixels</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="set_.html">set()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>definir
+pixels </small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="updatePixels_.html">updatePixels()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>atualizar
+pixels</small></td>
+
+          </tr>
+
+        </tbody>
+      </table>
+
+      <br>
+
+      <br>
+
+      <br>
+
+      <img src="images/typography.gif" alt="Typography" border="0" height="20" width="205"><br>
+
+      <span style="color: rgb(102, 102, 0);"> TIPOGRAFIA</span><span style="color: rgb(102, 102, 0);"></span><br>
+
+      <br>
+
+      <table style="text-align: left; width: 100%; height: 5%;" border="0" cellpadding="1" cellspacing="0">
+
+        <tbody>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="PFont.html">PFont</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined" width="60%"><small>tipo
+PFont</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined">&nbsp;</td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><i><font color="#666633">Carregar &amp;
+Visuaizar</font></i></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="createFont_.html">createFont()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>criar
+Fonte</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="loadFont_.html">loadFont()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>carregar
+Fonte</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="text_.html">text()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>texto</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="textFont_.html">textFont()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>fonte
+do texto</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined">&nbsp;</td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><i><font color="#666633">Atributos</font></i></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="textAscent_.html">textAscent()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small>medida
+linha base topo</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="textAlign_.html">textAlign()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>alinhamento&nbsp;</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="textDescent_.html">textDescent()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small>medida
+linha base base</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="textLeading_.html">textLeading()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>definir
+espa&ccedil;mento</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="textMode_.html">textMode()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>definir
+modo</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="textSize_.html">textSize()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>definir
+tamanho da fonte</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="textWidth_.html">textWidth()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>definir
+largura</small></td>
+
+          </tr>
+
+        </tbody>
+      </table>
+
+      <br>
+
+      <br>
+
+      <br>
+
+      <img src="images/math.gif" alt="Math" border="0" height="20" width="205"><br>
+
+      <span style="color: rgb(102, 102, 0);">MATEM&Aacute;TICA</span><br>
+
+      <br>
+
+      <table style="text-align: left; width: 225px; height: 549px;" border="0" cellpadding="1" cellspacing="0">
+
+        <tbody>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><i><font color="#666633">Operadores</font></i></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined" width="60%"><small><small><font size="-1"><small><small><span style="color: rgb(102, 102, 0);"><br>
+
+            </span></small></small></font></small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="modulo.html">&nbsp;%&nbsp; </a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small><small><font size="-1"><small><small>resto
+/ m&oacute;dulo</small></small></font></small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="multiply.html">&nbsp;*&nbsp; </a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small><small><font size="-1"><small><small>multiplica&ccedil;&atilde;o</small></small></font></small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="addition.html">&nbsp;+&nbsp;</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small><small><font size="-1"><small><small>adi&ccedil;&atilde;o</small></small></font></small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="increment.html">&nbsp;++&nbsp; </a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small><small><font size="-1"><small><small>incremento</small></small></font></small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="addassign.html">&nbsp;+=&nbsp; </a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small><small><font size="-1"><small><small>soma
+e
+atribui&ccedil;&atilde;o</small></small></font></small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="minus.html">&nbsp; - &nbsp; </a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small><small><font size="-1"><small><small>subtra&ccedil;&atilde;o</small></small></font></small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="decrement.html">&nbsp; -- &nbsp; </a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small><small><font size="-1"><small><small>decremento</small></small></font></small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="subtractassign.html">&nbsp; -= &nbsp; </a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small><small><font size="-1"><small><small>subtra&ccedil;&atilde;o
+e atribui&ccedil;&atilde;o</small></small></font></small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="divide.html">&nbsp; / &nbsp; </a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small><small><font size="-1"><small><small>divis&atilde;o</small></small></font></small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"></td>
+
+            <td align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><i><font color="#666633">Operadores de bit</font></i></td>
+
+            <td align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="bitwiseAND.html">&amp;
+&nbsp;</a>&nbsp;</td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small><small><font size="-1"><small><small>E
+de bit</small></small></font></small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="leftshift.html">&lt;&lt;</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small><small><font size="-1"><small><small>deslocamento
+&agrave; esquerda</small></small></font></small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="rightshift.html">&gt;&gt;&nbsp;</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small><small><font size="-1"><small><small>deslocamento
+&agrave; direita</small></small></font></small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="bitwiseOR.html">|</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small><small><font size="-1"><small><small>Ou de bit</small></small></font></small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined">&nbsp;
+&nbsp;</td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small><small><font size="-1"><small><small>&nbsp;</small></small></font></small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><i><font color="#666633">C&aacute;lculo</font></i></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small><small><font size="-1"><small><small><span style="color: rgb(102, 102, 0);"></span><br>
+
+            </small></small></font></small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="abs_.html">abs()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small><small><font size="-1"><small><small>valor
+absoluto</small></small></font></small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="ceil_.html">ceil()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small><small><font size="-1"><small><small>arredondar para cima</small></small></font></small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="constrain_.html">constrain()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small><small><font size="-1"><small><small>restri&ccedil;&atilde;o</small></small></font></small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="dist_.html">dist()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small><small><font size="-1"><small><small>dist&acirc;ncia</small></small></font></small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="floor_.html">floor()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small><small><font size="-1"><small><small>arredondar para baixo</small></small></font></small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="lerp_.html">lerp()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small><small><font size="-1"><small><small>interpolar</small></small></font></small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="log_.html">log()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small><small><font size="-1"><small><small>logaritmo neperiano</small></small></font></small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="mag_.html">mag()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small><small><font size="-1"><small><small>tamnho vetor</small></small></font></small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="max_.html">max()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small><small><font size="-1"><small><small>m&aacute;ximo</small></small></font></small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="min_.html">min()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small><small><font size="-1"><small><small>m&iacute;nimo</small></small></font></small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="pow_.html">pow()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small><small><font size="-1"><small><small>pot&ecirc;ncia</small></small></font></small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="round_.html">round()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small><small><font size="-1"><small><small>arredondamento</small></small></font></small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="sq_.html">sq()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small><small><font size="-1"><small><small>quadrado</small></small></font></small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="sqrt_.html">sqrt()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small><small><font size="-1"><small><small>raiz&nbsp;quadrada</small></small></font></small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined">&nbsp;
+            </td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><i><font color="#666633">Trigonometria</font></i></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small><small><font size="-1"><small><small><span style="color: rgb(102, 102, 0);"></span><br>
+
+            </small></small></font></small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="acos_.html">acos()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small><small><font size="-1"><small><small>arco
+coseno</small></small></font></small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="asin_.html">asin()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small><small><font size="-1"><small><small>arco seno</small></small></font></small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="atan_.html">atan()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small><small><font size="-1"><small><small>arco tangente</small></small></font></small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="atan2_.html">atan2()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small><small><font size="-1"><small><small>arco
+tangente</small></small></font></small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="cos_.html">cos()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small><small><font size="-1"><small><small>coseno</small></small></font></small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="degrees_.html">degrees()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small><small><font size="-1"><small><small>grau</small></small></font></small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="radians_.html">radians()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small><small><font size="-1"><small><small>radiano</small></small></font></small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="sin_.html">sin()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small><small><font size="-1"><small><small>seno</small></small></font></small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="tan_.html">tan()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small><small><font size="-1"><small><small>tangente</small></small></font></small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined">&nbsp;</td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small><small><font size="-1"><small><small>&nbsp;</small></small></font></small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><i><font color="#666633">Random</font></i></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="noise_.html">noise()</a> <br>
+
+            </td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small><small><font size="-1"><small><small>ru&iacute;do de
+Perlin</small></small></font></small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="noiseDetail_.html">noiseDetail()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small><small><font size="-1"><small><small>detalhe em Perlin</small></small></font></small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="noiseSeed_.html">noiseSeed()</a></td>
+
+            <td style="color: rgb(153, 153, 0);" align="undefined" valign="undefined"><small><small><font size="-1"><small><small>semente para Perlin</small></small></font></small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="random_.html">random()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small><small><font size="-1"><small><small>valor
+pseudo-rand&ocirc;mico</small></small></font></small></small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="randomSeed_.html">randomSeed()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small><small><font size="-1"><small><small>semente
+para rand&ocirc;mico</small></small></font></small></small></td>
+
+          </tr>
+
+        </tbody>
+      </table>
+
+      <br>
+
+&nbsp;<br>
+
+      <br>
+
+      <img style="width: 205px; height: 19px;" src="images/constants.gif" alt="Constantes" border="0"><br>
+
+      <span style="color: rgb(102, 102, 0);">CONSTANTES</span><span style="color: rgb(102, 102, 0);"></span><br>
+
+      <br>
+
+      <table style="text-align: left; width: 225px; height: 38px;" border="0" cellpadding="1" cellspacing="0">
+
+        <tbody>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="HALF_PI.html">HALF_PI </a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined" width="60%"><small>PI/2
+= 1.57079...</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="PI.html">PI </a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small> PI
+= 3.14159...</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="TWO_PI.html">TWO_PI </a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>2*PI
+= 6.28318...</small></td>
+
+          </tr>
+
+        </tbody>
+      </table>
+
+&nbsp;<br>
+
+      <br>
+
+      <br>
+
+      <img src="images/sound.gif" alt="Sound" border="0" height="20" width="205"><br>
+
+      <span style="color: rgb(102, 102, 0);">SOM</span><span style="color: rgb(102, 102, 0);"></span><br>
+
+      <br>
+
+      <table style="text-align: left; width: 223px; height: 58px;" border="0" cellpadding="1" cellspacing="0">
+
+        <tbody>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="PSound.html">PSound</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined" width="60%"><small>tipo
+PSound</small></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined">&nbsp;</td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><i><font color="#666633">Carregar</font></i></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"></td>
+
+          </tr>
+
+          <tr>
+
+            <td align="undefined" valign="undefined"><a href="loadSound_.html">loadSound()</a></td>
+
+            <td style="color: rgb(102, 102, 0);" align="undefined" valign="undefined"><small>carregar
+som</small></td>
+
+          </tr>
+
+        </tbody>
+      </table>
+
+&nbsp;<br>
+
+      </td>
+
+      <td width="20">&nbsp;</td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+  <tbody>
+
+    <tr>
+
+      <td width="55">&nbsp;<br>
+
+      </td>
+
+      <td valign="top" width="675">Tradu&ccedil;&atilde;o
+e
+Adapta&ccedil;&atilde;o para o
+Portugu&ecirc;s do Brasil:
+Luiz Ernesto Merkle <br>
+
+Atuallizada em: 30 de novembro de 2005, 9h08 (BRST)<br>
+
+&nbsp; </td>
+
+      <td width="20">&nbsp;</td>
+
+    </tr>
+
+    <tr>
+
+      <td bgcolor="#5a5a4e" width="55">&nbsp;</td>
+
+      <td bgcolor="#5a5a4e" valign="middle" width="675">
+      <font color="#ffffff">Processing &eacute; um
+projeto aberto iniciado por</font> <a href="http://www.benfry.com"><font color="#ffffff">Ben
+Fry</font></a> <font color="#ffffff">e</font>
+      <a href="http://www.reas.com"><font color="#ffffff">Casey Reas</font></a> </td>
+
+      <td bgcolor="#5a5a4e" height="25" width="20">&nbsp;</td>
+
+    </tr>
+
+    <tr>
+
+      <td bgcolor="#000000" width="55">&nbsp;</td>
+
+      <td bgcolor="#000000" valign="middle" width="675">
+      <a href="../../copyright.html"><font color="#ffffff">&copy; Info</font></a> </td>
+
+      <td bgcolor="#000000" height="25" width="20">&nbsp;</td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+</body>
+</html>

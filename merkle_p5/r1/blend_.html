@@ -1,0 +1,287 @@
+<table border="0" cellpadding="0" cellspacing="0" width="675">
+<tbody>
+<tr>
+<td width="100"><img height="40" src="../images/1pix.gif" width="100"/></td>
+<td width="20"><img height="1" src="../images/1pix.gif" width="20"/></td>
+<td width="555"><img height="1" src="../images/1pix.gif" width="555"/></td>
+</tr>
+<tr>
+<td valign="top">Nome</td>
+<td valign="top"> </td>
+<td valign="top">
+<h3>blend()</h3>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Exemplos</td>
+<td valign="top"> </td>
+<td valign="top">
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="120"><img border="0" height="100" src="media/blend_color.gif" width="100"/></td>
+<td valign="top" width="430">
+<pre>color orange = color(204, 102, 0); <br/>color blue = color(0, 102, 153); <br/>color orangeblueadd = blend(orange, blue, ADD); <br/>background(51); <br/>noStroke(); <br/>fill(orange); <br/>rect(14, 20, 20, 60); <br/>fill(orangeblueadd); <br/>rect(40, 20, 20, 60); <br/>fill(blue); <br/>rect(66, 20, 20, 60); <br/></pre>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><img height="25" src="../images/1pix.gif" width="1"/></td>
+</tr>
+<tr>
+<td valign="top" width="120"><img border="0" height="100" src="media/blend_add.jpg" width="100"/></td>
+<td valign="top" width="430">
+<pre>background(loadImage("rockies.jpg")); <br/>PImage img = loadImage("degaul.jpg"); <br/>image(img, 0, 0); <br/>blend(img, 0, 0, 33, 100, 67, 0, 33, 100, ADD); <br/></pre>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><img height="25" src="../images/1pix.gif" width="1"/></td>
+</tr>
+<tr>
+<td valign="top" width="120"><img border="0" height="100" src="media/blend_subtract.jpg" width="100"/></td>
+<td valign="top" width="430">
+<pre>background(loadImage("rockies.jpg")); <br/>PImage img = loadImage("degaul.jpg"); <br/>image(img, 0, 0); <br/>blend(img, 0, 0, 33, 100, 67, 0, 33, 100, SUBTRACT); <br/></pre>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><img height="25" src="../images/1pix.gif" width="1"/></td>
+</tr>
+<tr>
+<td valign="top" width="120"><img border="0" height="100" src="media/blend_darkest.jpg" width="100"/></td>
+<td valign="top" width="430">
+<pre>background(loadImage("rockies.jpg")); <br/>PImage img = loadImage("degaul.jpg"); <br/>image(img, 0, 0); <br/>blend(img, 0, 0, 33, 100, 67, 0, 33, 100, DARKEST); <br/></pre>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><img height="25" src="../images/1pix.gif" width="1"/></td>
+</tr>
+<tr>
+<td valign="top" width="120"><img border="0" height="100" src="media/blend_lightest.jpg" width="100"/></td>
+<td valign="top" width="430">
+<pre>background(loadImage("rockies.jpg")); <br/>PImage img = loadImage("degaul.jpg"); <br/>image(img, 0, 0); <br/>blend(img, 0, 0, 33, 100, 67, 0, 33, 100, LIGHTEST); <br/></pre>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><img height="25" src="../images/1pix.gif" width="1"/></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td valign="top">Descrição</td>
+<td valign="top"> </td>
+<td valign="top">Mistura dois valores de cor ou copia um
+único pixel ou região de pixels de uma imagem em outra
+(ou na própria imagem) , com suporte copleto a canal alfa.
+Há a escolha dos segintes modos para misturar os pixels fonte
+(A) aos pixels destino (B). <br/>
+<br/>
+
+BLEND - interpolação linear de cores: C = A*factor + B<br/>
+<br/>
+
+ADD - mistura aditiva com recorte em branco: C = min(A*factor + B, 255)<br/>
+<br/>
+
+SUBTRACT - smistura subtrativa com recorte em preto: C = max(B - A*factor, 0)<br/>
+<br/>
+
+DARKEST - apenas a cor mais escura sucede: C = min(A*factor, B)<br/>
+<br/>
+
+LIGHTEST - apenas a cor mais clara sucede: C = max(A*factor, B)<br/>
+<br/>
+
+Todos os modos utilizam informação alfa (byte mais alto)
+dos pixels da imagem fonte como fator de mistura. Se os tamanhos das
+regiões da fonte e do destino são diferentes, a imagem
+será automaticamente redimensionada  de mod adequado ao
+tamanho do destino. Se parâmetro <span style="font-weight: bold;">srcImg</span> não for utilizado, a tela de visualização é utilizada como imagem fonte. <br/>
+<br/>
+
+A função <span style="font-weight: bold;">imageMode() </span>modificará o modo de trabalho dos parâmetros. Por exemplo, uma chamada à <span style="font-weight: bold;">imageMode(CORNERS) </span> modificará
+ os parâmetros de definirem largura e altura para definirem
+os valores dos cantos opostos a x e y.	 </td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Sintaxe</td>
+<td valign="top"> </td>
+<td valign="top">
+<pre>blend(<font color="#996600">c1</font>, <font color="#996600">c2</font>, <font color="#996600">mode</font>);<br/>blend(<font color="#996600">fx</font>, <font color="#996600">fy</font>, <font color="#996600">dx</font>, <font color="#996600">dy</font>, <font color="#996600">mode</font>);<br/>blend(<font color="#996600">fntImg</font>, <font color="#996600">fx</font>, <font color="#996600">fy</font>, <font color="#996600">dx</font>, <font color="#996600">dy</font>, <font color="#996600">mode</font>);<br/>blend(<font color="#996600">fx1</font>, <font color="#996600">fy1</font>, <font color="#996600">flargura</font>, <font color="#996600">faltura</font>, <font color="#996600">dx1</font>, <font color="#996600">dy1</font>, <font color="#996600">dlargura</font>, <font color="#996600">daltura</font>, <font color="#996600">mode</font>);<br/>blend(<font color="#996600">fntImg</font>, <font color="#996600">fx1</font>, <font color="#996600">fy1</font>, <font color="#996600">flargura</font>, <font color="#996600">faltura</font>, <font color="#996600">dx1</font>, <font color="#996600">dy1</font>, <font color="#996600">dlargura</font>, <font color="#996600">daltura</font>, <font color="#996600">mode</font>);<br/></pre>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Parâmetros</td>
+<td valign="top"> </td>
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="90">c1</td>
+<td width="20"> </td>
+<td valign="top" width="440">color: a primeira cor a misturar<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">c2</td>
+<td width="20"> </td>
+<td valign="top" width="440">color: a segunda cor a misturar<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">mode</td>
+<td width="20"> </td>
+<td valign="top" width="440">Qualquer um entre: BLEND, ADD, SUBTRACT, LIGHTEST, ou DARKEST<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">fx</td>
+<td width="20"> </td>
+<td valign="top" width="440">int: coordenada-x do píxel da imagem fonte<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">fy</td>
+<td width="20"> </td>
+<td valign="top" width="440">int: coordenada-y do píxel na imagem fonte<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">dx</td>
+<td width="20"> </td>
+<td valign="top" width="440">int: coordenada-x do píxel da imagem destino<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">dy</td>
+<td width="20"> </td>
+<td valign="top" width="440">int: coordenada-y do píxel da imagem destino<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">fntImg</td>
+<td width="20"> </td>
+<td valign="top" width="440">PImage: a variável de imagem que se refere à imagem fonte<description><br/>
+<br/>
+</description></td>
+</tr>
+<tr>
+<td valign="top" width="90">fx1</td>
+<td width="20"> </td>
+<td valign="top" width="440">int: coordenada x do canto superior esquerdo da imagem fonte<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">fy1</td>
+<td width="20"> </td>
+<td valign="top" width="440">int: coordenada y do canto superior esquerdo da imagem fonte<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">flargura</td>
+<td width="20"> </td>
+<td valign="top" width="440">int: largura da imagem fonte<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">faltura</td>
+<td width="20"> </td>
+<td valign="top" width="440">int: altura da imagem fonte<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">dx1</td>
+<td width="20"> </td>
+<td valign="top" width="440">int: coordenada x do canto superior esquerdo da imagem destino<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">dy1</td>
+<td width="20"> </td>
+<td valign="top" width="440">int: coordenada y do canto superior esquerdo da imagem destino<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">dlargura</td>
+<td width="20"> </td>
+<td valign="top" width="440">int: largura da imagem destino<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">daltura</td>
+<td width="20"> </td>
+<td valign="top" width="440">int: altura da imagem destino<br/>
+<br/>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Retorno</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Nenhum	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Utilização</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Web &amp; Applicações	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Relacionado</td>
+<td valign="top"> </td>
+<td valign="top">
+<a href="filter_.html">filter()</a><br/>
+</td>
+</tr>
+</tbody>
+</table>

@@ -1,0 +1,173 @@
+<table border="0" cellpadding="0" cellspacing="0" width="675">
+<tbody>
+<tr>
+<td width="100"><img height="40" src="../images/1pix.gif" width="100"/></td>
+<td width="20"><img height="1" src="../images/1pix.gif" width="20"/></td>
+<td width="555"><img height="1" src="../images/1pix.gif" width="555"/></td>
+</tr>
+<tr>
+<td valign="top">Nome</td>
+<td valign="top"> </td>
+<td valign="top">
+<h3>for()</h3>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Exemplos</td>
+<td valign="top"> </td>
+<td valign="top">
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="120"><img border="0" height="100" src="media/for_.gif" width="100"/></td>
+<td valign="top" width="430">
+<pre>for(int i=0; i&lt;40; i=i+1) { <br/>  line(30, i, 80, i); <br/>} <br/></pre>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><img height="25" src="../images/1pix.gif" width="1"/></td>
+</tr>
+<tr>
+<td valign="top" width="120"><img border="0" height="100" src="media/for_2.gif" width="100"/></td>
+<td valign="top" width="430">
+<pre>for(int i=0; i&lt;80; i=i+5) { <br/>  line(30, i, 80, i); <br/>} <br/></pre>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><img height="25" src="../images/1pix.gif" width="1"/></td>
+</tr>
+<tr>
+<td valign="top" width="120"><img border="0" height="100" src="media/for_3.gif" width="100"/></td>
+<td valign="top" width="430">
+<pre>for(int i=40; i&lt;80; i=i+5) { <br/>  line(30, i, 80, i); <br/>} <br/></pre>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><img height="25" src="../images/1pix.gif" width="1"/></td>
+</tr>
+<tr>
+<td valign="top" width="120"><img border="0" height="100" src="media/for_4.gif" width="100"/></td>
+<td valign="top" width="430">
+<pre>for(int i=30; i&lt;80; i=i+5) { <br/>  for(int j=0; j&lt;80; j=j+5) { <br/>    point(i, j); <br/>  } <br/>} <br/></pre>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><img height="25" src="../images/1pix.gif" width="1"/></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td valign="top">Descrição</td>
+<td valign="top"> </td>
+<td valign="top">Controla uma seqüência de repetições. A estrutura <span style="font-weight: bold;">for </span> tem três partes: <b>início</b>, <b>teste</b>, e <b>coda</b>. Cada parte deve ser separada por um ponto e vírgula (';'). O laço continua ate que <span style="font-weight: bold;">teste</span> seja avaliada como <span style="font-weight: bold;"><span style="font-style: italic;">false</span></span><span style="font-style: italic;">. </span>Quando a estrutura <span style="font-weight: bold;">for()</span>é executada, a seguinte seqüência passos ocorre: <br/>
+
+1. os comandos em "início" são executados;<br/>
+
+2. a expressão "teste" é avaliada verdadeira ou falsa;<br/>
+
+3. Caso "teste" seja verdadeira (<span style="font-style: italic;">true</span>), passa-se ao passo 4.   Caso "teste" seja falsa (<span style="font-style: italic;">false</span>), passa-se ao passo 6;<br/>
+
+4. Executam-se os comandos contidos no bloco da estrutura em laço; <br/>
+
+5. Executam-se os comandos em "coda" e  passa-se ao passo 2;<br/>
+
+6.  Sai-se do laço. <br/>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Sintaxe</td>
+<td valign="top"> </td>
+<td valign="top">
+<pre>for(<font color="#996600">início</font>; <font color="#996600">teste</font>; <font color="#996600">coda</font>) { <br/>  <font color="#996600">comandos</font>
+} 
+            </pre>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Parâmetros</td>
+<td valign="top"> </td>
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="90">início</td>
+<td width="20"> </td>
+<td valign="top" width="440">inclui os comandos execudados uma única vez antes do início do laço<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">teste</td>
+<td width="20"> </td>
+<td valign="top" width="440">caso "teste"seja avaliado verdadeiro (<b style="font-style: italic;">true</b>), os comando são executados<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td align="undefined" valign="undefined">comandos<br/>
+</td>
+<td align="undefined" valign="undefined"></td>
+<td align="undefined" valign="undefined">conjunto de comandos executados em cada iteração do laço<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">coda</td>
+<td width="20"> </td>
+<td valign="top" width="440">inclui comandos executadas ao final de cada iteração do laço<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90"></td>
+<td width="20"> </td>
+<td valign="top" width="440"><br/>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Utilização</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Web &amp; Applicações	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Relacionado</td>
+<td valign="top"> </td>
+<td valign="top">
+<a href="while_.html">while()</a><br/>
+</td>
+</tr>
+</tbody>
+</table>

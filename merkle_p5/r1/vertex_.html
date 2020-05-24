@@ -1,0 +1,177 @@
+<table border="0" cellpadding="0" cellspacing="0" width="675">
+<tbody>
+<tr>
+<td width="100"><img height="40" src="../images/1pix.gif" width="100"/></td>
+<td width="20"><img height="1" src="../images/1pix.gif" width="20"/></td>
+<td width="555"><img height="1" src="../images/1pix.gif" width="555"/></td>
+</tr>
+<tr>
+<td valign="top">Nome</td>
+<td valign="top"> </td>
+<td valign="top">
+<h3>vertex()</h3>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Exemplos</td>
+<td valign="top"> </td>
+<td valign="top">
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="120"><img border="0" height="100" src="media/vertex_.gif" width="100"/></td>
+<td valign="top" width="430">
+<pre>beginShape(POINTS); <br/>vertex(30, 20); <br/>vertex(85, 20); <br/>vertex(85, 75); <br/>vertex(30, 75); <br/>endShape(); <br/></pre>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><img height="25" src="../images/1pix.gif" width="1"/></td>
+</tr>
+<tr>
+<td valign="top" width="120"><img border="0" height="100" src="media/vertex_3.gif" width="100"/></td>
+<td valign="top" width="430">
+<pre>// O desenho de vértices em 3D requer P3D<br/>// ou OPENGL com parâmetro de size()<br/>size(100, 100, P3D); <br/>beginShape(POINTS); <br/>vertex(30, 20, -50); <br/>vertex(85, 20, -50); <br/>vertex(85, 75, -50); <br/>vertex(30, 75, -50); <br/>endShape(); <br/></pre>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><img height="25" src="../images/1pix.gif" width="1"/></td>
+</tr>
+<tr>
+<td valign="top" width="120"><img border="0" height="100" src="media/vertex_2.gif" width="100"/></td>
+<td valign="top" width="430">
+<pre>noStroke(); <br/>PImage a = loadImage("arch.jpg"); <br/>beginShape(); <br/>texture(a); <br/>// "arch.jpg" é ima imagem de 100x100 pixels, portanto<br/>// os valores de 0 e 100 são utilizados para os <br/>// parâmetros "u" e "v" para se mapear diretamente <br/>// os pontos de vértice <br/>vertex(10, 20, 0, 0); <br/>vertex(80, 5, 100, 0); <br/>vertex(95, 90, 100, 100); <br/>vertex(40, 95, 0, 100); <br/>endShape(); <br/></pre>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><img height="25" src="../images/1pix.gif" width="1"/></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td valign="top">Descrição</td>
+<td valign="top"> </td>
+<td valign="top">Todos as formas são construídas pela conexão de uma série de vértices. <span style="font-weight: bold;">vertex() </span> é
+utilizada para especificar as coordenadas de pontos, linhas,
+triângulos, quadriláteros e  polígonos, e
+é utilizada exclusivamente entre chamadas à <span style="font-weight: bold;">beginShape() </span>e <span style="font-weight: bold;">endShape()</span>. <br/>
+<br/>
+
+O desenho de um vértice em 3D através dop uso do parâmetro <span style="font-weight: bold;">z </span> requer o uso do parâmetro P3D ou  OPENGL em combinação co size, como ilustrado no exemplo acima. <br/>
+<br/>
+Esta função também é utilizada para mapear
+uma textura sobre uma forma geométrica. A função <span style="font-weight: bold;">texture() </span> decalra a textura a ser aplicada sobre a forma geométrica e as coordenadas <span style="font-weight: bold;">u</span> e <span style="font-weight: bold;">v</span> definem o mapeamento desta textura à forma. Como padrão, as coordenadas utilizadas para <span style="font-weight: bold;">u</span> e <span style="font-weight: bold;">v</span>
+são especificadas em relação ao tamanho da imagem
+em pixels, mas esta relação pode ser modificada
+através da função <b>textureMode()</b>.	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Sintaxe</td>
+<td valign="top"> </td>
+<td valign="top">
+<pre>vertex(<font color="#996600">x</font>, <font color="#996600">y</font>); <br/>vertex(<font color="#996600">x</font>, <font color="#996600">y</font>, <font color="#996600">z</font>); <br/>vertex(<font color="#996600">x</font>, <font color="#996600">y</font>, <font color="#996600">u</font>, <font color="#996600">v</font>); <br/>vertex(<font color="#996600">x</font>, <font color="#996600">y</font>, <font color="#996600">z</font>, <font color="#996600">u</font>, <font color="#996600">v</font>); <br/></pre>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Parâmetros</td>
+<td valign="top"> </td>
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="90">x</td>
+<td width="20"> </td>
+<td valign="top" width="440">int ou float: coordenada-x do vértice<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">y</td>
+<td width="20"> </td>
+<td valign="top" width="440">int ou float: coordenada-y do vértice<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">z</td>
+<td width="20"> </td>
+<td valign="top" width="440">int ou float: coordenada-z do vértice<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">u</td>
+<td width="20"> </td>
+<td valign="top" width="440">int ou float: coordenada horizontal da textura de mapeamento<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">v</td>
+<td width="20"> </td>
+<td valign="top" width="440">int ou float: coordenada vertica da textura de mapeamento<br/>
+<br/>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Retorno</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Nenhum	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Utilização</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Application &amp; Web	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Relacionado</td>
+<td valign="top"> </td>
+<td valign="top">
+<a href="beginShape_.html">beginShape()</a><br/>
+<a href="endShape_.html">endShape()</a><br/>
+<a href="bezierVertex_.html">bezierVertex()</a><br/>
+<a href="curveVertex_.html">curveVertex()</a><br/>
+<a href="texture_.html">texture()</a><br/>
+</td>
+</tr>
+</tbody>
+</table>

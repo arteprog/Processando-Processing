@@ -1,0 +1,87 @@
+<table border="0" cellpadding="0" cellspacing="0" width="675">
+<tbody>
+<tr>
+<td width="100"><img height="40" src="../images/1pix.gif" width="100"/></td>
+<td width="20"><img height="1" src="../images/1pix.gif" width="20"/></td>
+<td width="555"><img height="1" src="../images/1pix.gif" width="555"/></td>
+</tr>
+<tr>
+<td valign="top">Nome</td>
+<td valign="top"> </td>
+<td valign="top">
+<h3>this</h3>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Exemplos</td>
+<td valign="top"> </td>
+<td valign="top">
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="550">
+<pre>float ypos = 50; <br/> <br/>void setup() { <br/>  size(100, 100); <br/>  noLoop(); <br/>} <br/> <br/>void draw() { <br/>  line(0, 0, 100, ypos); <br/>  this.ypos = 100; <br/>  line(0, 0, 100, ypos); <br/>} <br/> <br/></pre>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<hr align="left" noshade="noshade" size="1" width="150"/><br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="550">
+<pre>import processing.video.*; <br/>Movie myMovie; <br/> <br/>void setup() { <br/>  size(200, 200); <br/>  background(0); <br/>  myMovie = new Movie(this, "totoro.mov"); <br/>  myMovie.loop(); <br/>} <br/> <br/>void draw() { <br/>  if(myMovie.available()) { <br/>    myMovie.read(); <br/>  } <br/>  image(myMovie, 0, 0); <br/>} <br/> <br/></pre>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<br/>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td valign="top">Descrição</td>
+<td valign="top"> </td>
+<td valign="top">Se refere ao objeto atual ou corrente (ex. "this object"). Em Processing é muito comum o uso de <span style="font-weight: bold;">this </span> para se passar a referência de um objeto corrente a umas das bibliotacas. A palavra chace <span style="font-weight: bold;">this </span> também
+pode ser utilizada da outro modo, mas nem sempre é
+necessário. Por exemplo, ao se chamar o método <span style="font-weight: bold;">filter() </span>de um objeto <span style="font-weight: bold;">PImage</span>  chamado <span style="font-weight: bold;">tree</span>, se escreve <span style="font-weight: bold;">tree.filter()</span>. Para se chamar este método dentro da própria <span style="font-weight: bold;">PImage</span> é possível escrever simplesmente <span style="font-weight: bold;">filter()</span>, ou se pode explicitamente escrever <span style="font-weight: bold;">this.filter(). </span>  Não é errado escrever <span style="font-weight: bold;">this.filter()</span> mas n não é necessários, pois isto está sempre implícito.  	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Sintaxe</td>
+<td valign="top"> </td>
+<td valign="top">
+<pre>this<br/></pre>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Utilização</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Web &amp; Applicações	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody>
+</table>

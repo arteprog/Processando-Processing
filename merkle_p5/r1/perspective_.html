@@ -1,0 +1,139 @@
+<table border="0" cellpadding="0" cellspacing="0" width="675">
+<tbody>
+<tr>
+<td width="100"><img height="40" src="../images/1pix.gif" width="100"/></td>
+<td width="20"><img height="1" src="../images/1pix.gif" width="20"/></td>
+<td width="555"><img height="1" src="../images/1pix.gif" width="555"/></td>
+</tr>
+<tr>
+<td valign="top">Nome</td>
+<td valign="top"> </td>
+<td valign="top">
+<h3>perspective()</h3>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Exemplos</td>
+<td valign="top"> </td>
+<td valign="top">
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="120"><img border="0" height="100" src="media/perspective_.gif" width="100"/></td>
+<td valign="top" width="430">
+<pre>// Recria a perspectiva padrão<br/>size(100, 100, P3D); <br/>noFill(); <br/>float fov = PI/3.0; <br/>float cameraZ = (height/2.0) / tan(PI * fov / 360.0); <br/>perspective(fov, float(width)/float(height), <br/>            cameraZ/10.0, cameraZ*10.0); <br/>translate(50, 50, 0); <br/>rotateX(-PI/6); <br/>rotateY(PI/3); <br/>box(45); <br/></pre>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><img height="25" src="../images/1pix.gif" width="1"/></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td valign="top">Descrição</td>
+<td valign="top"> </td>
+<td valign="top">Configura a perspecitva padrão ao aplicar encurtamento (n.t. <span style="font-style: italic;">foreshortening</span>),
+o que faz com que objetos mais distantes aparecem menores que os mais
+próximos, Os parâmetros definem um volume de
+visualização com a forma de pirâmide truncada.
+Objetos próximos a câmera aparecem em seu tamanho real,
+enquanto que objetos mais distantes aparecem menores.  Esta
+projeção simula a perspectiva do mundo de mod mais
+acurado que a perspectiva ortográfica. Sua versão sem
+parâmetros configura a perspectiva padrão, e sua
+versão com quatro parâmetros especifica a área
+precisamente. Os valores padrão equivalem à perspective(PI/3.0, width/height, cameraZ/10.0, cameraZ*10.0) onde cameraZ é ((height/2.0) / tan(PI*60.0/360.0));	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Sintaxe</td>
+<td valign="top"> </td>
+<td valign="top">
+<pre>perspective()<br/>perspective(<font color="#996600">fov</font>, <font color="#996600">aspecto</font>, <font color="#996600">zProx</font>, <font color="#996600">zDist</font>)<br/></pre>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Parâmetros</td>
+<td valign="top"> </td>
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="90">fov</td>
+<td width="20"> </td>
+<td valign="top" width="440">float: ângulo do campo de visão  (em radianos) da direção vertical<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">aspecto</td>
+<td width="20"> </td>
+<td valign="top" width="440">float: taxa entre largura e altura<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">zProx</td>
+<td width="20"> </td>
+<td valign="top" width="440">float: posição z do plano de recorte mais próximo<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">zDist</td>
+<td width="20"> </td>
+<td valign="top" width="440">float: posição z do plano de recorte mais distante<br/>
+<br/>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Retorno</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Nenhum	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Utilização</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Web &amp; Applicações	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody>
+</table>

@@ -1,0 +1,180 @@
+<table border="0" cellpadding="0" cellspacing="0" width="675">
+<tbody>
+<tr>
+<td width="100"><img height="40" src="../images/1pix.gif" width="100"/></td>
+<td width="20"><img height="1" src="../images/1pix.gif" width="20"/></td>
+<td width="555"><img height="1" src="../images/1pix.gif" width="555"/></td>
+</tr>
+<tr>
+<td valign="top">Nome</td>
+<td valign="top"> </td>
+<td valign="top">
+<h3>bezierVertex()</h3>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Exemplos</td>
+<td valign="top"> </td>
+<td valign="top">
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="120"><img border="0" height="100" src="media/bezierVertex_.gif" width="100"/></td>
+<td valign="top" width="430">
+<pre>beginShape(LINE_STRIP); <br/>vertex(30, 20); <br/>bezierVertex(80, 0, 80, 75, 30, 75); <br/>endShape(); <br/></pre>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><img height="25" src="../images/1pix.gif" width="1"/></td>
+</tr>
+<tr>
+<td valign="top" width="120"><img border="0" height="100" src="media/bezierVertex_2.gif" width="100"/></td>
+<td valign="top" width="430">
+<pre>beginShape(POLYGON); <br/>vertex(30, 20); <br/>bezierVertex(80, 0, 80, 75, 30, 75); <br/>bezierVertex(50, 80, 60, 25, 30, 20); <br/>endShape(); <br/></pre>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><img height="25" src="../images/1pix.gif" width="1"/></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td valign="top">Descrição</td>
+<td valign="top"> </td>
+<td valign="top">Especifica as coordenadas de vértices para curvas de Bezier. Cada chamada a função  <span style="font-weight: bold;">bezierVertex()</span>
+define a posição de dois pontos de controle e um de
+ancoragem de uma cruva de Bezier, e adiciona um novo segmento de uma
+linha ou forma.  A primeira vez que bezierVertex() é
+utilizada no escopo de uma chamada a beginShape(), deve sser prefaciada
+com uma chamada a vertex() para estabelecer o primeiro ponto de
+ancoragem. Esta função deve ser utilizada entre
+beginShape() e endShape(), e pode ser utilizada apenas para desenhar os
+tipos POLYGON, LINE_LOOP, e LINE_STRIP. O uso da versão 3D
+requer a renderização com P3D ou OPENGL (ver a
+referência ao Ambiente para mais informações). </td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Sintaxe</td>
+<td valign="top"> </td>
+<td valign="top">
+<pre>bezierVertex(<font color="#996600">x1</font>, <font color="#996600">y1</font>, <font color="#996600">x2</font>, <font color="#996600">y2</font>, <font color="#996600">x3</font>, <font color="#996600">y3</font>)<br/>bezierVertex(<font color="#996600">x1</font>, <font color="#996600">y1</font>, <font color="#996600">z1</font>, <font color="#996600">x2</font>, <font color="#996600">y2</font>, <font color="#996600">z2</font>, <font color="#996600">x3</font>, <font color="#996600">y3</font>, <font color="#996600">z3</font>)<br/></pre>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Parâmetros</td>
+<td valign="top"> </td>
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="90">x1</td>
+<td width="20"> </td>
+<td valign="top" width="440">floar ou int: A coordenada-x do primeiro ponto de controle <br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">y1</td>
+<td width="20"> </td>
+<td valign="top" width="440">floar ou int: A coordenada-y do primeiro ponto de controle <br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">z1</td>
+<td width="20"> </td>
+<td valign="top" width="440">floar ou int: A coordenada-z do primeiro ponto de controle <br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">x2</td>
+<td width="20"> </td>
+<td valign="top" width="440">floar ou int: A coordenada-x of segundo ponto de controle <br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">y2</td>
+<td width="20"> </td>
+<td valign="top" width="440">floar ou int: A coordenada-y of segundo ponto de controle <br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">z2</td>
+<td width="20"> </td>
+<td valign="top" width="440">floar ou int: A coordenada-z of segundo ponto de controle <br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">x3</td>
+<td width="20"> </td>
+<td valign="top" width="440">floar ou int: A coordenada-x of ponto de ancoragem<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">y3</td>
+<td width="20"> </td>
+<td valign="top" width="440">floar ou int: A coordenada-y of ponto de ancoragem<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">z3</td>
+<td width="20"> </td>
+<td valign="top" width="440">floar ou int: A coordenada-z of ponto de ancoragem <br/>
+<br/>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Utilização</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Web &amp; Applicações	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Relacionado</td>
+<td valign="top"> </td>
+<td valign="top">
+<a href="curveVertex_.html">curveVertex()</a><br/>
+<a href="vertex_.html">vertex()</a><br/>
+<a href="bezier_.html">bezier()</a><br/>
+</td>
+</tr>
+</tbody>
+</table>

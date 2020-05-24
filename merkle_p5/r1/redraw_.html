@@ -1,0 +1,98 @@
+<table border="0" cellpadding="0" cellspacing="0" width="675">
+<tbody>
+<tr>
+<td width="100"><img height="40" src="../images/1pix.gif" width="100"/></td>
+<td width="20"><img height="1" src="../images/1pix.gif" width="20"/></td>
+<td width="555"><img height="1" src="../images/1pix.gif" width="555"/></td>
+</tr>
+<tr>
+<td valign="top">Nome</td>
+<td valign="top"> </td>
+<td valign="top">
+<h3>redraw()</h3>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Exemplos</td>
+<td valign="top"> </td>
+<td valign="top">
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="550">
+<pre>float x = 0; <br/> <br/>void setup() { <br/>  size(200, 200); <br/>  noLoop(); <br/>} <br/> <br/>void draw() { <br/>  background(204); <br/>  line(x, 0, x, height); <br/>} <br/> <br/>void mousePressed() { <br/>  x += 1; <br/>  redraw(); <br/>} <br/></pre>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<br/>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td valign="top">Descrição</td>
+<td valign="top"> </td>
+<td valign="top">Executa o código incluso em <span style="font-weight: bold;">draw() </span> uma
+vez. Esta função permite ao programa atualizar a janela
+de visualização apenas quando necessário, por
+exemplo, quando um evento registrado por <span style="font-weight: bold;">mousPressed() </span>ou <span style="font-weight: bold;">keyPressed()</span> ocorrer. Na estruturação de um programa, apenas faz sentido chamar redraw() em evento tais como <span style="font-weight: bold;">mousPressed().  </span>Chamá-la em <span style="font-weight: bold;">draw()</span> não tem efeito, pois esta é executada continuamente de qualquer modo. 	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Sintaxe</td>
+<td valign="top"> </td>
+<td valign="top">
+<pre>redraw()<br/></pre>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Retorno</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Nenhum	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Utilização</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Web &amp; Applicações	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Relacionado</td>
+<td valign="top"> </td>
+<td valign="top">
+<a href="noLoop_.html">noLoop()</a><br/>
+<a href="loop_.html">loop()</a><br/>
+</td>
+</tr>
+</tbody>
+</table>

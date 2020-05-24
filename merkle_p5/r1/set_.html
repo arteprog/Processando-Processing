@@ -1,0 +1,171 @@
+<table border="0" cellpadding="0" cellspacing="0" width="675">
+<tbody>
+<tr>
+<td width="100"><img height="40" src="../images/1pix.gif" width="100"/></td>
+<td width="20"><img height="1" src="../images/1pix.gif" width="20"/></td>
+<td width="555"><img height="1" src="../images/1pix.gif" width="555"/></td>
+</tr>
+<tr>
+<td valign="top">Nome</td>
+<td valign="top"> </td>
+<td valign="top">
+<h3>set()</h3>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Exemplos</td>
+<td valign="top"> </td>
+<td valign="top">
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="120"><img border="0" height="100" src="media/set_.gif" width="100"/></td>
+<td valign="top" width="430">
+<pre>color black = color(0); <br/>set(30, 20, black); <br/>set(85, 20, black); <br/>set(85, 75, black); <br/>set(30, 75, black); <br/></pre>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><img height="25" src="../images/1pix.gif" width="1"/></td>
+</tr>
+<tr>
+<td valign="top" width="120"><img border="0" height="100" src="media/set_2.jpg" width="100"/></td>
+<td valign="top" width="430">
+<pre>for (int i=30; i&lt;(width-15); i++) { <br/>  for(int j=20; j&lt;(height-25); j++) { <br/>    color c = color(204-j, 153-i, 0); <br/>    set(i, j, c); <br/>  } <br/>} <br/></pre>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><img height="25" src="../images/1pix.gif" width="1"/></td>
+</tr>
+<tr>
+<td valign="top" width="120"><img border="0" height="100" src="media/set_3.jpg" width="100"/></td>
+<td valign="top" width="430">
+<pre>size(100, 100, P3D); <br/>PImage myImage = loadImage("topanga.jpg"); <br/>set(0, 0, myImage); <br/>line(0, 0, width, height); <br/>line(0, height, width, 0); <br/></pre>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><img height="25" src="../images/1pix.gif" width="1"/></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td valign="top">Descrição</td>
+<td valign="top"> </td>
+<td valign="top">
+Modifica a cor de qualquer
+píxel ou escreve uma imagem diretamente na janela de
+visualização. Os parâmetros x e y
+especificam o píxel a modificar, e o parâmetro cor 
+especificam sua cor. O parâmetro cor é afetato
+pelo atual modo de cor (o valor padrão é o RGB com
+valores entre 0 e 255). Ao especificar uma imagem, os parâmetros
+x e y definem as coordenadas do canto superior esquerdo
+da imagem (o posicionamente dda imagem não é afetado
+pela função imageMode()). function).<br style="font-family: Helvetica,Arial,sans-serif;"/>
+<br style="font-family: Helvetica,Arial,sans-serif;"/>
+Atribuir  a cor a um único
+píxel com set(x,y) é fácil, mas não tão
+rápido como atribuir dados diretamente em pixels[]. Ao
+se usar pixels[], o comando equivalente a "set(x,y,
+#000000)" é "pixels[y*largura+x] = #000000. A versão BETA de Processing requer que se chame <span style="font-weight: bold;">loadPixels() </span>para se carregar a janela de visualização no array <span style="font-weight: bold;">pixels[]</span> antes que se pegue os valores. ow data into the <b>pixels[]</b> array before getting the values.	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Sintaxe</td>
+<td valign="top"> </td>
+<td valign="top">
+<pre>set(<font color="#996600">x</font>, <font color="#996600">y</font>, <font color="#996600">cor</font>)<br/>set(<font color="#996600">x</font>, <font color="#996600">y</font>, <font color="#996600">imagem</font>)<br/></pre>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Parâmetros</td>
+<td valign="top"> </td>
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="90">x</td>
+<td width="20"> </td>
+<td valign="top" width="440">int: coordenada-x do píxel<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">y</td>
+<td width="20"> </td>
+<td valign="top" width="440">int: coordenada-y do píxel<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">cor</td>
+<td width="20"> </td>
+<td valign="top" width="440">color: qualquer valor de tipo de dados color<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">imagem</td>
+<td width="20"> </td>
+<td valign="top" width="440">PImage: qualquer variável válida do tipo PImage<br/>
+<br/>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Retorno</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Nenhum	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Utilização</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Web &amp; Applicações	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Relacionado</td>
+<td valign="top"> </td>
+<td valign="top">
+<a href="get_.html">get()</a><br/>
+<a href="pixels.html">pixels[]</a><br/>
+</td>
+</tr>
+</tbody>
+</table>

@@ -1,0 +1,104 @@
+<table border="0" cellpadding="0" cellspacing="0" width="675">
+<tbody>
+<tr>
+<td width="100"><img height="40" src="../images/1pix.gif" width="100"/></td>
+<td width="20"><img height="1" src="../images/1pix.gif" width="20"/></td>
+<td width="555"><img height="1" src="../images/1pix.gif" width="555"/></td>
+</tr>
+<tr>
+<td valign="top">Nome</td>
+<td valign="top"> </td>
+<td valign="top">
+<h3>noLoop()</h3>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Exemplos</td>
+<td valign="top"> </td>
+<td valign="top">
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="550">
+<pre>void setup() { <br/>  size(200, 200); <br/>  noLoop(); <br/>} <br/> <br/>void draw() { <br/>  line(10, 10, 190, 190); <br/>} <br/></pre>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<hr align="left" noshade="noshade" size="1" width="150"/><br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="550">
+<pre>void setup() { <br/>  size(200, 200); <br/>} <br/> <br/>float x = 0.0; <br/> <br/>void draw() { <br/>  background(204); <br/>  x = x + 0.1; <br/>  if (x &gt; width) { <br/>    x = 0; <br/>  } <br/>  line(x, 0, x, height); <br/>} <br/> <br/>void mousePressed() { <br/>  noLoop(); <br/>} <br/> <br/>void mouseReleased() { <br/>  loop(); <br/>} <br/></pre>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<br/>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td valign="top">Descrição</td>
+<td valign="top"> </td>
+<td valign="top">Para o Processind de continuamente executar o código em <span style="font-weight: bold;">draw()</span>.  Caso <span style="font-weight: bold;">loop() </span>seja chamada,  o código em <span style="font-weight: bold;">draw() </span>é executado continuamente. 	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Sintaxe</td>
+<td valign="top"> </td>
+<td valign="top">
+<pre>noLoop()<br/>redraw()<br/>draw()<br/></pre>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Retorno</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Nenhum	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Utilização</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Web &amp; Applicações	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Relacionado</td>
+<td valign="top"> </td>
+<td valign="top">
+<a href="loop_.html">loop()</a><br/>
+</td>
+</tr>
+</tbody>
+</table>

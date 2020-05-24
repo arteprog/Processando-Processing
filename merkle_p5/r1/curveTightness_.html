@@ -1,0 +1,122 @@
+<table border="0" cellpadding="0" cellspacing="0" width="675">
+<tbody>
+<tr>
+<td width="100"><img height="40" src="../images/1pix.gif" width="100"/></td>
+<td width="20"><img height="1" src="../images/1pix.gif" width="20"/></td>
+<td width="555"><img height="1" src="../images/1pix.gif" width="555"/></td>
+</tr>
+<tr>
+<td valign="top">Nome</td>
+<td valign="top"> </td>
+<td valign="top">
+<h3>curveTightness()</h3>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Exemplos</td>
+<td valign="top"> </td>
+<td valign="top">
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="120"><img border="0" height="100" src="media/curveTightness_.gif" width="100"/></td>
+<td valign="top" width="430">
+<pre>// White curve <br/>stroke(255); <br/>beginShape(LINE_STRIP); <br/>curveVertex(10, 26); <br/>curveVertex(10, 26); <br/>curveVertex(83, 24); <br/>curveVertex(83, 61); <br/>curveVertex(25, 65); <br/>curveVertex(25, 65); <br/>endShape(); <br/> <br/>// Gray curve <br/>stroke(126); <br/>curveTightness(3.5); <br/>beginShape(LINE_STRIP); <br/>curveVertex(10, 26); <br/>curveVertex(10, 26); <br/>curveVertex(83, 24); <br/>curveVertex(83, 61); <br/>curveVertex(25, 65); <br/>curveVertex(25, 65); <br/>endShape(); <br/> <br/>// Black curve <br/>stroke(0); <br/>curveTightness(-2.5); <br/>beginShape(LINE_STRIP); <br/>curveVertex(10, 26); <br/>curveVertex(10, 26); <br/>curveVertex(83, 24); <br/>curveVertex(83, 61); <br/>curveVertex(25, 65); <br/>curveVertex(25, 65); <br/>endShape(); <br/></pre>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><img height="25" src="../images/1pix.gif" width="1"/></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td valign="top">Descrição</td>
+<td valign="top"> </td>
+<td valign="top">Modivida a qualidade das curvas criadas com <span style="font-weight: bold;">curve<span style="font-weight: bold;">()</span></span> e <span style="font-weight: bold;">curveVertex()</span>.  O parâmetro <span style="font-weight: bold;">squishy </span>define como a curva se ajusta aos pontos que são vértices.  O valor 0.o é o valor padrão de <span style="font-weight: bold;">squishy </span>(este
+parâmetro defina as curvas como sendo Catmul-Rom splines) e o
+calor 1.0 conecta todos os pontos com linhas retas. Valores no
+intervalo de -5.0 a +5.0 deformarão a curva  mas a
+deixarão reconhecível, e na medida que os valore
+creçam em magnitude, a deformação será
+continuada. 	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Sintaxe</td>
+<td valign="top"> </td>
+<td valign="top">
+<pre>curveTightness(<font color="#996600">squishy</font>)<br/></pre>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Parâmetros</td>
+<td valign="top"> </td>
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="90">squishy</td>
+<td width="20"> </td>
+<td valign="top" width="440">float ou int: quantidade de deformacão relativa aos vértices originais.<br/>
+<br/>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Retorno</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Nenhum	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Utilização</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Web &amp; Applicações	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Relacionado</td>
+<td valign="top"> </td>
+<td valign="top">
+<a href="curve_.html">curve()</a><br/>
+<a href="curveVertex_.html">curveVertex()</a><br/>
+</td>
+</tr>
+</tbody>
+</table>

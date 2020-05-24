@@ -1,0 +1,143 @@
+<table border="0" cellpadding="0" cellspacing="0" width="675">
+<tbody>
+<tr>
+<td width="100"><img height="40" src="../images/1pix.gif" width="100"/></td>
+<td width="20"><img height="1" src="../images/1pix.gif" width="20"/></td>
+<td width="555"><img height="1" src="../images/1pix.gif" width="555"/></td>
+</tr>
+<tr>
+<td valign="top">Nome</td>
+<td valign="top"> </td>
+<td valign="top">
+<h3>saveFrame()</h3>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Exemplos</td>
+<td valign="top"> </td>
+<td valign="top">
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="550">
+<pre>int x = 0; <br/>void draw() <br/>{ <br/>  background(204); <br/>  if(x &lt; 100) { <br/>    line(x, 0, x, 100); <br/>    // Salva cada quadro como screen-0000.tif, screen-0001, etc. <br/>    saveFrame(); <br/>    x = x + 1; <br/>  } <br/>} <br/></pre>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<hr align="left" noshade="noshade" size="1" width="150"/><br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="550">
+<pre>int x = 0; <br/>void draw() <br/>{ <br/>  background(204); <br/>  if(x &lt; 100) { <br/>    line(x, 0, x, 100); <br/>    // Salva cada quadro como line-0000.tif, line-0001, etc. <br/>    saveFrame("line-####.tif"); <br/>    x = x + 1; <br/>  } <br/>} <br/></pre>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<br/>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td valign="top">Descrição</td>
+<td valign="top"> </td>
+<td valign="top">Salva uma seqüência numerada de imagens. Caso <span style="font-weight: bold;">saveFrame()</span>
+é chamada sem parâmetros, ela nomeará os arquivos
+como screen-0000.tif, screen-0001.tif, etc. IÉ possível
+especificar o nome da seqüência de arquivos através
+do parâmetro <span style="font-weight: bold;">filename, </span>e escolhr entre salvar arquivos to tipo TIFF ou TARGA através do parâmetro <span style="font-weight: bold;">ext. </span> Estas
+seqüências de imagems podems ser carregadas em programas
+como o QuickTime da Apple na confecção de filmes. Estes
+arquivos são
+salvos na pasta de esboços, a qual pode ser aberta ao
+selecionar "Show sketch folder" do  menu  Não
+é possível utilizar a função <span style="font-weight: bold;">saveFrame()</span> quando o programa esta executando em um navegador web.	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Sintaxe</td>
+<td valign="top"> </td>
+<td valign="top">
+<pre>saveFrame()<br/>saveFrame("<font color="#996600">filename</font>-####.<font color="#996600">ext</font>")<br/></pre>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Parâmetros</td>
+<td valign="top"> </td>
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="90">filename</td>
+<td width="20"> </td>
+<td valign="top" width="440">String: qualquer seqüência de letras e números entre aspas<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">ext</td>
+<td width="20"> </td>
+<td valign="top" width="440">um entre  "tif" ou "tga"<br/>
+<br/>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Retorno</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Nenhum	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Utilização</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Application	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Relacionado</td>
+<td valign="top"> </td>
+<td valign="top">
+<a href="save_.html">save()</a><br/>
+</td>
+</tr>
+</tbody>
+</table>

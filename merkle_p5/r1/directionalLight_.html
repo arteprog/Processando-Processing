@@ -1,0 +1,172 @@
+<table border="0" cellpadding="0" cellspacing="0" width="675">
+<tbody>
+<tr>
+<td width="100"><img height="40" src="../images/1pix.gif" width="100"/></td>
+<td width="20"><img height="1" src="../images/1pix.gif" width="20"/></td>
+<td width="555"><img height="1" src="../images/1pix.gif" width="555"/></td>
+</tr>
+<tr>
+<td valign="top">Nome</td>
+<td valign="top"> </td>
+<td valign="top">
+<h3>directionalLight()</h3>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Exemplos</td>
+<td valign="top"> </td>
+<td valign="top">
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="120"><img border="0" height="100" src="media/directionalLight_.jpg" width="100"/></td>
+<td valign="top" width="430">
+<pre>size(100, 100, P3D); <br/>background(0); <br/>noStroke(); <br/>directionalLight(51, 102, 126, -1, 0, 0); <br/>translate(20, 50, 0); <br/>sphere(30); <br/></pre>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><img height="25" src="../images/1pix.gif" width="1"/></td>
+</tr>
+<tr>
+<td valign="top" width="120"><img border="0" height="100" src="media/directionalLight_2.jpg" width="100"/></td>
+<td valign="top" width="430">
+<pre>size(100, 100, P3D); <br/>background(0); <br/>noStroke(); <br/>directionalLight(51, 102, 126, 0, -1, 0); <br/>translate(80, 50, 0); <br/>sphere(30); <br/> <br/></pre>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><img height="25" src="../images/1pix.gif" width="1"/></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td valign="top">Descrição</td>
+<td valign="top"> </td>
+<td valign="top">Adiciona uma luz direta. A luz direta vem apenas de
+uma direção e é mais forte quando atinge uma
+superfície ortogonalmente,e mais fraca quando a atingem em um
+pequeno ângulo. Após atingir uma superfície, a luz
+direta se espalha em todas as direções. Luzes precisam
+ser incluidas em <span style="font-weight: bold;">draw()</span> para se manterem persistentes em programas em laço. A sua colocação no <span style="font-weight: bold;">setup()</span>
+de um programa em laço causará edeito apenas
+ durante a primeira passagem pelo laço. O efeito dos
+parâmetros  <b>v1</b>, <b>v2</b>, e <b>v3 </b>é determinado pelo atual modo de cor.  Os parâmetros <b>nx</b>, <b>ny</b>, e <b>nz </b>especificam a direção que a luz está iluminando. Por exemplo, ao especificar <span style="font-weight: bold;">ny</span> como -1 determina que a geometria será iluminada de baixo (a luz está iluminando diretamente para cima). 	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Sintaxe</td>
+<td valign="top"> </td>
+<td valign="top">
+<pre>directionalLight(<font color="#996600">v1</font>, <font color="#996600">v2</font>, <font color="#996600">v3</font>, <font color="#996600">nx</font>, <font color="#996600">ny</font>, <font color="#996600">nz</font>)<br/></pre>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Parâmetros</td>
+<td valign="top"> </td>
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="90">v1</td>
+<td width="20"> </td>
+<td valign="top" width="440">int ou float: valor de vermelho ou de matiz<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">v2</td>
+<td width="20"> </td>
+<td valign="top" width="440">
+
+                  int ou float: valor de verde ou de saturação<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">v3</td>
+<td width="20"> </td>
+<td valign="top" width="440">int ou float: valor de azul ou de brilho<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">nx</td>
+<td width="20"> </td>
+<td valign="top" width="440">int ou float: direção ao longo do eixo x<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">ny</td>
+<td width="20"> </td>
+<td valign="top" width="440">int ou float: direção ao longo do eixo y<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">nz</td>
+<td width="20"> </td>
+<td valign="top" width="440">int ou float: direção ao longo do eixo z<br/>
+<br/>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Retorno</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Nenhum	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Utilização</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Web &amp; Applicações	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Relacionado</td>
+<td valign="top"> </td>
+<td valign="top">
+<a href="lights_.html">lights()</a><br/>
+<a href="ambientLight_.html">ambientLight()</a><br/>
+<a href="pointLight_.html">pointLight()</a><br/>
+<a href="spotLight_.html">spotLight()</a><br/>
+</td>
+</tr>
+</tbody>
+</table>

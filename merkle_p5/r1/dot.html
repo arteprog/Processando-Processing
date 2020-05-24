@@ -1,0 +1,129 @@
+<table border="0" cellpadding="0" cellspacing="0" width="675">
+<tbody>
+<tr>
+<td width="100"><img height="40" src="../images/1pix.gif" width="100"/></td>
+<td width="20"><img height="1" src="../images/1pix.gif" width="20"/></td>
+<td width="555"><img height="1" src="../images/1pix.gif" width="555"/></td>
+</tr>
+<tr>
+<td valign="top">Nome</td>
+<td valign="top"> </td>
+<td valign="top">
+<h3>. (ponto)</h3>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Exemplos</td>
+<td valign="top"> </td>
+<td valign="top">
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="550">
+<pre>// Declara e constrói dois objetos (h1, h2) da classe HLine<br/>HLine h1 = new HLine(20, 1.0); <br/>HLine h2 = new HLine(50, 5.0); <br/> <br/>void setup() { <br/>  size(200, 200); <br/>} <br/> <br/>void draw() { <br/>  if(h2.speed &gt; 1.0) {  // speed se traduz como velocidade<br/>    h2.speed -= 0.01; <br/>  } <br/>  h1.update(); 		// update se traduz como atualização<br/>  h2.update();  <br/>} <br/> <br/>class HLine { <br/>  float ypos, speed; <br/>  HLine (float y, float s) {  <br/>    ypos = y; <br/>    speed = s; <br/>  } <br/>  void update() { <br/>    ypos += speed; <br/>    if (ypos &gt; width) { <br/>      ypos = 0; <br/>    } <br/>    line(0, ypos, width, ypos); <br/>  } <br/>} <br/></pre>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<br/>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td valign="top">Descrição</td>
+<td valign="top"> </td>
+<td valign="top">Permite o acesso aos métodos e dados de um
+objeto. Um objeto é uma instância de uma classe e
+contém um grupo de métodos (funções do
+objeto) e dados (constantes e variáveis do objeto). O operador
+ponto direcion o programa para a informação encapsulada
+dentro do objeto. <br/>
+Provides access to an object's methods and data. An object is an
+instance of a class and contains is a grouping of methods (object
+functions) and data (object variables and constants). The dot operator
+directs the program to the information encapsulated within an object. </td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Sintaxe</td>
+<td valign="top"> </td>
+<td valign="top">
+<pre><font color="#996600">objecto</font>.<font color="#996600">metodo()</font>
+<font color="#996600">objecto</font>.<font color="#996600">dado</font>
+            </pre>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Parâmetros</td>
+<td valign="top"> </td>
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="90">objeto</td>
+<td width="20"> </td>
+<td valign="top" width="440">o objeto que se quer acessar<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">metodo()</td>
+<td width="20"> </td>
+<td valign="top" width="440">o método encapsulado no objeto<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">dada</td>
+<td width="20"> </td>
+<td valign="top" width="440">variável ou constante encapsulada no objeto<br/>
+<br/>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Utilização</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Web &amp; Applicações	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Relacionado</td>
+<td valign="top"> </td>
+<td valign="top">
+<a href="Object.html">Object</a><br/>
+</td>
+</tr>
+</tbody>
+</table>

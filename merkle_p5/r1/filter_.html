@@ -1,0 +1,172 @@
+<table border="0" cellpadding="0" cellspacing="0" width="675">
+<tbody>
+<tr>
+<td width="100"><img height="40" src="../images/1pix.gif" width="100"/></td>
+<td width="20"><img height="1" src="../images/1pix.gif" width="20"/></td>
+<td width="555"><img height="1" src="../images/1pix.gif" width="555"/></td>
+</tr>
+<tr>
+<td valign="top">Nome</td>
+<td valign="top"> </td>
+<td valign="top">
+<h3>filter()</h3>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Exemplos</td>
+<td valign="top"> </td>
+<td valign="top">
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="120"><img border="0" height="100" src="media/filter_threshold.jpg" width="100"/></td>
+<td valign="top" width="430">
+<pre>PImage b; <br/>b = loadImage("topanga.jpg"); <br/>image(b, 0, 0); <br/>filter(THRESHOLD); <br/></pre>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><img height="25" src="../images/1pix.gif" width="1"/></td>
+</tr>
+<tr>
+<td valign="top" width="120"><img border="0" height="100" src="media/filter_gray.jpg" width="100"/></td>
+<td valign="top" width="430">
+<pre>PImage b; <br/>b = loadImage("topanga.jpg"); <br/>image(b, 0, 0); <br/>filter(GRAY); <br/></pre>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><img height="25" src="../images/1pix.gif" width="1"/></td>
+</tr>
+<tr>
+<td valign="top" width="120"><img border="0" height="100" src="media/filter_invert.jpg" width="100"/></td>
+<td valign="top" width="430">
+<pre>PImage b; <br/>b = loadImage("topanga.jpg"); <br/>image(b, 0, 0); <br/>filter(INVERT); <br/>save("filter_invert.tif"); <br/></pre>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><img height="25" src="../images/1pix.gif" width="1"/></td>
+</tr>
+<tr>
+<td valign="top" width="120"><img border="0" height="100" src="media/filter_posterize.jpg" width="100"/></td>
+<td valign="top" width="430">
+<pre>PImage b; <br/>b = loadImage("topanga.jpg"); <br/>image(b, 0, 0); <br/>filter(GRAY); <br/>filter(POSTERIZE, 4); <br/></pre>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><img height="25" src="../images/1pix.gif" width="1"/></td>
+</tr>
+<tr>
+<td valign="top" width="120"><img border="0" height="100" src="media/filter_blur.jpg" width="100"/></td>
+<td valign="top" width="430">
+<pre>PImage b; <br/>b = loadImage("topanga.jpg"); <br/>image(b, 0, 0); <br/>filter(BLUR, 6); <br/></pre>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><img height="25" src="../images/1pix.gif" width="1"/></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td valign="top">Descrição</td>
+<td valign="top"> </td>
+<td valign="top">Filtra a imagem de visualização como definido em um dos seguintes modos:<br/>
+<br/>
+THRESHOLD  - converte a imagem para preto e branco dependendo se
+os pixels estão acima ou abaixo de um limiar definido pelo
+parâmetro<span style="font-weight: bold;"> nivel</span>. Este nível deve estar entre 0.0 (preto) e 1.0 (branco). Nos casos onde <span style="font-weight: bold;">nivel </span> não é especificado, 0.5 é utilizado. <br/>
+<br/>
+GRAY - converte quaisquer cores na imagem em seus equivalentes tons de cinza<br/>
+<br/>
+INVERT - atribui a cada píxel seu valor inverso<br/>
+<br/>
+POSTERIZE - limita cada canal da imagem a um número de cores especificada pelo parâmetro <span style="font-weight: bold;">nivel. </span><br/>
+<br/>
+BLUR - executa um borramento Gaussiano (n.t. <span style="font-style: italic;">Guassian blur</span>), sendo que o parâmetro <span style="font-weight: bold;">level</span> especifica a extensão do borramento. Nos casos em que o parâmetro <span style="font-weight: bold;">level</span> não é utilizado, o borramento equivalente a um borramento gaussiano de raio 1.<br/>
+<br/>
+OPAQUE - atribui ao canal alfa para ser inteiramente opaco	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Sintaxe</td>
+<td valign="top"> </td>
+<td valign="top">
+<pre>filter(<font color="#996600">MODO</font>)<br/>ilter(<font color="#996600">MODO</font>, <font color="#996600">nivel</font>)<br/></pre>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Parâmetros</td>
+<td valign="top"> </td>
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="90">MODO</td>
+<td width="20"> </td>
+<td valign="top" width="440">Qualquer um entre: THRESHOLD, GRAY, INVERT, POSTERIZE, BLUR, ou OPAQUE<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">nivel</td>
+<td width="20"> </td>
+<td valign="top" width="440">int ou float: define a qualidade do filtro<br/>
+<br/>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Retorno</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Nenhum	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Utilização</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Web &amp; Applicações	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Relacionado</td>
+<td valign="top"> </td>
+<td valign="top">
+<a href="blend_.html">blend()</a><br/>
+</td>
+</tr>
+</tbody>
+</table>

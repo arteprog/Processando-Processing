@@ -1,0 +1,186 @@
+<table border="0" cellpadding="0" cellspacing="0" width="675">
+<tbody>
+<tr>
+<td width="100"><img height="40" src="../images/1pix.gif" width="100"/></td>
+<td width="20"><img height="1" src="../images/1pix.gif" width="20"/></td>
+<td width="555"><img height="1" src="../images/1pix.gif" width="555"/></td>
+</tr>
+<tr>
+<td valign="top">Nome</td>
+<td valign="top"> </td>
+<td valign="top">
+<h3>copy()</h3>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Exemplos</td>
+<td valign="top"> </td>
+<td valign="top">
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="120"><img border="0" height="100" src="media/copy_.jpg" width="100"/></td>
+<td valign="top" width="430">
+<pre>PImage img = loadImage("eames.jpg"); <br/>image(img, 0, 0); <br/>copy(15, 25, 10, 10, 35, 25, 50, 50); <br/>noFill(); <br/>// O retângulo mostra a áreas sendo copiada<br/>rect(15, 25, 10, 10); <br/></pre>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><img height="25" src="../images/1pix.gif" width="1"/></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td valign="top">Descrição</td>
+<td valign="top"> </td>
+<td valign="top">Copia uma região de pixels da janela de
+visualização em outra região da janela de
+visualização, ou copia uma região de pixels de uma
+imagem definida pelo parâmetro <span style="font-weight: bold;">srcImg</span>
+na janela de visualização.  Se as regiões
+fonte e destino não forem do mesmo tamanho, ela irá
+automaticamente redimensionar os pixels fonte ao tamenho da
+região alvo. Neste processo não é utilizado
+informação alfa, mas caso ca imagem fonte tenha um canal
+alpha, esta também será copiado.  A
+função <span style="font-weight: bold;">imageMode() </span> altera a maneira com que os parâmetros trabalham. <span style="font-weight: bold;"> </span>Uma chamada a <span style="font-weight: bold;">imageMode(CORNERS)</span> alterará os parâmetros altura e largura de modo a definir os valores x e y do canto oposto da imagem.	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Sintaxe</td>
+<td valign="top"> </td>
+<td valign="top">
+<pre>copy(<font color="#996600">fx</font>, <font color="#996600">sy</font>, <font color="#996600">flargura</font>, <font color="#996600">faltura</font>, <font color="#996600">dx</font>, <font color="#996600">dy</font>, <font color="#996600">dlargura</font>, <font color="#996600">daltura</font>)<br/>copy(<font color="#996600">fntImg</font>, <font color="#996600">fx</font>, <font color="#996600">sy</font>, <font color="#996600">fwidth</font>, <font color="#996600">faltura</font>, <font color="#996600">dx</font>, <font color="#996600">dy</font>, <font color="#996600">dlargura</font>, <font color="#996600">daltura</font>)<br/></pre>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Parâmetros</td>
+<td valign="top"> </td>
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="90">fx</td>
+<td width="20"> </td>
+<td valign="top" width="440">int: coordenada x do canto superior esquerdo da imagem fonte<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">sy</td>
+<td width="20"> </td>
+<td valign="top" width="440">int: coordenada y do canto superior esquerdo da imagem fonte<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">flargura</td>
+<td width="20"> </td>
+<td valign="top" width="440">int: largura da imagem fonte<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">faltura</td>
+<td width="20"> </td>
+<td valign="top" width="440">int: altura da imagem fonte<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">dx</td>
+<td width="20"> </td>
+<td valign="top" width="440">int: coordenada x do canto superior esquerdo da imagem destino<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">dy</td>
+<td width="20"> </td>
+<td valign="top" width="440">int: coordenada y do canto superior esquerdo da imagem destino<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">dlargura</td>
+<td width="20"> </td>
+<td valign="top" width="440">
+
+                  int: largura da imagem destino<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">daltura</td>
+<td width="20"> </td>
+<td valign="top" width="440">
+
+                  int: altura da imagem destino<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">fntImg</td>
+<td width="20"> </td>
+<td valign="top" width="440">PImage: a variável de imagem que se refere à imagem fonte<br/>
+<br/>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Retorno</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Nenhum	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Utilização</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Web &amp; Applicações	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Relacionado</td>
+<td valign="top"> </td>
+<td valign="top">
+<a href="imageMode_.html">imageMode()</a><br/>
+<a href="blend_.html">blend()</a><br/>
+<a href="get_.html">get()</a><br/>
+</td>
+</tr>
+</tbody>
+</table>

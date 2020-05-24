@@ -1,0 +1,178 @@
+<table border="0" cellpadding="0" cellspacing="0" width="675">
+<tbody>
+<tr>
+<td width="100"><img height="40" src="../images/1pix.gif" width="100"/></td>
+<td width="20"><img height="1" src="../images/1pix.gif" width="20"/></td>
+<td width="555"><img height="1" src="../images/1pix.gif" width="555"/></td>
+</tr>
+<tr>
+<td valign="top">Nome</td>
+<td valign="top"> </td>
+<td valign="top">
+<h3>noise()</h3>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Exemplos</td>
+<td valign="top"> </td>
+<td valign="top">
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="550">
+<pre>float xoff = 0.0; <br/>void draw() <br/>{ <br/>  background(204); <br/>  xoff = xoff + .01; <br/>  float n = noise(xoff) * width; <br/>  line(n, 0, n, height); <br/>} <br/></pre>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<hr align="left" noshade="noshade" size="1" width="150"/><br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="550">
+<pre>float noiseScale=0.02; <br/>void draw() { <br/>  background(0); <br/>  for(int x=0; x&lt;width; x++) { <br/>    float noiseVal = noise((mouseX+x)*noiseScale, <br/>                            mouseY*noiseScale); <br/>    stroke(noiseVal*255); <br/>    line(x, mouseY+noiseVal*80, x, height); <br/>  } <br/>} <br/></pre>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<br/>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td valign="top">Descrição</td>
+<td valign="top"> </td>
+<td valign="top">Retorna um valor de ruído de Perlim em
+coordenadas específicas. O ruído de Perin é um
+gerador de seqüências randômicas que produz uma
+sucessão ordenada de modo mais natural de números, se
+comparada a função padrão <span style="font-weight: bold;">random()</span>.
+ Ela foi inventada por Ken Perlin nos anos de 1980, e tem sido
+utilizada desde então em aplicações
+gráficas para produzir texturas, movimento natural, formas,
+terrenos, etc. <br/>
+<br/>
+Sua principal diferença da função <span style="font-weight: bold;">random()</span>
+reside no fato de que o ruído de perlin é definido cem um
+espaço n-dimensional, onde cada pare de coordenadas corresponde
+a um valor fixo-semi-randômico (fixo no temp de vida de um
+programa). O valor resultante sempre será entre 0.0 e 1.0.
+Processing pode computar ruído de Perlin 1D, 2D e 3D, dependendo
+do número de coordenadas dados. O valor do ruído pode ser
+animado ao se movimentar pelo espaço de ruído como
+demonstrado no exemplo acima. A segunda e a terceira dimensão
+também podem ser interpretadas como tempo. <br/>
+<br/>
+O rído real pode ser estruturado de modo similara a um sinal de
+áudio, em respeito ao uso que a função faz de
+freqüências. De modo similara ao conceito de
+harmônicas em física, o ruído de Perlin é
+calculado sobre várias oitavas, as quais são somadas para
+se obter o reultado final. <br/>
+<br/>
+Uma outra forma de se ajustar a qualidade da seqüência
+resultante  é a escala das coordenadas de entrada. Como a
+função trabalha em um espaço infinito, o
+valor das coordenadas não importa como tal, mas distância
+entre coordenadas sucessicas (por exemplo, na utilização
+de <span style="font-weight: bold;">noise()</span> em um laço).
+omo regra geral, quanto menor a diferença entre coordenadas,
+mais suave será a seqüência de ruído de Perlin
+resultante. Passos entre 0.0003 e 0.003 funcionam melhor para a maioria
+das aplicações, mas pode ser diferente dependendo do uso.	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Sintaxe</td>
+<td valign="top"> </td>
+<td valign="top">
+<pre>noise(<font color="#996600">x</font>)<br/>noise(<font color="#996600">x</font>, <font color="#996600">y</font>)<br/>noise(<font color="#996600">x</font>, <font color="#996600">y</font>, <font color="#996600">z</font>)<br/></pre>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Parâmetros</td>
+<td valign="top"> </td>
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="90">x</td>
+<td width="20"> </td>
+<td valign="top" width="440">float: coordenada x no espaço de ruído de Perlin<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">y</td>
+<td width="20"> </td>
+<td valign="top" width="440">float: coordenada y no espaço de ruído de Perlin<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">z</td>
+<td width="20"> </td>
+<td valign="top" width="440">float: coordenada z no espaço de ruído de Perlin<br/>
+<br/>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Retorno</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+float	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Utilização</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Web &amp; Applicações	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Relacionado</td>
+<td valign="top"> </td>
+<td valign="top">
+<a href="noiseDetail_.html">noiseDetail()</a><br/>
+<a href="random_.html">random()</a><br/>
+</td>
+</tr>
+</tbody>
+</table>

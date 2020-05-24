@@ -1,0 +1,145 @@
+<table border="0" cellpadding="0" cellspacing="0" width="675">
+<tbody>
+<tr>
+<td width="100"><img height="40" src="../images/1pix.gif" width="100"/></td>
+<td width="20"><img height="1" src="../images/1pix.gif" width="20"/></td>
+<td width="555"><img height="1" src="../images/1pix.gif" width="555"/></td>
+</tr>
+<tr>
+<td valign="top">Nome</td>
+<td valign="top"> </td>
+<td valign="top">
+<h3>lerp()</h3>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Exemplos</td>
+<td valign="top"> </td>
+<td valign="top">
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="120"><img border="0" height="100" src="media/lerp_.gif" width="100"/></td>
+<td valign="top" width="430">
+<pre>float a = 20; <br/>float b = 80; <br/>float c = lerp(a, b, .2); <br/>float d = lerp(a, b, .5); <br/>float e = lerp(a, b, .8); <br/>beginShape(POINTS); <br/>vertex(a, 50); <br/>vertex(b, 50); <br/>vertex(c, 50); <br/>vertex(d, 50); <br/>vertex(e, 50); <br/>endShape(); <br/></pre>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><img height="25" src="../images/1pix.gif" width="1"/></td>
+</tr>
+<tr>
+<td valign="top" width="120"><img border="0" height="100" src="media/lerp_2.gif" width="100"/></td>
+<td valign="top" width="430">
+<pre>int x1 = 15; <br/>int y1 = 10; <br/>int x2 = 80; <br/>int y2 = 90; <br/>line(x1, y1, x2, y2); <br/>for(int i=0; i&lt;=10; i++) { <br/>  float x = lerp(x1, x2, i/10.0) + 10; <br/>  float y = lerp(y1, y2, i/10.0); <br/>  point(x, y); <br/>} <br/></pre>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><img height="25" src="../images/1pix.gif" width="1"/></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td valign="top">Descrição</td>
+<td valign="top"> </td>
+<td valign="top">Calcula um número entre dois números em um incremento expecífico. O parâmetro <span style="font-weight: bold;">amt </span>representa
+a quantidade a interpolar entre os dois valores, onde 0.0 equivale ao
+primeiro ponto;  0.1 está muito próximo deste
+primeire ponto;  0.5  está a meio caminho entre os
+dois, etc.  A função lerp() é conveniente
+para se criar movimento ao longo de um caminho reto, e para se criar
+linhas tracejadas. 	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Sintaxe</td>
+<td valign="top"> </td>
+<td valign="top">
+<pre>lerp(<font color="#996600">valor1</font>, <font color="#996600">valor2</font>, <font color="#996600">amt</font>)<br/></pre>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Parâmetros</td>
+<td valign="top"> </td>
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="90">valor1</td>
+<td width="20"> </td>
+<td valign="top" width="440">float ou int: primeiro valor<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">valor2</td>
+<td width="20"> </td>
+<td valign="top" width="440">float ou int: segundo valor<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">amt</td>
+<td width="20"> </td>
+<td valign="top" width="440">float: entre 0.0 e 1.0 <br/>
+<br/>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Retorno</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+float	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Utilização</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Web &amp; Applicações	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Relacionado</td>
+<td valign="top"> </td>
+<td valign="top">
+<a href="curvePoint_.html">curvePoint()</a><br/>
+<a href="bezierPoint_.html">bezierPoint()</a><br/>
+</td>
+</tr>
+</tbody>
+</table>

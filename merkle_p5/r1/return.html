@@ -1,0 +1,148 @@
+<table border="0" cellpadding="0" cellspacing="0" width="675">
+<tbody>
+<tr>
+<td width="100"><img height="40" src="../images/1pix.gif" width="100"/></td>
+<td width="20"><img height="1" src="../images/1pix.gif" width="20"/></td>
+<td width="555"><img height="1" src="../images/1pix.gif" width="555"/></td>
+</tr>
+<tr>
+<td valign="top">Nome</td>
+<td valign="top"> </td>
+<td valign="top">
+<h3>return</h3>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Exemplos</td>
+<td valign="top"> </td>
+<td valign="top">
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="550">
+<pre>int val = 30; <br/> <br/>void draw() { <br/>  int t = timestwo(val); <br/>  println(t); <br/>} <br/> <br/>int timestwo(int dVal) { <br/>  dVal = dVal * 2; <br/>  return dVal; <br/>} <br/></pre>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<hr align="left" noshade="noshade" size="1" width="150"/><br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="550">
+<pre>int[] vals = {10, 20, 30}; <br/>  <br/>void draw() { <br/>  int[] t = timestwo(vals); <br/>  println(t); <br/>  noLoop(); <br/>} <br/> <br/>int[] timestwo(int[] dVals) { <br/>  for(int i=0; i&lt;dVals.length; i++) { <br/>    dVals[i] = dVals[i] * 2; <br/>  } <br/>  return dVals; <br/>} <br/></pre>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<hr align="left" noshade="noshade" size="1" width="150"/><br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="550">
+<pre>void draw() { <br/>  background(204); <br/>  line(0, 0, width, height); <br/>  if(mousePressed) { <br/>    return; <br/>  } <br/>  line(0, height, width, 0); <br/>} <br/> <br/></pre>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<br/>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td valign="top">Descrição</td>
+<td valign="top"> </td>
+<td valign="top">A palavra chave <span style="font-weight: bold;">return</span>
+é utilizada para indicar o tipo de valor a retornar de uma
+função. O valor sendo retornado deve ser de tipo igual ao
+definido na declaração da função.
+Funções declaradas com <span style="font-weight: bold;">void </span>não podem retornar valores e não podem incluir um valor de retorno. A palavara chace <span style="font-weight: bold;">return </span> também
+pode ser usada para  sair de uma função, e
+consequentemente não permitindo que o program leia e execute os
+comandos restantes nela contidos (veja o terceiro exemplo acima).	 </td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Sintaxe</td>
+<td valign="top"> </td>
+<td valign="top">
+<pre><font color="#996600">tipo</font> <font color="#996600">funcao</font> {<br/>  <font color="#996600">comandos</font>
+  return <font color="#996600">valorvalue</font>
+}
+            </pre>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Parâmetros</td>
+<td valign="top"> </td>
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="550">
+<tbody>
+<tr>
+<td valign="top" width="90">tipo</td>
+<td width="20"> </td>
+<td valign="top" width="440">boolean, byte, char, int, float, String, boolean[], byte[], char[], int[], float[], String[]<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">funcao</td>
+<td width="20"> </td>
+<td valign="top" width="440">qualquer função que esteja sendo definida<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">comandos</td>
+<td width="20"> </td>
+<td valign="top" width="440">qualquer comando válido<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="90">valor</td>
+<td width="20"> </td>
+<td valign="top" width="440">deve ser do mesmo tipo de dados que o parâmtro "tipo"<br/>
+<br/>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td valign="top">Utilização</td>
+<td valign="top"> </td>
+<td valign="top">
+	
+Web &amp; Applicações	</td>
+</tr>
+<tr>
+<td><img height="25" src="../images/1pix.gif" width="1"/></td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody>
+</table>

@@ -1,0 +1,552 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+  <title>logicalAND &raquo; Linguagem (API) &raquo; Processing 1.0 (BETA)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+  <link rel="stylesheet" href="../../processing_beta.css">
+
+
+  <script language="JavaScript">
+<!--
+function gogo(dropdown) {
+  var tempURL = dropdown.options[dropdown.selectedIndex].value;
+  if(tempURL!="") {
+    document.location.href = tempURL;
+  }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v3.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+  </script>
+</head>
+
+<body>
+
+<table bgcolor="#000000" border="0" cellpadding="0" cellspacing="0" width="750">
+
+  <tbody>
+    <tr>
+
+    <td colspan="2" bgcolor="#000000" width="550">
+      <a href="../index.html"><img src="../../images/processing_beta.gif" align="top" border="0" height="50" width="500"></a><a name="top"></a></td>
+
+    <td align="right" bgcolor="#000000" valign="top" width="180">
+                    <img src="../../images/1pix.gif" height="8" width="180"><br>
+ 
+                    <a href="../faq/index.html"><font color="#ccccbe">FAQ</font></a>
+                  </td>
+
+    <td bgcolor="#000000" width="20">&nbsp;</td>
+
+  </tr>
+  </tbody>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="750">
+
+  <tbody>
+    <tr>
+
+    <td bgcolor="#333323" height="25" width="55">&nbsp;</td>
+
+    <td rowspan="2" valign="middle" width="675">       
+      <table ="width=&quot;675&quot;" valign="middle" border="0" cellpadding="0" cellspacing="0">
+
+         <tbody>
+          <tr>
+
+            <td bgcolor="#333323" height="25" width="1"><a href="../index.html"><font color="#ffffff">Cover</font></a>&nbsp;</td>
+
+            <td bgcolor="#333323" height="25" width="1"><font color="#ccccbe">\</font>&nbsp;<a href="../exhibition/index.html"><font color="#ffffff">Exhibition</font></a>&nbsp;</td>
+
+            <td bgcolor="#333323" height="25" width="1"><font color="#ccccbe">\</font>&nbsp;<a href="../learning/index.html"><font color="#ffffff">Learning</font></a>&nbsp;</td>
+
+            <td bgcolor="#333323" height="25" width="1"><font color="#ccccbe">\</font>&nbsp;<a href="index.html"><font color="#ccccbe">Reference</font></a>&nbsp;</td>
+
+            <td bgcolor="#333323" height="25" width="1"><font color="#ccccbe">\</font>&nbsp;<a href="../download/index.html"><font color="#ffffff">Download</font></a>&nbsp;</td>
+
+            <td bgcolor="#333323" height="25" width="1"><font color="#ccccbe">\</font>&nbsp;<a href="../discourse/index.html"><font color="#ffffff">Discourse</font></a>&nbsp;</td>
+
+           <td bgcolor="#333323" height="25" width="672">&nbsp;</td>
+         </tr>
+
+        <tr>
+
+	    <td bgcolor="#ffffff" height="25" width="1">&nbsp;</td>
+
+	    <td bgcolor="#ffffff" height="25" width="1">&nbsp;</td>
+
+	    <td bgcolor="#ffffff" height="25" width="1">&nbsp;</td>
+
+	    <td colspan="4" bgcolor="#5a5a46" height="25" valign="middle" width="672">
+            <img src="../../images/nav_bottomarrow.gif" align="middle" height="25" width="33"><a href="index.html"><font color="#ccccbe">Linguagem</font></a> <font color="#ccccbe">\ </font><a href="environment/index.html"><font color="#ffffff">Ambiente</font></a> <font color="#ccccbe">\ </font>  <a href="libraries/index.html"><font color="#ffffff">Bibliotecas</font></a> <font color="#ccccbe">\ </font>  <a href="compare/index.html"><font color="#ffffff">Compara&ccedil;&atilde;o</font></a></td>
+
+	    </tr>
+
+    
+        </tbody>
+      </table>
+
+    </td>
+
+    <td bgcolor="#333323" height="25" valign="middle" width="20">&nbsp;</td>
+
+  </tr>
+
+  <tr>
+ 
+    <td bgcolor="#ffffff" height="25" valign="middle" width="55">&nbsp;</td>
+
+    <td bgcolor="#5a5a46" height="25" valign="middle" width="20">&nbsp;</td>
+
+  </tr>
+
+  </tbody>
+</table>
+
+	
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+  <tbody>
+    <tr>
+ 
+    <td width="55"><img src="../images/1pix.gif" height="25" width="55"></td>
+
+    <td valign="bottom" width="675">&nbsp;</td>
+
+    <td width="20">&nbsp;</td>
+
+  </tr>
+
+  <!--
+  <tr> 
+    <td width="55" align="right"><a href="javascript:window.history.go(-1)"><img src="http://www.processing.org/reference/images/back_off.gif" width="38" height="30" border="0"></a></td>
+    <td width="675" valign="middle"><a href="javascript:window.history.go(-1)">Back</a></td>
+    <td width="20">&nbsp;</td>
+  </tr>
+  -->
+  <tr>
+ 
+    <td align="right" width="55"><img src="../images/1pix.gif" border="0" height="30" width="38"></td>
+
+    <td valign="middle" width="675"><a href="index.html">Resumida</a> (<a href="index_alpha.html">A-Z</a>) \ <a href="index_ext.html">Completa</a> (<a href="index_alpha_ext.html">A-Z</a>)</td>
+
+    <td width="20">&nbsp;</td>
+
+  </tr>
+
+  </tbody>
+</table>
+
+
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+  <tbody>
+    <tr>
+ 
+    <td width="55"><img src="../images/1pix.gif" height="25" width="55"></td>
+
+    <td valign="bottom" width="675">&nbsp;</td>
+
+    <td width="20">&nbsp;</td>
+
+  </tr>
+
+  <tr>
+ 
+    <td align="right" width="55">&nbsp;</td>
+
+    <td valign="middle" width="675"><font color="#006699"><b>Refer&ecirc;ncia
+para Processing (BETA) version 91+. Se voc&ecirc; tem uma vers&atilde;o
+anterior, utilize a documenta&ccedil;&atilde;o inclusa em seu software.</b> Se voc&ecirc; encontrar quaisquer erros ou tiver quaisquer coment&aacute;rios, <a href="http://processing.org/discourse/yabb_beta/YaBB.cgi?board=WebsiteBugs">leve ao nosso conhecimento</a>.</font></td>
+
+    <td width="20">&nbsp;</td>
+
+  </tr>
+
+  </tbody>
+</table>
+
+
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+  <tbody>
+    <tr>
+ 
+    <td width="55"><img src="../images/1pix.gif" height="1" width="55"></td>
+
+    <td valign="bottom" width="675">
+    
+
+      
+      <table border="0" cellpadding="0" cellspacing="0" width="675">
+
+          <tbody>
+          <tr>
+ 
+            <td width="100"><img src="../images/1pix.gif" height="40" width="100"></td>
+
+            <td width="20"><img src="../images/1pix.gif" height="1" width="20"></td>
+
+            <td width="555"><img src="../images/1pix.gif" height="1" width="555"></td>
+
+          </tr>
+
+
+
+	<tr>
+
+		<td valign="top">Nome</td>
+
+		<td valign="top">&nbsp;</td>
+
+	<td valign="top">
+	
+            <h3>&amp;&amp; (logical AND)</h3>
+	</td>
+          </tr>
+
+           <tr>
+ 
+            <td><img src="../images/1pix.gif" height="25" width="1"></td>
+
+            <td>&nbsp;</td>
+
+            <td>&nbsp;</td>
+
+          </tr>
+
+
+	<tr>
+
+		<td valign="top">Exemplos</td>
+
+		<td valign="top">&nbsp;</td>
+
+	<td valign="top">
+	
+            <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="550">
+              <tbody>
+                <tr>
+                  <td valign="top" width="120"><img src="media/logicalAND.gif" border="0" height="100" width="100"></td>
+
+                  <td valign="top" width="430">
+                  <pre>for(int i=5; i&lt;=95; i+=5) { <br>  if((i &gt; 35) &amp;&amp; (i &lt; 60)) { <br>    stroke(0);    //Atribui a vari&aacute;vel color a cor preta<br>  } else { <br>    stroke(255);  //Atribui a vari&aacute;vel color a cor branca<br> &nbsp;} <br>  line(30, i, 80, i); <br>} <br></pre>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td colspan="2" valign="top"><img src="../images/1pix.gif" height="25" width="1"></td>
+                </tr>
+
+              </tbody>
+            </table>
+	</td>
+          </tr>
+
+
+	<tr>
+
+		<td valign="top">Descri&ccedil;&atilde;o</td>
+
+		<td valign="top">&nbsp;</td>
+
+	<td valign="top">Compara duas express&otilde;es e retorna verdadeiro (<span style="font-weight: bold;">true</span>) se ambas forem avaliadas como verdadeiras (<span style="font-weight: bold;">true</span>). Retorna false (<span style="font-weight: bold;">false</span>) se uma ou ambas forem avaliadas como falsas (<span style="font-weight: bold;">false</span>). A seguinte linstas mostra todas as poss&iacute;veis combina&ccedil;&otilde;es<br>
+            <br>
+            <tt>true &amp;&amp; false   &nbsp;// &Eacute; avaliada como falsa porqu&ecirc; a segunda &eacute; falsa<br>
+false &amp;&amp; true   &nbsp;// &Eacute; avaliada como falsa porqu&ecirc; a primeira &eacute; falsa<br>
+true &amp;&amp; true &nbsp; // &Eacute; avaliada como verdadeira porqu&ecirc; ambas s&atilde;o verdadeiras<br>
+false &amp;&amp; false  // &Eacute; avaliada como falsa porqu&ecirc; ambas s&atilde;o falsas</tt>	</td>
+          </tr>
+
+           <tr>
+ 
+            <td><img src="../images/1pix.gif" height="25" width="1"></td>
+
+            <td>&nbsp;</td>
+
+            <td>&nbsp;</td>
+
+          </tr>
+
+
+	<tr>
+
+		<td valign="top">Sintaxe</td>
+
+		<td valign="top">&nbsp;</td>
+
+	<td valign="top">
+	
+            <pre><font color="#996600">express&atilde;o1</font> &amp;&amp; <font color="#996600">express&atilde;o2</font>
+            </pre>
+	</td>
+          </tr>
+
+           <tr>
+ 
+            <td><img src="../images/1pix.gif" height="25" width="1"></td>
+
+            <td>&nbsp;</td>
+
+            <td>&nbsp;</td>
+
+          </tr>
+
+
+	<tr>
+
+		<td valign="top">Par&acirc;metros</td>
+
+		<td valign="top">&nbsp;</td>
+
+	<td valign="top">
+	
+            <table border="0" cellpadding="0" cellspacing="0" width="550">
+              <tbody>
+                <tr>
+
+                  <td valign="top" width="90">express&atilde;o1</td>
+
+                  <td width="20">&nbsp;</td>
+
+                  <td valign="top" width="440">qualquer express&atilde;o v&aacute;lida<br>
+                  <br>
+                  </td>
+
+                </tr>
+                <tr>
+
+                  <td valign="top" width="90">express&atilde;o2</td>
+
+                  <td width="20">&nbsp;</td>
+
+                  <td valign="top" width="440">qualquer express&atilde;o v&aacute;lida<br>
+                  <br>
+                  </td>
+
+                </tr>
+              </tbody>
+            </table>
+           </td>
+          </tr>
+          <tr>
+ 
+            <td><img src="../images/1pix.gif" height="25" width="1"></td>
+
+            <td>&nbsp;</td>
+
+            <td>&nbsp;</td>
+
+          </tr>
+
+
+	<tr>
+
+		<td valign="top">Utiliza&ccedil;&atilde;o</td>
+
+		<td valign="top">&nbsp;</td>
+
+	<td valign="top">
+	
+Web &amp; Applica&ccedil;&otilde;es	</td>
+          </tr>
+
+           <tr>
+ 
+            <td><img src="../images/1pix.gif" height="25" width="1"></td>
+
+            <td>&nbsp;</td>
+
+            <td>&nbsp;</td>
+
+          </tr>
+
+
+	<tr>
+
+		<td valign="top">Relacionado</td>
+
+		<td valign="top">&nbsp;</td>
+
+	<td valign="top">
+	
+            <a href="logicalOR.html">|| (l&oacute;gico OU)</a><br>
+            <a href="logicalNOT.html">! (l&oacute;gico N&Atilde;O)</a><br>
+            <a href="if_.html">if()</a><br>
+	</td>
+          </tr>
+
+	 
+        </tbody>
+      </table>
+
+    </td>
+
+    <td width="20">&nbsp;</td>
+
+  </tr>
+
+  </tbody>
+</table>
+
+
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+  <tbody>
+    <tr>
+ 
+    <td width="55">&nbsp;<br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      </td>
+
+    <td valign="bottom" width="675">&nbsp;</td>
+
+    <td width="20">&nbsp;</td>
+
+  </tr>
+
+  <tr>
+ 
+    <td align="right" width="55">&nbsp;</td>
+
+    <td align="left" valign="middle" width="675">
+      <br>
+
+      Original em ingl&ecirc;s atualizado em: Fri Jul 15 16:35:45 PDT 2005 <br>
+Tradu&ccedil;&atilde;o para o Portugu&ecirc;s do Brasil: Luiz Ernesto Merkle <br>
+ Atuallizada em: 30 de novembro de 2005, 9h00 (BRST) 
+      <br>
+
+    </td>
+
+    <td width="20">&nbsp;</td>
+
+  </tr>
+
+  </tbody>
+</table>
+
+
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+  <tbody>
+    <tr>
+ 
+    <td width="55">&nbsp;<br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      </td>
+
+    <td valign="top" width="675">
+
+<!-- Creative Commons License -->
+      <br>
+
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/"><img alt="Creative Commons License" src="http://creativecommons.org/images/public/somerights20.pt.png" border="0"></a>
+
+
+<!--
+
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="">
+   <dc:title>Processing.org Reference</dc:title>
+   <dc:date>2004</dc:date>
+   <dc:description>Reference for the Processing.org programming environment and language.</dc:description>
+   <dc:creator><Agent>
+      <dc:title>Casey Reas et al.</dc:title>
+   </Agent></dc:creator>
+   <dc:rights><Agent>
+      <dc:title>Casey Reas</dc:title>
+   </Agent></dc:rights>
+   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" />
+   <license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.0/" />
+</Work>
+
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.0/">
+   <permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+   <permits rdf:resource="http://web.resource.org/cc/Distribution" />
+   <requires rdf:resource="http://web.resource.org/cc/Notice" />
+   <requires rdf:resource="http://web.resource.org/cc/Attribution" />
+   <prohibits rdf:resource="http://web.resource.org/cc/CommercialUse" />
+   <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+   <requires rdf:resource="http://web.resource.org/cc/ShareAlike" />
+</License>
+
+</rdf:RDF>
+
+-->
+
+
+    </td>
+
+    <td width="20">&nbsp;</td>
+
+  </tr>
+  
+  <tr>
+ 
+    <td bgcolor="#5a5a4e" width="55">&nbsp;</td>
+
+    <td bgcolor="#5a5a4e" valign="middle" width="675">
+      <font color="#ffffff">Processing &eacute; um projeto aberto iniciado por</font> 
+      <a href="http://www.benfry.com"><font color="#ffffff">Ben Fry</font></a> <font color="#ffffff">e</font> 
+      <a href="http://www.reas.com"><font color="#ffffff">Casey Reas</font></a>
+    </td>
+
+    <td bgcolor="#5a5a4e" height="25" width="20">&nbsp;</td>
+
+  </tr>
+
+  <tr>
+ 
+    <td bgcolor="#000000" width="55">&nbsp;</td>
+
+    <td bgcolor="#000000" valign="middle" width="675">
+      <a href="../../copyright.html"><font color="#ffffff">&copy; Info</font></a>
+    </td>
+
+    <td bgcolor="#000000" height="25" width="20">&nbsp;</td>
+
+  </tr>
+
+  </tbody>
+</table>
+
+</body>
+</html>
