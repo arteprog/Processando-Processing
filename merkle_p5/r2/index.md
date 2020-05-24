@@ -1,532 +1,545 @@
-[ ()  ](parentheses)
-<small>parênteses</small>
-[ ,   ](comma)
-<small>operador
-vírgula</small>
-[ ](multilinecomment)[ .  ](dot)
-<small>operador
-ponto</small>
-[/* */](multilinecomment)
-<small>comentário
-multi-linha</small>
-[/** */ ](doccomment)
-<small>comentário
-documental</small>
-[ // ](comment)
-<small>comentário
-linha única</small>
-[ ;  ](semicolon)
-<small>operador
+- [ ()  ](parentheses)
+parênteses
+- [ ,   ](comma)
+operador
+vírgula
+- [ ](multilinecomment)- [ .  ](dot)
+operador
+ponto
+- [/* */](multilinecomment)
+comentário
+multi-linha
+- [/** */ ](doccomment)
+comentário
+documental
+- [ // ](comment)
+comentário
+linha única
+- [ ;  ](semicolon)
+operador
 ponto
 e
-vírgula</small>
-[ = ](assign)
-<small>atribuição</small>
-[ [] ](arrayaccess)
-<small>acesso
-a vetor</small>
-[class](class)
-<small>classe</small>
-[delay()](delay_)
-<small>atraso
-            </small>
-[draw()](draw_)
-<small>desenhar</small>
-[false](false)
-<small>falso</small>
-[loop()](loop_)
-<small>ativar
-redesenho</small>
-[new](new)
-<small>alocar
-objeto</small>
-[noLoop()](noLoop_)
-<small>desativar
-redesenho</small>
-[redraw()](redraw_)
-<small>redesenhar</small>
-[return](return)
-<small>retornar</small>
-[setup()](setup_)
-<small>configurar</small>
-[size()](size_)
-<small>tamanho
-da tela</small>
-[true](true)
-<small>verdadeiro</small>
-[void](void)
-<small>sem
-retorno</small>
-[ {} ](curlybraces)
-<small>chaves</small>
-[cursor()](cursor_)
-<small>configurar
-cursor</small>
-[frameCount](frameCount)
-<small>número de
-quadros</small>
-[framerate](framerate)
-<small>taxa
-de troca</small>
-[framerate()](framerate_)
-<small>definir
+vírgula
+- [ = ](assign)
+atribuição
+- [ [] ](arrayaccess)
+acesso
+a vetor
+- [class](class)
+classe
+- [delay()](delay_)
+atraso
+- [draw()](draw_)
+desenhar
+- [false](false)
+falso
+- [loop()](loop_)
+ativar
+redesenho
+- [new](new)
+alocar
+objeto
+- [noLoop()](noLoop_)
+desativar
+redesenho
+- [redraw()](redraw_)
+redesenhar
+- [return](return)
+retornar
+- [setup()](setup_)
+configurar
+- [size()](size_)
+tamanho
+da tela
+- [true](true)
+verdadeiro
+- [void](void)
+sem
+retorno
+- [ {} ](curlybraces)
+chaves
+
+- [cursor()](cursor_)
+configurar
+cursor
+- [frameCount](frameCount)
+número de
+quadros
+- [framerate](framerate)
 taxa
-de troca</small>
-[height](height)
-<small>altura
-da tela</small>
-[noCursor()](noCursor_)
-<small>esconder
-cursor</small>
-[screen](screen)
-<small>tela</small>
-[width](width)
-<small>largura
-da tela</small>
-*Primitivos*
-[boolean](boolean)
-<small>booleano</small>
-[byte](byte)
-<small>byte</small>
-[char](char)
-<small>caracter</small>
-[color](color)
-<small>cor</small>
-[float](float)
-<small>flutante</small>
-[int](int)
-<small>inteiro</small>
-*Compostos*
-[Array](Array)
-<small>vetor
-/ array</small>
-[Object](Object)
-<small>objeto</small>
-[String](String)
-<small>cadeia
-de caracteres</small>
-*Conversão*
-[boolean()](boolean_)
-<small>para
-booleano</small>
-[byte()](byte_)
-<small>para
-byte</small>
-[char()](char_)
-<small>para
-caracter</small>
-[float()](float_)
-<small>para
-float</small>
-[int()](int_)
-<small>para
-inteiro</small>
-[str()](str_)
-<small>para
-string</small>
-*Operadores Relacionais*
-[ != ](inequality)
-<small>diferente</small>
-[ > ](greaterthan)
-<small>maior</small>
-[ >= ](greaterthanorequalto)
-<small>maior
-ou igual </small>
-[ < ](lessthan)
-<small>menor</small>
-[ <= ](lessthanorequalto)
-<small>menor
-ou igual</small>
-[ == ](equality)
-<small>igual</small>
-*Iteração*
-[for()](for_)
-<small>repita
-... enquanto ...</small>
-[while()](while_)
-<small>enquanto</small>
-*Condicionais*
-[else](else)
-<small>senão</small>
-[if()](if_)
-<small>se
-/ condicional</small>
-*Operadores
-Lógicos*
-[  !  ](logicalNOT)
-<small>NÃO
-            </small><small>lógico </small>
-[ &&
+de troca
+- [framerate()](framerate_)
+definir
+taxa
+de troca
+- [height](height)
+altura
+da tela
+- [noCursor()](noCursor_)
+esconder
+cursor
+- [screen](screen)
+tela
+- [width](width)
+largura
+da tela
+
+<i><font color="#666633">Primitivos</font></i>
+- [boolean](boolean)
+booleano
+- [byte](byte)
+byte
+- [char](char)
+caracter
+- [color](color)
+cor
+- [float](float)
+flutante
+- [int](int)
+inteiro
+<i><font color="#666633">Compostos</font></i>
+- [Array](Array)
+vetor
+/ array
+- [Object](Object)
+objeto
+- [String](String)
+cadeia
+de caracteres
+<i><font color="#666633">Conversão</font></i>
+- [boolean()](boolean_)
+para
+booleano
+- [byte()](byte_)
+para
+byte
+- [char()](char_)
+para
+caracter
+- [float()](float_)
+para
+float
+- [int()](int_)
+para
+inteiro
+- [str()](str_)
+para
+string
+
+<i><font color="#666633">Operadores Relacionais</font></i>
+- [ != ](inequality)
+diferente
+- [ > ](greaterthan)
+maior
+- [ >= ](greaterthanorequalto)
+maior
+ou igual
+- [ < ](lessthan)
+menor
+- [ <= ](lessthanorequalto)
+menor
+ou igual
+- [ == ](equality)
+igual
+<i><font color="#666633">Iteração</font></i>
+- [for()](for_)
+repita
+... enquanto ...
+- [while()](while_)
+enquanto
+<i><font color="#666633">Condicionais</font></i>
+- [else](else)
+senão
+- [if()](if_)
+se
+/ condicional
+<i><font color="#666633">Operadores
+Lógicos</font></i>
+- [  !  ](logicalNOT)
+NÃOlógico
+- [ &&
  ](logicalAND)
-<small>E </small><small>lógico </small>
-[  ||  ](logicalOR)
-<small>OU </small><small>lógico </small>
-*Primitivas 2D*
-[arc()](arc_)
-<small>arco</small>
-[ellipse()](ellipse_)
-<small>elipse</small>
-[line()](line_)
-<small>segmento
-de linha</small>
-[point()](point_)
-<small>ponto</small>
-[quad()](quad_)
-<small>quadrilátero</small>
-[rect()](rect_)
-<small>retângulo</small>
-[triangle()](triangle_)
-<small>triângulo</small>
-*Curvas*
-[bezier()](bezier_)
-<small>curva
-bezier</small>
-[curve()](curve_)
-<small>curva</small>
-*Atributos*
+Elógico
+- [  ||  ](logicalOR)
+OUlógico
+
+<i><font color="#666633">Primitivas 2D</font></i>
+- [arc()](arc_)
+arco
+- [ellipse()](ellipse_)
+elipse
+- [line()](line_)
+segmento
+de linha
+- [point()](point_)
+ponto
+- [quad()](quad_)
+quadrilátero
+- [rect()](rect_)
+retângulo
+- [triangle()](triangle_)
+triângulo
+<i><font color="#666633">Curvas</font></i>
+- [bezier()](bezier_)
+curva
+bezier
+- [curve()](curve_)
+curva
+<i><font color="#666633">Atributos</font></i>
 on
-[ellipseMode()](ellipseMode_)
-<small>modo
-elipse</small>
-[noSmooth()](noSmooth_)
-<small>desativar
-alisamento</small>
-[rectMode()](rectMode_)
-<small>modo
-retângulo</small>
-[smooth()](smooth_)
-<small>com
-alisamento</small>
-[strokeCap()](strokeCap_)
-<small>final
+- [ellipseMode()](ellipseMode_)
+modo
+elipse
+- [noSmooth()](noSmooth_)
+desativar
+alisamento
+- [rectMode()](rectMode_)
+modo
+retângulo
+- [smooth()](smooth_)
+com
+alisamento
+- [strokeCap()](strokeCap_)
+final
 do
-traço</small>
-[strokeJoin()](strokeJoin_)
-<small>junção
-de traço</small>
-[strokeWeight()](strokeWeight_)
-<small>espessura
-do traço</small>
-*Vértice*
-[beginShape()](beginShape_)
-<small>iniciar
-forma</small>
-[bezierVertex()](bezierVertex_)
-<small>vértice
-bezier</small>
-[curveVertex()](curveVertex_)
-<small>vértice
+traço
+- [strokeJoin()](strokeJoin_)
+junção
+de traço
+- [strokeWeight()](strokeWeight_)
+espessura
+do traço
+<i><font color="#666633">Vértice</font></i>
+- [beginShape()](beginShape_)
+iniciar
+forma
+- [bezierVertex()](bezierVertex_)
+vértice
+bezier
+- [curveVertex()](curveVertex_)
+vértice
 em
-curva</small>
-[endShape()](endShape_)
-<small>concluir
-forma</small>
-[vertex()](vertex_)
+curva
+- [endShape()](endShape_)
+concluir
+forma
+- [vertex()](vertex_)
 <small>definir
 vértice
 
 </small>
-*Mouse*
-[mouseButton](mouseButton)
-<small>botão
-do mouse</small>
-[mouseDragged()](mouseDragged_)
-<small>ao
-arrastar  mouse</small>
-[mouseMoved()](mouseMoved_)
-<small>ao
-mover mouse</small>
-[mousePressed](mousePressed)
-<small>mouse
-pressionado</small>
-[mousePressed()](mousePressed_)
-<small>ao
-pressionar botão</small>
-[mouseReleased()](mouseReleased_)
-<small>ao
-soltar  botão</small>
-[mouseX](mouseX)
-<small>posição
-X atual </small>
-[mouseY](mouseY)
-<small>posição
-Y atual </small>
-[pmouseX](pmouseX)
-<small>posição
-X anterior </small>
-[pmouseY](pmouseY)
-<small>posição
-X anterior </small>
-*Teclado*
-[key](key)
-<small>tecla</small>
-[keyCode](keyCode)
-<small>código
-da tecla</small>
-[keyPressed](keyPressed)
-<small>tecla
-pressionada</small>
-[keyPressed()](keyPressed_)
-<small>ao
-pressionar tecla</small>
-[keyReleased()](keyReleased_)
-<small>ao
-soltar tecla</small>
-*Hora &
-Data*
-[day()](day_)
-<small>dia</small>
-[hour()](hour_)
-<small>hora</small>
-[millis()](millis_)
-<small>tempo
-de sessão </small>
-[minute()](minute_)
-<small>minuto</small>
-[month()](month_)
-<small>mês</small>
-[second()](second_)
-<small>segundo</small>
-[year()](year_)
-<small>ano</small>
-*Arquivo*
-[loadBytes()](loadBytes_)
-<small>carregar
-Bytes</small>
-[loadStrings()](loadStrings_)
-<small>carregar
-Strings</small>
-*Área de
-Texto da IDE*
-[print()](print_)
-<small>escrever
-no console </small>
-[println()](println_)
-<small>escrever
-linha</small>
-*Imagens*
-[save()](save_)
+
+<i><font color="#666633">Mouse</font></i>
+- [mouseButton](mouseButton)
+botão
+do mouse
+- [mouseDragged()](mouseDragged_)
+ao
+arrastar  mouse
+- [mouseMoved()](mouseMoved_)
+ao
+mover mouse
+- [mousePressed](mousePressed)
+mouse
+pressionado
+- [mousePressed()](mousePressed_)
+ao
+pressionar botão
+- [mouseReleased()](mouseReleased_)
+ao
+soltar  botão
+- [mouseX](mouseX)
+posição
+X atual
+- [mouseY](mouseY)
+posição
+Y atual
+- [pmouseX](pmouseX)
+posição
+X anterior
+- [pmouseY](pmouseY)
+posição
+X anterior
+<i><font color="#666633">Teclado</font></i>
+- [key](key)
+tecla
+- [keyCode](keyCode)
+código
+da tecla
+- [keyPressed](keyPressed)
+tecla
+pressionada
+- [keyPressed()](keyPressed_)
+ao
+pressionar tecla
+- [keyReleased()](keyReleased_)
+ao
+soltar tecla
+<i><font color="#666633">Hora &amp;
+Data</font></i>
+- [day()](day_)
+dia
+- [hour()](hour_)
+hora
+- [millis()](millis_)
+tempo
+de sessão
+- [minute()](minute_)
+minuto
+- [month()](month_)
+mês
+- [second()](second_)
+segundo
+- [year()](year_)
+ano
+<i><font color="#666633">Arquivo</font></i>
+- [loadBytes()](loadBytes_)
+carregar
+Bytes
+- [loadStrings()](loadStrings_)
+carregar
+Strings
+
+<i><font color="#666633">Área de
+Texto da IDE</font></i>
+- [print()](print_)
+escrever
+no console
+- [println()](println_)
+escrever
+linha
+<i><font color="#666633">Imagens</font></i>
+- [save()](save_)
+salvar
+imagem
+- [saveFrame()](saveFrame_)
+salvar
+seq. de quadros
+<i><font color="#666633">Arquivos</font></i>
+- [saveBytes()](saveBytes_)
 <small>salvar
-imagem</small>
-[saveFrame()](saveFrame_)
+            <span style="font-style: italic;">bytes</span></small>
+- [saveStrings()](saveStrings_)
 <small>salvar
-seq. de quadros</small>
-*Arquivos*
-[saveBytes()](saveBytes_)
-<small>salvar
-            *bytes*</small>
-[saveStrings()](saveStrings_)
-<small>salvar
-            *strings*</small>
-[popMatrix()](popMatrix_)
-<small>inserir
-matriz da pilha</small>
-[pushMatrix()](pushMatrix_)
-<small>retirar
-matriz da pilha</small>
-[rotat](rotate_)[e()](rotate_)
-<small>rotacionar</small>
-[scale()](scale_)
-<small>mudar
-escala</small>
-[translate()](translate_)
-<small>translacionar</small>
-*Cenário*
-[background()](background_)
-<small>fundo</small>
-[colorMode()](colorMode_)
-<small>modelo
-de cor </small>
-[fill()](fill_)
-<small>preenchimento</small>
-[noFill()](noFill_)
-<small>sem
-preenchimento</small>
-[noStroke()](noStroke_)
-<small>desativar 
-traço</small>
-[stroke()](stroke_)
-<small>ativar
-traço</small>
-*Criação &
-Consulta*
-[alpha()](alpha_)
-<small>coeficeinte
-alfa </small>
-[blue()](blue_)
-<small>azul</small>
-[brightness()](brightness_)
-<small>brilho</small>
-[color()](color_)
-<small>cor</small>
-[green()](green_)
-<small>verde</small>
-[hue()](hue_)
-<small>matiz</small>
-[red()](red_)
-<small>vermelho</small>
-[saturation()](saturation_)
+            <span style="font-style: italic;">strings</span></small>
+
+- [popMatrix()](popMatrix_)
+inserir
+matriz da pilha
+- [pushMatrix()](pushMatrix_)
+retirar
+matriz da pilha
+- [rotat](rotate_)- [e()](rotate_)
+rotacionar
+- [scale()](scale_)
+mudar
+escala
+- [translate()](translate_)
+translacionar
+
+<i><font color="#666633">Cenário</font></i>
+- [background()](background_)
+fundo
+- [colorMode()](colorMode_)
+modelo
+de cor
+- [fill()](fill_)
+preenchimento
+- [noFill()](noFill_)
+sem
+preenchimento
+- [noStroke()](noStroke_)
+desativar 
+traço
+- [stroke()](stroke_)
+ativar
+traço
+<i><font color="#666633">Criação &amp;
+Consulta</font></i>
+- [alpha()](alpha_)
+coeficeinte
+alfa
+- [blue()](blue_)
+azul
+- [brightness()](brightness_)
+brilho
+- [color()](color_)
+cor
+- [green()](green_)
+verde
+- [hue()](hue_)
+matiz
+- [red()](red_)
+vermelho
+- [saturation()](saturation_)
 <small>saturação
 
 </small>
-[PImage](PImage)
-<small>tipo
-PImage</small>
-*Carregar &
-Visualizar*
-[image()](image_)
-<small>visualização
-de imagem</small>
-[imageMode()](imageMode_)
-<small>modo
-de  visualização</small>
-[loadImage()](loadImage_)
-<small>carregar
-imagem</small>
-[noTint()](noTint_)
-<small>desativar
-tingimento</small>
-[tint()](tint_)
-<small>ativar 
-tingimento</small>
-*Pixels*
-[blend()](blend_)
-<small>misturar</small>
-[copy()](copy_)
-<small>copiar</small>
-[filter()](filter_)
-<small>filtrar</small>
-[get()](get_)
-<small>consultar
-e extrair</small>
-[loadPixels()](loadPixels_)
-<small>carregar
-píxels</small>
-[pixels[]](pixels)
-<small style="color: rgb(102, 102, 0);">array de pixels</small>
-[set()](set_)
-<small>definir
-pixels </small>
-[updatePixels()](updatePixels_)
-<small>atualizar
-pixels</small>
-[PFont](PFont)
-<small>tipo
-PFont</small>
-*Carregar &
-Visuaizar*
-[createFont()](createFont_)
-<small>criar
-Fonte</small>
-[loadFont()](loadFont_)
-<small>carregar
-Fonte</small>
-[text()](text_)
-<small>texto</small>
-[textFont()](textFont_)
-<small>fonte
-do texto</small>
-*Atributos*
-[textAlign()](textAlign_)
-<small>alinhamento </small>
-[textLeading()](textLeading_)
-<small>definir
-espaçmento</small>
-[textMode()](textMode_)
-<small>definir
-modo</small>
-[textSize()](textSize_)
-<small>definir
-tamanho da fonte</small>
-[textWidth()](textWidth_)
-<small>definir
-largura</small>
-*Operadores*
+
+- [PImage](PImage)
+tipo
+PImage
+<i><font color="#666633">Carregar &amp;
+Visualizar</font></i>
+- [image()](image_)
+visualização
+de imagem
+- [imageMode()](imageMode_)
+modo
+de  visualização
+- [loadImage()](loadImage_)
+carregar
+imagem
+- [noTint()](noTint_)
+desativar
+tingimento
+- [tint()](tint_)
+ativar 
+tingimento
+<i><font color="#666633">Pixels</font></i>
+- [blend()](blend_)
+misturar
+- [copy()](copy_)
+copiar
+- [filter()](filter_)
+filtrar
+- [get()](get_)
+consultar
+e extrair
+- [loadPixels()](loadPixels_)
+carregar
+píxels
+- [pixels[]](pixels)
+array de pixels
+- [set()](set_)
+definir
+pixels
+- [updatePixels()](updatePixels_)
+atualizar
+pixels
+
+- [PFont](PFont)
+tipo
+PFont
+<i><font color="#666633">Carregar &amp;
+Visuaizar</font></i>
+- [createFont()](createFont_)
+criar
+Fonte
+- [loadFont()](loadFont_)
+carregar
+Fonte
+- [text()](text_)
+texto
+- [textFont()](textFont_)
+fonte
+do texto
+<i><font color="#666633">Atributos</font></i>
+- [textAlign()](textAlign_)
+alinhamento
+- [textLeading()](textLeading_)
+definir
+espaçmento
+- [textMode()](textMode_)
+definir
+modo
+- [textSize()](textSize_)
+definir
+tamanho da fonte
+- [textWidth()](textWidth_)
+definir
+largura
+
+<i><font color="#666633">Operadores</font></i>
 <span style="color: rgb(102, 102, 0);">
 
 </span>
-[ %  ](modulo)
-<small>resto
-/ módulo</small>
-[ *  ](multiply)
-<small>multiplicação</small>
-[ + ](addition)
-<small>adição</small>
-[ ++  ](increment)
-<small>incremento</small>
-[ +=  ](addassign)
-<small>soma
+- [ %  ](modulo)
+resto
+/ módulo
+- [ *  ](multiply)
+multiplicação
+- [ + ](addition)
+adição
+- [ ++  ](increment)
+incremento
+- [ +=  ](addassign)
+soma
 e
-atribuição</small>
-[  -   ](minus)
-<small>subtração</small>
-[  --   ](decrement)
-<small>decremento</small>
-[  -=   ](subtractassign)
-<small>subtração
-e atribuição</small>
-[  /   ](divide)
-<small>divisão</small>
-*Cálculo*
+atribuição
+- [  -   ](minus)
+subtração
+- [  --   ](decrement)
+decremento
+- [  -=   ](subtractassign)
+subtração
+e atribuição
+- [  /   ](divide)
+divisão
+<i><font color="#666633">Cálculo</font></i>
 <span style="color: rgb(102, 102, 0);"></span>
-[abs()](abs_)
-<small>valor
-absoluto</small>
-[ceil()](ceil_)
-<small>forro</small>
-[constrain()](constrain_)
-<small>restrição</small>
-[dist()](dist_)
-<small>distância</small>
-[floor()](floor_)
-<small>chão</small>
-[max()](max_)
-<small>máximo</small>
-[min()](min_)
-<small>mínimo</small>
-[pow()](pow_)
-<small>potência</small>
-[round()](round_)
-<small>arredondamento</small>
-[sq()](sq_)
-<small>quadrado</small>
-[sqrt()*](sqrt_)
-<small>raiz quadrada</small>
-*Trigonometria*
+- [abs()](abs_)
+valor
+absoluto
+- [ceil()](ceil_)
+forro
+- [constrain()](constrain_)
+restrição
+- [dist()](dist_)
+distância
+- [floor()](floor_)
+chão
+- [max()](max_)
+máximo
+- [min()](min_)
+mínimo
+- [pow()](pow_)
+potência
+- [round()](round_)
+arredondamento
+- [sq()](sq_)
+quadrado
+- [sqrt()*
+](sqrt_)
+raiz quadrada
+<i><font color="#666633">Trigonometria</font></i>
 <span style="color: rgb(102, 102, 0);"></span>
-[atan2()](atan2_)
-<small>arco
-tangente</small>
-[cos()](cos_)
-<small>coseno</small>
-[degrees()](degrees_)
-<small>grau</small>
-[radians()](radians_)
-<small>radiano</small>
-[sin()](sin_)
-<small>seno</small>
-[tan()](tan_)
-<small>tangente</small>
-*Random*
-[random()](random_)
-<small>valor
-pseudo-randômico</small>
-[randomSeed()](randomSeed_)
-<small>semente
-para randômico</small>
-[HALF_PI ](HALF_PI)
-<small>PI/2
-= 1.57079...</small>
-[PI ](PI)
-<small> PI
-= 3.14159...</small>
-[TWO_PI ](TWO_PI)
-<small>2*PI
-= 6.28318...</small>
-[PSound](PSound)
-<small>tipo
-PSound</small>
-*Carregar*
-[loadSound()](loadSound_)
-<small>carregar
-som</small>
+- [atan2()](atan2_)
+arco
+tangente
+- [cos()](cos_)
+coseno
+- [degrees()](degrees_)
+grau
+- [radians()](radians_)
+radiano
+- [sin()](sin_)
+seno
+- [tan()](tan_)
+tangente
+<i><font color="#666633">Random</font></i>
+- [random()](random_)
+valor
+pseudo-randômico
+- [randomSeed()](randomSeed_)
+semente
+para randômico
+
+- [HALF_PI ](HALF_PI)
+PI/2
+= 1.57079...
+- [PI ](PI)
+ PI
+= 3.14159...
+- [TWO_PI ](TWO_PI)
+2*PI
+= 6.28318...
+
+- [PSound](PSound)
+tipo
+PSound
+<i><font color="#666633">Carregar</font></i>
+- [loadSound()](loadSound_)
+carregar
+som
+

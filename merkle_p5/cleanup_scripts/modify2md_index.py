@@ -43,22 +43,22 @@ for file_name in file_names[:]:   # file_names[:] todos!
     with open(os.path.join(folder, file_name)) as f,\
          open(os.path.join(folder_out, file_out), "w") as g:
         soup = BeautifulSoup(f, "html.parser")
-        for b_span in soup.find_all(name='span', style=re.compile("bold")):
-            if b_span.string:
-                b_span.replace_with('**{}**'.format(b_span.string))
-        for b_tag in soup.find_all('b'):
-            if b_tag.string:
-                b_tag.replace_with('**{}**'.format(b_tag.string))
-        for i_span in soup.find_all(name='span', style=re.compile("italic")):
-            if i_span.string:#<span style="font-weight: bold;">
-                i_span.replace_with('*{}*'.format(i_span.string))
-        for i_tag in soup.find_all('i'):
-            if i_tag.string:
-                i_tag.replace_with('*{}*'.format(i_tag.string))
+#         for b_span in soup.find_all(name='span', style=re.compile("bold")):
+#             if b_span.string:
+#                 b_span.replace_with('**{}**'.format(b_span.string))
+#         for b_tag in soup.find_all('b'):
+#             if b_tag.string:
+#                 b_tag.replace_with('**{}**'.format(b_tag.string))
+#         for i_span in soup.find_all(name='span', style=re.compile("italic")):
+#             if i_span.string:#<span style="font-weight: bold;">
+#                 i_span.replace_with('*{}*'.format(i_span.string))
+        for s_tag in soup.find_all('small'):
+            if s_tag.string:
+                s_tag.replace_with('{}\n'.format(s_tag.string.rstrip()))
         for a_tag in soup.find_all('a'):
             # ATENÇÃO: para a wiki vou tentar.
             href = a_tag['href'].replace('.html', '')  # para Wiki
-            a_tag.replace_with('[{}]({})'.format(a_tag.text, href))
+            a_tag.replace_with('- [{}]({})'.format(a_tag.text, href))
 #             href = a_tag['href'].replace('.html', '.md')  # para GitHub Pages
 #             a_tag.replace_with('[{}]({})'.format(a_tag.text, href))
         for pre in soup.find_all('pre'):
@@ -76,6 +76,6 @@ for file_name in file_names[:]:   # file_names[:] todos!
                 line = print_c(cont)
                 if line:
 #                     print(line)  # debug, output no console
-                    g.write(str(line))
+                    g.write(str(line)+ '\n')
 #         break # debug, single file!
 
