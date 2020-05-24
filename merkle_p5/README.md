@@ -1,6 +1,6 @@
 ## Material para conversão da referência do Processing em Português 
 
-[www.dainf.ct.utfpr.edu.br| prof. Luiz Ernesto Merkle | 2005](http://www.dainf.ct.utfpr.edu.br/~merkle/processing/reference/ptBR/index.html) --> [Wiki-tradução da referência do Processing (Processando Processing)](https://github.com/arteprog/Processando-Processing/wiki)
+### [UTFPR, 2005 (Prof. Luiz Ernesto Merkle)](http://www.dainf.ct.utfpr.edu.br/~merkle/processing/reference/ptBR/index.html) --> [Wiki-tradução em Processando Processing](https://github.com/arteprog/Processando-Processing/wiki)
 
 - arquivos baixados do site original
   - html
