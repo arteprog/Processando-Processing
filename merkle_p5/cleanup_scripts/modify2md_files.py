@@ -15,7 +15,7 @@ def print_c(c):
     result = ''
     if c.name is None:
         c = str(c).rstrip()
-        if c: result = "<<"+c+">>"
+        if c: result = "<<"+c+">>"  # debug, I suppose
     elif c.name == 'td':
         if c.contents:
             conts = [str(cont).rstrip() for cont in c.contents]
@@ -32,10 +32,9 @@ def print_c(c):
         for child in c.contents:
             line = print_c(child)
             if line:
-                result += line    
+                result += line.replace('<br/>', '\n')    
     return result # + '\n' if result else ''
         
-
 def replace_tag(template, *args, **kwargs):
     for tag_instance in soup.find_all(*args, **kwargs):
             if tag_instance.string:
@@ -50,22 +49,20 @@ for file_name in file_names[:]:   # file_names[:] todos!
          open(os.path.join(folder_out, file_out), "w") as g:
         soup = BeautifulSoup(f, "html.parser")
         
-        # simple cases
-        for br in soup.find_all('br'):
-            br.replace_with('\n') # maybe double?
-
-        replace_tag('**{}**', 'b')
-        replace_tag('*{}*', 'i')
+        replace_tag(' **{}** ', 'b')
+        replace_tag(' *{}* ', 'i')
         replace_tag('### {}\n\n', 'h3') # maybe double?
         replace_tag('{}', 'font')
-        replace_tag('**{}**', name='span', style=re.compile("bold"))
-        replace_tag('*{}*', name='span', style=re.compile("italic"))
+        # esses bolds prefiro em monospace!
+        replace_tag(' `{}` ', name='span', style=re.compile("bold"))
+        replace_tag(' *{}* ', name='span', style=re.compile("italic"))
  
         # special cases
         for a_tag in soup.find_all('a'):
             # ATENÇÃO: para a wiki vou tentar.
             href = a_tag['href'].replace('.html', '')  # para Wiki
-            a_tag.replace_with('[{}]({})'.format(a_tag.text, href))
+            href = href.replace('http://www.processing.org/reference/', '')
+            a_tag.replace_with('[{}]({}<br/>)'.format(a_tag.text, href))
 #             href = a_tag['href'].replace('.html', '.md')  # para GitHub Pages
 #             a_tag.replace_with('[{}]({})'.format(a_tag.text, href))
         for pre in soup.find_all('pre'):
@@ -77,13 +74,17 @@ for file_name in file_names[:]:   # file_names[:] todos!
         for img in soup.find_all('img'):
             if '1pix.gif'in img['src']:
                 img.decompose()
-            
+                
+        for hr in soup.find_all('hr'):
+                hr.decompose()
+
         # these soups start with a table
         for cont in soup.contents:  
             if cont.name is not None:
                 line = print_c(cont)
                 if line:
                     pass
-#                     print(line)
                     g.write(str(line))
+#                     print(line)
+#         break  # to debug a single file
 
