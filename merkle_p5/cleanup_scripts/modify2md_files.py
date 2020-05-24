@@ -36,6 +36,12 @@ def print_c(c):
     return result # + '\n' if result else ''
         
 
+def replace_tag(template, *args, **kwargs):
+    for tag_instance in soup.find_all(*args, **kwargs):
+            if tag_instance.string:
+                tag_instance.replace_with(template.format(tag_instance.string))    
+#                 if template == '*{}*': print(str(tag_instance))
+
 for file_name in file_names[:]:   # file_names[:] todos!
     if 'index' in file_name: continue
     print(file_name)
@@ -43,18 +49,19 @@ for file_name in file_names[:]:   # file_names[:] todos!
     with open(os.path.join(folder, file_name)) as f,\
          open(os.path.join(folder_out, file_out), "w") as g:
         soup = BeautifulSoup(f, "html.parser")
-        for b_span in soup.find_all(name='span', style=re.compile("bold")):
-            if b_span.string:
-                b_span.replace_with('**{}**'.format(b_span.string))
-        for b_tag in soup.find_all('b'):
-            if b_tag.string:
-                b_tag.replace_with('**{}**'.format(b_tag.string))
-        for i_span in soup.find_all(name='span', style=re.compile("italic")):
-            if i_span.string:#<span style="font-weight: bold;">
-                i_span.replace_with('*{}*'.format(i_span.string))
-        for i_tag in soup.find_all('i'):
-            if i_tag.string:
-                i_tag.replace_with('*{}*'.format(i_tag.string))
+        
+        # simple cases
+        for br in soup.find_all('br'):
+            br.replace_with('\n') # maybe double?
+
+        replace_tag('**{}**', 'b')
+        replace_tag('*{}*', 'i')
+        replace_tag('### {}\n\n', 'h3') # maybe double?
+        replace_tag('{}', 'font')
+        replace_tag('**{}**', name='span', style=re.compile("bold"))
+        replace_tag('*{}*', name='span', style=re.compile("italic"))
+ 
+        # special cases
         for a_tag in soup.find_all('a'):
             # ATENÇÃO: para a wiki vou tentar.
             href = a_tag['href'].replace('.html', '')  # para Wiki
@@ -66,15 +73,17 @@ for file_name in file_names[:]:   # file_names[:] todos!
             pre_content = pre_content.replace('<br/>', '\n')
 #             print(pre_content)
             pre.replace_with('```pde\n{}\n```'.format(pre_content))
-        for br in soup.find_all('br'):
-            br.replace_with('\n') # maybe double?
-        for h3 in soup.find_all('h3'):
-            h3.replace_with('### {}\n\n'.format(h3.string)) # maybe double?
+            
+        for img in soup.find_all('img'):
+            if '1pix.gif'in img['src']:
+                img.decompose()
+            
         # these soups start with a table
         for cont in soup.contents:  
             if cont.name is not None:
                 line = print_c(cont)
                 if line:
+                    pass
 #                     print(line)
                     g.write(str(line))
 
