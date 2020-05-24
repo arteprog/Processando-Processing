@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### size()
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 
@@ -62,15 +58,13 @@ JAVA2D - O renderizador padrão assumido. Possui excelente qualidade em geral, m
 OPENGL - Interface com hardware que possui suporte para
 aceleração OpenGL, de modo a aumentar a velocidade de
 placas gráficas OpenGl instaladas.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
-size(<font color="#996600">width</font>, <font color="#996600">height</font>)
-size(<font color="#996600">width</font>, <font color="#996600">height</font>, <font color="#996600">MODE</font>)
+size(width, height)
+size(width, height, MODE)
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 width
 int: largura da janela de visualização em pixels
@@ -78,16 +72,13 @@ height
 int: altura da janela de visualização em píxels
 MODE
 Qualquer entre P2D, P3D, JAVA2D, ou OPENGL
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Retorno
 
 	
 Nenhum
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>

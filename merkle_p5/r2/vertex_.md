@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### vertex()
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 <img border="0" height="100" src="media/vertex_.gif" width="100"/>
@@ -18,7 +14,6 @@ vertex(30, 75);
 endShape(); 
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 <img border="0" height="100" src="media/vertex_3.gif" width="100"/>
 
 ```pde
@@ -33,7 +28,6 @@ vertex(30, 75, -50);
 endShape(); 
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 <img border="0" height="100" src="media/vertex_2.gif" width="100"/>
 
 ```pde
@@ -52,7 +46,6 @@ vertex(40, 95, 0, 100);
 endShape(); 
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Descrição
 Todos as formas são construídas pela conexão de uma série de vértices.**vertex() ** é
@@ -66,17 +59,15 @@ uma textura sobre uma forma geométrica. A função**texture() ** decalra a tex
 são especificadas em relação ao tamanho da imagem
 em pixels, mas esta relação pode ser modificada
 através da função**textureMode()**.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
-vertex(<font color="#996600">x</font>, <font color="#996600">y</font>); 
-vertex(<font color="#996600">x</font>, <font color="#996600">y</font>, <font color="#996600">z</font>); 
-vertex(<font color="#996600">x</font>, <font color="#996600">y</font>, <font color="#996600">u</font>, <font color="#996600">v</font>); 
-vertex(<font color="#996600">x</font>, <font color="#996600">y</font>, <font color="#996600">z</font>, <font color="#996600">u</font>, <font color="#996600">v</font>); 
+vertex(x, y); 
+vertex(x, y, z); 
+vertex(x, y, u, v); 
+vertex(x, y, z, u, v); 
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 x
 int ou float: coordenada-x do vértice
@@ -88,19 +79,16 @@ u
 int ou float: coordenada horizontal da textura de mapeamento
 v
 int ou float: coordenada vertica da textura de mapeamento
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Retorno
 
 	
 Nenhum
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Application & Web
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [beginShape()](beginShape_)[endShape()](endShape_)[bezierVertex()](bezierVertex_)[curveVertex()](curveVertex_)[texture()](texture_)

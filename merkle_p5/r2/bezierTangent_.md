@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### bezierTangent()
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 <img border="0" height="100" src="media/bezierTangent_.gif" width="100"/>
@@ -33,7 +29,6 @@ for (int i = 0; i <= steps; i++) {
 } 
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 <img border="0" height="100" src="media/bezierTangent_2.gif" width="100"/>
 
 ```pde
@@ -52,20 +47,17 @@ for (int i = 0; i <= steps; i++) {
 } 
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Descrição
 Calcula a tangente de um ponto sobre uma curva de
 bezier. Há uma boa definição de tangente na
 Wikipedia:[http://en.wikipedia.org/wiki/Tangent](http://en.wikipedia.org/wiki/Tangent)
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
-bezierPoint(<font color="#996600">a</font>, <font color="#996600">b</font>, <font color="#996600">c</font>, <font color="#996600">d</font>, <font color="#996600">t</font>)
+bezierPoint(a, b, c, d, t)
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 a
 int ou float: coordenada do primeiro ponto na curva
@@ -77,13 +69,11 @@ d
 int ou float: coordenada do segundo ponto na curva
 t
 float: valor entre 0 e 1
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [bezier()](bezier_)[bezierVertex()](bezierVertex_)[curvePoint()](curvePoint_)

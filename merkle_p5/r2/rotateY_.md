@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### rotateY()
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 <img border="0" height="100" src="media/rotateY_.gif" width="100"/>
@@ -16,7 +12,6 @@ rotateY(PI/3.0);
 rect(-26, -26, 52, 52); 
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 <img border="0" height="100" src="media/rotateY_.gif" width="100"/>
 
 ```pde
@@ -26,7 +21,6 @@ rotateY(radians(60));
 rect(-26, -26, 52, 52); 
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Descrição
 Rotaciona um objeto em torno do eixo Y em uma quatidade especificada pelo parâmetro**angulo**.
@@ -40,30 +34,25 @@ cumulativo. Por exemplo, ao se chamar**rotateY(PI/2) ** e em seguida** rotateX
 a transformação é reinicializada ao começo do novo laço.  Esta função
 requer a passagem de P3D ou OPENGL como parâmetro à função size() como
 mostrado no exemplo acima.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
-rotateY(<font color="#996600">angulo</font>)
+rotateY(angulo)
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 angulo
 float: ângulo de rotação especificado em radianos
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Retorno
 
 	
 Nenhum
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [rotateX() ](rotateX_)[rotateZ() ](rotateZ_)[translate() ](translate_)[rotate() ](rotate_)[scale() ](scale_)[pushMatrix() ](pushMatrix_)[popMatrix() ](popMatrix_)

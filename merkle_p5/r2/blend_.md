@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### blend()
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 <img border="0" height="100" src="media/blend_color.gif" width="100"/>
@@ -23,7 +19,6 @@ fill(blue);
 rect(66, 20, 20, 60); 
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 <img border="0" height="100" src="media/blend_add.jpg" width="100"/>
 
 ```pde
@@ -33,7 +28,6 @@ image(img, 0, 0);
 blend(img, 0, 0, 33, 100, 67, 0, 33, 100, ADD); 
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 <img border="0" height="100" src="media/blend_subtract.jpg" width="100"/>
 
 ```pde
@@ -43,7 +37,6 @@ image(img, 0, 0);
 blend(img, 0, 0, 33, 100, 67, 0, 33, 100, SUBTRACT); 
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 <img border="0" height="100" src="media/blend_darkest.jpg" width="100"/>
 
 ```pde
@@ -53,7 +46,6 @@ image(img, 0, 0);
 blend(img, 0, 0, 33, 100, 67, 0, 33, 100, DARKEST); 
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 <img border="0" height="100" src="media/blend_lightest.jpg" width="100"/>
 
 ```pde
@@ -63,7 +55,6 @@ image(img, 0, 0);
 blend(img, 0, 0, 33, 100, 67, 0, 33, 100, LIGHTEST); 
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Descrição
 Mistura dois valores de cor ou copia um
@@ -91,18 +82,16 @@ tamanho do destino. Se parâmetro**srcImg** não for utilizado, a tela de visual
 A função**imageMode() **modificará o modo de trabalho dos parâmetros. Por exemplo, uma chamada à**imageMode(CORNERS) ** modificará
  os parâmetros de definirem largura e altura para definirem
 os valores dos cantos opostos a x e y.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
-blend(<font color="#996600">c1</font>, <font color="#996600">c2</font>, <font color="#996600">mode</font>);
-blend(<font color="#996600">fx</font>, <font color="#996600">fy</font>, <font color="#996600">dx</font>, <font color="#996600">dy</font>, <font color="#996600">mode</font>);
-blend(<font color="#996600">fntImg</font>, <font color="#996600">fx</font>, <font color="#996600">fy</font>, <font color="#996600">dx</font>, <font color="#996600">dy</font>, <font color="#996600">mode</font>);
-blend(<font color="#996600">fx1</font>, <font color="#996600">fy1</font>, <font color="#996600">flargura</font>, <font color="#996600">faltura</font>, <font color="#996600">dx1</font>, <font color="#996600">dy1</font>, <font color="#996600">dlargura</font>, <font color="#996600">daltura</font>, <font color="#996600">mode</font>);
-blend(<font color="#996600">fntImg</font>, <font color="#996600">fx1</font>, <font color="#996600">fy1</font>, <font color="#996600">flargura</font>, <font color="#996600">faltura</font>, <font color="#996600">dx1</font>, <font color="#996600">dy1</font>, <font color="#996600">dlargura</font>, <font color="#996600">daltura</font>, <font color="#996600">mode</font>);
+blend(c1, c2, mode);
+blend(fx, fy, dx, dy, mode);
+blend(fntImg, fx, fy, dx, dy, mode);
+blend(fx1, fy1, flargura, faltura, dx1, dy1, dlargura, daltura, mode);
+blend(fntImg, fx1, fy1, flargura, faltura, dx1, dy1, dlargura, daltura, mode);
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 c1
 color: a primeira cor a misturar
@@ -137,19 +126,16 @@ dlargura
 int: largura da imagem destino
 daltura
 int: altura da imagem destino
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Retorno
 
 	
 Nenhum
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [filter()](filter_)

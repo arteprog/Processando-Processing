@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### return
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 
@@ -65,17 +61,15 @@ Funções declaradas com**void **não podem retornar valores e não podem inclui
 pode ser usada para  sair de uma função, e
 consequentemente não permitindo que o program leia e execute os
 comandos restantes nela contidos (veja o terceiro exemplo acima).
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
-<font color="#996600">tipo</font> <font color="#996600">funcao</font> {
-  <font color="#996600">comandos</font>
-  return <font color="#996600">valorvalue</font>
+tipo funcao {
+  comandos
+  return valorvalue
 }
             
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 tipo
 boolean, byte, char, int, float, String, boolean[], byte[], char[], int[], float[], String[]
@@ -85,10 +79,8 @@ comandos
 qualquer comando válido
 valor
 deve ser do mesmo tipo de dados que o parâmtro "tipo"
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>

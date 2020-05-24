@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### textLeading()
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 <img border="0" height="100" src="media/textLeading_.gif" width="100"/>
@@ -26,36 +22,30 @@ textLeading(30);
 text(lines, 68, 25); 
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Descrição
 
 	
 Sets the spacing between lines of text in units of pixels. This setting will be used in all subsequent calls to the**text()** function.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
-textLeading(<font color="#996600">dist</font>)
+textLeading(dist)
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 dist
 int or float: the size in pixels for spacing between lines
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Retorno
 
 	
 Nenhum
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 

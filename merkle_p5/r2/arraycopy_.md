@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### arraycopy()
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 
@@ -34,15 +30,13 @@ em outro de mesmo tamanho. É equivalente à
 "arraycopy(src, 0, dst, 0, src.length)".  Esta
 função é muito mais eficiente do que copiar os
 dados de um array mediante a iteração em um laço**for()** onde se copia cada um dos elementos.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
-arraycopy(<font color="#996600">src</font>, <font color="#996600">dest</font>)
-arraycopy(<font color="#996600">src</font>, <font color="#996600">srcPos</font>, <font color="#996600">dest</font>, <font color="#996600">destPos</font>, <font color="#996600">tamanho</font>)
+arraycopy(src, dest)
+arraycopy(src, srcPos, dest, destPos, tamanho)
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 src
 booleans[], bytes[], chars[], ints[], floats[], or Strings[]: o array fonte
@@ -54,16 +48,13 @@ destPos
 int: posição de início no array destino
 tamabho
 int: número de elementos a ser copiado
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Retorno
 
 	
 Nenhum
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>

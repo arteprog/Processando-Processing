@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### noLoop()
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 
@@ -49,7 +45,6 @@ void mouseReleased() {
 
 #### Descrição
 Para o Processind de continuamente executar o código em**draw()**.  Caso**loop() **seja chamada,  o código em**draw() **é executado continuamente.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
@@ -58,19 +53,16 @@ redraw()
 draw()
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Retorno
 
 	
 Nenhum
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [loop()](loop_)

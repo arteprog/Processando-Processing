@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### lerp()
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 <img border="0" height="100" src="media/lerp_.gif" width="100"/>
@@ -24,7 +20,6 @@ vertex(e, 50);
 endShape(); 
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 <img border="0" height="100" src="media/lerp_2.gif" width="100"/>
 
 ```pde
@@ -40,7 +35,6 @@ for(int i=0; i<=10; i++) {
 } 
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Descrição
 Calcula um número entre dois números em um incremento expecífico. O parâmetro**amt **representa
@@ -50,14 +44,12 @@ primeire ponto;  0.5  está a meio caminho entre os
 dois, etc.  A função lerp() é conveniente
 para se criar movimento ao longo de um caminho reto, e para se criar
 linhas tracejadas.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
-lerp(<font color="#996600">valor1</font>, <font color="#996600">valor2</font>, <font color="#996600">amt</font>)
+lerp(valor1, valor2, amt)
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 valor1
 float ou int: primeiro valor
@@ -65,19 +57,16 @@ valor2
 float ou int: segundo valor
 amt
 float: entre 0.0 e 1.0
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Retorno
 
 	
 float
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [curvePoint()](curvePoint_)[bezierPoint()](bezierPoint_)

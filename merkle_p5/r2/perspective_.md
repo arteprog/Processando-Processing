@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### perspective()
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 <img border="0" height="100" src="media/perspective_.gif" width="100"/>
@@ -23,7 +19,6 @@ rotateY(PI/3);
 box(45); 
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Descrição
 Configura a perspecitva padrão ao aplicar encurtamento (n.t.*foreshortening*),
@@ -37,15 +32,13 @@ acurado que a perspectiva ortográfica. Sua versão sem
 parâmetros configura a perspectiva padrão, e sua
 versão com quatro parâmetros especifica a área
 precisamente. Os valores padrão equivalem à perspective(PI/3.0, width/height, cameraZ/10.0, cameraZ*10.0) onde cameraZ é ((height/2.0) / tan(PI*60.0/360.0));
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
 perspective()
-perspective(<font color="#996600">fov</font>, <font color="#996600">aspecto</font>, <font color="#996600">zProx</font>, <font color="#996600">zDist</font>)
+perspective(fov, aspecto, zProx, zDist)
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 fov
 float: ângulo do campo de visão  (em radianos) da direção vertical
@@ -55,16 +48,13 @@ zProx
 float: posição z do plano de recorte mais próximo
 zDist
 float: posição z do plano de recorte mais distante
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Retorno
 
 	
 Nenhum
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>

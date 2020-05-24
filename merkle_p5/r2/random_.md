@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### random()
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 
@@ -38,15 +34,13 @@ parâmetros. A chamada de função**random(-5.0, 10.2)** 
 retornará valores entre -5.0 e 10.2. Para se converter um
 número randômico de ponto flutuante para inteiro, use a
 função**int()**.<span style="font-weight: bold;"></span><span style="font-weight: bold;"></span>
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
-random(<font color="#996600">valor1</font>);
-random(<font color="#996600">valor1</font>, <font color="#996600">valor2</font>);
+random(valor1);
+random(valor1, valor2);
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 valor1
 int
@@ -54,16 +48,13 @@ ou float
 valor2
 int
 ou float
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Retorno
  float
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
  Web &
 Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [noise()](noise_)[randomSeed()](randomSeed_)

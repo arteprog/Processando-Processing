@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### Object
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 
@@ -46,26 +42,22 @@ class HLine {
 Objetos são instâncias de classes. Uma
 classe é um agregado de métodos (funções)
 relacionados e campos (variáveis e constantes).
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
-<font color="#996600">class</font> <font color="#996600">instancia</font>
+class instancia
             
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 class
 o tipo da classe que o objeto será instanciado ou criado
 instancia
 qualquer nome válido de variável
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [class](class)

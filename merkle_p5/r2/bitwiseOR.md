@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### | (bitwise OR)
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 
@@ -43,26 +39,22 @@ binária dos números.```pde
 ```
 
             Para se ver a representação binária de um número, utilizar a função**Binário()** em conjunto com**println()**.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
-<font color="#996600">valor</font> | <font color="#996600">valor2</font>
+valor | valor2
             
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 valor1
 int, char, byte
 valor2
 int, char, byte
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [& (bitwise AND)](bitwiseAND)[Binário()](binary_)

@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### saveFrame()
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 
@@ -51,33 +47,28 @@ arquivos são
 salvos na pasta de esboços, a qual pode ser aberta ao
 selecionar "Show sketch folder" do  menu  Não
 é possível utilizar a função**saveFrame()** quando o programa esta executando em um navegador web.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
 saveFrame()
-saveFrame("<font color="#996600">filename</font>-####.<font color="#996600">ext</font>")
+saveFrame("filename-####.ext")
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 filename
 String: qualquer seqüência de letras e números entre aspas
 ext
 um entre  "tif" ou "tga"
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Retorno
 
 	
 Nenhum
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Application
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [save()](save_)

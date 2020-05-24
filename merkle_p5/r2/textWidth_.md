@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### textWidth()
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 <img border="0" height="100" src="media/textWidth_.gif" width="100"/>
@@ -24,36 +20,30 @@ text(s, 0, 85);
 line(sw, 50, sw, 100); 
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Descrição
 
 	
 Calculates and returns the width of any character or text string.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
-textWidth(<font color="#996600">data</font>)
+textWidth(data)
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 data
 char or String
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Retorno
 
 	
 Float
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 

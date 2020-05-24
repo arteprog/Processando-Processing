@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### applyMatrix()
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 <img border="0" height="100" src="media/applyMatrix_.gif" width="100"/>
@@ -28,7 +24,6 @@ stroke(255);
 box(50); 
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Descrição
 Multiplica a matriz corrente por aquela
@@ -37,7 +32,6 @@ porque tentará tentar calculara o inverso da
 transformação. Portanto, a evite sempre que
 possível. A função equivalente em OpenGL é
 glMultMatrix().
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
@@ -47,23 +41,19 @@ applyMatrix(n00, n01, n02, n03
             n12, n13, n14, n15)
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 n00-n15
 float: números que definem a matriz 4x4 a ser multiplicada
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Retorno
 
 	
 Nenhum
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [pushMatrix()](pushMatrix_)[popMatrix()](popMatrix_)[resetMatrix()](resetMatrix_)[printMatrix()](printMatrix_)

@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### bezierDetail()
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 <img border="0" height="100" src="media/bezierDetail_.gif" width="100"/>
@@ -28,7 +24,6 @@ void draw() {
  
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Descrição
 Especificam a resolução na qual as
@@ -37,30 +32,25 @@ curvas de Bezier são visualizadas. O valor padrão
 quando o renderer de P3D ou OPENGL  como padrão, pois o
 visualizador padrão (JAVA2D) não utiliza esta
 informação.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
-bezierDetail(<font color="#996600">detalhe</font>)
+bezierDetail(detalhe)
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 detalhe
 int: resolução das curvas
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Retorno
 
 	
 Nenhum
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [curve()](curve_)[curveVertex()](curveVertex_)[curveTightness()](curveTightness_)

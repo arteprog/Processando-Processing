@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### emissive()
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 <img border="0" height="100" src="media/emissive_.jpg" width="100"/>
@@ -21,22 +17,19 @@ sphere(30);
  
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Descrição
 Acusta a cor emissividade de materiais utilizados
 para se desenhar formas geométricas na tela.  É
 utilizada em combinação com**ambient()**,**specular()**, e**shininess()**para se configurar as propriedades materiais de formas geométricas.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
-emissive(<font color="#996600">cinza</font>)
-emissive(<font color="#996600">cor</font>)
-emissive(<font color="#996600">v1</font>, <font color="#996600">v2</font>, <font color="#996600">v3</font>)
+emissive(cinza)
+emissive(cor)
+emissive(v1, v2, v3)
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 cinza
 int ou float: número que especifica valor entre preto e branco
@@ -50,19 +43,16 @@ v2
                   int ou float: valor de verde ou de saturação
 v3
 int ou float: valor de azul ou de brilho
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Retorno
 
 	
 Nenhum
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [ambient()](ambient_)[specular()](specular_)[shininess()](shininess_)

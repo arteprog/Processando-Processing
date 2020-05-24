@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### nf()
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 
@@ -32,15 +28,13 @@ Função utilitária para se
 formatar números em strings. Há duas versões, uma
 para formatar floats e outra para formatar ints. Os valores dos
 parâmentros**digitos**,**esquerda**, e**direita **devem ser sempre números inteiros positivos.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
-nf(<font color="#996600">intValor</font>, <font color="#996600">digitos</font>)
-nf(<font color="#996600">floatValor</font>, <font color="#996600">esquerda</font>, <font color="#996600">direita</font>)
+nf(intValor, digitos)
+nf(floatValor, esquerda, direita)
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 intValor
 int ou int[]: os números a formatar
@@ -56,19 +50,16 @@ direita
 int: numero de
 algarismos à direita do ponto decimal (n.t. em inglês se
 utiliza ponto ao invés de vírgula)
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Retorno
 
 	
 String or String[]
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [nfs()](nfs_)[nfp()](nfp_)[nfc()](nfc_)

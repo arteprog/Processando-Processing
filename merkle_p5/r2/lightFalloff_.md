@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### lightFalloff()
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 
@@ -35,14 +31,12 @@ posição e a taxa de falloff, ou decaimento.  Pode-se
 concebê-la como uma luz pontual que não  se importa
 com que direção uma superfície está
 orientada.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
-lightFalloff(<font color="#996600">constante</font>, <font color="#996600">linear</font>, <font color="#996600">quadratico</font>)
+lightFalloff(constante, linear, quadratico)
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 constante
 int ou float: valor constante para determinação do decaimento
@@ -50,19 +44,16 @@ linear
 int ou float: valor constante linear para determinação do decaimento
 quadratico
 int ou float: valor constante quadrático para determinação do decaimento
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Retorno
 
 	
 Nenhum
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [lights()](lights_)[ambientLight()](ambientLight_)[pointLight()](pointLight_)[spotLight()](spotLight_)[lightSpecular()](lightSpecular_)

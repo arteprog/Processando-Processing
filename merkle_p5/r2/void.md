@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### void
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 
@@ -25,25 +21,21 @@ função não retorna valor. Cada
 função deve ou retornar um valor de um tipo
 específico de dados ou especificar que não retorna nada
 através da palavra chave Bvoid.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
-void <font color="#996600">funcao</font> {
-  <font color="#996600">comandos</font>
+void funcao {
+  comandos
 }
             
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 funcao
 qualquer função que está sendo definida ou implementada
 comandos
 quaisquer comandos válidos
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>

@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### - (subtração)
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 
@@ -31,27 +27,23 @@ do segundo parâmetor é subtraído do primeiro. Por
 exemplo, 5-3 resulta no número 2. Como um operador de
 "negação, é equivalente a multiplicar o
 número por -1. Por exemplo, -5 equivale à 5*-1.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
--<font color="#996600">value1</font>
-<font color="#996600">value1</font> - <font color="#996600">value2</font>
+-value1
+value1 - value2
             
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 valor1
 int ou float
 valor2
 int ou float
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [-- (decremento)](decrement)[-= (subtração e atribuição)](subtractassign)[+ (adição)](addition)

@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### keyCode
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 
@@ -41,20 +37,17 @@ código de tecla foi pressionado, é necessário
 testar e ver ser a tecla foi mesmo codificada. Isto pode ser feito com
 o comando condicional "if(key == CODED) {}", como ilustrado no exemplo
 acima.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
 keyCode
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [key](key)[keyPressed ](keyPressed)[keyPressed() ](keyPressed_)[keyReleased() ](keyReleased_)

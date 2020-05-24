@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### switch()
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 
@@ -70,22 +66,20 @@ demais comandos no switch são executados exceto quando a
 execução for redirecionalda por um comando**break.**
 Apenas dados primitivos que podem ser convertidos para um inteiro
 (byte, char, and int) podem ser utilizados com parâmetro**expressão. ** O caso padrão (*default*) é opcional.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
-switch(<font color="#996600">expressão</font>)
+switch(expressão)
 {
-  case<font color="#996600"> rotulo</font>: 
-     <font color="#996600">statements</font>          
-  case <font color="#996600">rotulo</font>:        // Optional
-     <font color="#996600">statements</font>        // "
+  case rotulo: 
+     statements          
+  case rotulo:        // Optional
+     statements        // "
   default:             // "
-     <font color="#996600">statements</font>        // "
+     statements        // "
 }
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 expressão
 byte, char, or int
@@ -93,13 +87,11 @@ rotulo
 byte, char, or int
 comandos
 um ou mais comando a executar
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [case](case)[default](default)[break](break)[if()](if_)[else](else)

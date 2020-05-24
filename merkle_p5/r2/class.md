@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### class
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 
@@ -50,28 +46,24 @@ pode ser instanciada em objetos. Usualmente, a primeira letra do nome
 de uma classe é escolhida maiúscula, de modo a
 diferenciá-la de outros tipos de variáveis.  Um
 tutorial em[Programação Orientada a Objetos](http://java.sun.com/docs/books/tutorial/java/concepts/index), em inglês, pode ser encontrado no sítio da Sun.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
-class <font color="#996600">NomeClasse</font> {
-  <font color="#996600">comandos</font>
+class NomeClasse {
+  comandos
 }
             
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 NomeClasse
 Qualquer nome válido de variáveis
 comandos
 Qualquer comando válido
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [Object](Object)

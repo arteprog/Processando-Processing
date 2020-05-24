@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### atan()
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 
@@ -29,30 +25,25 @@ println(a + " : " + t + " : " +  at);
 
 #### Descrição
 A oposta a**tan()**; retorna o arco tangente de um valor.<b></b> This function expects the valors in the range of -Infinity to Infinity (exclusive) and valors are returned in the range**-PI/2** to**PI/2 **.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
-atan(<font color="#996600">valor</font>)
+atan(valor)
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 valor
 float: -Infinito a +Infinito (exclusivo)
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Retorno
 
 	
 float
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [tan()](tan_)[asin()](asin_)[acos()](acos_)

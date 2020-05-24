@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### cursor()
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 
@@ -31,16 +27,14 @@ cursor é recomendado faz6e-lo com imagens de tamanho 16x16 ou
 32x32 pixels. Não é possível carregar uma imagem
 como cursor nos casos em que se esteja exportando o programa para a
 Web. Os valores dos parâmetros**x **e**y** devem ser menores do que as dimensões da imagem.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
 cursor()
-cursor(<font color="#996600">MODO</font>)
-cursor(<font color="#996600">imagem</font>, <font color="#996600">x</font>, <font color="#996600">y</font>)
+cursor(MODO)
+cursor(imagem, x, y)
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 MODO
 escolher entre  ARROW, CROSS, HAND, MOVE, TEXT, WAIT
@@ -52,19 +46,16 @@ x
 int: o ponto horizontal ativo do cursor
 y
 int: o ponto vertical ativo do cursor
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Retorno
 
 	
 Nenhum
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [noCursor()](noCursor_)

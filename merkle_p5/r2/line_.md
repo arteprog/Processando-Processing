@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### line()
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 <img border="0" height="100" src="media/line_.gif" width="100"/>
@@ -13,7 +9,6 @@
 line(30, 20, 85, 75); 
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 <img border="0" height="100" src="media/line_2.gif" width="100"/>
 
 ```pde
@@ -24,7 +19,6 @@ stroke(255);
 line(85, 75, 30, 75); 
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 <img border="0" height="100" src="media/line_3.gif" width="100"/>
 
 ```pde
@@ -38,7 +32,6 @@ stroke(255);
 line(85, 75, 0, 30, 75, -50); 
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Descrição
 Desenha uma linha (um caminho direto entre dois pontos) na janela de visualização. A versão de**line()** com quatro parâmetros desenha uma linha em 2D. Para se utilizar cor em uma linha, utilize a função**stroke()**. Uma linha não pode ser preenchida, e conseqüentemente o método**fill**
@@ -48,15 +41,13 @@ pode ser modificado através da funcção**strokeWeight(). **A
 versão com seis parâmetros permite que uma linha seja
 posicionada em qualquer lugar do espaço XYZ. O desenho desta
 forma em 3D  faz uso do parâmetro**z ** e deve ser combinado com o uso do parâmerto P3D ou OPENGL em size() , como no exemplo acima.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
-line(<font color="#996600">x1</font>, <font color="#996600">y1</font>, <font color="#996600">x2</font>, <font color="#996600">y2</font>); 
-line(<font color="#996600">x1</font>, <font color="#996600">y1</font>, <font color="#996600">z1</font>, <font color="#996600">x2</font>, <font color="#996600">y2</font>, <font color="#996600">z2</font>); 
+line(x1, y1, x2, y2); 
+line(x1, y1, z1, x2, y2, z2); 
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 x1
 int ou float: coordenada-x do primeiro ponto
@@ -70,19 +61,16 @@ y2
 int ou float: coordenada-y do segundo ponto
 z2
 int ou float: coordenada-z do segundo ponto
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Retorno
 
 	
 Nenhum
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [strokeWeight()](strokeWeight_)[strokeJoin()](strokeJoin_)[strokeCap()](strokeCap_)[beginShape()](beginShape_)

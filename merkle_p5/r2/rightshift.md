@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### >> (deslocamento à direita)
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 
@@ -42,26 +38,22 @@ deslocamento à direita para divisões rápidas, ou para extrair um número indi
 grupo de números. O deslocamento à direita trabalha
 apenas com números inteiros, ou os números serão primeiramente
 convertidos para inteiro, como um byte ou char.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
-<font color="#996600">valor</font> >> <font color="#996600">n</font>
+valor >> n
             
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 valor
 int: o valor a deslocar
 n
 int: o número de lugares a deslocar à direita
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [<< (deslocamento à esquerda)](leftshift)

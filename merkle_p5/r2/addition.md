@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### + (addição)
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 
@@ -40,26 +36,22 @@ Como operador matemático, calcula a soma de duas
 variáveis. Como operador de string, combina duas strings em uma
 única, e caso necessário faz antes a
 conversão de tipos de dados primiticos em String.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
-<font color="#996600">valor1</font> + <font color="#996600">valor2</font>
+valor1 + valor2
             
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 valor1
 String, int, float, char, byte, boolean
 valor2
 String, int, float, char, byte, boolean
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [++ (incremento)](increment)[+= (atribuição e soma)](addassign)[- (subtração)](minus)

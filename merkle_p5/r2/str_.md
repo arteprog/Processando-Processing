@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### str()
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 
@@ -31,27 +27,22 @@ println(sb);  // Imprime 'false-28R-32.61024'
 Retorna uma representação em  String  de tipos de dados primitivos e*arrays. *Por
 exemplo, o inteiro  3 retornará "3", o  float -12.6
 retornará a string "-12.6", e o valor booleano*true* retornará a string "true".
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
-str(<font color="#996600">dado</font>)
+str(dado)
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 dado
 boolean, byte, char, float, int, boolean[], byte[], char[], float[], int[]
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Retorno
 
 	
 String ou String[]
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>

@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### setup()
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 
@@ -34,27 +30,23 @@ ande que**draw() **comece a ser executada.  Variáveis declaradas no escopo de*
 #### Sintaxe
 ```pde
 void setup() {
-  <font color="#996600">comandos</font>
+  comandos
 }
             
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 comandos
 quaisquer comandos válidos
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Retorno
 
 	
 Nenhum
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [loop()](loop_)[size()](size_)

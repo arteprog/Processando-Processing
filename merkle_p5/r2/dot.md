@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### . (ponto)
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 
@@ -53,15 +49,13 @@ Provides access to an object's methods and data. An object is an
 instance of a class and contains is a grouping of methods (object
 functions) and data (object variables and constants). The dot operator
 directs the program to the information encapsulated within an object.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
-<font color="#996600">objecto</font>.<font color="#996600">metodo()</font>
-<font color="#996600">objecto</font>.<font color="#996600">dado</font>
+objecto.metodo()
+objecto.dado
             
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 objeto
 o objeto que se quer acessar
@@ -69,13 +63,11 @@ metodo()
 o método encapsulado no objeto
 dada
 variável ou constante encapsulada no objeto
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [Object](Object)

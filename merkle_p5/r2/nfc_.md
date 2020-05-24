@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### nfc()
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 
@@ -29,15 +25,13 @@ Utility function for formatting numbers into strings and placing
 appropriate commas to mark units of 100. There are two versions, one
 for formatting ints and one for formatting an array of ints. The value
 for the**digits** parameter should always be a positive integer.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
-nfc(<font color="#996600">intValor</font>)
-nfc(<font color="#996600">floatValue</font>, <font color="#996600">direita</font>)
+nfc(intValor)
+nfc(floatValue, direita)
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 intValor
 int ou int[]: o(s) número(s) a formatar
@@ -45,19 +39,16 @@ floatValor
 float ou float[]: o(s) número(s) a formatar
 direita
 int: o número de digitos após o ponto decimal
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Retorno
 
 	
 String ou String[]
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [nf()](nf_)[nfs()](nfs_)[nfp()](nfp_)

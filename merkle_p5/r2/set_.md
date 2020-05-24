@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### set()
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 <img border="0" height="100" src="media/set_.gif" width="100"/>
@@ -17,7 +13,6 @@ set(85, 75, black);
 set(30, 75, black); 
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 <img border="0" height="100" src="media/set_2.jpg" width="100"/>
 
 ```pde
@@ -29,7 +24,6 @@ for (int i=30; i<(width-15); i++) {
 } 
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 <img border="0" height="100" src="media/set_3.jpg" width="100"/>
 
 ```pde
@@ -40,7 +34,6 @@ line(0, 0, width, height);
 line(0, height, width, 0); 
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Descrição
 
@@ -59,15 +52,13 @@ píxel com set(x,y) é fácil, mas não tão
 rápido como atribuir dados diretamente em pixels[]. Ao
 se usar pixels[], o comando equivalente a "set(x,y,
 #000000)" é "pixels[y*largura+x] = #000000. A versão BETA de Processing requer que se chame**loadPixels() **para se carregar a janela de visualização no array**pixels[]** antes que se pegue os valores. ow data into the**pixels[]** array before getting the values.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
-set(<font color="#996600">x</font>, <font color="#996600">y</font>, <font color="#996600">cor</font>)
-set(<font color="#996600">x</font>, <font color="#996600">y</font>, <font color="#996600">imagem</font>)
+set(x, y, cor)
+set(x, y, imagem)
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 x
 int: coordenada-x do píxel
@@ -77,19 +68,16 @@ cor
 color: qualquer valor de tipo de dados color
 imagem
 PImage: qualquer variável válida do tipo PImage
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Retorno
 
 	
 Nenhum
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [get()](get_)[pixels[]](pixels)

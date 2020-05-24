@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### noise()
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 
@@ -71,16 +67,14 @@ omo regra geral, quanto menor a diferença entre coordenadas,
 mais suave será a seqüência de ruído de Perlin
 resultante. Passos entre 0.0003 e 0.003 funcionam melhor para a maioria
 das aplicações, mas pode ser diferente dependendo do uso.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
-noise(<font color="#996600">x</font>)
-noise(<font color="#996600">x</font>, <font color="#996600">y</font>)
-noise(<font color="#996600">x</font>, <font color="#996600">y</font>, <font color="#996600">z</font>)
+noise(x)
+noise(x, y)
+noise(x, y, z)
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 x
 float: coordenada x no espaço de ruído de Perlin
@@ -88,19 +82,16 @@ y
 float: coordenada y no espaço de ruído de Perlin
 z
 float: coordenada z no espaço de ruído de Perlin
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Retorno
 
 	
 float
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [noiseDetail()](noiseDetail_)[random()](random_)

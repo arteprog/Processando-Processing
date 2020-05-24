@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### constrain()
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 
@@ -21,14 +17,12 @@ void draw()
 #### Descrição
 
 Restringe um valor a um intervalo definico por um valor mínimo e um máximo.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
-constrain(<font color="#996600">valor</font>, <font color="#996600">min</font>, <font color="#996600">max</font>)
+constrain(valor, min, max)
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 valor
 int ou float: o calor a ser restrito
@@ -36,19 +30,16 @@ min
 int ou float: limite mínimo
 max
 int ou float: limite máximo
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Retorno
 
 	
 float ou int (dependendo dos valores de entrada)
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [max()](max_)[min()](min_)

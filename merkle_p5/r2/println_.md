@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### println()
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 
@@ -48,30 +44,25 @@ ambiete Processing. Isto é de ajuda para se  visualizar
 função só pode imprimeir arraus 1D, mas pode
 testar se o conteúdo de uma array de mais de duas
 dimensões é nulo ou não nulo.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
-println(<font color="#996600">dado</font>)
+println(dado)
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 dado
 boolean, byte, char, color, int, float, ou String
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Retorno
 
 	
 Nenhum
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 IDE
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [print()](print_)

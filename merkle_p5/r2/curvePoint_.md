@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### curvePoint()
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 <img border="0" height="100" src="media/curvePoint_.gif" width="100"/>
@@ -25,7 +21,6 @@ for (int i = 0; i <= steps; i++) {
 } 
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Descrição
 Avalia uma curva spline em ponto t para os
@@ -34,14 +29,12 @@ são pontos na curva; e b e c são pontos de controle. Isto
 pode ser feito em uma primeira ocasião com as coordenadas x e em
 um segundo momento com as coordenadas y pare se ter a
 localização da curva spline em t.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
-curvePoint(<font color="#996600">a</font>, <font color="#996600">b</font>, <font color="#996600">c</font>, <font color="#996600">d</font>, <font color="#996600">t</font>)
+curvePoint(a, b, c, d, t)
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 a
 int ou float: coordenada do primeiro ponto sobre a curva
@@ -53,13 +46,11 @@ d
 int ou float: coordenada do quarto ponto sobre a curva
 t
 float: valor entre 0 e 1
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [curve()](curve_)[curveVertex()](curveVertex_)[bezierPoint()](bezierPoint_)

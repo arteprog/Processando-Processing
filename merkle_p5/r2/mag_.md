@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### mag()
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 <img border="0" height="100" src="media/mag_.gif" width="100"/>
@@ -25,7 +21,6 @@ line(0, 0, x2, y2);
 println(mag(x2, y2));  // Imprime 106.30146 
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Descrição
 Calcula a magnitude  (ou comprimento) de um
@@ -36,15 +31,13 @@ posição "inicial", a magnitude de um vetor pode ser
 compreendica como a distância entre a coordenada (0,0) e seu
  valor (x,y). Portanto, mag() é uma maneira abreviada de se
 escrever "dist(0,0,x,y)".
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
-mag(<font color="#996600">a</font>, <font color="#996600">b</font>)
-mag(<font color="#996600">a</font>, <font color="#996600">b</font>, <font color="#996600">c</font>)
+mag(a, b)
+mag(a, b, c)
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 a
 float ou int: primeiro valor<description>
@@ -55,19 +48,16 @@ float ou int: segundo valor<description>
 c
 float ou int: terceiro valor<description>
 </description>
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Retorno
 
 	
 float
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [dist()](dist_)

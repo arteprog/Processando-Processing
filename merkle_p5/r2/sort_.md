@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### sort()
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 
@@ -40,33 +36,28 @@ Ordena um array de números do menor ao
 maior, ou colococa um array de palavras em ordem alfabética.
  O array original não é modificado, e um array
 reordenado é retornado. O parâmetro**count** fornece o número de elementos a ordenar. Por exemplo, caso haja 12 elementos em um array e o valor de**count **dor 5,  apenas os primeiros cinco elementos serão ordenados.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
-sort(<font color="#996600">dataArray</font>)
-sort(<font color="#996600">dataArray</font>, <font color="#996600">count</font>)
+sort(dataArray)
+sort(dataArray, count)
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 dataArray
 String[], int[], ou float[]
 count
 int: número dos elementos iniciais do array a ordenart
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Retorno
 
 	
 Array (do mesmo tipo de dados da entrada)
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [reverse()](reverse_)

@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### abs()
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 
@@ -18,27 +14,22 @@ float d = abs(-9.23);  // Atribui 9.23 à d
 
 #### Descrição
 Calcula o valor absoluto (magnitude) de um número. O valor absoluto de um número é sempre positivo.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
-abs(<font color="#996600">valor</font>)
+abs(valor)
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 valor
 float ou int
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Retorno
 
 	
 float ou int (dependendo dos valores de entrada)
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>

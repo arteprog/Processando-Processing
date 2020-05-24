@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### noiseDetail()
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 
@@ -54,27 +50,23 @@ Qualquer valor entre 0.0 e 1.0 é válido.
  Entretanto, notar que valores acima de 0.5 podem resultar em
 valores acima de 1.0 retornados por**noise()**.
 Ao alterar estes parâmetros, o sinal criado pela função**noise()** pode ser adaptado para se adequar a necessidades e características bem específicas.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
-noiseDetail(<font color="#996600">oitavas</font>)
-noiseDetail(<font color="#996600">oitavas</font>, <font color="#996600">declinação</font>)
+noiseDetail(oitavas)
+noiseDetail(oitavas, declinação)
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 oitavas
 int: número de oitavas a ser utilizada pela função **noise()**.
 declinação
 float: declinação (n.t. *falloff factor*) para cada oitava
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [noise()](noise_)

@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### sphereDetail()
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 
@@ -35,30 +31,25 @@ ativo ate que**sphereDetail()** seja chamada novamente  com umm novo parâmetod
 a não ser que se queira esferas com diferentes atributos; por
 exemplo, quando se utiliza menores detalhes em esferas menores, ou
 quando se distancia da câmara.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
 sphereDetail(n);
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 n
 int: número de segmentos (mínimo de 3) utilizados por revolução de um  círculo.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Retorno
 
 	
 Nenhum
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [sphere()](sphere_)

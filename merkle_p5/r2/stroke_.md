@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### stroke()
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 <img border="0" height="100" src="media/stroke_.gif" width="100"/>
@@ -14,7 +10,6 @@ stroke(153);
 rect(30, 20, 55, 55); 
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 <img border="0" height="100" src="media/stroke_2.gif" width="100"/>
 
 ```pde
@@ -22,7 +17,6 @@ stroke(204, 102, 0);
 rect(30, 20, 55, 55); 
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Descrição
  Sets the color used to draw lines and borders
@@ -34,18 +28,16 @@ HSB color depending on the current**colorMode()** (the default color space is RG
 </i>Atribui cor ao traço utilizado em linhas e contornos de formas Esta cor pode ser
 especificada nos termos dos modelos RGB ou HSB, dependendo do modo
 corrente especificado através de**colorMode() **( o espaço de cor padrão é o RGB, como cada valor variando de 0 a 255).<span style="font-style: italic;">Nota: o valor do parâmetro "cinza"deve ser menor ou igual ao máximo valor corrente especificado por **colorMode()**. O valor padrão máximo é 255. </span>
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
-stroke(<font color="#996600">ciza</font>)
-stroke(<font color="#996600">ciza</font>, <font color="#996600">alpha</font>)
-stroke(<font color="#996600">color</font>)
-stroke(<font color="#996600">valor1</font>, <font color="#996600">valor2</font>, <font color="#996600">valor3</font>)
-stroke(<font color="#996600">valor1</font>, <font color="#996600">valor2</font>, <font color="#996600">valor3</font>, <font color="#996600">alpha</font>)
+stroke(ciza)
+stroke(ciza, alpha)
+stroke(color)
+stroke(valor1, valor2, valor3)
+stroke(valor1, valor2, valor3, alpha)
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 ciza
 int ou float: número que especifica valor entre preto e branco
@@ -59,19 +51,16 @@ valor2
 int ou float: alor de verde ou de saturação (dependendo do atual modo de cor)
 valor3
 iint ou float: valor de azul o de brilho  (dependendo do atual modo de cor)
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Retorno
 
 	
 Nenhum
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [noStroke()](noStroke_)[colorMode()](colorMode_)

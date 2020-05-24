@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### Array
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 
@@ -41,16 +37,14 @@ representa sua respectiva posição.  O primeiro
 elemento  é identificado pelo índice**[0]**,  o segundo pelo índice**[1]**,
 e assim consecutivamente. Arrays são similares a objetos,
 conseqüentemente devem ser criados através da palavra chave**new.** Cada*array* tem uma variável**lengh**, a qual armazena um valor inteiro que indica sua quantidade total de elementos.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
-<font color="#996600">datatype</font>[] <font color="#996600">var</font>
-<font color="#996600">var</font>[<font color="#996600">elemento</font>] = <font color="#996600">valor</font>
-<font color="#996600">var</font>.length
+datatype[] var
+var[elemento] = valor
+var.length
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 datatype
 qualquer tipo de dados primitivo ou composto, incluindo classes definidas pelos usuários
@@ -62,10 +56,8 @@ valor
 dado a ser atribuído ao elemento do array, que deve ser de tipo igual do do array.
 var.lenght
 tamanho ou cardinalidade do array "var". É definido  no momento de sua declaração.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>

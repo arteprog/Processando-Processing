@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### color
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 <img border="0" height="100" src="media/color.gif" width="100"/>
@@ -22,34 +18,29 @@ fill(c3);
 rect(50, 0, 50, 100); 
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Descrição
 Tipo de dados para armazenar valores de cores.  Cores podem ser atribuídas através de  e**get()** e**color()**, ou podem ser especificadas diretamente em notação hexadecimal como em**#FFCC00. **Cores
 são 32 bits de informação ordenados como
 AAAAAAAARRRRRRRRGGGGGGGGBBBBBBBB, onde:  os As contém
 o valor alfa;  os Rs o vermelho (*Red*) ou o matiz (*hue*); os Gs o valor verde (*Green*)  ou a saturação (*saturation*);  e os Bs o azul (*Blue*) ou o brilho.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
-color <font color="#996600">var</font>
-color <font color="#996600">var</font> = <font color="#996600">valuedecor</font>
+color var
+color var = valuedecor
             
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 var
 nome de variável que faz referência a valor de cor
 valordecor
 qualquer valor de cor
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [colorMode()](colorMode_)[color()](color_)

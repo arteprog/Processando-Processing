@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### bezierVertex()
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 <img border="0" height="100" src="media/bezierVertex_.gif" width="100"/>
@@ -16,7 +12,6 @@ bezierVertex(80, 0, 80, 75, 30, 75);
 endShape(); 
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 <img border="0" height="100" src="media/bezierVertex_2.gif" width="100"/>
 
 ```pde
@@ -27,7 +22,6 @@ bezierVertex(50, 80, 60, 25, 30, 20);
 endShape(); 
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Descrição
 Especifica as coordenadas de vértices para curvas de Bezier. Cada chamada a função**bezierVertex()**
@@ -41,15 +35,13 @@ beginShape() e endShape(), e pode ser utilizada apenas para desenhar os
 tipos POLYGON, LINE_LOOP, e LINE_STRIP. O uso da versão 3D
 requer a renderização com P3D ou OPENGL (ver a
 referência ao Ambiente para mais informações).
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
-bezierVertex(<font color="#996600">x1</font>, <font color="#996600">y1</font>, <font color="#996600">x2</font>, <font color="#996600">y2</font>, <font color="#996600">x3</font>, <font color="#996600">y3</font>)
-bezierVertex(<font color="#996600">x1</font>, <font color="#996600">y1</font>, <font color="#996600">z1</font>, <font color="#996600">x2</font>, <font color="#996600">y2</font>, <font color="#996600">z2</font>, <font color="#996600">x3</font>, <font color="#996600">y3</font>, <font color="#996600">z3</font>)
+bezierVertex(x1, y1, x2, y2, x3, y3)
+bezierVertex(x1, y1, z1, x2, y2, z2, x3, y3, z3)
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 x1
 floar ou int: A coordenada-x do primeiro ponto de controle
@@ -69,13 +61,11 @@ y3
 floar ou int: A coordenada-y of ponto de ancoragem
 z3
 floar ou int: A coordenada-z of ponto de ancoragem
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [curveVertex()](curveVertex_)[vertex()](vertex_)[bezier()](bezier_)

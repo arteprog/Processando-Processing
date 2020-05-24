@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### image()
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 <img border="0" height="100" src="media/image_.jpg" width="100"/>
@@ -16,7 +12,6 @@ b = loadImage("laDefense.jpg");
 image(b, 0, 0); 
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 <img border="0" height="100" src="media/image_2.jpg" width="100"/>
 
 ```pde
@@ -27,7 +22,6 @@ image(b, 0, 0);
 image(b, 0, 0, width/2, height/2); 
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Descrição
 Visualiza imagens na tela. A imagem precisam estar
@@ -42,11 +36,10 @@ esquerdo. A imagem é visualizada em seu tamanho original,
 
 #### Sintaxe
 ```pde
-image(<font color="#996600">img</font>, <font color="#996600">x</font>, <font color="#996600">y</font>)
-image(<font color="#996600">img</font>, <font color="#996600">x</font>, <font color="#996600">y</font>, <font color="#996600">largura</font>, <font color="#996600">altura</font>)
+image(img, x, y)
+image(img, x, y, largura, altura)
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 img
 PImage: a imagem a visualizar
@@ -62,13 +55,11 @@ height
 int ou float: altura de
 visualização da imagem ou coordenada-y do canto inferior
 direito (dependendo do modo de visualização)
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [loadImage() ](loadImage_)[PImage  ](PImage)[imageMode()](imageMode_)[tint() ](tint_)[background() ](background_)[alpha()](alpha_)

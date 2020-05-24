@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### pushMatrix()
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 <img border="0" height="100" src="media/pushMatrix_.gif" width="100"/>
@@ -20,7 +16,6 @@ fill(102);
 rect(15, 10, 50, 50); //Retângulo cinza
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Descrição
 
@@ -32,26 +27,22 @@ insersões(n.t.*push*)  e retiradas (n.t.* pop*) requer a comprenção co conce
 utilizadas em conjuto com outros métodos de
 transformação  e podem ser incorporadas ao controle
 do escopo das transformações.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
 pushMatrix()
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Retorno
 
 	
 Nenhum
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [popMatrix()](popMatrix_)[translate()](translate_)[rotate()](rotate_)[rotateX() ](rotateX_)[rotateY() ](rotateY_)[rotateZ() ](rotateZ_)

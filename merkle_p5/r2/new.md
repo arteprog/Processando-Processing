@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### new
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 
@@ -44,17 +40,14 @@ aplicações no exemplo acima. Neste exemplo, um novo
 objeto "h1"do tipo "HLine"é criado. Na linha seguinte,  um
 novo vetor de velocidades do tipo float, chamado "speeds", é
 criado.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
 new 
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>

@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### byte
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 
@@ -30,27 +26,23 @@ que expressa seu tipo de dados. Usos subseqüentes desta
 variável não devem fazer refer6encia ao seu tipo de dados
 porque irá paracer para o Processing  que a variável
 está sendo declarada novamente.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
-byte <font color="#996600">var</font>
-byte <font color="#996600">var</font> = <font color="#996600">valor</font>
+byte var
+byte var = valor
             
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 var
 nome de variável que faz referência a valor de tipo byte
 valor
 um número entre -128 e 127
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [int](int)[float](float)[boolean](boolean)

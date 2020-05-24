@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### split()
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 
@@ -48,14 +44,12 @@ n.t. form feed) , e o espaço (' '). Para se converter
 uma String em um array de inteiros ou floats, se utilizam as funções
 de conversão de tipos int() e float() para se
 converter o array de Strings (veja exemplo acima).</p>
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
-split(<font color="#996600">str</font>)
-split(<font color="#996600">str</font>, <font color="#996600">delim</font>)
+split(str)
+split(str, delim)
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 str
 a string a repartir
@@ -65,13 +59,11 @@ Retorna
 
 	
 String[]
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [join()](join_)[](text_)

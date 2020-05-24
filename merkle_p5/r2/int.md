@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### int
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 
@@ -28,27 +24,23 @@ variável é escrita, ela deve ser declarada com um comando
 que expressa seu tipo de dados. Usos subseqüentes desta variável não
 devem fazer referência ao seu tipo de dados porque irá paracer para o
 Processing  que a variável está sendo declarada novamente.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
-int <font color="#996600">var</font>
-int <font color="#996600">var</font> = <font color="#996600">valor </font>
+int var
+int var = valor 
             
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 var
 nome de variávels que faz referência a valor inteiro
 value
 qualquer valor inteiro
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [splitInts()](splitInts_)[float](float)

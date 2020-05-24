@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### camera()
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 <img border="0" height="100" src="media/lookat_.gif" width="100"/>
@@ -21,7 +17,6 @@ rotateY(PI/3);
 box(45); 
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Descrição
 Configura a posição da câmara
@@ -36,15 +31,13 @@ camera(width/2.0, height/2.0, ((height/2.0) / tan(PI*60.0 / 360.0),
 width/2.0, height/2.0, 0, 0, 1, 0). Esta função é
 similar a gluLookAt() em OpenGL, mas primeiro limpa a atual
 configuração da câmera.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
 camera()
-camera(<font color="#996600">olhoX</font>, <font color="#996600">olhoY</font>, <font color="#996600">olhoZ</font>, <font color="#996600">centroX</font>, <font color="#996600">centroY</font>, <font color="#996600">centroZ</font>, <font color="#996600">upX</font>, <font color="#996600">upY</font>, <font color="#996600">upZ</font>)
+camera(olhoX, olhoY, olhoZ, centroX, centroY, centroZ, upX, upY, upZ)
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 olhoX
 float: x coordenada  do olho
@@ -64,19 +57,16 @@ upY
 float: usualmente 0.0, 1.0, ou -1.0
 upZ
 float: usualmente 0.0, 1.0, ou -1.0
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Retorno
 
 	
 Nenhum
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [camera()](camera_)[endCamera()](endCamera_)[frustum()](frustum_)

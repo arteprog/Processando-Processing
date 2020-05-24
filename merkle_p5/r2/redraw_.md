@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### redraw()
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 
@@ -33,26 +29,22 @@ Executa o código incluso em**draw() ** uma
 vez. Esta função permite ao programa atualizar a janela
 de visualização apenas quando necessário, por
 exemplo, quando um evento registrado por**mousPressed() **ou**keyPressed()** ocorrer. Na estruturação de um programa, apenas faz sentido chamar redraw() em evento tais como**mousPressed().  **Chamá-la em**draw()** não tem efeito, pois esta é executada continuamente de qualquer modo.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
 redraw()
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Retorno
 
 	
 Nenhum
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [noLoop()](noLoop_)[loop()](loop_)

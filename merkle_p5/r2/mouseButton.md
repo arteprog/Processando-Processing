@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### mouseButton
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 
@@ -51,13 +47,11 @@ Processing rastreia automaticamente se o
 botão do mouse é pressionando, assim como qual
 botão é pressionando. O valor da variável de
 sistema**mouseButton** pode ser um entre**LEFT**,**RIGHT**, ou**CENTER**, dependendo de qual botão foi pressionado.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [mouseX](mouseX)[mouseY](mouseY)[mousePressed()](mousePressed_)[mouseReleased()](mouseReleased_)[mouseMoved()](mouseMoved_)[mouseDragged()](mouseDragged_)

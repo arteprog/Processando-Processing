@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### online
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 
@@ -22,17 +18,14 @@ if(online) {  // of "if (online == true)"
 Confirma se um programa Processing está
 executando em um navegador web. Esta variável é "true"
 (n.t. verdadeira)  se o programa estiver*online *e "*fasle"* caso não esteja.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
 online
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web
-<img height="25" src="../images/1pix.gif" width="1"/>

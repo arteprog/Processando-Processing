@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### curveDetail()
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 <img border="0" height="100" src="media/curveDetail_.gif" width="100"/>
@@ -34,7 +30,6 @@ void drawCurves(float y) {
  
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Descrição
 Especifica a
@@ -43,28 +38,23 @@ visualizada. O valor padrão é 20. Esta
 função é util apenas quando o renderer de P3D ou
 OPENGL como padrão, pois o visualizador padrão (JAVA2D)
 não utiliza esta informação.
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
-curveDetail(<font color="#996600">detalhe</font>)
+curveDetail(detalhe)
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 detalhe
 int:
 resolução da curva
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Retorno
  Nenhum
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
  Web &
 Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [curve()](curve_)[curveVertex()](curveVertex_)[curveTightness()](curveTightness_)

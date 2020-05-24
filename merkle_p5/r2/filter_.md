@@ -1,10 +1,6 @@
-<img height="40" src="../images/1pix.gif" width="100"/>
-<img height="1" src="../images/1pix.gif" width="20"/>
-<img height="1" src="../images/1pix.gif" width="555"/>
 
 #### Nome
 ### filter()
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Exemplos
 <img border="0" height="100" src="media/filter_threshold.jpg" width="100"/>
@@ -16,7 +12,6 @@ image(b, 0, 0);
 filter(THRESHOLD); 
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 <img border="0" height="100" src="media/filter_gray.jpg" width="100"/>
 
 ```pde
@@ -26,7 +21,6 @@ image(b, 0, 0);
 filter(GRAY); 
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 <img border="0" height="100" src="media/filter_invert.jpg" width="100"/>
 
 ```pde
@@ -37,7 +31,6 @@ filter(INVERT);
 save("filter_invert.tif"); 
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 <img border="0" height="100" src="media/filter_posterize.jpg" width="100"/>
 
 ```pde
@@ -48,7 +41,6 @@ filter(GRAY);
 filter(POSTERIZE, 4); 
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 <img border="0" height="100" src="media/filter_blur.jpg" width="100"/>
 
 ```pde
@@ -58,7 +50,6 @@ image(b, 0, 0);
 filter(BLUR, 6); 
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Descrição
 Filtra a imagem de visualização como definido em um dos seguintes modos:
@@ -70,33 +61,28 @@ INVERT - atribui a cada píxel seu valor inverso
 POSTERIZE - limita cada canal da imagem a um número de cores especificada pelo parâmetro**nivel. **
 BLUR - executa um borramento Gaussiano (n.t.*Guassian blur*), sendo que o parâmetro**level** especifica a extensão do borramento. Nos casos em que o parâmetro**level** não é utilizado, o borramento equivalente a um borramento gaussiano de raio 1.
 OPAQUE - atribui ao canal alfa para ser inteiramente opaco
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Sintaxe
 ```pde
-filter(<font color="#996600">MODO</font>)
-ilter(<font color="#996600">MODO</font>, <font color="#996600">nivel</font>)
+filter(MODO)
+ilter(MODO, nivel)
 
 ```
-<img height="25" src="../images/1pix.gif" width="1"/>
 Parâmetros
 MODO
 Qualquer um entre: THRESHOLD, GRAY, INVERT, POSTERIZE, BLUR, ou OPAQUE
 nivel
 int ou float: define a qualidade do filtro
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Retorno
 
 	
 Nenhum
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Utilização
 
 	
 Web & Applicações
-<img height="25" src="../images/1pix.gif" width="1"/>
 
 #### Relacionado
 [blend()](blend_)
