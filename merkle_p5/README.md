@@ -7,8 +7,7 @@
     - html
     - imagens
 - `r1` html
-- `r2` markdown -> movendo pro repositório-wiki
-    (não vou deixar aqui)
+- `r2` ~markdown~ .md movido pro repositório-wiki
  
 #### `cleanup_scripts`
 - scripts pra converter o HTML original simplificado (ptBR -> r1)
@@ -16,4 +15,4 @@
   - `modify_html_files_first_cleanup.py` todos os outros
 - scripts pra converter o HTML simplifcado em markdown (r1 -> r2)
   - `modify2md_indez.py`4 arquivos index__
-  - `moidfy2md_files.py` todosos outros
+  - `moidfy2md_files.py` todos os outros
