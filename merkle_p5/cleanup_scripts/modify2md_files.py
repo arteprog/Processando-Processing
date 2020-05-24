@@ -32,8 +32,8 @@ def print_c(c):
         for child in c.contents:
             line = print_c(child)
             if line:
-                result += line.replace('<br/>', '\n')    
-    return result # + '\n' if result else ''
+                result += line   
+    return result.replace('<br/>', '\n') 
         
 def replace_tag(template, *args, **kwargs):
     for tag_instance in soup.find_all(*args, **kwargs):
@@ -62,7 +62,7 @@ for file_name in file_names[:]:   # file_names[:] todos!
             # ATENÇÃO: para a wiki vou tentar.
             href = a_tag['href'].replace('.html', '')  # para Wiki
             href = href.replace('http://www.processing.org/reference/', '')
-            a_tag.replace_with('[{}]({}<br/>)'.format(a_tag.text, href))
+            a_tag.replace_with('[{}]({})<br/>'.format(a_tag.text, href))
 #             href = a_tag['href'].replace('.html', '.md')  # para GitHub Pages
 #             a_tag.replace_with('[{}]({})'.format(a_tag.text, href))
         for pre in soup.find_all('pre'):
