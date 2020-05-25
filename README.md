@@ -4,21 +4,21 @@
 
 Processando Processing é um esforço para traduzir para o português material de referência sobre Processing; Os resultados serão sempre publicados com licenças abertas semelhantes às do material original. [**Doações**](http://patreon.com/arteprog) feitas para **arteprog** vão contribuir para manter este projeto.
 
-# 2020 Reboot
+## Atividades recentes
+
+### 2020 Reboot
 
 Depois do agito do PCD 2020 @ São Paulo e um encontro para falar sobre tadução na Noite de Processing de fevereiro de 2020, temos uma grupo de interssados em traduzir material!
 
 Grupo no Telegram: **@processando_processing** (`https:// t.me / processando_processing`)
 
-## Atividades recentes
-
 ### Wiki-tradução da referência do Processing em testes!
 
-- Visite: https://github.com/arteprog/Processando-Processing/wiki
-   Baseada tradução da referência da linguagem versão 1.0 http://www.dainf.ct.utfpr.edu.br/~merkle/processing/reference/ptBR/index.html
+- **Wiki em testes: https://github.com/arteprog/Processando-Processing/wiki **
+   Baseada [tradução da referência do Processing v1.0 de 2005 do prof. Merkle](http://www.dainf.ct.utfpr.edu.br/~merkle/processing/reference/ptBR/index.html)
 
 
-### Trabalhando recentemente a tradução dos tutoriais
+### Trabalhando recentemente nos seguintes tutoriais
 
 - Transformações 2D do J David Eisenberg
   - [Python](/tutoriais-PT/python-transformacoes_2D.md) 
@@ -27,17 +27,15 @@ Grupo no Telegram: **@processando_processing** (`https:// t.me / processando_pro
   - [Python (inacabado)](/tutoriais-PT/Anatomia_de_um_Programa_py.md) 
   - [Java (inacabado)](/tutoriais-PT/Anatomia_de_um_Programa.md)
   
-## Material produzido anteriormente (
-
-### concluído (ou em andamento) / *done (or in progress)*
+## Material produzido anteriormente
 
 * [**Introdução**](https://github.com/arteprog/Processando-Processing/tree/master/natureza-do-codigo) do livro [Nature of Code](http://natureofcode.com) de Daniel Shiffman. OBS: Encontramos na Khan Academy [Simulações Naturais](https://pt.khanacademy.org/computing/computer-programming/programming-natural-simulations),uma tradução do livro para o português com exemplos em JS.
 
 * [**Python, Jython e Java**](https://github.com/arteprog/Processando-Processing/blob/master/tutoriais-PT/python-Python_Jython_e_Java.md) 
 
-* **Arduino (Firmata) All inputs** [[Merged arduino_input.pyde](https://github.com/jdf/processing.py/commit/f6f59dc45844b8ee40a8b7cb47ccd9ddbd026416)]
+* **Arduino (Firmata) All inputs para modo Python** [[Merged arduino_input.pyde](https://github.com/jdf/processing.py/commit/f6f59dc45844b8ee40a8b7cb47ccd9ddbd026416)]
 
-* [[Em andamento](https://docs.google.com/document/d/14MYeJQPlA57-pYYm_UPt0u3sVynIxVIU8gras3ERAFQ/pub)][[original](https://processing.org/tutorials/typography/)] "Typography
+* **Typography** [[Em andamento](https://docs.google.com/document/d/14MYeJQPlA57-pYYm_UPt0u3sVynIxVIU8gras3ERAFQ/pub)][[original](https://processing.org/tutorials/typography/)] "Typography
  by Casey Reas and Ben Fry
  Working with typefaces and text.
  Level: Beginner"
