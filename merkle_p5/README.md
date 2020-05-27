@@ -2,7 +2,7 @@
 
 ### [UTFPR, 2005 (Prof. Luiz Ernesto Merkle)](http://www.dainf.ct.utfpr.edu.br/~merkle/processing/reference/ptBR/index.html) --> [Wiki-tradução em Processando Processing](https://github.com/arteprog/Processando-Processing/wiki)
 
-Os arquivos da Wiki podem ser clonado(a)s usando a URL **https://github.com/arteprog/Processando-Processing.wiki.git**
+Os arquivos .md do(a) Wiki podem ser clonados usando a URL **https://github.com/arteprog/Processando-Processing.wiki.git**
 
 #### Roadmap (tentativa de)
 
