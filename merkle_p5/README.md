@@ -21,12 +21,12 @@ Os arquivos da Wiki podem ser clonado(a)s usando a URL **https://github.com/arte
 6. Profit! Quer dizer, pronto pra galera traduzir tudo
    
 #### dados
-- `enV3` aquivos do site atual em inglês (sem imagens...)
+- `enV3` aquivos do site atual em inglês - está sem imagens... :(
 - `ptBR` arquivos baixados do site original
     - html
     - imagens
-- `r1` html
-- `r2` ~markdown~ .md movido pro repositório-wiki
+- `r1` html - primeira limpeza, remove cabeçalhos todos
+- `r2` ~markdown~ - primeira conversão, movi os .md pro repositório-wiki já, ficou a pasta e uns indices...
  
 #### `cleanup_scripts`
 - scripts pra converter o HTML original simplificado (ptBR -> r1)
