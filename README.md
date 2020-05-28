@@ -14,11 +14,11 @@ Grupo no Telegram: **@processando_processing** (`https:// t.me / processando_pro
 
 ### Wiki-tradução da referência do Processing em testes!
 
-- **Wiki em testes: https://github.com/arteprog/Processando-Processing/wiki **
    Baseada [tradução da referência do Processing v1.0 de 2005 do prof. Merkle](http://www.dainf.ct.utfpr.edu.br/~merkle/processing/reference/ptBR/index.html)
+- *<b>Wiki em testes: https://github.com/arteprog/Processando-Processing/wiki</b>
+- Issues com label [wiki-tradução referência](https://github.com/arteprog/Processando-Processing/issues?q=is%3Aopen+is%3Aissue+label%3A%22wiki-tradu%C3%A7%C3%A3o+refer%C3%AAncia%22)
 
-
-### Trabalhando recentemente nos seguintes tutoriais
+### Trabalhando nos tutoriais
 
 - Transformações 2D do J David Eisenberg
   - [Python](/tutoriais-PT/python-transformacoes_2D.md) 
@@ -27,9 +27,11 @@ Grupo no Telegram: **@processando_processing** (`https:// t.me / processando_pro
   - [Python (inacabado)](/tutoriais-PT/Anatomia_de_um_Programa_py.md) 
   - [Java (inacabado)](/tutoriais-PT/Anatomia_de_um_Programa.md)
   
+- Issues com label [tutoriais](https://github.com/arteprog/Processando-Processing/issues?q=is%3Aopen+is%3Aissue+label%3A%22tutoriais%22+)
+
 ## Material produzido anteriormente
 
-* [**Introdução**](https://github.com/arteprog/Processando-Processing/tree/master/natureza-do-codigo) do livro [Nature of Code](http://natureofcode.com) de Daniel Shiffman. OBS: Encontramos na Khan Academy [Simulações Naturais](https://pt.khanacademy.org/computing/computer-programming/programming-natural-simulations),uma tradução do livro para o português com exemplos em JS.
+* [**Introdução**](https://github.com/arteprog/Processando-Processing/tree/master/natureza-do-codigo) do livro [Nature of Code](http://natureofcode.com) de Daniel Shiffman. OBS: Encontramos na Khan Academy [Simulações Naturais](https://pt.khanacademy.org/computing/computer-programming/programming-natural-simulations),uma tradução do livro para o português com exemplos em JS.t
 
 * [**Python, Jython e Java**](https://github.com/arteprog/Processando-Processing/blob/master/tutoriais-PT/python-Python_Jython_e_Java.md) 
 
