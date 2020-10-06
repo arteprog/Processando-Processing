@@ -14,8 +14,9 @@ Grupo no Telegram: **@processando_processing** (`https:// t.me / processando_pro
 
 ### Wiki-tradução da referência do Processing em testes!
 
-   Baseada [tradução da referência do Processing v1.0 de 2005 do prof. Merkle](http://www.dainf.ct.utfpr.edu.br/~merkle/processing/reference/ptBR/index.html)
-- *<b>Wiki em testes: https://github.com/arteprog/Processando-Processing/wiki</b>
+   Baseada tradução da referência do Processing [v1.0 de 2005 do prof. Merkle](http://www.dainf.ct.utfpr.edu.br/~merkle/processing/reference/ptBR/index.html)
+- Documentação básica do que está rolando: [merkle_p5/README.md](https://github.com/arteprog/Processando-Processing/tree/master/merkle_p5)
+- Wiki em testes: <b>https://github.com/arteprog/Processando-Processing/wiki</b>
 - Issues com label [wiki-tradução referência](https://github.com/arteprog/Processando-Processing/issues?q=is%3Aopen+is%3Aissue+label%3A%22wiki-tradu%C3%A7%C3%A3o+refer%C3%AAncia%22)
 
 ### Trabalhando nos tutoriais
