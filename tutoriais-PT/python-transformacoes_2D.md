@@ -344,7 +344,7 @@ def drawRightArm():
 
 Agora, concluímos o programa inserindo a animação. O braço esquerdo deve girar de 0° a 135° e vice-versa. Como o movimento do braço é simétrico, o ângulo do braço direito sempre será o valor negativo do ângulo do braço esquerdo. Para simplificar, iremos em incrementos de 5 graus.
 
-```
+```python
 armAngle = 0
 angleChange = 5
 ANGLE_LIMIT = 135
@@ -416,7 +416,7 @@ O problema restante é descobrir o ângulo de rotação. Dada a posição do pon
 
 Mas e quanto a encontrar o ângulo de uma linha que não começa na origem, como a linha de (10, 37) a (48, 59)? Sem problema; É o mesmo que o ângulo de uma linha de (0, 0) a (48-10, 59-37). Generalizando, para encontrar o ângulo da linha de (*x*0, *y*0) a (*x*1, *y*1), calcule
 
-```pyde
+```python
    atan2(y1 - y0, x1 - x0)
 ```
 
@@ -441,7 +441,7 @@ Isso funciona muito bem. O que acontece se desenharmos o retângulo para que fiq
 
 Neste ponto, podemos escrever a versão final do programa de rastreamento dos braços. Começamos com definições de constantes e variáveis. O número 39 na definição de `MIDPOINT_X` deriva do fato de que o corpo do robô começa na coordenada *x* 14 e tem 50 pixels de largura, então 39 (14 + 25) é o ponto médio horizontal do corpo do robô.
 
-```
+```python
 # Where upper left of robot appears on screen 
 ROBOT_X = 50
 ROBOT_Y = 50
