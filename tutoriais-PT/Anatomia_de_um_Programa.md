@@ -17,7 +17,7 @@ Há uma peça do quebra-cabeça que esses tutoriais não resolvem: como você an
 
 Lembre que o que você está vendo aqui são o meu processo mental e o meu estilo de programação particulares. Há muitas diferentes formas de aproximação e estilos. Conforme você continuar a programar, vai encontrar o seu próprio. Você pode também ver o estilo de programaco de outras pessoas (mas não o seus processos mentais!) olhando o código fonte de programas em [openProcessing.org](http://openprocessing.org/). 
 
-### Desenhando poígonos regulares
+### Desenhando polígonos regulares
 
 Ninguém pensa em construir uma casa sem um projeto executivo, e você não deve pensar em escrever um programa sem algum tipo de planejamento. Uma vez que Processing é uma linguagem tão visual, eu sempre tenho que esboçar o que eu gostaria como resultado antes de me aproximar do teclado. Então é aí que eu começo.
 
