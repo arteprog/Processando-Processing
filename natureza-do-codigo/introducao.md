@@ -1,13 +1,14 @@
 # Natureza do código - por Daniel Shiffman
 
-### Introdução
+## Introdução
 
 *"Eu sou dois com a natureza." - Woody Allen*
 
 <br>
-Aqui estamos: o começo. Bem, quase o começo. Se faz algum tempo que você não programa em Processing (ou, ainda, que você não usa qualquer matemática), esta introdução deve trazer de volta à sua mente o modo de pensar computacional antes de chegarmos ao material mais difícil e complexo.
 
-No Capítulo 1, vamos falar sobre o conceito de vetor e como este serve como base para construção de simulações de movimento ao longo do livro. Mas antes de tomar este passo, pensemos sobre o que significa algo se mover pela tela. Vamos começar com uma das mais conhecidas e simples simulações de movimento — a caminhada aleatória. 
+Aqui estamos: o começo. Bem, quase o começo. Se faz algum tempo que você não programa em Processing (ou, ainda, que você não usa um pouco de matemática), esta introdução deve trazer de volta à sua mente o modo de pensar computacional antes de chegarmos ao material mais difícil e complexo.
+
+No Capítulo 1, vamos falar sobre o conceito de vetor e como este serve como base para construção de simulações de movimento ao longo do livro. Mas antes de darmos este passo, vamos pensar sobre o que significa algo se mover pela tela. Vamos começar com uma das mais conhecidas e simples simulações de movimento — a caminhada aleatória. 
 
 ### I.1 Caminhada Aleatória
 
@@ -20,20 +21,20 @@ Cara | Coroa | Passo para direita.
 Coroa | Cara | Passo para esquerda.
 Coroa | Coroa | Passo para trás.
 
-Bom, isso pode parecer um algoritmo particularmente simples. No entanto, caminhadas aleatórias podem ser usadas para modelar fenômenos que acontecem no mundo real, de movimentos de moléculas num gás ao comportamento de um jogador passando o dia em um cassino. Começamos o livro estudando uma caminhada aleatória com três objetivos em mente.
+Bom, isso pode parecer um algoritmo particularmente simples. No entanto, caminhadas aleatórias podem ser usadas para modelar fenômenos que acontecem no mundo real, de movimentos de moléculas em um gás até o comportamento de um jogador passando o dia em um cassino. Começamos o livro estudando uma caminhada aleatória com três objetivos em mente.
 
-1. Precisamos rever um conceito de programação central para este livro — programação orientada a objetos. O nosso passeador aleatório, random walker, servirá de modelo para como usaremos a programação orientada a objetos para fazer coisas que se movem numa janela do Processing.
+1. Precisamos rever um conceito de programação central para este livro — programação orientada a objetos. O nosso passeador aleatório, *random walker*, servirá de modelo para como usaremos a programação orientada a objetos para fazer coisas que se movem numa janela do Processing.
 
 2. A caminhada aleatória instiga duas questões que vamos nos perguntar repetidamente neste livro: “Como vamos definir as regras que governam o comportamento dos nossos objetos?” e então, “Como vamos implementar essas regras no Processing?”
 
-3. Ao longo do livro, vamos periodicamente precisar de uma compreensão básica da aleatoriedade, probabilidade e ruído Perlin. A caminhada aleatória nos permitirá demonstar alguns pontos chave que serão úteis mais para frente.
+3. Ao longo do livro, nós vamos periodicamente precisar de uma compreensão básica da aleatoriedade, probabilidade e ruído Perlin. A caminhada aleatória nos permitirá demonstrar alguns pontos chave que serão úteis mais para frente.
 
 ### I.2 A classe Random Walker
 
-Vamos rever um pouco de programação orientada a objetos (POO) primeiramente construindo um objeto Walker. Esta será uma revisão rápida apenas. Se você nunca trabalhou com POO antes, pode ser que queira algo mais completo; Eu sugeriria parar aqui e revisar o básico no site do [Processing](https://processing.org/tutorials/objects/) (página em Inglês) antes de continuar.
+Vamos rever um pouco de programação orientada a objetos (POO) primeiramente construindo um objeto Walker. Esta será apenas uma revisão rápida. Se você nunca trabalhou com POO antes, pode ser que queira algo mais completo; Eu sugeriria parar aqui e revisar o básico no site do [Processing](https://processing.org/tutorials/objects/) (página em Inglês) antes de continuar.
 
 
-Um **objeto** em Processing é uma entidade que possui dados e funcionalidade. Nós queremos projetar um objeto Walker que mantém tanto o registro de seus dados (onde ele existe na tela) quanto tem a capacidade de executar certas ações (como desenhar-se ou dar um passo).
+Um **objeto** em Processing é uma entidade que possui dados e funcionalidade. Nós queremos projetar um objeto Walker que mantém tanto o registro de seus dados (onde ele existe na tela) quanto tem a capacidade de executar certas ações (como se desenhar ou dar um passo).
 
 Uma **classe** é o modelo para criar instâncias reais de objetos. Pense em uma classe como um cortador de biscoitos; os objetos são os próprios biscoitos.
 
@@ -63,7 +64,7 @@ void display() {    // Os objetos têm funções.
   }
 ```
 
-A segunda função direciona o objeto Walker para dar um passo. Agora, é aqui que as coisas ficam um pouco mais interessantes. Lembra-se de quando estavámos andando aleatoriamente no chão? Bem, agora podemos usar uma janela no Processing para fazer a mesma coisa. Existem quatro passos possíveis. Um passo para a direita pode ser simulado incrementando x (x ++); Para a esquerda, decrementando x (x -); Para a frente, indo para baixo um pixel (y ++); E para trás, subindo um pixel (y -). Como escolhemos uma dessas quatro possibilidades? Anteriormente, afirmamos que poderíamos virar duas moedas. No processamento, no entanto, quando queremos escolher aleatoriamente de uma lista de opções, podemos escolher um número aleatório usando random ().
+A segunda função direciona o objeto Walker para dar um passo. Agora, é aqui que as coisas ficam um pouco mais interessantes. Se lembra de quando estávamos andando aleatoriamente pelo chão? Bem, agora podemos usar uma janela no Processing para fazer a mesma coisa. Existem quatro passos possíveis. Um passo para a direita pode ser simulado incrementando x (x ++); Para a esquerda, decrementando x (x --); Para a frente, indo para baixo um pixel (y ++); E para trás, subindo um pixel (y --). Como escolhemos uma dessas quatro possibilidades? Anteriormente, afirmamos que poderíamos virar duas moedas. No Processing, no entanto, quando queremos escolher aleatoriamente de uma lista de opções, podemos escolher um número aleatório usando random().
 
 ```java
 void step() {
@@ -86,16 +87,16 @@ if (choice == 0) {    // A escolha aleatória determina nosso passo.
 }
 ```
 
-Agora que escrevemos a classe, é hora de fazer um objeto Walker na parte principal do nosso sketch - setup() e draw(). Assumindo que estamos procurando modelar uma única caminhada aleatória, declaramos uma variável global do tipo Walker.
+Agora que escrevemos a classe, é hora de fazer um objeto Walker na parte principal do nosso *sketch* - setup() e draw(). Assumindo que estamos procurando modelar uma única caminhada aleatória, declaramos uma variável global do tipo Walker.
 
 ```java
 Walker w;    // Um objeto Walker
 ```
 Em seguida, criamos o objeto no setup() chamando o construtor com o novo operador.
 
-### Exemplo I.1: Caminhada aleatória tradicional
+#### Exemplo I.1: Caminhada aleatória tradicional
 
-Cada vez que você vê o cabeçalho de Exemplo neste livro, significa que há um exemplo de código correspondente disponível no [GitHub](https://github.com/shiffman/The-Nature-of-Code-Examples).
+*Cada vez que você vê o cabeçalho de Exemplo neste livro, significa que há um exemplo de código correspondente disponível no* [GitHub](https://github.com/shiffman/The-Nature-of-Code-Examples).
 
 ```java
 void setup() {
@@ -116,13 +117,13 @@ void draw() {
 
 Uma vez que desenhamos o plano de fundo apenas uma vez no setup(), em vez de limpá-lo continuamente cada vez através do draw(), vemos a trilha da caminhada aleatória em nossa janela do Processing.
 
-Existem algumas melhorias que poderíamos fazer para o caminhante aleatório. Primeiro, as escolhas deste Walker estão limitadas a quatro opções - para cima, para baixo, para a esquerda e para a direita. Mas qualquer pixel dado na janela tem oito possíveis vizinhos, e uma nona possibilidade é ficar no mesmo lugar.
+Existem algumas melhorias que poderíamos fazer para o caminhante aleatório. Primeiro, as escolhas deste Walker estão limitadas a quatro opções - para cima, para baixo, para a esquerda e para a direita. Mas qualquer pixel da janela tem oito possíveis vizinhos, e uma nona possibilidade é ficar no mesmo lugar.
 
 ![1](https://github.com/arteprog/Processando-Processing/blob/master/natureza-do-codigo/assets/intro_01.png?raw=true)
 
 Figura I.1
 
-Para implementar um objeto Walker que pode pisar em qualquer pixel vizinho (ou ficar parado), poderíamos escolher um número entre 0 e 8 (nove escolhas possíveis). No entanto, a maneira mais eficiente para escrever o código seria a de simplesmente escolher a partir de três passos possíveis ao longo do eixo x (-1, 0, ou 1) e três passos possíveis ao longo do eixo y.
+Para implementar um objeto Walker que pode pisar em qualquer pixel vizinho (ou ficar parado), poderíamos escolher um número entre 0 e 8 (nove escolhas possíveis). No entanto, a maneira mais eficiente para escrever este código seria a de simplesmente escolher a partir de três passos possíveis ao longo do eixo x (-1, 0, ou 1) e três passos possíveis ao longo do eixo y.
 
 ```java
  void step() {
@@ -146,11 +147,11 @@ void step() {
   
 Todas estas variações na caminhada aleatória "tradicional" têm uma coisa em comum: a qualquer momento no tempo, a probabilidade de que o Walker dê um passo em uma determinada direção é igual à probabilidade de que o Walker dê um passo em qualquer direção. Em outras palavras, se houver quatro passos possíveis, há uma chance de 1 em 4 (ou 25%) que o Walker irá dar qualquer passo. Com nove passos possíveis, é uma chance de 1 em 9 (ou 11,1%). 
 
-Convenientemente, é assim que a função random() funciona. O gerador de números aleatórios do Processing (que opera nos bastidores) produz o que é conhecido como distribuição "uniforme" de números. Podemos testar esta distribuição com um sketch no Processing que sorteia um número aleatório de cada vez e ultiliza o resultado para definir a altura de um retângulo.
+Convenientemente, é assim que a função random() funciona. O gerador de números aleatórios do Processing (que opera nos bastidores) produz o que é conhecido como distribuição "uniforme" de números. Podemos testar esta distribuição com um *sketch* no Processing que sorteia um número aleatório de cada vez e utiliza o resultado para definir a altura de um retângulo.
 
 ![random1.2](https://github.com/arteprog/Processando-Processing/blob/master/natureza-do-codigo/assets/randomDistribution.jpg?raw=true)
 
-### Exemplo 1.2: Distribuição aleatória de números
+#### Exemplo 1.2: Distribuição aleatória de números
 
 ```pde
 int[] randomCounts; // um array que registra qual a frequência que um número aleatório é sorteado
@@ -176,19 +177,14 @@ void draw(){
 }
 ```
 
-A captura de tela acima mostra o resultado do sketch sendo executado por alguns minutos. Observe como cada barra do gráfico difere em altura. Nosso tamanho de amostra (ou seja, o número de números aleatórios que escolhemos) é bastante pequeno e existem algumas discrepâncias ocasionais, em que determinados números são selecionados com mais frequência. Com o tempo, com um bom gerador de números aleatórios, isso seria o mesmo.
+A captura de tela acima mostra o resultado do *sketch* sendo executado por alguns minutos. Observe como cada barra do gráfico difere em altura. Nosso tamanho de amostra (ou seja, o número de números aleatórios que escolhemos) é bastante pequeno e existem algumas discrepâncias ocasionais, em que determinados números são selecionados com mais frequência. Com o tempo, com um bom gerador de números aleatórios, isso seria o mesmo.
 
 #### Números Pseudo-Randômicos
-Os números randômicos que obtemos utilizando a função random() não são realmente randômicos; portanto são chamados de "pseudo-randômicos". Eles são o resultado de funções matemáticas que simulam randomicidade. A função pode gerar um padrão ao longo do tempo, mas esse período é tão longo para nós que o padrão é imperceptível. Os números pseudo-randômicos funcionam tão bem quanto os randômicos nas aplicações de Processing.
+
+Os números randômicos que obtemos utilizando a função random() não são realmente randômicos; portanto são chamados de "pseudo-randômicos". Eles são o resultado de funções matemáticas que simulam randomicidade. A função pode gerar um padrão ao longo do tempo, mas esse período é tão longo para nós que o padrão é imperceptível. Os números "pseudo-randômicos" funcionam tão bem quanto os randômicos nas aplicações de Processing.
 
 #### Exercício I.1
 
-Crie um caminhante aleatório que tenha a tendência de se mover para baixo e para a direita. (Veremos a solução para isso na próxima seção.)
+Crie um caminhante aleatório que tenha a tendência de se mover para baixo e para a direita (Veremos a solução para isso na próxima seção).
 
 ### I.3 Probabilidade e distribuições não uniformes
-
-[FINAL]
-Começamos este capítulo falando sobre como a aleatoriedade pode ser uma muleta. De muitas maneiras, é a resposta mais óbvia para certas perguntas que fazemos continuamente, como deve esse objeto se mover? Que cor deve ter? Esta resposta óbvia, contudo, também pode ser preguiçosa.
-À medida que terminamos a introdução, é importante notar que poderíamos facilmente cair na armadilha de usar o ruído Perlin como uma muleta também. Como deve esse objeto se mover? Ruído Perlin! Que cor deve ter? Ruído Perlin! O quão rápido ele deve crescer? Ruído Perlin!
-O ponto de tudo isto não é dizer que você deve ou não usar aleatoriedade. Ou que você deve ou não usar o ruído Perlin. O ponto é que as regras do seu sistema são definidas por você, e quanto maior a sua caixa de ferramentas, mais escolhas você vai ter como você implementar essas regras. O objetivo deste livro é encher sua caixa de ferramentas. Se tudo o que você sabe é aleatóriedade, então o sua estratégia de design é limitada. Claro, o ruído Perlin ajuda, mas você vai precisar de mais. Muito mais.
-Acho que estamos prontos para começar.
