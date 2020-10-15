@@ -31,14 +31,14 @@ Bom, isso pode parecer um algoritmo particularmente simples. No entanto, caminha
 
 ### I.2 A classe Random Walker
 
-Vamos rever um pouco de programação orientada a objetos (POO) primeiramente construindo um objeto Walker. Esta será apenas uma revisão rápida. Se você nunca trabalhou com POO antes, pode ser que queira algo mais completo; Eu sugeriria parar aqui e revisar o básico no site do [Processing](https://processing.org/tutorials/objects/) (página em Inglês) antes de continuar.
+Vamos rever um pouco de programação orientada a objetos (POO) primeiramente construindo um objeto *walker*. Esta será apenas uma revisão rápida. Se você nunca trabalhou com POO antes, pode ser que queira algo mais completo; Eu sugeriria parar aqui e revisar o básico no site do [Processing](https://processing.org/tutorials/objects/) (página em Inglês) antes de continuar.
 
 
-Um **objeto** em Processing é uma entidade que possui dados e funcionalidade. Nós queremos projetar um objeto Walker que mantém tanto o registro de seus dados (onde ele existe na tela) quanto tem a capacidade de executar certas ações (como se desenhar ou dar um passo).
+Um **objeto** em Processing é uma entidade que possui dados e funcionalidade. Nós queremos projetar um objeto *walker* que mantém tanto o registro de seus dados (onde ele existe na tela) quanto tem a capacidade de executar certas ações (como se desenhar ou dar um passo).
 
 Uma **classe** é o modelo para criar instâncias reais de objetos. Pense em uma classe como um cortador de biscoitos; os objetos são os próprios biscoitos.
 
-Vamos começar definindo a classe Walker - o que significa ser um objeto Walker. O Walker só precisa de dois dados - um número para sua localização x e um para sua localização y.
+Vamos começar definindo a classe *walker* - o que significa ser um objeto *walker*. O *walker* só precisa de dois dados - um número para sua localização x e um para sua localização y.
 
 ```java
     class Walker {
@@ -46,7 +46,7 @@ Vamos começar definindo a classe Walker - o que significa ser um objeto Walker.
       int y;
 ```
 
-Cada classe deve ter um construtor, uma função especial que é chamada quando o objeto é criado pela primeira vez. Você pode pensar nisso como o setup() - configuração - do objeto. Lá, inicializaremos a localização inicial do Walker (neste caso, o centro da janela).
+Cada classe deve ter um construtor, uma função especial que é chamada quando o objeto é criado pela primeira vez. Você pode pensar nisso como o setup() - configuração - do objeto. Lá, inicializaremos a localização inicial do *walker* (neste caso, o centro da janela).
 
 ```java
     Walker() {    // Os objetos têm um construtor onde eles são inicializados.
@@ -55,7 +55,7 @@ Cada classe deve ter um construtor, uma função especial que é chamada quando 
     }
 ```
 
-Finalmente, além de dados, as classes podem ser definidas com funcionalidades. Neste exemplo, um Walker tem duas funções. Primeiro, escrevemos uma função que permite que o objeto se exiba (como um ponto branco).
+Finalmente, além de dados, as classes podem ser definidas com funcionalidades. Neste exemplo, um *walker* tem duas funções. Primeiro, escrevemos uma função que permite que o objeto se exiba (como um ponto branco).
 
 ```java
 void display() {    // Os objetos têm funções.
@@ -64,7 +64,7 @@ void display() {    // Os objetos têm funções.
   }
 ```
 
-A segunda função direciona o objeto Walker para dar um passo. Agora, é aqui que as coisas ficam um pouco mais interessantes. Se lembra de quando estávamos andando aleatoriamente pelo chão? Bem, agora podemos usar uma janela no Processing para fazer a mesma coisa. Existem quatro passos possíveis. Um passo para a direita pode ser simulado incrementando x (x ++); Para a esquerda, decrementando x (x --); Para a frente, indo para baixo um pixel (y ++); E para trás, subindo um pixel (y --). Como escolhemos uma dessas quatro possibilidades? Anteriormente, afirmamos que poderíamos virar duas moedas. No Processing, no entanto, quando queremos escolher aleatoriamente de uma lista de opções, podemos escolher um número aleatório usando random().
+A segunda função direciona o objeto *walker* para dar um passo. Agora, é aqui que as coisas ficam um pouco mais interessantes. Se lembra de quando estávamos andando aleatoriamente pelo chão? Bem, agora podemos usar uma janela no Processing para fazer a mesma coisa. Existem quatro passos possíveis. Um passo para a direita pode ser simulado incrementando x (x ++); Para a esquerda, decrementando x (x --); Para a frente, indo para baixo um pixel (y ++); E para trás, subindo um pixel (y --). Como escolhemos uma dessas quatro possibilidades? Anteriormente, afirmamos que poderíamos virar duas moedas. No Processing, no entanto, quando queremos escolher aleatoriamente de uma lista de opções, podemos escolher um número aleatório usando random().
 
 ```java
 void step() {
@@ -87,10 +87,10 @@ if (choice == 0) {    // A escolha aleatória determina nosso passo.
 }
 ```
 
-Agora que escrevemos a classe, é hora de fazer um objeto Walker na parte principal do nosso *sketch* - setup() e draw(). Assumindo que estamos procurando modelar uma única caminhada aleatória, declaramos uma variável global do tipo Walker.
+Agora que escrevemos a classe, é hora de fazer um objeto *walker* na parte principal do nosso *sketch* - setup() e draw(). Assumindo que estamos procurando modelar uma única caminhada aleatória, declaramos uma variável global do tipo *walker*.
 
 ```java
-Walker w;    // Um objeto Walker
+Walker w;    // Um objeto walker
 ```
 Em seguida, criamos o objeto no setup() chamando o construtor com o novo operador.
 
@@ -101,29 +101,29 @@ Em seguida, criamos o objeto no setup() chamando o construtor com o novo operado
 ```java
 void setup() {
   size(640,360);
-  w = new Walker();    // Crie o Walker.
+  w = new Walker();    // Crie o walker.
   background(255);
 }
 ```
 
-Finalmente, durante cada ciclo através do draw(), pedimos ao Walker para dar um passo e desenhar um ponto.
+Finalmente, durante cada ciclo através do draw(), pedimos ao *walker* para dar um passo e desenhar um ponto.
 
 ```java
 void draw() {
-  w.step();    // Chame as funções do Walker.
+  w.step();    // Chame as funções do walker.
   w.display();
 }
 ```
 
 Uma vez que desenhamos o plano de fundo apenas uma vez no setup(), em vez de limpá-lo continuamente cada vez através do draw(), vemos a trilha da caminhada aleatória em nossa janela do Processing.
 
-Existem algumas melhorias que poderíamos fazer para o caminhante aleatório. Primeiro, as escolhas deste Walker estão limitadas a quatro opções - para cima, para baixo, para a esquerda e para a direita. Mas qualquer pixel da janela tem oito possíveis vizinhos, e uma nona possibilidade é ficar no mesmo lugar.
+Existem algumas melhorias que poderíamos fazer para o caminhante aleatório. Primeiro, as escolhas deste *walker* estão limitadas a quatro opções - para cima, para baixo, para a esquerda e para a direita. Mas qualquer pixel da janela tem oito possíveis vizinhos, e uma nona possibilidade é ficar no mesmo lugar.
 
 ![1](https://github.com/arteprog/Processando-Processing/blob/master/natureza-do-codigo/assets/intro_01.png?raw=true)
 
 Figura I.1
 
-Para implementar um objeto Walker que pode pisar em qualquer pixel vizinho (ou ficar parado), poderíamos escolher um número entre 0 e 8 (nove escolhas possíveis). No entanto, a maneira mais eficiente para escrever este código seria a de simplesmente escolher a partir de três passos possíveis ao longo do eixo x (-1, 0, ou 1) e três passos possíveis ao longo do eixo y.
+Para implementar um objeto *walker* que pode pisar em qualquer pixel vizinho (ou ficar parado), poderíamos escolher um número entre 0 e 8 (nove escolhas possíveis). No entanto, a maneira mais eficiente para escrever este código seria a de simplesmente escolher a partir de três passos possíveis ao longo do eixo x (-1, 0, ou 1) e três passos possíveis ao longo do eixo y.
 
 ```java
  void step() {
@@ -134,7 +134,7 @@ Para implementar um objeto Walker que pode pisar em qualquer pixel vizinho (ou f
   }
 ```
 
-Ainda mais longe, poderíamos usar números de ponto flutuante (ou seja, números decimais) para x e y e mover o Walker de acordo com um valor arbitrário aleatório entre -1 e 1.
+Ainda mais longe, poderíamos usar números de ponto flutuante (ou seja, números decimais) para x e y e mover o *walker* de acordo com um valor arbitrário aleatório entre -1 e 1.
 
 ```java
 void step() {
@@ -145,7 +145,7 @@ void step() {
   }
 ```
   
-Todas estas variações na caminhada aleatória "tradicional" têm uma coisa em comum: a qualquer momento no tempo, a probabilidade de que o Walker dê um passo em uma determinada direção é igual à probabilidade de que o Walker dê um passo em qualquer direção. Em outras palavras, se houver quatro passos possíveis, há uma chance de 1 em 4 (ou 25%) que o Walker irá dar qualquer passo. Com nove passos possíveis, é uma chance de 1 em 9 (ou 11,1%). 
+Todas estas variações na caminhada aleatória "tradicional" têm uma coisa em comum: a qualquer momento no tempo, a probabilidade de que o *walker* dê um passo em uma determinada direção é igual à probabilidade de que o *walker* dê um passo em qualquer direção. Em outras palavras, se houver quatro passos possíveis, há uma chance de 1 em 4 (ou 25%) que o *walker* irá dar qualquer passo. Com nove passos possíveis, é uma chance de 1 em 9 (ou 11,1%). 
 
 Convenientemente, é assim que a função random() funciona. O gerador de números aleatórios do Processing (que opera nos bastidores) produz o que é conhecido como distribuição "uniforme" de números. Podemos testar esta distribuição com um *sketch* no Processing que sorteia um número aleatório de cada vez e utiliza o resultado para definir a altura de um retângulo.
 
@@ -153,7 +153,7 @@ Convenientemente, é assim que a função random() funciona. O gerador de númer
 
 #### Exemplo 1.2: Distribuição aleatória de números
 
-```pde
+```java
 int[] randomCounts; // um array que registra qual a frequência que um número aleatório é sorteado
 
 void setup(){
@@ -188,3 +188,118 @@ Os números randômicos que obtemos utilizando a função random() não são rea
 Crie um caminhante aleatório que tenha a tendência de se mover para baixo e para a direita (Veremos a solução para isso na próxima seção).
 
 ### I.3 Probabilidade e distribuições não uniformes
+
+Lembra quando você começou a programar em Processing? Talvez você queira desenhar muitos círculos na tela. Então você disse a si mesmo: “Ah, eu sei. Vou desenhar todos esses círculos em locais aleatórios, com tamanhos e cores aleatórias”. Em um sistema de computação gráfica, muitas vezes é mais fácil semear um sistema com aleatoriedade. Neste livro, no entanto, nós estamos a procura de construir sistemas modelados com base no que vemos na natureza. Um padrão de aleatoriedade não é uma solução particularmente cuidadosa para um problema de design – em particular, o tipo de problema que envolve a criação de uma simulação orgânica ou de aparência natural.
+
+Com alguns truques, nós podemos modificar a maneira como usamos random() para produzir distribuições “não uniformes” de números aleatórios. Isso será útil ao longo do livro, quando examinarmos diversos cenários diferentes. Quando examinamos algoritmos genéticos, por exemplo, nós precisaremos de uma metodologia para realizar a “seleção” – quais membros da nossa população devem ser selecionados para passar seu DNA para a próxima geração? Lembra do conceito de sobrevivência do mais apto? Digamos que temos uma população de macacos evoluindo. Nem todos os macacos terão chances iguais de reprodução. Para simular a evolução Darwiniana, não podemos simplesmente escolher dois macacos aleatórios para serem os pais. Precisamos que os mais “adequados” tenham maior probabilidade de serem escolhidos. Precisamos definir a “probabilidade do mais apto”. Por exemplo, um macaco particularmente rápido e forte pode ter 90% de chance de procriar, enquanto um macaco mais fraco tem apenas 10% de chance.
+
+Vamos fazer uma pausa aqui e dar uma olhada nos princípios básicos da probabilidade. Primeiro, examinaremos a probabilidade de um único evento, ou seja, a probabilidade de um determinado evento ocorrer.
+
+Se você tem um sistema com um certo número de resultados possíveis, a probabilidade de ocorrência de um determinado evento é igual ao número de resultados que se qualificam como aquele evento dividido pelo número total de todos os resultados possíveis. O lançamento da moeda é um exemplo simples - tem apenas dois resultados possíveis: cara ou coroa. Só existe uma maneira de virar cara. A probabilidade de que a moeda dê cara, portanto, é dividida por dois: 1/2 ou 50%.
+
+Pegue um baralho de cinquenta e duas cartas. A probabilidade de tirar um ás desse baralho é:
+
+número de ases / número de cartas = 4/52 = 0,077 = ~ 8%
+
+A probabilidade de tirar um diamante é:
+
+número de diamantes / número de cartas = 13/52 = 0,25 = 25%
+
+Também podemos calcular a probabilidade de vários eventos ocorrerem em sequência. Para fazer isso, simplesmente multiplicamos as probabilidades individuais de cada evento.
+
+A probabilidade de uma moeda dar cara três vezes seguidas é:
+
+(1/2) * (1/2) * (1/2) = 1/8 (ou 0,125)
+
+... o que significa que uma moeda vai dar cara três vezes seguidas em uma em cada oito vezes (cada "vez" sendo três lançamentos).
+
+#### Exercício I.2
+
+Qual é a probabilidade de tirar dois ases seguidos de um baralho de cinquenta e duas cartas?
+
+Existem algumas maneiras pelas quais podemos usar a função random() com probabilidade no código. Uma técnica é preencher um *array* com uma seleção de números - alguns dos quais serão repetidos - e, em seguida, escolher números aleatórios desse *array* e gerar eventos com base nessas escolhas.
+
+```java
+nt[] stuff = new int[5]
+
+stuff[0] = 1; \\ 1 será guardado no array duas vezes, aumentando a probabilidade de seleciona-lo
+stuff[1] = 1;
+
+stuff[2] = 2;
+stuff[3] = 3;
+stuff[4] = 3;
+
+int index = int(random(stuff.length)); \\ selecionando um elemento do array
+```
+
+A execução desse código produzirá 40% de chance de imprimir o valor 1, 20% de chance de imprimir 2 e 40% de chance de imprimir 3.
+
+Também podemos pedir um número aleatório (vamos simplificar e apenas considerar valores de ponto flutuante aleatório entre 0 e 1) e permitir que um evento ocorra apenas se nosso número aleatório estiver dentro de um determinado intervalo. Por exemplo:
+
+```java
+float prob = 0.10; \\ probabilidade de 10%
+
+float r = random(1); \\ um valor de ponto flutuante aleatório entre 0 e 1
+
+If our random number is less than 0.1, try again!
+
+if (r < prob) { \\se nosso número aleatório for menor que 0.1, tente novamente!
+   // tente novamente!
+}
+```
+
+Este método também pode ser aplicado para múltiplos resultados. Digamos que o Resultado A tenha 60% de chance de acontecer, o Resultado B, uma chance de 10% e o Resultado C, uma chance de 30%. Implementaremos isso no código, escolhendo um *float* aleatório e vendo em que intervalo ele irá cair.
+
+- entre 0,00 e 0,60 (60%) –> Resultado A
+- entre 0,60 and 0,70 (10%) –> Resultado B
+- entre 0,70 e 1,00 (30%) –> Resultado C
+
+```java
+float num = random(1);
+
+if (num < 0.6) { // se o número aleatório for menor que 0,6
+  println("Resultado A");
+
+} else if (num < 0.7) { // entre 0,6 e 0,7
+  println("Resultado B");
+
+} else { // maior que 0,7
+  println("Resultado C");
+}
+
+```
+
+Poderíamos usar a metodologia acima para criar um *walker* aleatório que tende a se mover para a direita. Aqui está um exemplo de um *walker* com as seguintes probabilidades:
+
+- chance de subir: 20%
+- chance de descer: 20%
+- chance de mover para a esquerda: 20%
+- chance de mover para a direita: 40%
+
+**INSERIR FIGURA DE EXEMPLO**
+
+Exemplo I.3: O *walker* que tende se mover para a direita
+
+```java
+void step() {
+ 
+    float r = random(1);
+
+    if (r < 0.4) { \\ chance de 40% de se mover para a direita!
+      x++;
+    } else if (r < 0.6) {
+      x--;
+    } else if (r < 0.8) {
+      y++;
+    } else {
+      y--;
+    }
+  }
+```
+
+#### Exercício I.3
+
+Crie um *walker* aleatório com probabilidades dinâmicas. Por exemplo, você conseguiria dar a ele uma probabilidade de 50% de chance de se mover na direção do mouse?
+
+### I.4 Uma Distribuição Normal de Números Aleatórios
+
