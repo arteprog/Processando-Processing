@@ -31,7 +31,7 @@ Bom, isso pode parecer um algoritmo particularmente simples. No entanto, caminha
 
 ### I.2 A classe Random Walker
 
-Vamos rever um pouco de programação orientada a objetos (POO) primeiramente construindo um objeto Walker. Esta será apenas uma revisão rápida. Se você nunca trabalhou com POO antes, pode ser que queira algo mais completo; Eu sugeriria parar aqui e revisar o básico no site do [Processing](https://processing.org/tutorials/objects/) (página em Inglês) antes de continuar.
+Vamos rever um pouco de programação orientada a objetos (POO) primeiramente construindo um objeto Walker ("Caminhante"). Esta será apenas uma revisão rápida. Se você nunca trabalhou com POO antes, pode ser que queira algo mais completo; Eu sugeriria parar aqui e revisar o básico no site do [Processing](https://processing.org/tutorials/objects/) (página em Inglês) antes de continuar.
 
 
 Um **objeto** em Processing é uma entidade que possui dados e funcionalidade. Nós queremos projetar um objeto Walker que mantém tanto o registro de seus dados (onde ele existe na tela) quanto tem a capacidade de executar certas ações (como se desenhar ou dar um passo).
@@ -90,7 +90,7 @@ if (choice == 0) {    // A escolha aleatória determina nosso passo.
 Agora que escrevemos a classe, é hora de fazer um objeto Walker na parte principal do nosso *sketch* - setup() e draw(). Assumindo que estamos procurando modelar uma única caminhada aleatória, declaramos uma variável global do tipo Walker.
 
 ```java
-Walker w;    // Um objeto Walker
+Walker w;    // Um objeto walker
 ```
 Em seguida, criamos o objeto no setup() chamando o construtor com o novo operador.
 
@@ -101,7 +101,7 @@ Em seguida, criamos o objeto no setup() chamando o construtor com o novo operado
 ```java
 void setup() {
   size(640,360);
-  w = new Walker();    // Crie o Walker.
+  w = new Walker();    // Crie o walker.
   background(255);
 }
 ```
@@ -110,7 +110,7 @@ Finalmente, durante cada ciclo através do draw(), pedimos ao Walker para dar um
 
 ```java
 void draw() {
-  w.step();    // Chame as funções do Walker.
+  w.step();    // Chame as funções do walker.
   w.display();
 }
 ```
@@ -153,7 +153,7 @@ Convenientemente, é assim que a função random() funciona. O gerador de númer
 
 #### Exemplo 1.2: Distribuição aleatória de números
 
-```pde
+```java
 int[] randomCounts; // um array que registra qual a frequência que um número aleatório é sorteado
 
 void setup(){
@@ -179,12 +179,228 @@ void draw(){
 
 A captura de tela acima mostra o resultado do *sketch* sendo executado por alguns minutos. Observe como cada barra do gráfico difere em altura. Nosso tamanho de amostra (ou seja, o número de números aleatórios que escolhemos) é bastante pequeno e existem algumas discrepâncias ocasionais, em que determinados números são selecionados com mais frequência. Com o tempo, com um bom gerador de números aleatórios, isso seria o mesmo.
 
-#### Números Pseudo-Randômicos
+---
+**Números Pseudo-Randômicos**
 
 Os números randômicos que obtemos utilizando a função random() não são realmente randômicos; portanto são chamados de "pseudo-randômicos". Eles são o resultado de funções matemáticas que simulam randomicidade. A função pode gerar um padrão ao longo do tempo, mas esse período é tão longo para nós que o padrão é imperceptível. Os números "pseudo-randômicos" funcionam tão bem quanto os randômicos nas aplicações de Processing.
+---
 
 #### Exercício I.1
 
 Crie um caminhante aleatório que tenha a tendência de se mover para baixo e para a direita (Veremos a solução para isso na próxima seção).
 
 ### I.3 Probabilidade e distribuições não uniformes
+
+Lembra quando você começou a programar em Processing? Talvez você queira desenhar muitos círculos na tela. Então você disse a si mesmo: “Ah, eu sei. Vou desenhar todos esses círculos em locais aleatórios, com tamanhos e cores aleatórias”. Em um sistema de computação gráfica, muitas vezes é mais fácil semear um sistema com aleatoriedade. Neste livro, no entanto, nós estamos a procura de construir sistemas modelados com base no que vemos na natureza. Um padrão de aleatoriedade não é uma solução particularmente cuidadosa para um problema de design – em particular, o tipo de problema que envolve a criação de uma simulação orgânica ou de aparência natural.
+
+Com alguns truques, nós podemos modificar a maneira como usamos random() para produzir distribuições “não uniformes” de números aleatórios. Isso será útil ao longo do livro, quando examinarmos diversos cenários diferentes. Quando examinamos algoritmos genéticos, por exemplo, nós precisaremos de uma metodologia para realizar a “seleção” – quais membros da nossa população devem ser selecionados para passar seu DNA para a próxima geração? Lembra do conceito de sobrevivência do mais apto? Digamos que temos uma população de macacos evoluindo. Nem todos os macacos terão chances iguais de reprodução. Para simular a evolução Darwiniana, não podemos simplesmente escolher dois macacos aleatórios para serem os pais. Precisamos que os mais “adequados” tenham maior probabilidade de serem escolhidos. Precisamos definir a “probabilidade do mais apto”. Por exemplo, um macaco particularmente rápido e forte pode ter 90% de chance de procriar, enquanto um macaco mais fraco tem apenas 10% de chance.
+
+Vamos fazer uma pausa aqui e dar uma olhada nos princípios básicos da probabilidade. Primeiro, examinaremos a probabilidade de um único evento, ou seja, a probabilidade de um determinado evento ocorrer.
+
+Se você tem um sistema com um certo número de resultados possíveis, a probabilidade de ocorrência de um determinado evento é igual ao número de resultados que se qualificam como aquele evento dividido pelo número total de todos os resultados possíveis. O lançamento da moeda é um exemplo simples - tem apenas dois resultados possíveis: cara ou coroa. Só existe uma maneira de virar cara. A probabilidade de que a moeda dê cara, portanto, é dividida por dois: 1/2 ou 50%.
+
+Pegue um baralho de cinquenta e duas cartas. A probabilidade de tirar um ás desse baralho é:
+
+número de ases / número de cartas = 4/52 = 0,077 = ~ 8%
+
+A probabilidade de tirar um diamante é:
+
+número de diamantes / número de cartas = 13/52 = 0,25 = 25%
+
+Também podemos calcular a probabilidade de vários eventos ocorrerem em sequência. Para fazer isso, simplesmente multiplicamos as probabilidades individuais de cada evento.
+
+A probabilidade de uma moeda dar cara três vezes seguidas é:
+
+(1/2) * (1/2) * (1/2) = 1/8 (ou 0,125)
+
+... o que significa que uma moeda vai dar cara três vezes seguidas em uma em cada oito vezes (cada "vez" sendo três lançamentos).
+
+#### Exercício I.2
+
+Qual é a probabilidade de tirar dois ases seguidos de um baralho de cinquenta e duas cartas?
+
+Existem algumas maneiras pelas quais podemos usar a função random() com probabilidade no código. Uma técnica é preencher um *array* com uma seleção de números - alguns dos quais serão repetidos - e, em seguida, escolher números aleatórios desse *array* e gerar eventos com base nessas escolhas.
+
+```java
+nt[] stuff = new int[5]
+
+stuff[0] = 1; // 1 será guardado no array duas vezes, aumentando a probabilidade de seleciona-lo
+stuff[1] = 1;
+
+stuff[2] = 2;
+stuff[3] = 3;
+stuff[4] = 3;
+
+int index = int(random(stuff.length)); // selecionando um elemento do array
+```
+
+A execução desse código produzirá 40% de chance de imprimir o valor 1, 20% de chance de imprimir 2 e 40% de chance de imprimir 3.
+
+Também podemos pedir um número aleatório (vamos simplificar e apenas considerar valores de ponto flutuante aleatório entre 0 e 1) e permitir que um evento ocorra apenas se nosso número aleatório estiver dentro de um determinado intervalo. Por exemplo:
+
+```java
+float prob = 0.10; // probabilidade de 10%
+
+float r = random(1); // um valor de ponto flutuante aleatório entre 0 e 1
+
+If our random number is less than 0.1, try again!
+
+if (r < prob) { // se nosso número aleatório for menor que 0.1, tente novamente!
+   // tente novamente!
+}
+```
+
+Este método também pode ser aplicado para múltiplos resultados. Digamos que o Resultado A tenha 60% de chance de acontecer, o Resultado B, uma chance de 10% e o Resultado C, uma chance de 30%. Implementaremos isso no código, escolhendo um *float* aleatório e vendo em que intervalo ele irá cair.
+
+- entre 0,00 e 0,60 (60%) –> Resultado A
+- entre 0,60 and 0,70 (10%) –> Resultado B
+- entre 0,70 e 1,00 (30%) –> Resultado C
+
+```java
+float num = random(1);
+
+if (num < 0.6) { // se o número aleatório for menor que 0,6
+  println("Resultado A");
+
+} else if (num < 0.7) { // entre 0,6 e 0,7
+  println("Resultado B");
+
+} else { // maior que 0,7
+  println("Resultado C");
+}
+
+```
+
+Poderíamos usar a metodologia acima para criar um *walker* ("caminhante") aleatório que tende a se mover para a direita. Aqui está um exemplo de um *walker* com as seguintes probabilidades:
+
+- chance de subir: 20%
+- chance de descer: 20%
+- chance de mover para a esquerda: 20%
+- chance de mover para a direita: 40%
+
+**INSERIR FIGURA DE EXEMPLO**
+
+Exemplo I.3: O *walker* que tende se mover para a direita
+
+```java
+void step() {
+ 
+    float r = random(1);
+
+    if (r < 0.4) { // chance de 40% de se mover para a direita!
+      x++;
+    } else if (r < 0.6) {
+      x--;
+    } else if (r < 0.8) {
+      y++;
+    } else {
+      y--;
+    }
+  }
+```
+
+#### Exercício I.3
+
+Crie um *walker* aleatório com probabilidades dinâmicas. Por exemplo, você conseguiria dar a ele uma probabilidade de 50% de chance de se mover na direção do mouse?
+
+### I.4 Uma Distribuição Normal de Números Aleatórios
+
+Vamos voltar para aquela população de macacos simulada no Procesing. Seu programa gera mil objetos Monkey ("Macacos"), cada um com um valor de altura entre 200 e 300 (pois este é um mundo de macacos que possuem alturas entre 200 e 300 pixels).
+
+```java
+float h = random(200,300);
+```
+
+Isso representa com precisão as alturas dos organismos do mundo real? Pense em uma calçada lotada na cidade de Nova York. Escolha qualquer pessoa nessa rua e isso pode parecer que sua altura é aleatória. No entanto, não é o tipo de aleatório que random() produz. As alturas das pessoas não são distribuídas uniformemente; há muito mais pessoas de estatura média do que muito altas ou muito baixas. Para simular a natureza, gostaríamos de uma maior probabilidade de que nossos macacos tenham uma altura média (250 pixels), mas ainda permitir que eles sejam, ocasionalmente, muito baixos ou muito altos.
+
+Uma distribuição de valores que se agrupam em torno de uma média (*mean*) é conhecida como distribuição "normal". É também chamada de distribuição Gaussiana (em homenagem ao matemático Carl Friedrich Gauss) ou, se você for francês, de distribuição Laplaciana (em homenagem a Pierre-Simon Laplace). Ambos os matemáticos trabalharam simultaneamente no início do século XIX na definição dessa distribuição.
+
+Ao representar graficamente a distribuição, você obtém algo semelhante a seguinte imagem, informalmente conhecida como curva de sino:
+
+**INSERIR FIGURAS I.2 e I.3**
+
+A curva é gerada por uma função matemática que define a probabilidade de qualquer valor ocorrer em função da média (muitas vezes escrita como μ, a letra grega mu) e do desvio padrão (σ, a letra grega sigma).
+
+A média é muito fácil de entender. No caso dos nossos valores da altura entre 200 e 300, você provavelmente tem uma noção intuitiva da média como 250. No entanto, e se eu dissesse que o desvio padrão é 3 ou 15? O que isso significa para os números? Os gráficos acima devem nos dar uma dica. O gráfico à esquerda nos mostra a distribuição com um desvio padrão muito baixo, onde a maioria dos valores se agrupa próximo à média. O gráfico à direita nos mostra um desvio padrão mais alto, em que os valores são mais uniformemente espalhados da média.
+
+Os números funcionam da seguinte forma: dada uma população, 68% dos membros dessa população terão valores na faixa de um desvio padrão da média, 98% dentro de dois desvios padrão e 99,7% dentro de três desvios padrão. Dado um desvio padrão de 5 pixels, apenas 0,3% das alturas dos macacos será menor que 235 pixels (três desvios padrão abaixo da média de 250) ou maior que 265 pixels (três desvios padrão acima da média de 250).
+
+---
+
+**Calculando a Média e o Desvio Padrão**
+
+Considere uma sala de aula com dez alunos que recebem as seguintes pontuações (de 100) em um teste:
+
+85, 82, 88, 86, 85, 93, 98, 40, 73, 83
+
+A média é: 81,3
+
+O desvio padrão é calculado como a raiz quadrada da média dos quadrados dos desvios em torno da média. Em outras palavras, pegue a diferença da média para cada pessoa e eleve ao quadrado (variância). Calcule a média de todos esses valores e tome a raiz quadrada como o desvio padrão.
+
+| **Pontuação** | **Diferença da média** | **Variância**        |
+|---------------|------------------------|----------------------|
+| 85            | 85-81,3 = 3,7          | (3,7)^2 = 13,69      |
+| 40            | 40-81,3 = -41,3        | (-41,3)^22 = 1705,69 |
+| etc.          |                        |                      |
+|               | **Variância média**    | 254,23               |
+
+
+**O desvio padrão é a raiz quadrada da variância média: 15,13**
+
+---
+
+Felizmente para nós, para utilizarmos uma distribuição normal de números aleatórios em um *sketch* no Processing, não precisamos fazer nenhum desses cálculos manualmente. Em vez disso, podemos fazer uso de uma classe conhecida como Random, que obtemos gratuitamente como parte das bibliotecas padrão em Java importadas para o Processing (para mais informações consulte os [JavaDocs](http://docs.oracle.com/javase/6/docs/api/java/util/Random.html)).
+
+Para utilizar a classe Random, devemos primeiro declarar uma variável do tipo Random e criar o objeto Random em setup().
+
+```java
+Random generator; // nós utilizamos o nome "generator" porque o que temos aqui pode ser pensado como um gerador de números aleatórios
+ 
+void setup() {
+  size(640,360);
+  generator = new Random();
+}
+
+```
+
+Se quisermos produzir um número aleatório com uma distribuição normal (ou Gaussiana) cada vez que executamos o draw(), é tão fácil quanto chamar a função nextGaussian().
+
+
+```java
+void draw() { // pedindo para um número aleatório Gaussiano (note que nextGaussian() retorna um "double" e deve ser convertido em um "float")
+  float num = (float) generator.nextGaussian();
+}
+```
+
+Aqui está um detalhe. O que devemos fazer com esse valor? E se quiséssemos usá-lo, por exemplo, para atribuir a posição x de um desenho na tela?
+
+A função nextGaussian() retorna uma distribuição normal de números aleatórios com os seguintes parâmetros: uma média de zero e um desvio padrão de um. Digamos que queremos uma média de 320 (o pixel horizontal central em uma janela de 640 largura) e um desvio padrão de 60 pixels. Podemos ajustar o valor aos nossos parâmetros multiplicando-o pelo desvio padrão e adicionando a média.
+
+**INSERIR FIGURA EXEMPLO I.4**
+
+```java
+void draw() { // observe que o nextGaussian() retorna um "double".
+
+  float num = (float) generator.nextGaussian();
+  float sd = 60;
+  float mean = 320;
+ 
+  float x = sd * num + mean; // multiplique pelo desvio padrão da média e adicione-o na média
+ 
+  noStroke();
+  fill(255,10);
+  ellipse(x,180,16,16);
+}
+```
+
+Desenhando as elipses umas sobre as outras com um pouco de transparência, podemos observar a distribuição claramente. O ponto mais brilhante fica próximo ao centro, onde a maioria dos valores se agrupam, mas de vez em quando os círculos são desenhados mais à direita ou à esquerda do centro.
+
+#### Exercício I.4
+
+Considere uma simulação de respingos de tinta desenhada como uma coleção de pontos coloridos. A maior parte da tinta se aglomera em torno de um local central, mas alguns pontos se espalham em direção às bordas. Você consegue utilizar a distribuição normal de números aleatórios para gerar as localizações destes pontos? Você também conseguiria utilizar a distribuição normal de números aleatórios para gerar uma paleta de cores?
+
+#### Exercício I.5
+
+Um caminhante aleatório gaussiano (*Gaussian random walker*) é definido como aquele em que o tamanho do passo (a distância que o objeto se move em uma determinada direção) é gerado por uma distribuição normal. Implemente esta variação no nosso caminhante aleatório.
+
+### I.5 Uma Distriuição de Números Aleatórios Personalizados
