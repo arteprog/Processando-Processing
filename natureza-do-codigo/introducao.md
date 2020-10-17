@@ -180,9 +180,11 @@ void draw(){
 A captura de tela acima mostra o resultado do *sketch* sendo executado por alguns minutos. Observe como cada barra do gráfico difere em altura. Nosso tamanho de amostra (ou seja, o número de números aleatórios que escolhemos) é bastante pequeno e existem algumas discrepâncias ocasionais, em que determinados números são selecionados com mais frequência. Com o tempo, com um bom gerador de números aleatórios, isso seria o mesmo.
 
 ---
+
 **Números Pseudo-Randômicos**
 
 Os números randômicos que obtemos utilizando a função random() não são realmente randômicos; portanto são chamados de "pseudo-randômicos". Eles são o resultado de funções matemáticas que simulam randomicidade. A função pode gerar um padrão ao longo do tempo, mas esse período é tão longo para nós que o padrão é imperceptível. Os números "pseudo-randômicos" funcionam tão bem quanto os randômicos nas aplicações de Processing.
+
 ---
 
 #### Exercício I.1
@@ -339,8 +341,8 @@ O desvio padrão é calculado como a raiz quadrada da média dos quadrados dos d
 
 | **Pontuação** | **Diferença da média** | **Variância**        |
 |---------------|------------------------|----------------------|
-| 85            | 85-81,3 = 3,7          | (3,7)^2 = 13,69      |
-| 40            | 40-81,3 = -41,3        | (-41,3)^22 = 1705,69 |
+| 85            | 85-81,3 = 3,7          | (3,7)<sup>2</sup> = 13,69      |
+| 40            | 40-81,3 = -41,3        | (-41,3)<sup>2</sup> = 1705,69 |
 | etc.          |                        |                      |
 |               | **Variância média**    | 254,23               |
 
