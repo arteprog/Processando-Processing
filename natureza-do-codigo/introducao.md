@@ -180,9 +180,9 @@ void draw(){
 
 A captura de tela acima mostra o resultado do *sketch* sendo executado por alguns minutos. Observe como cada barra do gráfico difere em altura. Nosso tamanho de amostra (ou seja, o número de números aleatórios que escolhemos) é bastante pequeno e existem algumas discrepâncias ocasionais, em que determinados números são selecionados com mais frequência. Com o tempo, com um bom gerador de números aleatórios, isso seria o mesmo.
 
-> **Números Pseudo-Randômicos**
+> **Números Pseudo-aleatórios**
 
-> Os números randômicos que obtivemos utilizando a função `random()` não são realmente randômicos; portanto são chamados de "pseudoaleatórios". Eles são o resultado de funções matemáticas que simulam aleatoriedade. A função pode gerar um padrão ao longo do tempo, mas esse período é tão longo para nós que o padrão é imperceptível. Os números "pseudoaleatórios" funcionam tão bem quanto os randômicos nas aplicações de Processing.
+> Os números aleatórios, ou randômicos, que obtivemos utilizando a função `random()` não são realmente aleatórios; portanto são chamados de "pseudoaleatórios". Eles são o resultado de funções matemáticas que simulam aleatoriedade. A função pode gerar um padrão ao longo do tempo, mas esse período é tão longo para nós que o padrão é imperceptível. Os números "pseudoaleatórios" funcionam tão bem quanto os verdadeiramente randômicos nas aplicações de Processing.
 
 #### Exercício I.1
 
@@ -322,7 +322,6 @@ A média é muito fácil de entender. No caso dos nossos valores da altura entre
 
 Os números funcionam da seguinte forma: dada uma população, 68% dos membros dessa população terão valores na faixa de um desvio padrão da média, 98% dentro de dois desvios padrão e 99,7% dentro de três desvios padrão. Dado um desvio padrão de 5 pixels, apenas 0,3% das alturas dos macacos será menor que 235 pixels (três desvios padrão abaixo da média de 250) ou maior que 265 pixels (três desvios padrão acima da média de 250).
 
-
 > **Calculando a Média e o Desvio Padrão**
 > 
 > Considere uma sala de aula com dez alunos que recebem as seguintes pontuações (de 100) em um teste:
@@ -341,7 +340,6 @@ Os números funcionam da seguinte forma: dada uma população, 68% dos membros d
 > |     | **Variância média**    | 254,23               |
 
 > **O desvio padrão é a raiz quadrada da variância média: 15,13**
-
 Felizmente para nós, para utilizarmos uma distribuição normal de números aleatórios em um *sketch* no Processing, não precisamos fazer nenhum desses cálculos manualmente. Em vez disso, podemos fazer uso de uma classe conhecida como Random, que obtemos gratuitamente como parte das bibliotecas padrão em Java importadas para o Processing (para mais informações consulte os [JavaDocs](http://docs.oracle.com/javase/6/docs/api/java/util/Random.html)).
 
 Para utilizar a classe Random, devemos primeiro declarar uma variável do tipo Random e criar o objeto Random em `setup()`.
