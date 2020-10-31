@@ -10,23 +10,23 @@ Processing tem funções embutidas que tornam fácil você fazer objetos em um *
 
 ### Translação: Movendo a grade
 
-As you know, your Processing window works like a piece of graph paper. When you want to draw something, you specify its coordinates on the graph.Here is a simple rectangle drawn with the code`rect(20, 20, 40, 40)`. The coordinatesystem (a fancy word for “graph paper”) is shown in gray.
+Como você sabe, sua janela do Processing funciona como um pedaço de papel milimetrado. Quando você quer desenhar alguma coisa, especifica as cordenadas. Veja um retângulo simples desenhado com o código `rect(20, 20, 40, 40)`. O sistema de coordenadas (um nome sofisticado para o nosso "papel quadriculado") é mostrado aqui em cinza.
 
 ![Black rectangle on gray numbered grid](https://processing.org/tutorials/transform2d/imgs/original.png)
 
-If you want to move the rectangle 60 units right and 80 units down,you can just change the coordinates by adding to the *x* and *y*starting point:`rect(20 + 60, 20 + 80, 40, 40)` and the rectangle will appearin a different place. (We put the arrow in there for dramatic effect.)
+Se você quiser mover o retângulo 60 unidades para a direita e 80 unidades para baixo, pode mudar as coordenadas somando ao *x* e *y* do ponto inicial: `rect(20 + 60, 20 + 80, 40, 40)` e o retângulo vai aparecer em um local diferente. (Pusemos a seta aí para efeito dramático.)
 
 ![Black rectangle on gray numbered grid, moved](https://processing.org/tutorials/transform2d/imgs/new_coords.png)
 
-But there is a more interesting way to do it: **move the graph paper instead**.If you move the graph paper 60 units right and 80 units down,you will get exactly the same visual result. Movingthe coordinate system is called translation.
+Mas tem uma maneira mais interessante de fazer isso: **em vez disso mover o papel quadriculado**. Se você move o papel quadriculado 60 unidades para a direita e 80 para baixo vai obter exatamente o mesmo resultado visual. Mover o sistema de coordenadas é chamado de translação.
 
 ![grid moved with arrow showing motion](https://processing.org/tutorials/transform2d/imgs/moved_grid.png)
 
-The important thing to notice in the preceding diagram is that, as far asthe rectangle is concerned, it hasn’t moved at all. Its upper leftcorner is still at (20,20). When you use transformations, the things youdraw *never* change position; the coordinate system does.
+A coisa importante de se notar no diagrama anterior é que, do ponto de vista do retângulo, ele não se moveu nada. O canto superior esquerdo continual em (20,20). Quando você usa transformações, as coisas que você desenha *nunca* mudam de posição; o sistema de cordenadas muda.
 
-Here is code that draws the rectangle in red by changing its coordinates,then draws it in blue by moving the grid. The rectangles are translucentso that you can see that they are (visually) at the same place. Only the method used tomove them has changed. Copy and paste this code into Processing and give it a try.
+Abaixo o código que desenha o retângulo em vermelho mudando suas coordenadas, e então desenha em azul movendo a grade. Os retângulos são translúcidos de maneira que você pode ver que estão (visualmente) no mesmo lugar. Apenas o método usado para movê-los mudou. Copie este código no Processing e experimente:
 
-```pde
+```java
 void setup()
 {
   size(200, 200);
@@ -52,17 +52,17 @@ void setup()
 
 ```
 
-Let’s look at the translation code in more detail.`pushMatrix()` is a built-in function thatsaves the current position of the coordinate system. The `translate(60, 80)` moves the coordinate system 60 units rightand 80 units down. The `rect(20, 20, 40, 40)` draws therectangle at the same place it was originally. Remember, the things you drawdon’t move—the grid moves instead. Finally,`popMatrix()` restores the coordinate system to the way it wasbefore you did the translate.
+Vamos olhar o código de conversão em mais detalhes.`pushMatrix()` é uma função embutida que salva a posição atual do sistema de coordendas. O `translate(60, 80)` move o sistema de coordenadas 60 para direita e 80 para baixo. O `rect(20, 20, 40, 40)` desenha o retângulo no mesmo local em que estava originalmente. Lembre-se de que as coisas que você desenha não se movem - a grade se move. Por fim,`popMatrix()` restaura o sistema de coordenadas como estava antes de você fazer a translação.
 
-Yes, you could have done a `translate(-60, -80)` tomove the grid back to its original position. However, when you startdoing more sophisticated operations with the coordinate system, it’seasier to use `pushMatrix()` and `popMatrix()` tosave and restore the status rather than having to undo all your operations.Later on in this tutorial, you will find out why those functionsseem to have such strange names.
+Sim, você podia ter feito uma translação `translate(-60, -80)` para mover a grade de volta a sua posição original. No entanto, quando você começa a executar operações mais sofisticadas com o sistema de coordenadas, é mais fácil usar `pushMatrix()` e `popMatrix()` para salvar e restaurar o status em vez de precisar desfazer todas as suas operações. Mais adiante neste tutorial, você descobrirá por que essas funções parecem ter nomes tão estranhos.
 
-### What’s the Advantage?
+### Qual é a vantagem?
 
-You may be thinking that picking up the coordinate system and moving itis a lot more trouble than just adding to coordinates. For a simple examplelike the rectangle, you are correct. But let’s take an example ofwhere `translate()` can make life easier. Here is somecode that draws a row of houses. It uses a loop that calls afunction named `house()`, which takesthe *x* and *y* location of the house’s upper-left corner as its parameters.
+Você pode estar pensando que pegar o sistema de coordenadas e movê-lo é muito mais complicado do que apenas adicionar às coordenadas. Para um exemplo simples, como o retângulo, você está correto. Mas vamos dar um exemplo de onde o `translate()` pode facilitar a vida. Aqui está um código que desenha uma fileira de casas. Ele usa um loop que chama a função chamada `casa()`, que recebe o *x* e *y* da posição do canto superioe esquerdo da casa como parâmetros.
 
 ![Row of stick-figure houses](https://processing.org/tutorials/transform2d/imgs/houses.png)
 
-```pde
+```java
 void setup()
 {
   size(400, 100);
@@ -76,22 +76,20 @@ void setup()
 
 ```
 
-This is the code for drawing the house by changing itsposition. Look at all the additions that youhave to keep track of.
+Este é o código para desenhar a casa alterando sua posição. Veja todos os acréscimos que você precisa acompanhar.
 
-```pde
-void house(int x, int y)
+```java
+Compare isso com a versão da função que usa `translate()`. Neste caso o código desenha a casa no mesmo lugar, com o canto superior esquerdo em (0, 0), e deixa a translação fazer todo o trabalho.void house(int x, int y)
 {
   triangle(x + 15, y, x, y + 15, x + 30, y + 15);
   rect(x, y + 15, 30, 30);
   rect(x + 12, y + 30, 10, 15);
 }
-
-
 ```
 
 Compare that to the version of the function that uses `translate()`.In this case, the code draws the house in the same place every time,with its upper left corner at (0, 0), and lets translation do all thework instead.
 
-```pde
+```java
 void house(int x, int y)
 {
   pushMatrix();
@@ -111,9 +109,9 @@ Além da translação que move a grade, é possível girar o sistema de coordena
 
 ![Degrees are measured clockwise with zero being at 3 o'clock](https://processing.org/tutorials/transform2d/imgs/degrees.png)
 
-Since most people think in degrees, Processing has a built-in `radians()` functionwhich takes a number of degrees as its argument and converts it for you.  It also hasa `degrees()` function that converts radians to degrees. Given that background,let’s try rotating a square clockwise 45 degrees.
+Como a maioria das pessoas pensa em graus, o Processing possui uma função embutida `radians()` que recebe um número em graus como argumento e o converte para você. Ele também possui uma função  `degrees()` que converte radianos em graus. Dado esse cenário, vamos tentar girar um quadrado 45 graus no sentido horário.
 
-```pde
+```java
 void setup()
 {
   size(200, 200);
@@ -129,11 +127,9 @@ void setup()
   rect(40, 40, 40, 40);
   popMatrix();
 }
-
-
 ```
 
-Hey, what happened? How come the square got moved and cut off?The answer is: the square did not move. The **grid** was rotated.Here is what really happened. As you can see, on the rotated coordinate system,the square still has its upper left corner at (40, 40).
+Ei o que aconteceu? Como o quadrado foi movido e cortadao A resposta é: o quadrado não se moveu. A **grade** foi girada. Aqui está o que realmente aconteceu. Como você pode ver, no sistema de coordenadas girado, o quadrado ainda tem seu canto superior esquerdo em (40, 40).
 
 ![shows grid rotated 45 degrees clockwise](https://processing.org/tutorials/transform2d/imgs/rotated_grid.png)
 
@@ -147,9 +143,9 @@ A maneira certa de girar o quadrado é:
 
 ![Grid translated, then rotated](https://processing.org/tutorials/transform2d/imgs/correct_rotate_grid.png)
 
-And here is the code and its result, without the grid marks.
+E aqui está o código que gera o resultado, sem as marcas de grade.
 
-```pde
+```java
 void setup()
 {
   size(200, 200);
@@ -171,13 +167,11 @@ void setup()
   rect(0, 0, 40, 40);
   popMatrix();
 }
-
-
 ```
 
-And here is a program that generates a wheel of colors by usingrotation. The screenshot is reduced to save space.
+E aqui um programa que gera uma roda de cores usando rotação. A captura de tela é reduzida para economizar espaço.
 
-```pde
+```java
 void setup() {
   size(200, 200);
   background(255);
@@ -196,14 +190,13 @@ void draw(){
     popMatrix();
   }
 }
-
 ```
 
-### Scaling
+### Escalando
 
-The final coordinate system transformation isscaling, which changes the size of the grid. Take a look at this example,which draws a square, then scales the grid to twice its normal size,and draws it again.
+A transformação final do sistema de coordenadas é a mudança de escala, que altera o tamanho da grade. Dê uma olhada neste exemplo, que desenha um quadrado, depois redimensiona a grade para o dobro do tamanho normal e a desenha novamente.
 
-```pde
+```java
 void setup()
 {
   size(200,200);
@@ -218,21 +211,20 @@ void setup()
   rect(20, 20, 40, 40);
   popMatrix();
 }
-
-
 ```
 
-First, you can see that the square appears to have moved. It hasn’t, ofcourse. Its upper left corner is still at (20, 20) on thescaled-up grid, but that point isnow twice as far away from the origin as it was in the original coordinatesystem. You can also see that the lines are thicker. That’s no opticalillusion—the lines really are twice as thick, because the coordinate systemhas been scaled to double its size.
+Primeiro, você pode ver que o quadrado parece ter se movido. Claro que não. Seu canto superior esquerdo ainda está em (20, 20) na grade escalada para cima, mas esse ponto está agora duas vezes mais distante da origem do que no sistema de coordenadas original. Você também pode ver que as linhas são mais grossas. Isso não é ilusão de ótica - as linhas realmente têm o dobro da espessura, porque o sistema de coordenadas foi dimensionado para dobrar seu tamanho.
 
-> **Programming Challenge:** Scale up the black square, but keep itsupper left corner in the same place as the gray square. Hint: use `translate()` to move the origin, then use `scale()`.
+> **Desafio de programação** aumente a o tamnaho do quadrado preto, mas mantenha o cantto superior esquerdo dele no mesmo lugar do quadrado cinza. Dica: use `translate()` para mover a origem, então use `scale()`.
 
-There is no law saying that you have to scale the *x* and *y* dimensionsequally. Try using `scale(3.0, 0.5)` to make the *x* dimensionthree times its normal size and the *y* dimension only half its normal size.
 
-### Order Matters
+Não tem uma lei que diz que você tem que escalar as dimensões em *x* e *y* igualmente. Tente usar `scale(3.0, 0.5)` para fazer a dimensão em *x* três vezes maior e a dimensão em *y* metade do tamanho normal.
 
-When you do multiple transformations, the order makes a difference. A rotationfollowed by a translate followed by a scale will not give the same results as atranslate followed by a rotate by a scale. Here is some sample code andthe results.
+### A ordem importa
 
-```pde
+Quando você faz várias transformações, a ordem faz diferença. Uma rotação seguida de uma translação seguida por uma mudança de escala não produzirá os mesmos resultados que uma translação seguida de uma rotação e uma mudança de escala. Aqui está um exemplo de código e os resultados.
+
+```java
 void setup()
 {
   size(200, 200);
@@ -257,37 +249,38 @@ void setup()
   rect(0, 0, 20, 20);
   popMatrix();
 }
-
-
 ```
 
-### The Transformation Matrix
+### A matriz de transformação
 
-Every time you do a rotation, translation, or scaling, the informationrequired to do the transformation is accumulated into a table ofnumbers. This table, or matrix has only a few rowsand columns, yet, through the miracle of mathematics, it contains all theinformation needed to do any series of transformations. And that’swhy the `pushMatrix()` and `popMatrix()` have thatword in their name.
+Sempre que você faz uma rotação, translação ou mudança de escla, as informações necessárias para a transformação são acumuladas em uma tabela de números. Essa tabela, ou matriz, possui apenas algumas linhas e colunas; no entanto, através do milagre da matemática, ela contém todas as informações necessárias para realizar qualquer série de transformações. E é por isso que `pushMatrix ()` e `popMatrix ()` têm essa palavra em seu nome.
 
-### Push and Pop
+### Push e Pop
 
-What about the *push* and *pop* part of the names? These come from a computerconcept known as a stack, which works like a spring-loaded traydispenser in a cafeteria. When someone returns a tray to the stack, its weight pushes the platform down.When someone needs a tray, he takes it from the top of the stack,and the remaining trays pop up a little bit.
+Sobre a parte *push* e *pop* dos nomes? Elas vêm de um conceito de computação conhecido como pilha, que funciona como um dispensador de bandejas com mola em uma lanchonete. Quando alguém devolve uma bandeja para a pilha, seu peso empurra a plataforma para baixo. Quando alguém precisa de uma bandeja, ela a pega da parte superior da pilha e as bandejas restantes aparecem um pouco.
 
-In a similar manner, `pushMatrix()` puts the current status ofthe coordinate system at the top of a memory area, and `popMatrix()`pulls that status back out. The preceding example used`pushMatrix()` and `popMatrix()` to make sure that thecoordinate system was “clean” before each part of the drawing.In all of the other examples, the calls to those two functions weren’treally necessary, but it doesn’t hurt anything to save and restorethe grid status.
 
-Note: in Processing, the coordinate system is restored to its original state(origin at the upper left of the window, no rotation, and no scaling) everytime that the `draw()` function is executed.
+De maneira semelhante, `pushMatrix()` coloca o status atual do sistema de coordenadas no topo de uma área de memória, e `popMatrix()` pega de volta o status. O exemplo anterior usou `pushMatrix()` e `popMatrix()` para garantir que o sistema de coordenação estivesse "limpo" antes de cada parte do desenho. Em todos os outros exemplos, as chamadas para essas duas funções não eram realmente necessárias, mas não custa nada salvar e restaurar o status da grade.
 
-### Three-dimensional Transforms
 
-If you are working in three dimensions, you can call the`translate()` function with three arguments for the*x*, *y*, and *z* distances. Similarly, you cancall `scale()` with three arguments that tell howmuch you want the grid scaled in each of those dimensions.
+Nota: Em Processing, o sistema de coordenadas é restaurado ao seu estado original (origem na parte superior esquerda da janela, sem rotação e sem mudança de escala) toda vez que a função `draw \()` é executada.
 
-For rotation, call the `rotateX()`, `rotateY()`, or `rotateZ()` functionto rotate around each of the axes. All three of these functionsexpect one argument: the number of radians to rotate.
+### Transformações Tri-dimensionais
 
-### Case Study: An Arm-Waving Robot
 
-Let’s use these transformations to animate a bluerobot waving its arms. Rather than try to write it all atonce, we will do the work in stages. The first step isto draw the robot without any animation.
+Se você estiver trabalhando em três dimensões, poderá chamar a função `translate()` com três argumentos para as distâncias *x*, *y*, e *z*. Da mesma forma, você vhama `scale()` com três argumentos que indicam o quanto você deseja que a grade seja redimensionada em cada uma dessas dimensões
 
-The robot is modeled on[thisdrawing](http://www.openclipart.org/detail/5457), although it will not look as charming.First, we draw the robot so that itsleft and top side touch the *x* and *y* axes. Thatwill allow us to use `translate()` to easily placethe robot anywhere we want or to make multiple copies ofthe robot, as we did in the example of the houses.
+Para rotação, chame as funções `rotateX()`, `rotateY()`, ou `rotateZ()` para girar em torno de cada um dos eixos. Todas essas três funções esperam um argumento: o número de radianos a serem rotacionados.
 
-When we refer to left and right in this drawing, we mean yourleft and right (the left and right side of your monitor),not the robot’s left and right.
+### Estudo de caso: Um robô que balança os braços
 
-```pde
+Vamos usar essas transformações para animar um robô azul agitando os braços. Em vez de tentar escrever tudo de uma vez, faremos o trabalho em etapas. O primeiro passo é desenhar o robô sem nenhuma animação.
+
+O robô é baseado em [thisdrawing](http://www.openclipart.org/detail/5457), embora não pareça tão charmoso. Primeiro, desenhamos o robô para que sua esquerda e a parte superior toquem os eixos *x* e *y*. Isso nos permitirá usar `translate()` para posicionar facilmente o robô em qualquer lugar que desejarmos ou que façamos várias cópias do robô, como fizemos no exemplo das casas.
+
+Quando nos referimos à esquerda e à direita neste desenho, queremos dizer sua esquerda e direita (o lado esquerdo e direito do monitor), não o esquerdo e o direito do robô.
+
+```java
 void setup()
 {
   size(200, 200);
@@ -300,28 +293,30 @@ void drawRobot()
 {
   noStroke();
   fill(38, 38, 200);
-  rect(20, 0, 38, 30); // head
-  rect(14, 32, 50, 50); // body
+  rect(20, 0, 38, 30); // cabeça
+  rect(14, 32, 50, 50); // corpo
 
-  rect(0, 32, 12, 37); // left arm
-  rect(66, 32, 12, 37); // right arm
+  rect(0, 32, 12, 37); // braço esquerdo
+  rect(66, 32, 12, 37); // braço direito
   
-  rect(22, 84, 16, 50); // left leg
-  rect(40, 84, 16, 50); // right leg
+  rect(22, 84, 16, 50); // perna esquerda
+  rect(40, 84, 16, 50); // perna direita
   
   fill(222, 222, 249);
-  ellipse(30, 12, 12, 12); // left eye
-  ellipse(47, 12, 12, 12); // right eye
+  ellipse(30, 12, 12, 12); // olho esquerdo
+  ellipse(47, 12, 12, 12); // olho direito
 }
 
 
 ```
 
-![robot with red dots at shoulder joints](https://processing.org/tutorials/transform2d/imgs/pivot.png)The next step is to identify the points wherethe arms pivot. That is shown in this drawing.The pivot points are (12, 32) and(66, 32). Note: the term “center of rotation”is a more formal term for the pivot point.
+![robot with red dots at shoulder joints](https://processing.org/tutorials/transform2d/imgs/pivot.png)
 
-Now, separate the code for drawing the left and rightarms, and move the center of rotation for each arm to the origin, becauseyou always rotate around the (0, 0) point. To save space,we are not repeating the code for `setup()`.
+O próximo passo é identificar os pontos nos quais os braços giram. Isso é mostrado neste desenho. Os pontos de articulação são (12, 32) e (66, 32). Nota: o termo "centro de rotação" é um termo mais formal para o ponto de articulação.
 
-```pde
+Agora separe o código para desenhar os braços direito e esquerdo, e mova o centro de rotação de cada braço para a orgigem, porque você sempre gira em torno do ponto (0, 0). Para economizar espaço, não estamos repetindo o código para `setup()`.
+
+```java
 void drawRobot()
 {
   noStroke();
@@ -353,13 +348,11 @@ void drawRightArm()
   rect(0, 0, 12, 37);
   popMatrix();
 }
-
-
 ```
 
-Now test to see if the arms rotate properly.Rather than attempt a full animation, we will justrotate the left side arm 135 degreesand the right side arm -45 degrees as a test. Hereis the code that needs to be added, and the result.The left side arm is cut off because of the windowboundaries, but we’ll fix that in the finalanimation.
+Agora, teste para ver se os braços giram corretamente. Em vez de tentar uma animação completa, iremos apenas girar o braço esquerdo esquerdo 135 graus e o braço direito -45 graus como teste. Aqui está o código que precisa ser adicionado e o resultado. O braço esquerdo foi cortado por causa dos limites da janela, mas corrigiremos isso na animação final.
 
-```pde
+```java
 void drawLeftArm()
 {
   pushMatrix();
@@ -377,11 +370,9 @@ void drawRightArm()
   rect(0, 0, 12, 37); // right arm
   popMatrix();
 }
-
-
 ```
 
-Now we complete the program by putting in the animation. Theleft arm has to rotate from 0° to 135° and back.Since the arm-waving is symmetric, theright-arm angle will always be the negative value ofthe left-arm angle. To make things simple,we will go in increments of 5degrees. 
+Agora, concluímos o programa inserindo a animação. O braço esquerdo deve girar de 0° a 135° e vice-versa. Como o movimento do braço é simétrico, o ângulo do braço direito sempre será o valor negativo do ângulo do braço esquerdo. Para simplificar, iremos em incrementos de 5 graus.
 
 ```
 int armAngle = 0;
@@ -446,29 +437,25 @@ void drawRightArm()
   rect(0, 0, 12, 37); // right arm
   popMatrix();
 }
-
-
 ```
 
-### Case Study: Interactive Rotation
+### Estudo de caso: Rotação interativa
 
-Instead of having the arms move on their own, we will modify the programso that the arms follow the mouse while the mouse button is pressed. Insteadof just writing the program at the keyboard, we first think about theproblem and figure out what the program needs to do. 
+Em vez de mover dos braços se mexerem sozinhos, modificaremos o programa para que os braços sigam o mouse quando o botão do mouse é pressionado. Em vez de sair escrevendo o programa com o teclado, vamos primeiro pensar no problema e descobrir o que o programa precisa fazer.
 
-Since the two arms move independently ofone another, we need to have one variable for each arm’s angle.It’s easy to figure out which arm to track. If the mouse is at theleft side of the robot’s center, track the left arm; otherwise,track the right arm.
+Como os dois braços se movem independentemente um do outro, precisamos ter uma variável para o ângulo de cada braço. É fácil descobrir qual braço rastrear. Se o mouse estiver no lado esquerdo do centro do robô, acompanhe o braço esquerdo; caso contrário, acompanhe o braço direito.
 
-The remaining problem is to figure out the angle of rotation. Given thepivot point position and the mouse position, how do you determine theangle of a line connecting those two points?  The answer comes from the`atan2()` function, which gives (in radians) the angleof a line from the origin to a given *y* and *x* coordinate.In constrast to most other functions, the *y* coordinate comesfirst. `atan2()` returns a value from -π to π radians,which is the equivalent of -180° to 180°.
+O problema restante é descobrir o ângulo de rotação. Dada a posição do ponto de articulação e a posição do mouse, como você determina a alteração de uma linha que liga esses dois pontos? A resposta vem da função`atan2()`,  que fornece (em radianos) o ângulo de uma linha da origem até uma determinada coordenada *y* e *x*. Em contraste com a maioria das outras funções, a coordenada *y* vem primeiro. `atan2()` devolve um valor de -π a π radianos, que é equivalente a de -180° a 180°.
 
-But what about finding the angle of a line that doesn’t startfrom the origin, such as the line from (10, 37) to (48, 59)?No problem; it’s the same as the angle of a line from(0, 0) to (48-10, 59-37). In general, to find theangle of the line from (*x*0, *y*0)to (*x*1, *y*1), calculate
+Mas e quanto a encontrar o ângulo de uma linha que não começa na origem, como a linha de (10, 37) a (48, 59)? Sem problema; É o mesmo que o ângulo de uma linha de (0, 0) a (48-10, 59-37). Generalizando, para encontrar o ângulo da linha de (*x*0, *y*0) a (*x*1, *y*1), calcule
 
-```
+```python
    atan2(y1 - y0, x1 - x0)
-
-
 ```
 
-Because this is a new concept, rather than integrate it into the robotprogram, you should write a simple test program to see that you understand how `atan2()`works. This program draws a rectangle whose center of rotation isits upper left corner at (100, 100) and tracks the mouse.
+Como esse é um conceito novo, em vez de integrá-lo ao programa do robô, você deve escrever um programa de teste simples para entender como o `atan2()` funciona. Este programa desenha um retângulo cujo centro de rotação está no canto superior esquerdo em (100, 100) e rastreia o mouse.
 
-```pde
+```java
 void setup()
 {
   size(200, 200);
@@ -485,13 +472,11 @@ void draw()
   rect(0, 0, 50, 10);
   popMatrix();
 }
-
-
 ```
 
-That works great. What happens if we draw the rectangle so it istaller than it is wide? Change the preceding code to read`rect(0, 0, 10, 50)`. How come itdoesn’t seem to follow the mouse any more? The answer isthat the rectangle really *is* still following the mouse,but it’s the short side of the rectangle that does the following.Our eyes are trained to want the long side to be tracked. Becausethe long side is at a 90 degree angle to the short side,you have to subtract 90° (or π/2 radians) to get thedesired effect. Change the preceding code to read`rotate(angle - HALF_PI)` and try it again.Since Processing deals almost exclusively in radians,the language has defined the constants `PI` (180°),`HALF_PI` (90°), `QUARTER_PI` (45°)and `TWO_PI` (360°) for your convenience.
+sso funciona muito bem. O que acontece se desenharmos o retângulo para que fique mais alto do que largo? Mude o código anterior para ler`rect (0, 0, 10, 50)`. Como é que não parece mais seguir o mouse? A resposta é que o retângulo ainda *segue* o mouse, mas é o lado mais curto do retângulo que segue. Nossos olhos são treinados para que o lado mais longo seja rastreado. Como o lado longo está em um ângulo de 90 graus em relação ao lado mais curto, é necessário subtrair 90° (ou π/2 radianos) para obter o efeito desejado. Altere o código anterior para `rotate(angle - HALF_PI)` e tente novamente. Como o Processing trabalha quase exclusivamente com radianos, a linguagem definiu as constantes` PI` (180°), `HALF_PI` (90°),` QUARTER_PI` (45°) e `TWO_PI` (360°) para sua conveniência.
 
-At this point, we can write the final version of thearm-tracking program. We start off with definitionsof constants and variables. The number 39in the definition of `MIDPOINT_X`comes from the fact that the body of the robot starts at*x*-coordinate 14 and is 50 pixels wide, so 39 (14 + 25)is the horizontal midpoint of the robot’s body.
+Neste ponto, podemos escrever a versão final do programa de rastreamento dos braços. Começamos com definições de constantes e variáveis. O número 39 na definição de `MIDPOINT_X` deriva do fato de que o corpo do robô começa na coordenada *x* 14 e tem 50 pixels de largura, então 39 (14 + 25) é o ponto médio horizontal do corpo do robô.
 
 ```
 /* Where upper left of robot appears on screen */
@@ -513,31 +498,29 @@ void setup()
   smooth();
   frameRate(30);
 }
-
-
 ```
 
-The `draw()` function is next. It determines if themouse is pressed and the angle between the mouse locationand the pivot point, setting `leftArmAngle` and`rightArmAngle` accordingly.
+A função `draw()` é a próxima. Ela vai determinar que se o mouse está apertado e o ângulo entre o mouse e o ponto de articulação, definindo `leftArmAngle` (ângulo do braço esquerdo) e `rightArmAngle` (ângulo do braço direito) de acordo.
 
-```pde
+```java
 void draw()
 {
   /*
-   * These variables are for mouseX and mouseY,
-   * adjusted to be relative to the robot's coordinate system
-   * instead of the window's coordinate system.
+   * Estas variáveis são adjustadas com mouseX and mouseY,
+   * para serem relativas ao sistema de coordenadas
+   * do robô em vez do sistema de coordenadas da janela.
    */
   float mX;
   float mY;
   
   background(255);
   pushMatrix();
-  translate(ROBOT_X, ROBOT_Y); // place robot so arms are always on screen
+  translate(ROBOT_X, ROBOT_Y); // locar robô para caber braços
   if (mousePressed)
   {
     mX = mouseX - ROBOT_X;
     mY = mouseY - ROBOT_Y;
-    if (mX < MIDPOINT_X) // left side of robot
+    if (mX < MIDPOINT_X) // lado esquerdo do robô
     {
       leftArmAngle = atan2(mY - PIVOT_Y, mX - LEFT_PIVOT_X)
       - HALF_PI;
@@ -552,19 +535,17 @@ void draw()
   
   popMatrix();
 }
-
-
 ```
 
-The `drawRobot()` function remains unchanged, but aminor change to `drawLeftArm()` and `drawRightArm()`is now necessary. Because `leftArmAngle` and`rightArmAngle` are now computed in radians, thefunctions don’t have to do any conversion. The changesto the two functions are in bold.
+A função `drawRobot()` continua inalterada, mas uma pequena mudança em `drawLeftArm()` e `drawRightArm()` agora é necessária. Uma vez que `leftArmAngle` e`rightArmAngle` são agora computadas em radianos, as funções não tem mais que fazer nenhuma conversão. As mudanças nas funções foram indicadas com comentários.
 
-```pde
+```java
 void drawLeftArm()
 {
   pushMatrix();
   translate(12, 32);
   rotate(leftArmAngle);
-  rect(-12, 0, 12, 37); // left arm
+  rect(-12, 0, 12, 37); // braço esquerdo
   popMatrix();
 }
 
@@ -573,7 +554,10 @@ void drawRightArm()
   pushMatrix();
   translate(66, 32);
   rotate(rightArmAngle);
-  rect(0, 0, 12, 37); // right arm
+  rect(0, 0, 12, 37); // braço direito
   popMatrix();
 }
 ```
+
+Você pode [baixar os arquivos do tutorial original ](https://processing.org/tutorials/transform2d/imgs/transform2d.zip) (.processing.org/tutorials/transform2d), incluido o programa para fazer os diagramas de grade.
+
