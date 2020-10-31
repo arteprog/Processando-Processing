@@ -67,13 +67,13 @@ def polygon(n, cx, cy, r):
 
 ### Dois passos para frente, um para trás
 
-The program works, so it’s time to see if there are things that could be added or changed.  First, the triangle and pentagon seem somehow wrong; they are usually drawn pointing upwards instead of to the side. The reason they look odd is that the first vertex (at 0°) points to the right instead of straight up. It would be nice to have an extra parameter that gives the starting angle for the first vertex. (Another solution is to leave things as they are and let programmers use `rotate()` [[see this tutorial](http://processing.org/learning/transform2d)], but I made the design decision to use an extra parameter.) Should the angle be given in degrees or in radians? The answer: radians, in order to be consistent with everything else that Processing does.
+O programa funciona, então é hora de ver se tem coisas que podem ser acrescentadas ou mudadas. Primeiro, o triângulo e o pentágono parecem de alguma maneira errados; eles são normalmente desenhados apontando pra cima em vez de pro lado. A razão deles parecerem estranhos é que o primeiro vértice (em 0°) aponta pra direita em vez de direto pra cima. Seria legal ter um parâmetro extra que desse o ângulo inicial para o primeiro vértice. (Uma outra solução é deisar as coisas como estão e deixar as pessoas usaresm `rotate()` [veja o tutorial das transformações 2D], mas tomei a descisão de projeto de usar um parâmetro extra.) Deve o ângulo ser fornecido em graus ou em radianos? A resposta: radianos, de maneira a ser consistente com to o resto que Processing faz.
 
-My next thought was that it would be nice to be able to specify a width and height for the polygon, much as you do with an `ellipse()` or `rectangle()`. I already knew what the formula would be, but I wanted to make a drawing to check it out. As a preliminary experiment, I tried drawing a pentagon into a square using a protractor and straightedge, and ended up with the awful drawing at the left. How come the sides weren’t equal length? I realized that I was trying to make the drawing fit my preconceptions, rather than making an accurate drawing and seeing where that led me. The drawing on the right was done much more carefully. After a little thinking, I realized that the pentagon wouldn’t fit the square exactly, because the angles weren’t multiples of 90 degrees. The regular polygon fits in a *circle*, not in a square!
+Meu próximo pensamento foi que seria legal ser capaz de especificar uma altura e largura para o polĩgono, parecido com o que fazemos com a `ellipse()`ou `rect()`. E eu já sabia como a fórmula devia ser, mas eu queria fazer um desenho para conferir. Como experimento preliminar, tentei desenhar um pentágono em um quadrado com transferidor régua, e terminei com o horrível desenho à esquerda. Como que os lados não tem comprimentos iguais? Percebi que estava tentando fazer o desenho encaixar nas minhas preconcepções, em vez de fazer um desenho preciso e ver onde isso me levaria. O desenho da direita foi feito muito mais cuidadosamente. Depois de pensar um pouco,percebi que o pentágono não encaixaria no quadrado exatamente, pois os ângulos não eram múltiplos de 90 graus. O polígono regular encaixa em um *círculo*, não em um quadrado!
 
 ![pentagon with unequal sides](https://processing.org/tutorials/anatomy/imgs/bad_pentagon.jpg)  ![pentagon with equal sides](https://processing.org/tutorials/anatomy/imgs/accurate_pentagon.jpg)
 
-Well, that was a dead end. That sort of thing happens in programming all the time, so I didn’t spend too much time worrying about it. It was time for another approach. Since I didn't have an accurate way of drawing ellipses, I had to think about the problem a different way. Presume you have a circle drawn on a square sheet of rubber, and you stretch it out so that it’s twice as wide but the same height. The vertical position of the points on the circle does not change, but the horizontal positions are now twice as far away from the center as they used to be. The same idea applies if you stretch the sheet vertically. The following crude drawings seemed to bear this out, so it was time to rewrite the `polygon()` function.
+Bem, isso foi um beco sem saída. Esse tipo de coisa acontece em progrmação o tempo todo, então eu não gastei muito temp me preocupando com isso. Era hora de uma outra aproximação. Uma vez que eu não tinha uma maneira precisa de desenhar elipses, tinha que pensar no problema de outra maneira. Presuma que você tem um círculo desenhado em uma folha de borracha, e você estica de tal maneira que ela fica duas vezes mais larga mas com a mesma altura. A posição vertical dos pontos no círculo não muda, mas as posições horizontais agora estão duas vezes mais distantes do centro do que estavam antes. A mesma ideia se aplica se vocẽ esticar a folha verticalmente. Os desenhos grosseiros a seguir pareciam levar a isto, então estava na hora de reescrever a função `polygon()`.
 
 ![diagrams showing stretched circle](https://processing.org/tutorials/anatomy/imgs/stretchy.jpg)
 
@@ -116,17 +116,15 @@ def polygon(n, cx, cy, w, h, startAngle):
     endShape(CLOSE)
  ```
 
-Since everything was in radians, I now described angles in terms of `PI` and `TWO_PI` (2π), since 2π radians equals 360°. In addition to the code in `setup()` to test the new features, I drew ellipses with the same center and width and height as the polygons to make sure that the vertices were within the proper area.
+Uma vez que tudo estava em radianos, agora descrevi os ânguloes em termos de `PI` e `TWO_PI` (2π), já que 2π radianos é igual a 360°. Em acréscimo ao código no`setup()` para testar os novos recursos, desenhei elipses com o mesmo centro e largura e altura como os polígonos para ter certeza de que os véritces estavam dentro da região certa.
 
 ### Parâmetros demais
 
-Agora eu tinha uma função muito mais flexível para desenhar polígonos, mas isso veio ao custo de mais parâmetros. Seria legal ser caoaz de desenhar os casos mais comuns (com largura e altura iguais, ângulo inicial zero) sem ter que ficar especificando todos esses parâmetros. A solução é usar parâmetros default. Em Python, você pode fazer com que certo parâmetros funcionem como defaults, 
+Agora eu tinha uma função muito mais flexível para desenhar polígonos, mas isso veio ao custo de mais parâmetros. Seria legal ser caoaz de desenhar os casos mais comuns (com largura e altura iguais, ângulo inicial zero) sem ter que ficar especificando todos esses parâmetros. A solução é usar parâmetros padrão (*default*). Em Python, você pode fazer com que certo parâmetros funcionem como defaults, o que quer dizer que se a pessoa não os definir os valores padrão entram em cena. Isso significa que a função pode ser chamada com um número diferente de argumentos dependendo do que a pessoa gostaria de fazer! Um exemplo disso é a função `stroke()` do Processing, que admite que você a chame com um único número par abter um cinza, três números para cor, ou quatro para cor com opacidade.
 
-, meaning if the user does not define themour defaults will step in. This means that a function can be calledwith a different number of parameters depending on what the user would like to do! An example of this is Processing’s stroke() function, which allows you to call it with a single number for grayscale, threenumbers for color, or four numbers for color with opacity.
+Veja o que precisamos muda na definição da nossa função `polygon` para que se ajuste aos parâmetros padrão. Note que quando mudamos nosso quarto parâmentro `w` para `r`, isto é (estilisticamente) para dar conta do fato de que nós agora podemos representar largura e altura como r * 2.0. Dentro da nossa função, podemos conferir para ver se a pessola definiu um `h `e `startAngle`e então ajustar os parâmetros de acordo.
 
-Here is what we'll change the definition of our polygon()function to look like to adjust for default parameters. Notice how we've changed our fourth parameter w to r, this is(stylistically) to account for the fact that we can now represent width and height as r * 2.0. Within our function, we can now make a check to see if the user defined an h and startAngle and then adjust our parameters accordingly.
-
-Eis o código para acrescentar ao exemplo anterior. Quando você der `polygon()` apenas quatro números, vai chamar a seguinte função, que chama a versão "grande" da função com largura e altura iguais ao dobro do seu raio desejado e com o ângulo zero.
+quatro números, vai chamar a seguinte função, que chama a versão "grande" da função com largura e altura iguais ao dobro do seu raio desejado e com o ângulo zero.
 
  ```python
 def polygon(n, cx, cy, r, h=None, startAngle=None):
@@ -141,7 +139,7 @@ def polygon(n, cx, cy, r, h=None, startAngle=None):
 
  ```
 
-E aqui código para testar a função com defaults.
+E aqui código para testar a função com *defaults*.
 
  ```python
 def setup():
