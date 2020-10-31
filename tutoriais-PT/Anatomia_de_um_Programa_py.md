@@ -4,15 +4,14 @@
 
 > Esta é uma tradução de [Anatomy of a Program](https://processing.org/tutorials/anatomy/) dispinível em processing.org/tutorials mantendo a licença [Creative Commons BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/).
 >
->[TO DO: Adaptar também para a versão com Processing modo Python em https://py.processing.org/tutorials/anatomy/ ]
 
-Muitos dos tutoriais para o Processing se concentram no que a linguagem pode fazer (mudar cores, desenhar formas, criar arrays`*` de objetos) a quais chamadas de função permitem a você realizar essas tarefas. Essas são coisas que você precisa saber para escrever um programa em Processing. `*`*[existe a tradução 'arranjo' em português, mas ninguém fala]*
+Muitos dos tutoriais para o Processing se concentram no que a linguagem pode fazer (mudar cores, desenhar formas, criar arrays`*` de objetos) a quais chamadas de função permitem a você realizar essas tarefas. Essas são coisas que você precisa saber para escrever um programa em Processing. `(*NT:`*Existe a tradução 'arranjo' em português, mas ninguém fala.)*
 
 Há uma peça do quebra-cabeça que esses tutoriais não resolvem: como você analisa um problema e o desmonta em passos que o computador consegue executar? Neste tutorial, pretendo mostrar o que aconteceu na minha cabeça conforme eu prosegui na tarefa de escrever funções para desenhar polígonos regulares e figuras em forma de estrela em Processing. Esta é uma boa escolha por não ser uma tarefa grande demais para compreender, mas também não é um problema trivial.
 
 Lembre que o que você está vendo aqui são o meu processo mental e o meu estilo de programação particulares. Há muitas diferentes formas de aproximação e estilos. Conforme você continuar a programar, vai encontrar o seu próprio. Você pode também ver o estilo de programaco de outras pessoas (mas não o seus processos mentais!) olhando o código fonte de programas em [openProcessing.org](http://openprocessing.org/). 
 
-### Desenhando poígonos regulares
+### Desenhando polígonos regulares
 
 Ninguém pensa em construir uma casa sem um projeto executivo, e você não deve pensar em escrever um programa sem algum tipo de planejamento. Uma vez que Processing é uma linguagem tão visual, eu sempre tenho que esboçar o que eu gostaria como resultado antes de me aproximar do teclado. Então é aí que eu começo.
 
@@ -29,8 +28,6 @@ Eu só precisava ter uma ideia do que era a tarefa, e um diagrama desenhado a m�
 
 Então se você tem uma linha do tamanho de *r* iniciando em (0,0) em um anguo theta (0), o que são estas coordenadas em termos de *x* e *y*? Se você conhece um pouco de trigonometria , a resposta é que ponto final da linha está em (*r* cos θ,*sen*),Se você não conhece trigonometria, ^de uma olhada,[Neste tutorial](http://catcode.com/trig/) (Uma introdução geral a trigonometrial),[Neste tutorial](http://processing.org/learning/trig/) (Trigonometria orientada a Processing) e [Neste exemple a partit capitulo 13 de *Learning Processing*]
 (http://learningprocessing.com/examples/chp13/example-13-05-polar-cartesian). No seguinte diagrama, os angulos sao desenhados em sentido horário, no qual é como são mensurados no Processing.
-
-So, if you have a line of length *r* starting at (0,0) at an angle theta (θ), what are its coordinates in terms of *x* and *y*? If you know a little bit of  trigonometry, the answer is that the endpoint of the line is at (*r* cos θ, *r* sin θ). If you don’t  know trigonometry, take a look at [this tutorial](http://catcode.com/trig/) (a general and very light introduction to  trigonometry), [this tutorial](http://processing.org/learning/trig/) (oriented towards Processing), and [this example from chapter 13 of *Learning Processing*](http://learningprocessing.com/examples/chp13/example-13-05-polar-cartesian). In the following diagram, angles are drawn clockwise, which is how they are measured in Processing.
 
 ### Passo 3: Decisões de projeto
 
@@ -66,7 +63,7 @@ def polygon(n, cx, cy, r):
         vertex(cx + r * cos(radians(angle * i)),
           cy + r * sin(radians(angle * i)))
     endShape(CLOSE)
-```
+ ```
 
 ### Dois passos para frente, um para trás
 
@@ -117,15 +114,15 @@ def polygon(n, cx, cy, w, h, startAngle):
         vertex(cx + w * cos(startAngle + angle * i),
           cy + h * sin(startAngle + angle * i))
     endShape(CLOSE)
-```
+ ```
 
 Since everything was in radians, I now described angles in terms of `PI` and `TWO_PI` (2π), since 2π radians equals 360°. In addition to the code in `setup()` to test the new features, I drew ellipses with the same center and width and height as the polygons to make sure that the vertices were within the proper area.
 
 ### Parâmetros demais
 
-Agore eu tinha uma função muito mais flexível para desenhar polígonos, mas isso veio ao custo de mais parâmetros. Seria legal ser caoaz de desenhar os casos mais comuns (com largura e altura iguais, ângulo inicial zero) sem ter que ficar especificando todos esses parâmetros. A solução é usar parâmetros default. Em Python, vocÊ pode fazer com que certo parâmetros funcionem como defaults,
+Agora eu tinha uma função muito mais flexível para desenhar polígonos, mas isso veio ao custo de mais parâmetros. Seria legal ser caoaz de desenhar os casos mais comuns (com largura e altura iguais, ângulo inicial zero) sem ter que ficar especificando todos esses parâmetros. A solução é usar parâmetros default. Em Python, você pode fazer com que certo parâmetros funcionem como defaults, 
 
- In Python, you can have certain parameters to a function act as defaults, meaning if the user does not define themour defaults will step in. This means that a function can be calledwith a different number of parameters depending on what the user would like to do! An example of this is Processing’s stroke() function, which allows you to call it with a single number for grayscale, threenumbers for color, or four numbers for color with opacity.
+, meaning if the user does not define themour defaults will step in. This means that a function can be calledwith a different number of parameters depending on what the user would like to do! An example of this is Processing’s stroke() function, which allows you to call it with a single number for grayscale, threenumbers for color, or four numbers for color with opacity.
 
 Here is what we'll change the definition of our polygon()function to look like to adjust for default parameters. Notice how we've changed our fourth parameter w to r, this is(stylistically) to account for the fact that we can now represent width and height as r * 2.0. Within our function, we can now make a check to see if the user defined an h and startAngle and then adjust our parameters accordingly.
 
@@ -142,7 +139,7 @@ def polygon(n, cx, cy, r, h=None, startAngle=None):
     else: # User defined 6 parameters
         w = r
 
-```
+ ```
 
 E aqui código para testar a função com defaults.
 
@@ -161,13 +158,11 @@ def setup():
     ellipse(70, 75, 100, 100)
     ellipse(170, 75, 50, 50)
 
-```
+ ```
 
 ### Computação segura
 
-O que acontece se alguém tentar desenhar um polígono com 2 lados, 1 lado ou pior, 0 lados? Os dois primeiros casos vão gerar uma linha e um ponto, mas o terceiro vai causar um erro de divisão por zero quando for tentar descobrir o ângulo. E o que aconteceria com números negativos?
-
-What happens if someone tries to draw a polygon with 2 sides, 1 side, or worse, 0 sides?  The first two will generate a line and a point, but the third one will cause a division by zero error when trying to figure out the angle. And what would happen with negative numbers? Since polygons with fewer than three sides don’t make a lot of sense, I wrapped the body of the `polygon()` function inside of an `if` statement. Now, when someone specifies two or fewer sides, the function just won’t draw anything.
+O que acontece se alguém tentar desenhar um polígono com 2 lados, 1 lado ou pior, 0 lados? Os dois primeiros casos vão gerar uma linha e um ponto, mas o terceiro vai causar um erro de divisão por zero quando for tentar descobrir o ângulo. E o que aconteceria com números negativos? Uma vez que polígonos com menos do que três lados não fazem muito sentido, encapsuleio o corpo da função `polygon()`em uma instrução `if` . Agora quando alguém especifica dois ou menos lados a função só não vai desenhar nada.
 
  ```python
 def polygon(n, cx, cy, r, h = None, startAngle = None):
@@ -189,7 +184,7 @@ def polygon(n, cx, cy, r, h = None, startAngle = None):
         endShape(CLOSE)
 
 
-```
+ ```
 
 ### Desenhando estrelas
 
@@ -263,7 +258,7 @@ def star(n, cx, cy, r, h = None, startAngle = None, proportion = 1.0):
               cy + dh * sin(startAngle + angle * i))
         endShape(CLOSE)
 
-```
+ ```
 
 ### O que deu errado?
 
@@ -306,7 +301,7 @@ def setup():
     ellipse(60, 200, 75, 50)
     ellipse(170, 200, 50, 100)
 
-```
+ ```
 
 ### Usando as funções
 
@@ -353,7 +348,7 @@ def draw():
     else:
         proportion = random(0.2, 0.8) * cos(PI / nSides)
         star(nSides, cx, cy, 24, proportion)
-```
+ ```
 
 ### Polígonos e estrelas como objetos
 

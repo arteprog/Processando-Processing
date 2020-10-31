@@ -1,8 +1,3 @@
-- Pessoal eu vou querer traduzir este aqui no Modo Python também depois OK? [py.processing.org/tutorials/anatomy](http://py.processing.org/tutorials/anatomy) -> https://github.com/arteprog/Processando-Processing/blob/master/tutoriais-PT/Anatomia_de_um_Programa_py.md ?
-- E mais:
-    - Transformações 2D (Python) https://hackmd.io/WX8HQeDzSaqD83J-6xybHg
-    - Transformações 2D (Java) https://github.com/arteprog/Processando-Processing/blob/master/tutoriais-PT/java-tranformacoes_2D.md
-
 # Anatomia de um programa
 
  Autor to artigo orginal em inglês: **J David Eisenberg**
@@ -47,7 +42,7 @@ O problema de desenhar um grupo de linhas é que elas são só linhas—você fi
 Uma vez que provavelmente você quer desenhar muitos polígonos durante o programa, faz sentido ter uma função `polygon()`. Quais parâmetros ela precisa? Quatro vem à mente: O número de lados, as coordenadas do centro *x* e *y*, e o raio. Aqui está o código. Eu escrevei várias chamadas diferentes a `polygon()` dentro da função `setup()`. Apesar de ter calculado `angle` em graus, seno e coseno usam radianos, então eu tive que usar `radians()` para fazer a conversão.
 
 ![](https://processing.org/tutorials/anatomy/imgs/polytest1.jpg)
- 
+
 ```pde
 void setup() {
   size(300, 300);
