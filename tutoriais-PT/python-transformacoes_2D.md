@@ -10,7 +10,7 @@ Processing tem funções embutidas que tornam fácil você mover, girar, ecresce
 
 ### Translação: Movendo a grade
 
-Como você sabe, sua janela do Processing funciona como um pedaço de papel milimetrado. Quando você quer desenhar alguma coisa, especifica as cordenadas. Veja um retângulo simples desenhado com o código `rect(20, 20, 40, 40)`. O sistema de coordenadas (um nome sofisticado para o nosso "papel milimetrado") está mostrado em cinza.
+Como você sabe, sua janela do Processing funciona como um pedaço de papel quadriculado. Quando você quer desenhar alguma coisa, especifica as cordenadas. Veja um retângulo simples desenhado com o código `rect(20, 20, 40, 40)`. O sistema de coordenadas (um nome sofisticado para o nosso "papel quadriculado") é mostrado aqui em cinza.
 
 ![Black rectangle on gray numbered grid](https://py.processing.org/tutorials/transform2d/imgs/original.png)
 
@@ -18,7 +18,7 @@ Se você quiser mover o retângulo 60 unidades para a direita e 80 unidades para
 
 ![Black rectangle on gray numbered grid, moved](https://py.processing.org/tutorials/transform2d/imgs/new_coords.png)
 
-Mas tem uma maneira mais interessante de fazer isso: **em vez disso mover o papel milimetrado**. Se você move o papel milimetrado 60 unidades para a direita e 80 para baixo vai obter exatamente o mesmo resultado visual. Mover o sistema de coordenadas é chamado de translação.
+Mas tem uma maneira mais interessante de fazer isso: **em vez disso mover o papel quadriculado**. Se você move o papel quadriculado 60 unidades para a direita e 80 para baixo vai obter exatamente o mesmo resultado visual. Mover o sistema de coordenadas é chamado de translação.
 
 ![grid moved with arrow showing motion](https://py.processing.org/tutorials/transform2d/imgs/moved_grid.png)
 
