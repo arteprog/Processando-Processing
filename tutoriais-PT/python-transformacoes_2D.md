@@ -152,7 +152,7 @@ def setup():
     popMatrix()
 ```
 
-E aqui está um programa que gera uma roda de cores usando rotação. A captura de tela é reduzida para economizar espaço.
+E aqui um programa que gera uma roda de cores usando rotação. A captura de tela é reduzida para economizar espaço.
 
 ```python
 def setup():
@@ -170,7 +170,6 @@ def draw():
         rotate(radians(frameCount * 2  % 360))
         rect(0, 0, 80, 20)
         popMatrix()
-
 ```
 
 ### Escalando
@@ -190,8 +189,6 @@ def setup():
     scale(2.0)
     rect(20, 20, 40, 40)
     popMatrix()
-
-
 ```
 Primeiro, você pode ver que o quadrado parece ter se movido. Claro que não. Seu canto superior esquerdo ainda está em (20, 20) na grade escalada para cima, mas esse ponto está agora duas vezes mais distante da origem do que no sistema de coordenadas original. Você também pode ver que as linhas são mais grossas. Isso não é ilusão de ótica - as linhas realmente têm o dobro da espessura, porque o sistema de coordenadas foi dimensionado para dobrar seu tamanho.
 
@@ -459,8 +456,6 @@ def setup():
     size(200, 200)
     smooth()
     frameRate(30)
-
-
 ```
 
 A função `draw()` é a próxima. Ela vai determinar que se o mouse está apertado e o ângulo entre o mouse e o ponto de articulação, definindo `leftArmAngle` (ângulo do braço esquerdo) e `rightArmAngle` (ângulo do braço direito) de acordo.
@@ -511,3 +506,4 @@ def drawRightArm():
 ```
 
 Você pode [baixar os arquivos do tutorial original ](https://py.processing.org/tutorials/transform2d/imgs/transform2d.zip) (py.processing.org/tutorials/transform2d), incluido o programa para fazer os diagramas de grade.
+
