@@ -343,9 +343,11 @@ endShape(CLOSE);
 
 ### Usando as funções
 
-Finally, in order to use the functions in something other than a test, I decided to write a program that would randomly generate polygons and stars. The window is 300 by 300, and the stars or polygons have a radius of 24 dots, so I have six rows and five columns (the extra dot is for spacing). Remember how I said that knowing the proportions that would create a star “may turn out to be useful in the future”? Well, they aren’t just useful for this program—they’re vital. When I generate a star, I need to make sure it really has a star shape, so I have to keep the proportion of short to long radius less than the cosine of π divided by the number of sides.
+Finalmente, para usar as funções em algo diferente de um teste, eu decidi escrever um programa que gerasse polígonos e estrelas aleatoriamente. A janela será de 300 por 300, e as estrelas ou polígonos terão um raio de 24 pontos, então eu terei seis linhas e cinco colunas (o ponto extra é para espaçamento). Lembre-se que eu disse que saber as proporções que criariam uma estrela "pode acabar sendo útil no futuro"? Bem, elas não serão úteis apenas para este programa - são vitais. Quando eu gerar uma estrela, precisarei ter certeza de que ela realmente terá o formato de uma estrela, então terei que manter a proporção do raio curto para o longo menor que o cosseno de π dividido pelo número de lados.
 
-Here is the code for `setup()` and `draw()`:
+Aqui está o código para `setup()` e `draw()`:
+
+![](https://processing.org/tutorials/anatomy/imgs/randomness.png)
 
 ```pde
 void setup() {
@@ -356,26 +358,26 @@ void setup() {
 }
 
 void draw() {
-  // Choose a random stroke color
+  // Escolha uma cor aleatória para o traço
   int r = int(random(0, 255));
   int g = int(random(0, 255));
   int b = int(random(0, 255));
-  // Fill opacity
+  // Preencha a opacidade
   int opacity = int(random(100, 255));
   int nSides = int(random(3, 9));
 
-  // Determine the center x and y coordinates
+  // Determine as coordenadas centrais de x e y
   int cx = 25 + 50 * int(random(0, 6));
   int cy = 25 + 50 * int(random(0, 6));
 
-  // If a random number (0 or 1) is 0, draw a polygon;
-  // otherwise, draw a star
+  // Se um número aleatório (0 ou 1) é 0, desenhe um polígono;
+  // Caso contrário, desenhe uma estrela
   boolean isPolygon = int(random(2)) == 0;
 
-  // For stars, you need the proportion of short to long radius
+  // Para as estrelas, você precisa da proporção de radianos curtos e longos
   float proportion;
 
-  stroke(255); // erase any previous drawing in this area
+  stroke(255); // Apague qualquer desenho anterior nessa área
   fill(255);
   rect(cx, cy, 50, 50); 
 
@@ -406,9 +408,9 @@ void star(int n, float cx, float cy, float r, float proportion) {
 void star(int n, float cx, float cy, float w, float h,
   float startAngle, float proportion) {
   if (n > 2) {
-float angle = TWO_PI/ (2 *n);  // twice as many sides
-float dw; // draw width
-float dh; // draw height
+float angle = TWO_PI/ (2 *n);  // Duas vezes mais lados
+float dw; // Largura do desenho
+float dh; // Altura do desenho
 
 w = w / 2.0;
 h = h / 2.0;
@@ -418,7 +420,7 @@ for (int i = 0; i < 2 * n; i++)
 {
   dw = w;
   dh = h;
-  if (i % 2 == 1) // for odd vertices, use short radius
+  if (i % 2 == 1) // Para vértices ímpares, use raio curto
   {
 dw = w * proportion;
 dh = h * proportion;
@@ -434,10 +436,10 @@ endShape(CLOSE);
 
 ### Polígonos e estrelas como objetos
 
-Now that I have working functions for polygons and stars, it mightbe useful to make a `Polygon` and `Star` classso that I can treat them as objects. The method I would use is muchthe same; I would start with simple test cases, build up theclasses step by step, and finally use them in a full-blown program.[Here isa tutorial about objects in Processing.](http://processing.org/learning/objects)
+Agora que tenho funções de trabalho para polígonos e estrelas, será útil fazer uma classe `Polygon` e` Star` para que eu possa tratá-los como objetos. O método que eu usaria é basicamente o mesmo; Eu começaria com teste simples, construindo as classes passo a passo e, finalmente, usaria em um programa completo [Aqui está um tutorial sobre objetos em Processing](http://processing.org/learning/objects) (em inglês).
 
 ### Resumindo
 
-This tutorial has shown you the things you never see in books.In a book, all the diagrams arepicture perfect. You see a sample program, and it just works, andit produces gorgeous results. To be fair, the authors*can’t* show you their thought process; otherwise,their books would be ten times as large. In fact, I did not includeall the versions where a misplaced parenthesis or a forgotten callto `radians()` made my sketch explode into a mass ofincomprehensible lines. But all of us, the big name authors, thepeople who write these tutorials, and the beginning programmers,go through this same tawdry process of design, trial and error,and development. I wanted you to see that process at least once,because we are all in this together.
+Este tutorial mostrou coisas que você não costuma ver nos livros. Em um livro, todos os diagramas são representados perfeitamente. Quando você vê um exemplo de um programa, ele simplesmente funciona e produz resultados fantásticos. Para ser justo, os autores *não podem* mostrar a sua forma de pensar; caso contrário, seus livros seriam dez vezes maiores. Na verdade, eu não incluí aqui todas as versões em que um parêntese mal colocado ou uma chamada esquecida de `radians()` ("radianos") fez com que meu esboço explodisse em uma massa de linhas incompreensíveis. Mas, todos nós, os grandes autores, as pessoas que escrevem esses tutoriais e os programadores iniciantes, passamos pelo mesmo processo espalhafatoso de *design*: tentativa, erro e desenvolvimento. Gostaria que você visse esse processo pelo menos uma vez, porque estamos todos juntos nisso.
 
-> Colaboraram nesta tradução: @ronireis  e [Alexandre Villares](http://abav.lugaralgum.com) 
+> Colaboraram nesta tradução: @ronireis, [Alexandre Villares](http://abav.lugaralgum.com) e [Vinícius B. Rodrigues](viniciusbrodrigues.github.io)
