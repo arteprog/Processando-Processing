@@ -38,7 +38,7 @@ Isso parece um trabalho para um loop `for` que corre de 0 a *n* (o número de la
 
 O problema de desenhar um grupo de linhas é que elas são só linhas—você fica sem uma forma verdadeira que pode preencher, como `rect()` ou `triangle()`. Por sorte, Processing deixa você criar suas próprias formas com as funções [`beginShape()`](http://processing.org/reference/beginShape_.html), [`vertex()`](file:///home/david/processing-1.0.9/reference/vertex_.html), e [`endShape()`]. O primeiro exemplo da página de referência para o `beginShape()` é o modelo a seguir. Então a próxima decisão é fazer o polígono como verdadeira forma.
 
-Uma vez que provavelmente você quer desenhar muitos polígonos durante o programa, faz sentido ter uma função `polygon()`. Quais parâmetros ela precisa? Quatro vem à mente: O número de lados, as coordenadas do centro *x* e *y*, e o raio. Aqui está o código. Eu escrevei várias chamadas diferentes a `polygon()` dentro da função `setup()`. Apesar de ter calculado `angle` em graus, seno e coseno usam radianos, então eu tive que usar `radians()` para fazer a conversão.
+Uma vez que provavelmente você quer desenhar muitos polígonos durante o programa, faz sentido ter uma função `polygon()`. Quais parâmetros ela precisa? Quatro vem à mente: O número de lados, as coordenadas do centro *x* e *y*, e o raio. Eis o código, escrevi várias chamadas diferentes a `polygon()` dentro da função `setup()`. Apesar de ter calculado `angle` em graus, seno e coseno usam radianos, então eu tive que usar `radians()` para fazer a conversão.
 
 ![](https://processing.org/tutorials/anatomy/imgs/polytest1.jpg)
 
@@ -345,7 +345,7 @@ endShape(CLOSE);
 
 Finalmente, para usar as funções em algo diferente de um teste, eu decidi escrever um programa que gerasse polígonos e estrelas aleatoriamente. A janela será de 300 por 300, e as estrelas ou polígonos terão um raio de 24 pontos, então eu terei seis linhas e cinco colunas (o ponto extra é para espaçamento). Lembre-se que eu disse que saber as proporções que criariam uma estrela "pode acabar sendo útil no futuro"? Bem, elas não serão úteis apenas para este programa - são vitais. Quando eu gerar uma estrela, precisarei ter certeza de que ela realmente terá o formato de uma estrela, então terei que manter a proporção do raio curto para o longo menor que o cosseno de π dividido pelo número de lados.
 
-Aqui está o código para `setup()` e `draw()`:
+Eis o código para `setup()` e `draw()`:
 
 ![](https://processing.org/tutorials/anatomy/imgs/randomness.png)
 
@@ -436,7 +436,7 @@ endShape(CLOSE);
 
 ### Polígonos e estrelas como objetos
 
-Agora que tenho funções de trabalho para polígonos e estrelas, será útil fazer uma classe `Polygon` e` Star` para que eu possa tratá-los como objetos. O método que eu usaria é basicamente o mesmo; Eu começaria com teste simples, construindo as classes passo a passo e, finalmente, usaria em um programa completo [Aqui está um tutorial sobre objetos em Processing](http://processing.org/learning/objects) (em inglês).
+Agora que tenho funções de trabalho para polígonos e estrelas, será útil fazer uma classe `Polygon` e` Star` para que eu possa tratá-los como objetos. O método que eu usaria é basicamente o mesmo; Eu começaria com teste simples, construindo as classes passo a passo e, finalmente, usaria em um programa completo [veja aqui um tutorial sobre objetos em Processing](http://processing.org/learning/objects) (em inglês).
 
 ### Resumindo
 
