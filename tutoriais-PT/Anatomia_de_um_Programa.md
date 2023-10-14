@@ -1,15 +1,15 @@
 # Anatomia de um programa
 
- Autor to artigo orginal em inglês: **J David Eisenberg**
+ Autor to artigo original em inglês: **J David Eisenberg**
 
 > Esta é uma tradução de [Anatomy of a Program](https://processing.org/tutorials/anatomy/) disponível em processing.org/tutorials mantendo a licença [Creative Commons BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/).
 >
 
 Muitos dos tutoriais para o Processing se concentram no que a linguagem pode fazer (mudar cores, desenhar formas, criar arrays`*` de objetos) a quais chamadas de função permitem a você realizar essas tarefas. Essas são coisas que você precisa saber para escrever um programa em Processing. `*`*[existe a tradução 'arranjo' em português, mas ninguém fala]*
 
-Há uma peça do quebra-cabeça que esses tutoriais não resolvem: como você analisa um problema e o desmonta em passos que o computador consegue executar? Neste tutorial, pretendo mostrar o que aconteceu na minha cabeça conforme eu prosegui na tarefa de escrever funções para desenhar polígonos regulares e figuras em forma de estrela em Processing. Esta é uma boa escolha por não ser uma tarefa grande demais para compreender, mas também não é um problema trivial.
+Há uma peça do quebra-cabeça que esses tutoriais não resolvem: como você analisa um problema e o desmonta em passos que o computador consegue executar? Neste tutorial, pretendo mostrar o que aconteceu na minha cabeça conforme eu prossegui na tarefa de escrever funções para desenhar polígonos regulares e figuras em forma de estrela em Processing. Esta é uma boa escolha por não ser uma tarefa grande demais para compreender, mas também não é um problema trivial.
 
-Lembre que o que você está vendo aqui são o meu processo mental e o meu estilo de programação particulares. Há muitas diferentes formas de aproximação e estilos. Conforme você continuar a programar, vai encontrar o seu próprio. Você pode também ver o estilo de programaco de outras pessoas (mas não o seus processos mentais!) olhando o código fonte de programas em [openProcessing.org](http://openprocessing.org/). 
+Lembre que o que você está vendo aqui são o meu processo mental e o meu estilo de programação particulares. Há muitas diferentes formas de aproximação e estilos. Conforme você continuar a programar, vai encontrar o seu próprio. Você pode também ver o estilo de programação de outras pessoas (mas não o seus processos mentais!) olhando o código fonte de programas em [openProcessing.org](http://openprocessing.org/). 
 
 ### Desenhando polígonos regulares
 
@@ -27,7 +27,7 @@ Eu só precisava ter uma ideia do que era a tarefa, e um diagrama desenhado a m�
 
 ### Passo 2: Um pouco de trigonometria básica
 
-Então se você tem uma linha do tamanho de *r* iniciando em (0,0) em um anguo theta (0), o que são estas coordenadas em termos de *x* e *y*? Se você conhece um pouco de trigonometria , a resposta é que ponto final da linha está em (*r* cos θ,*sen*),Se você não conhece trigonometria, dê uma olhada,[Neste tutorial](http://catcode.com/trig/) (Uma introdução geral a trigonometrial), [neste tutorial](http://processing.org/learning/trig/) (Trigonometria com Processing) e [neste exemplo a partir do capítulo 13 de *Learning Processing*](http://learningprocessing.com/examples/chp13/example-13-05-polar-cartesian). No seguinte diagrama, os ângulos são desenhados em sentido horário, da mesma maneira como medimos no Processing.
+Então se você tem uma linha do tamanho de *r* iniciando em (0,0) em um ângulo theta (0), o que são estas coordenadas em termos de *x* e *y*? Se você conhece um pouco de trigonometria , a resposta é que ponto final da linha está em (*r* cos θ,*sen*),Se você não conhece trigonometria, dê uma olhada,[Neste tutorial](http://catcode.com/trig/) (Uma introdução geral a trigonometrial), [neste tutorial](http://processing.org/learning/trig/) (Trigonometria com Processing) e [neste exemplo a partir do capítulo 13 de *Learning Processing*](http://learningprocessing.com/examples/chp13/example-13-05-polar-cartesian). No seguinte diagrama, os ângulos são desenhados em sentido horário, da mesma maneira como medimos no Processing.
 
 ![](https://processing.org/tutorials/anatomy/imgs/sketch2.jpg)
 
@@ -38,7 +38,7 @@ Isso parece um trabalho para um loop `for` que corre de 0 a *n* (o número de la
 
 O problema de desenhar um grupo de linhas é que elas são só linhas—você fica sem uma forma verdadeira que pode preencher, como `rect()` ou `triangle()`. Por sorte, Processing deixa você criar suas próprias formas com as funções [`beginShape()`](http://processing.org/reference/beginShape_.html), [`vertex()`](file:///home/david/processing-1.0.9/reference/vertex_.html), e [`endShape()`]. O primeiro exemplo da página de referência para o `beginShape()` é o modelo a seguir. Então a próxima decisão é fazer o polígono como verdadeira forma.
 
-Uma vez que provavelmente você quer desenhar muitos polígonos durante o programa, faz sentido ter uma função `polygon()`. Quais parâmetros ela precisa? Quatro vem à mente: O número de lados, as coordenadas do centro *x* e *y*, e o raio. Eis o código, escrevi várias chamadas diferentes a `polygon()` dentro da função `setup()`. Apesar de ter calculado `angle` em graus, seno e coseno usam radianos, então eu tive que usar `radians()` para fazer a conversão.
+Uma vez que provavelmente você quer desenhar muitos polígonos durante o programa, faz sentido ter uma função `polygon()`. Quais parâmetros ela precisa? Quatro vem à mente: O número de lados, as coordenadas do centro *x* e *y*, e o raio. Eis o código, escrevi várias chamadas diferentes a `polygon()` dentro da função `setup()`. Apesar de ter calculado `angle` em graus, seno e cosseno usam radianos, então eu tive que usar `radians()` para fazer a conversão.
 
 ![](https://processing.org/tutorials/anatomy/imgs/polytest1.jpg)
 
@@ -75,13 +75,13 @@ vertex(cx + r * cos(radians(angle * i)),
 
 ### Dois passos para frente, um para trás
 
-O programa funciona, então é hora de ver se tem coisas que podem ser acrescentadas ou mudadas. Primeiro, o triângulo e o pentágono parecem de alguma maneira errados; eles são normalmente desenhados apontando pra cima em vez de pro lado. A razão deles parecerem estranhos é que o primeiro vértice (em 0°) aponta pra direita em vez de direto pra cima. Seria legal ter um parâmetro extra que desse o ângulo inicial para o primeiro vértice. (Uma outra solução é deisar as coisas como estão e deixar as pessoas usaresm `rotate()` [veja o tutorial das transformações 2D], mas tomei a descisão de projeto de usar um parâmetro extra.) Deve o ângulo ser fornecido em graus ou em radianos? A resposta: radianos, de maneira a ser consistente com to o resto que Processing faz.
+O programa funciona, então é hora de ver se tem coisas que podem ser acrescentadas ou mudadas. Primeiro, o triângulo e o pentágono parecem de alguma maneira errados; eles são normalmente desenhados apontando pra cima em vez de pro lado. A razão deles parecerem estranhos é que o primeiro vértice (em 0°) aponta pra direita em vez de direto pra cima. Seria legal ter um parâmetro extra que desse o ângulo inicial para o primeiro vértice. (Uma outra solução é deixar as coisas como estão e deixar as pessoas usarem `rotate()` [veja o tutorial das transformações 2D], mas tomei a decisão de projeto de usar um parâmetro extra.) Deve o ângulo ser fornecido em graus ou em radianos? A resposta: radianos, de maneira a ser consistente com to o resto que Processing faz.
 
-Meu próximo pensamento foi que seria legal ser capaz de especificar uma altura e largura para o polĩgono, parecido com o que fazemos com a `ellipse()`ou `rect()`. E eu já sabia como a fórmula devia ser, mas eu queria fazer um desenho para conferir. Como experimento preliminar, tentei desenhar um pentágono em um quadrado com transferidor régua, e terminei com o horrível desenho à esquerda. Como que os lados não tem comprimentos iguais? Percebi que estava tentando fazer o desenho encaixar nas minhas preconcepções, em vez de fazer um desenho preciso e ver onde isso me levaria. O desenho da direita foi feito muito mais cuidadosamente. Depois de pensar um pouco,percebi que o pentágono não encaixaria no quadrado exatamente, pois os ângulos não eram múltiplos de 90 graus. O polígono regular encaixa em um *círculo*, não em um quadrado!
+Meu próximo pensamento foi que seria legal ser capaz de especificar uma altura e largura para o polígono, parecido com o que fazemos com a `ellipse()`ou `rect()`. E eu já sabia como a fórmula devia ser, mas eu queria fazer um desenho para conferir. Como experimento preliminar, tentei desenhar um pentágono em um quadrado com transferidor régua, e terminei com o horrível desenho à esquerda. Como que os lados não tem comprimentos iguais? Percebi que estava tentando fazer o desenho encaixar nas minhas preconcepções, em vez de fazer um desenho preciso e ver onde isso me levaria. O desenho da direita foi feito muito mais cuidadosamente. Depois de pensar um pouco,percebi que o pentágono não encaixaria no quadrado exatamente, pois os ângulos não eram múltiplos de 90 graus. O polígono regular encaixa em um *círculo*, não em um quadrado!
 
 ![pentagon with unequal sides](https://processing.org/tutorials/anatomy/imgs/bad_pentagon.jpg)   ![pentagon with equal sides](https://processing.org/tutorials/anatomy/imgs/accurate_pentagon.jpg)
 
-Bem, isso foi um beco sem saída. Esse tipo de coisa acontece em progrmação o tempo todo, então eu não gastei muito temp me preocupando com isso. Era hora de uma outra aproximação. Uma vez que eu não tinha uma maneira precisa de desenhar elipses, tinha que pensar no problema de outra maneira. Presuma que você tem um círculo desenhado em uma folha de borracha, e você estica de tal maneira que ela fica duas vezes mais larga mas com a mesma altura. A posição vertical dos pontos no círculo não muda, mas as posições horizontais agora estão duas vezes mais distantes do centro do que estavam antes. A mesma ideia se aplica se vocẽ esticar a folha verticalmente. Os desenhos grosseiros a seguir pareciam levar a isto, então estava na hora de reescrever a função `polygon()`.
+Bem, isso foi um beco sem saída. Esse tipo de coisa acontece em progrmação o tempo todo, então eu não gastei muito temp me preocupando com isso. Era hora de uma outra aproximação. Uma vez que eu não tinha uma maneira precisa de desenhar elipses, tinha que pensar no problema de outra maneira. Presuma que você tem um círculo desenhado em uma folha de borracha, e você estica de tal maneira que ela fica duas vezes mais larga mas com a mesma altura. A posição vertical dos pontos no círculo não muda, mas as posições horizontais agora estão duas vezes mais distantes do centro do que estavam antes. A mesma ideia se aplica se você esticar a folha verticalmente. Os desenhos grosseiros a seguir pareciam levar a isto, então estava na hora de reescrever a função `polygon()`.
 
 ![diagrams showing stretched circle](https://processing.org/tutorials/anatomy/imgs/stretchy.jpg)
 
@@ -129,12 +129,12 @@ vertex(cx + w * cos(startAngle + angle * i),
 }
 ```
 
-Uma vez que tudo estava em radianos, agora descrevi os ânguloes em termos de `PI` e `TWO_PI` (2π), já que 2π radianos é igual a 360°. Em acréscimo ao código no`setup()` para testar os novos recursos, desenhei elipses com o mesmo centro e largura e altura como os polígonos para ter certeza de que os véritces estavam dentro da região certa.
+Uma vez que tudo estava em radianos, agora descrevi os ângulos em termos de `PI` e `TWO_PI` (2π), já que 2π radianos é igual a 360°. Em acréscimo ao código no`setup()` para testar os novos recursos, desenhei elipses com o mesmo centro e largura e altura como os polígonos para ter certeza de que os vértices estavam dentro da região certa.
 
 ### Parâmetros demais
 
 Agora eu tinha uma função muito mais flexível para desenhar polígonos, mas isso veio ao custo de mais parâmetros. Seria legal ser caoaz de desenhar os casos mais comuns (com largura e altura iguais, ângulo inicial zero) sem ter que ficar especificando todos esses parâmetros. A solução é uma sobrecarga de função (*function overloading*). 
-Em Processing, você pode ter duas funções com o mesmo nome, desde que tenham diferente número de parâmetros e/ou diferentes tipos de parânetros. Um exemplo disso é a função `stroke()` do Processing, que é sobrecarregada de maneira que você pode chamá-la com um número para cinza, três números para cor, ou quatro números para cor com opacidade. Processing olha para o número de argumentos que você provê e escolhe qual versão do `stroke()` chamar. 
+Em Processing, você pode ter duas funções com o mesmo nome, desde que tenham diferente número de parâmetros e/ou diferentes tipos de parâmetros. Um exemplo disso é a função `stroke()` do Processing, que é sobrecarregada de maneira que você pode chamá-la com um número para cinza, três números para cor, ou quatro números para cor com opacidade. Processing olha para o número de argumentos que você provê e escolhe qual versão do `stroke()` chamar. 
 
 Eis o código para acrescentar ao exemplo anterior. Quando você der `polygon()` apenas quatro números, vai chamar a seguinte função, que chama a versão "grande" da função com largura e altura iguais ao dobro do seu raio desejado e com o ângulo zero.
 
