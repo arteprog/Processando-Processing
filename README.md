@@ -1,6 +1,6 @@
 # Processando Processing
 
-<sub> Processando Processing *means 'processing Processing" in Portuguese and is an effort to Translate into Portuguese Processing reference resources; Results will be always published under open licenses similar to the original resources. [<b>Donations</b>](http://patreon.com/arteprog) to <b>arteprog</b> will contribute to mantain this project.*</sub>
+<sub> Processando Processing *means 'processing Processing" in Portuguese and is an effort to Translate into Portuguese Processing reference resources; Results will be always published under open licenses similar to the original resources. [<b>Donations</b>](https://liberapay.com/villares) will contribute to mantain this project.*</sub>
 
 Processando Processing é um esforço para traduzir para o português material de referência sobre Processing; Os resultados serão sempre publicados com licenças abertas semelhantes às do material original.
 ## Atividades recentes
